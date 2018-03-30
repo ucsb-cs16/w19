@@ -1,0 +1,101 @@
+github_url: https://github.com/UCSB-CS56-F16/UCSB-CS56-F16.github.io
+mentor_url: https://ucsb-cs56-pconrad-mentors.github.io
+
+on_campus: http://proquest.safaribooksonline.com
+off_campus: http://proquest.safaribooksonline.com.proxy.library.ucsb.edu:2048
+hfj_url: book/programming/java/0596009208
+hfdp_url: book/software-engineering-and-development/patterns/0596007124 
+
+ta_list: "(configure ta_list in _config.yml)"
+mentors_list: "(configure mentors_list in _config.yml)"
+
+start_week: 0
+start_date: 2016-09-18 00:00:00.00-7:00
+num_weeks: 11
+extra_exam_week: true
+
+cal_dates: >
+  [
+  {"label":"First day of classes", "date":"2016-09-22" },
+  {"label":"Univ Holiday", "date":"2016-11-11" },
+  {"label":"Clocks back 1 hour", "date":"2016-11-06" },	
+  {"label":"Univ Holiday", "date":"2016-11-24" },
+  {"label":"Univ Holiday", "date":"2016-11-25" },
+  {"label":"Last day of classes", "date":"2016-12-02" },			
+  ]
+
+
+course: "CS56"
+legacy_wiki_name: 56wiki
+legacy_wiki_url: "https://foo.cs.ucsb.edu/56wiki" 
+qtr: "F16"
+quarter: "Fall 2016"
+hfj_chapter_url_prefix: "http://ucsb-cs56-pconrad.github.io/hfj/HFJ_Chapter_"
+hfdp_chapter_url_prefix: "http://ucsb-cs56-pconrad.github.io/hfdp/HFDP_Chapter_"
+
+kramdown:
+   parse_block_html: true
+
+
+exclude:
+   - vendor
+   - _exam/e02/cs56_m16_e02/code
+
+
+timezone: America/Los_Angeles
+
+collections:
+  hwk:
+    output: true
+    permalink: /hwk/:path/
+    last_before: false
+  lab:
+    output: true
+    permalink: /lab/:path/
+    last_before: false
+  exam:
+    output: true
+    permalink: /exam/:path/
+  info:
+    output: true
+    permalink: /info/:path/
+
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: default
+  - 
+    scope:
+      path: ""
+      type: hwk
+    values:
+      layout: hwk
+  - 
+    scope:
+      path: ""
+      type: lab
+    values:
+      layout: lab
+  - 
+    scope:
+      path: ""
+      type: exam
+    values:
+      layout: exam_info
+  - 
+    scope:
+      path: ""
+      type: info
+    values:
+      layout: info
+  -
+    scope:
+      path: "syllabus.md"
+      type: info
+    values:
+      layout: handout
+
+

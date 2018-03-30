@@ -1,0 +1,77 @@
+.calendar table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.calendar table tr th,td {
+    border: 1px solid black;
+}
+
+.calendar table tr td  {
+    text-align:center;
+    vertical-align:top;
+}
+
+.cal-assignments {
+   padding: 0.5em 0.5em 0.5em 0.5em;
+   text-align: left;
+}
+
+.not-ready {
+   color: #ccc;
+}
+
+.not-ready  a {
+   color: #cce;
+}
+
+.not-ready  a:visited {
+   color: #cce;
+}
+
+.ready a:hover {
+   color: #00f;
+}
+
+.not-ready a:hover {
+   color: #00f;
+}
+
+a:hover {
+   color: #00f;
+}
+
+.exam {
+    font-size: 120%;
+    font-weight: bold;
+    padding: 0.25em;
+    margin: 0.25em 0.25em 0.25em 0.25em;
+    border: 3px inset #369;
+}
+
+.cal_date  {
+    font-family: Arial Narrow, sans-serif;
+    font-size: 90%;
+    line-height: 0.8;
+    color: green;
+    font-weight: bold;
+    padding: 0.1em;
+    margin: 0.25em auto 0.25em auto;
+    text-align:center;
+}
+
+.exam-week-label  {
+    font-family: Arial Narrow, sans-serif;
+    font-size: 90%;
+    line-height: 0.8;
+    color: green;
+    font-weight: bold;
+    padding: 0.1em;
+    margin: 0.25em auto 0.25em auto;
+    text-align:center;
+}
+
+.lecture {
+
+    margin-top: 0.5em;
+}

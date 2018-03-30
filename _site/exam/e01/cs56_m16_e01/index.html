@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- head_exam.html -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<link rel="stylesheet" href="/site.css" />
+<link rel="stylesheet" href="/exam.css" />
+<script src="/site.js"></script>
+<script src="/exam.js"></script>
+
+    <title>e01 - Midterm Exam - </title>
+  </head>
+  <body id="page-top">
+    <div id="container" data-role="page">
+      <div data-role="header" class="header">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+    <li><a href="https://ucsb-cs16.github.io">UCSB CS16 </a></li>
+    <li><a href="/" class="ui-btn-active">CS16 S18</a></li>
+     <li><a href="https://submit.cs.ucsb.edu">submit.cs</a></li>
+  </ul>
+ </nav>
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://gauchospace.ucsb.edu">Gauchospace</a></li>
+   <li><a href="https://piazza.com/configure-classes/spring2018/cs16">Piazza</a></li>
+  </ul>
+ </nav>
+ 
+</div>
+
+      
+           
+      <div id="content"  class="ui-content">
+        <div class="exam-header">
+          <div class="exam-page-header exam-page-header-template">
+	    <table>
+  <tr>
+    <td class="page-num">1</td>
+  </tr>
+  <tr>
+    <td class="asn-num">e01</td>
+  </tr>
+  <tr>
+    <td class="course-qtr">
+      CS16&#160;<span class="insert-qtr">S18</span>
+    </td>
+  </tr>
+</table>
+
+	  </div> <!-- exam-page-header -->
+
+	  <table class="exam-name-header-table exam-name-header-template" style="width:40%; margin-top: 0; padding-top: 0;">	   
+  <tr>
+    <th colspan="2" class="exam-header-name">Name:</th>
+    <!-- 
+	 <th rowspan="3" class="exam-header-section"> section<br>
+	   <span class="exam-header-section-subtext">9am or 10:30am</span>
+	 </th>
+    -->
+    
+  </tr>
+  <tr><th colspan="2" class="exam-header-subtext">(as it would appear on official course roster)</th></tr>
+  <tr>
+    <th class="exam-header-umail-label">  Umail address:</th>
+    <th class="exam-header-umail-entry"> @umail.ucsb.edu</th>
+  </tr>
+</table>
+
+
+	  <h1 style="clear:left;">EXAM: e01: Midterm Exam</h1>
+	  
+	  <table class="exam_table">
+	    <tr>
+	      <th class="exam_ready">ready?</th>
+	      <th class="exam_date" >date</th>
+	      <th class="exam_points" >points</th>
+	    </tr>
+	    <tr class="ready">
+	      <td class="exam_ready">true</td>
+	      <td class="exam_date" >Thu 07/07 09:30AM</td> 
+	      <td class="pointCount"></td>
+	    </tr>
+	  </table>
+	  
+	  <div style="font-size: 8pt !important; font-family:Arial Narrow, sans-serif; font-style:italic; line-height: 100%;">
+	    <p>You may not collaborate on this exam with anyone.   If you need to use the restroom, you must leave your cell phone with the exam proctor before leaving the room.  
+	    </p>
+	  </div>
+
+	  <div class="instructions">
+	    <ul>
+	      <!-- exam_instructions_li_elements.html  -->
+<li> Write your name at the top of this page <strong>AND EVERY ODD NUMBERED PAGE.</strong>
+</li>
+
+<li>Double check that you turned in ALL pages; look for "End of Exam" on the last page.</li>
+
+<li>
+  This exam is <strong>closed book, closed
+  notes</strong>, <strong>closed mouth, cell phone off.</strong>
+</li>
+
+<li >
+  You are permitted <strong>one sheet of paper</strong> (max size 8.5x11&quot;) on which to write notes.
+</li>
+<li>This sheet will be collected with the exam, and might not be returned.</li>
+<li> Please write your name on your notes sheet.</li>
+
+	    </ul>
+	  </div>
+	</div><!-- exam-header -->
+<hr />	
+        <ol>
+
+<li style="margin-bottom:8em;">
+    <p>(50 pts) In the space below (and on the next page if needed) write the code forthe <code class="highlighter-rouge">Aircraft</code> class according to the instructions on the
+separate <a href="handout">handout</a> provided.</p>
+
+    <p class="instructions" style="margin-top:40em; margin-bottom:0pt; padding-bottom:0pt;">There is more room on the next page for your answer if you run out of room here.<br /></p>
+
+    <div class="page-break-before">
+      <p class="instructions">Extra space for your answer to question 1</p>
+    </div>
+
+  </li>
+
+
+
+
+
+<li class="page-break-before">
+
+    <p>(10 pts) For each of the following indicate if the line of code
+involves auto-boxing, and/or auto-unboxing.  If a line of code
+involves both, check both boxes.  If it involves neither, check
+neither box.  ASSUME THAT ALL THE LINES OF CODE ARE IN THE SAME <code class="highlighter-rouge">main</code>
+METHOD, CONSECUTIVELY.</p>
+
+    <p class="finePrint">(Grading: -2 for each incorrect answer, but no more than -10 total.)</p>
+
+    <table class="boxingTable">
+
+<tr>
+ <th width="60%">Code</th>
+ <th width="10%">auto-boxing</th>
+ <th width="10%">auto-unboxing</th>
+</tr>
+
+<tr>
+<td>
+          <p><code class="highlighter-rouge">ArrayList&lt;Integer&gt; mylist = new ArrayList&lt;Integer&gt;();</code></p>
+        </td>
+<td class="checkbox">&square;</td><td class="checkbox">&square;</td>
+</tr>
+
+<tr>
+<td>
+          <p><code class="highlighter-rouge">mylist.add(1);</code></p>
+        </td>
+<td class="checkbox">&square;</td><td class="checkbox">&square;</td>
+</tr>
+
+
+<tr>
+<td>
+          <p><code class="highlighter-rouge">mylist.add(new Integer(4));</code></p>
+        </td>
+<td class="checkbox">&square;</td><td class="checkbox">&square;</td>
+</tr>
+
+<tr>
+<td>
+          <p><code class="highlighter-rouge">mylist.add(new Integer(mylist.get(0)));</code></p>
+        </td>
+<td class="checkbox">&square;</td><td class="checkbox">&square;</td>
+</tr>
+
+<tr>
+<td>
+          <p><code class="highlighter-rouge">Integer x = mylist.get(0);</code></p>
+        </td>
+<td class="checkbox">&square;</td><td class="checkbox">&square;</td>
+</tr>
+
+<tr>
+<td>
+          <p><code class="highlighter-rouge">int y = mylist.get(1);</code></p>
+        </td>
+<td class="checkbox">&square;</td><td class="checkbox">&square;</td>
+</tr>
+
+<tr>
+ <td>
+          <p><code class="highlighter-rouge">Integer z = mylist.get(mylist.get(1));</code></p>
+        </td>
+<td class="checkbox">&square;</td><td class="checkbox">&square;</td>
+</tr>
+
+<tr>
+ <td>
+          <p><code class="highlighter-rouge">mylist.set(mylist.get(0),4);</code></p>
+        </td>
+<td class="checkbox">&square;</td><td class="checkbox">&square;</td>
+</tr>
+
+</table>
+
+  </li>
+
+
+
+<li style="margin-bottom:30em;" class="page-break-before">
+
+    <p>(10 pts) B.C. Dull thinks that unchecked exceptions are a bad idea.  B.C. 
+suggests that Java would be better language if all exceptions were
+checked exceptions.</p>
+
+    <p>Explain why B.C. Dull is incorrect.</p>
+
+    <p><em>For full credit:</em> Be precise, but concise: 
+include enough detail so the grader does not have to guess whether you
+understand the difference between checked and unchecked exceptions, but
+DO NOT include detail that is not relevant to the question being asked.</p>
+
+  </li>
+
+<li class="page-break-before" style="margin-bottom:20em;">
+    <p>(10 pts) We are using the <code class="highlighter-rouge">ant</code> utility in this course, which works with a file called <code class="highlighter-rouge">build.xml</code></p>
+
+    <p>If you were asked at a job interview to briefly describe the purpose of <code class="highlighter-rouge">ant</code>, and the 
+type of information contained in a <code class="highlighter-rouge">build.xml</code>, what would you say?</p>
+
+    <p>Include enough detail
+in your answer so that the interview knows that you are technically sharp, and  they should hire you.</p>
+
+    <p>Do not include so much extra detail that the interviewer finds you tedious and annoying, and decides you would be  painful to work with, and chooses to not hire you.</p>
+  </li>
+
+
+<li style="margin-bottom:5em;" class="page-break-before">
+
+    <p>(10 pts) In lecture, we discussed the way that that Java compiler (or any 
+compiler, for that matter) deals with the problem of turning Java code
+into bytecodes that can be interpreted by the Java Virtual Machine.</p>
+
+    <p>We discussed that the first phase is often to turn a sequence of 
+characters into a sequence of <em>tokens</em>.</p>
+
+    <p>Here is some Java code.   List what the first twelve tokens
+in this code would be by filling in the blanks.</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>
+
+<span class="k">while</span> <span class="o">(</span><span class="n">a</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">/</span> <span class="mi">2</span><span class="o">;</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"in loop"</span><span class="o">);</span>	
+<span class="o">}</span>
+</code></pre>
+    </div>
+
+    <div class="fill-in-blanks-table">
+
+      <table>
+        <tbody>
+          <tr>
+            <td>1:</td>
+            <td>2:</td>
+            <td>3:</td>
+            <td>4:</td>
+          </tr>
+          <tr>
+            <td>5:</td>
+            <td>6:</td>
+            <td>7:</td>
+            <td>8:</td>
+          </tr>
+          <tr>
+            <td>9:</td>
+            <td>10:</td>
+            <td>11:</td>
+            <td>12:</td>
+          </tr>
+          <tr>
+            <td>13:</td>
+            <td>14:</td>
+            <td>15:</td>
+            <td>16:</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+    <!-- space box -->
+
+    <p class="finePrint">Grader: -1 for each incorrect answer, minimum grade of 0. </p>
+
+  </li>
+
+<li style="margin-bottom:1em;">
+
+    <p>(10 pts) On the <a href="handout">handout</a> there is some code.    Your job: figure out after which line of main() each of the following objects is eligible for garbage collection.</p>
+
+    <p>If an object is still not eligible for garbage collection when the last line of main is reached, write “never”.    Your answer should be one of the line numbers that appears in comments in main (e.g. <code class="highlighter-rouge">/* 3 */</code> or <code class="highlighter-rouge">/* 7 */</code>) or the word “never”.</p>
+
+    <style>
+ .fill-in-blanks-smaller table {
+   width: 60%;
+ }
+ .fill-in-blanks-smaller table * td {
+    margin: 1em 1em 1em 1em;
+    padding: 1em 1em 1em 1em;
+ }
+</style>
+
+    <div class="fill-in-blanks-smaller">
+
+      <table>
+        <thead>
+          <tr>
+            <th>Object</th>
+            <th>Fill in line  here</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>(a) <code class="highlighter-rouge">Fido</code></td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>(b) <code class="highlighter-rouge">Rover</code></td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>(c) <code class="highlighter-rouge">Princess</code></td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>(d) <code class="highlighter-rouge">Spot</code></td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>(e) <code class="highlighter-rouge">Snoopy</code></td>
+            <td> </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+  </li>
+
+
+</ol>
+
+
+	<div class="end-of-exam">End of Exam</div>
+        </div><!-- content -->
+        <div data-role="footer" class="footer">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io">this site on github</a></li>
+   <li><a href="https://ucsb-cs16.github.io/instructor">Instructor info</a></li>
+   <li><a href='https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io/edit/master/_exam/e01/cs56_m16_e01.md'>edit this page on github</a></li>
+   <li><a href="https://foo.cs.ucsb.edu/16wiki">16wiki</a></li>
+
+  </ul>
+ </nav>
+</div>
+
+      </div><!-- container -->
+
+      
+    </body>
+</html>

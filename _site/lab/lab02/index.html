@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- head.html; common header items for all layouts -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<link rel="stylesheet" href="/site.css" />
+<script src="/site.js"></script>
+
+    <title>lab02 - ASCII Art: Logical operators, integrating github into your workflow - </title>
+  </head>
+    <body id="page-top">
+      <div id="container" data-role="page">
+      <div data-role="header" class="header">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+    <li><a href="https://ucsb-cs16.github.io">UCSB CS16 </a></li>
+    <li><a href="/" class="ui-btn-active">CS16 S18</a></li>
+     <li><a href="https://submit.cs.ucsb.edu">submit.cs</a></li>
+  </ul>
+ </nav>
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://gauchospace.ucsb.edu">Gauchospace</a></li>
+   <li><a href="https://piazza.com/configure-classes/spring2018/cs16">Piazza</a></li>
+  </ul>
+ </nav>
+ 
+</div>
+
+        <div id="content"  class="ui-content">
+          <h1>lab02 : ASCII Art: Logical operators, integrating github into your workflow</h1>
+          <table class="asn_table">
+            <!-- asn_table_header_row.html -->
+<tr>
+  <th class="asn_num"  >num</th>
+  <th class="asn_ready">ready?</th>
+  <th class="asn_desc" >description</th>
+  <th class="asn_date" >assigned</th>
+  <th class="asn_date" >due</th>
+</tr>
+
+
+            
+            <tr class="ready" >
+  <td class="asn_num"  ><a href="/lab/lab02/" data-ajax="false">lab02</a></td>
+  <td class="asn_ready">true</td>
+  <td class="asn_desc" >ASCII Art: Logical operators, integrating github into your workflow</td>
+  <td class="asn_date" >Tue 04/17 10:00AM</td> 
+  <td class="asn_date" >Mon 04/23 11:59PM</td>
+</tr>
+
+
+
+          </table>
+          <h1 id="pre-lab-prep">Pre-lab prep</h1>
+
+<ul>
+  <li>
+    <p>Read this article on <a href="https://ucsb-cs56-pconrad.github.io/topics/git_basic_workflow/">git basic workflow</a></p>
+  </li>
+  <li>
+    <p>Remotely log into your account on the csil servers and try to complete Step 1a of the lab that walks you through doing some initial ONE-TIME git configurations in your CoE account on CSIL.</p>
+  </li>
+</ul>
+
+<p>*Read through the entire lab, and identify parts that seem unclear to you. You can let your mentor know about this at the beginning of the lab.</p>
+
+<h1 id="goals-for-this-lab">Goals for this lab</h1>
+
+<p>By the time you have completed this lab, you should be able to</p>
+
+<ul>
+  <li>Use if/else and for loops to print various kinds of shapes with "ASCII Art"</li>
+  <li>Show that you understand how to work through the basic process of test-driven development in C++</li>
+  <li>Integrate github into your work flow</li>
+</ul>
+
+<h2 id="skills-needed-a-nameskillsa">Skills Needed <a name="skills"></a></h2>
+
+<p>By now, we expect that you are comfortable with these basic skills from lab00 and lab01 so we will no longer describe them in as much detail as we did previously:</p>
+
+<ul>
+  <li>Using a text-editor to create and/or edit C++ programs</li>
+  <li>Compiling and running C++ programs</li>
+  <li>Using the computers in both the CSIL and the Phelps labs to do basic things:
+    <ul>
+      <li>Performing basic management of directories and files with Unix commands such as mkdir, cd, pwd, ls, cp, mv</li>
+      <li>Submitting assignments in this class with the submit.cs system, and checking your results</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="step-0-check-in-with-your-mentor">Step 0: Check-in with your mentor</h2>
+
+<ul>
+  <li>
+    <p>At the start of every lab, you and your partner should get together with your mentor group and mentor. Your mentor will give you any initial instructions as required for the lab, guiding you on the key learning goals and any challenging aspects that you need to pay special attention to. They will also take your attendance for that lab. This is also a time when you will check in about your progress in the programming assignments. Make sure that you always have the latest version of your code pushed to github before your weekly check-in with your mentor.</p>
+  </li>
+  <li>
+    <p>If you reported a different partner to your mentor last week, please update your mentor before you proceed with the rest of the lab</p>
+  </li>
+  <li>
+    <p>Choose who will be the pilot for the first part of the lab. The pilot should sit down in front of the computer now. The navigator gets a chair and sits next to the pilot. You should exchange roles after awhile, before the pilot gets tired, and before the navigator gets bored or distracted.</p>
+  </li>
+  <li>
+    <p>If your partner shows up late, let your mentor know. Points will be deducted for students who don’t show up on time. If you face difficulties with pair programming consult your mentor.</p>
+  </li>
+</ul>
+
+<p>Below are the links to different sections of the lab:</p>
+
+<ul>
+  <li><a href="#git" data-ajax="false">Step by step instructions to getting setup with github</a></li>
+  <li><a href="#asciiart" data-ajax="false">Ascii Art</a></li>
+  <li><a href="#starL" data-ajax="false">An example for you to follow: starL</a></li>
+  <li><a href="#yourgoal" data-ajax="false">What you’ll be doing</a></li>
+  <li><a href="#stepbystep" data-ajax="false">Step by Step Instructions</a></li>
+  <li><a href="#eval" data-ajax="false">Evaluation and grading</a></li>
+</ul>
+
+<h1 id="step-by-step-instructions-to-getting-setup-with-github-a-namegita">Step by Step Instructions to getting setup with github <a name="git"></a></h1>
+
+<h2 id="step-1a-do-some-initial-one-time-git-configurations-this-step-has-to-be-done-individually">Step 1a: Do some initial ONE-TIME git configurations (this step has to be done individually)</h2>
+
+<ul>
+  <li>
+    <p>On separate machines, log onto your account.</p>
+  </li>
+  <li>
+    <p>Open a terminal window. As a reminder, that’s the Application Menu, then System Tools, then Terminal Window.</p>
+  </li>
+  <li>
+    <p>In your ~/cs16 directory, type the following commands, replacing Alex Triton with your name and atriton@cs.ucsb.edu with your email address.</p>
+  </li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>   git config --global user.name "Alex Triton"
+
+   git config --global user.email "atriton@cs.ucsb.edu"
+</code></pre>
+</div>
+
+<ul>
+  <li>
+    <p>Next, generate a private/public key pair and upload your public key to your github account. To do this refer to this tutorial: <a href="https://ucsb-cs56-pconrad.github.io/topics/github_ssh_keys/">https://ucsb-cs56-pconrad.github.io/topics/github_ssh_keys/</a> In the process of setting up your key pair, when asked for a passphrase just press enter. By doing this step you will avoid having to enter a password or passphrase everytime you push your code to git.</p>
+  </li>
+  <li>
+    <p>Clone the starter code repo from our class organization to the pilot’s local account by typing the following commands</p>
+  </li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>  git clone git@github.com:ucsb-cs16-w18/cs16-w18-starter-code.git
+</code></pre>
+</div>
+<p>Note that this repo contains the starter code for all labs (although only the code for the current is up to date). So, you don’t have to repeat the above step in subsequent labs.</p>
+
+<h2 id="step-1b-create-a-new-repo-add-your-partner-as-collaborator-and-clone-the-git-repo-that-contains-the-starter-code">Step 1b: Create a new repo, add your partner as collaborator and clone the git repo that contains the starter code</h2>
+
+<ul>
+  <li>
+    <p>Create a repo for this lab on the pilot’s github account (just like you did in lab00): To do this, open a browser and navigate to <a href="www.github.com">www.github.com</a>. Log into the pilot’s github account. From the drop down menu on the left, select our class organization: ucsb-cs16-w18 and proceed to create a new repo. You may refer to the instructions in lab00. Follow this naming convention: If your github username is jgaucho and your partner’s is alily, your should name your repo lab02_agaucho_alily (usernames appear in alphabetical order). Also you must set the visibity of your repo to be ‘PRIVATE’ when creating it. We will not repeat these instructions in subsequent labs.</p>
+  </li>
+  <li>
+    <p>The pilot should add the navigator as a collaborator on github. To do this navigate to the git repo you just created. Choose the settings tab. Then click on the ‘Collaborators and teams’ option on the left. Scroll all the way down and add the navigator’s github account. Then press on the ‘Add collaborator’ button. Now you and the navigator share the ownership of your git repo. You won’t work with your new repo until the end of the lab.</p>
+  </li>
+  <li>
+    <p>Now navigate to the cs16-w18-starter-code directory, and do a git pull to get the latest version of the lab starter code. You must do this step again in subsequent labs</p>
+  </li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>  cd cs16-w18-starter-code
+  git pull
+</code></pre>
+</div>
+
+<p>Never modify the code in the cs16-w18-starter-code repo directly because you are not the owner of that repo. Instead you should work on a copy of those files.</p>
+
+<h2 id="step-2-clone-the-repo-in-the-pilots-account-and-get-the-starter-code">Step 2: Clone the repo in the pilot’s account and get the starter code</h2>
+
+<ul>
+  <li>On the terminal, change to your cs16 directory:</li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>cd ~/cs16
+</code></pre>
+</div>
+
+<ul>
+  <li>Using the web-browser, navigate to your newly created repo on github. Find the address of your git repo. Click on the green “clone or download button”. If your git repo was named lab02_alily_jgaucho, then the git address should something like: “git@github.com:ucsb-cs16-w18/lab02_alily_jgaucho.git”. Now clone your repo into your csil account by typing the following on the terminal, replacing the last argument with the address of your git repo</li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git clone git@github.com:ucsb-cs16-w18/lab02_alily_jgaucho.git
+</code></pre>
+</div>
+
+<ul>
+  <li>Type ls to see your new git repo directory and change into that directory</li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>cd lab02_alily_jgaucho
+</code></pre>
+</div>
+
+<ul>
+  <li>Copy the starter code by typing the following command:</li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>cp ~/cs16/cs16-w18-starter-code/lab02/* ./
+</code></pre>
+</div>
+
+<p>You should see the following files:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ls
+backslash.cpp  README.md  starC.cpp  starL.cpp  starT.cpp  starZ.cpp
+</code></pre>
+</div>
+
+<h2 id="step-3-using-the-git-command-line-tools-to-save-the-first-version-of-your-code-a-namefirstcommita">Step 3: Using the git command line tools to save the first version of your code <a name="firstcommit"></a></h2>
+
+<p>Its now time to use the git-command line tools to perform version control for the files in your git repo. The four essential commands we will be using are:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git pull
+git add .
+git commit -m "Initial version of lab02 files"
+git push origin master
+</code></pre>
+</div>
+
+<p>Go ahead and type them out on a terminal in your git repo (lab02_alily_jgaucho) directory. The above commands save a snapshot of your code on github. To check that this was done sucessfully open a web-browser and navigate to your repo on github. Then check to see that the starter code appears in your repo.</p>
+
+<p>Note 1: Everytime you add a new piece of logic to your code you should save a snapshot of the latest version of your code by issuing the commands: <em>git add …</em> , <em>git commit …</em> and <em>git push …</em>. All the previous versions will be available to you as well and you have the option of reverting to older versions (We will see how in later labs). As you go through the rest of this lab you will essentially need to use these commands to keep track of the different versions of your code.</p>
+
+<p>Congratulations on integrating git into your workflow! Now proceed to the programming part of this assignment.</p>
+
+<h2 id="step-4-create-a-team-on-submitcs">Step 4: Create a team on submit.cs</h2>
+
+<ul>
+  <li>Go to submit.cs, navigate to CS16, W18, lab02, and create a team for you and your pair partner.</li>
+</ul>
+
+<h2 id="what-well-be-doing-in-this-lab-ascii-art-a-nameasciiarta">What we’ll be doing in this lab: ASCII Art <a name="asciiart"></a></h2>
+
+<p>There was a time when laser printers either hadn’t been invented yet, or were not yet widely available. Thus, the only kind of printer most folks had access to was something called a "line printer", which printed only from left to right, top to bottom, and could only print the kinds of characters you find on a typewriter keyboard.</p>
+
+<p>So, you might find folks making pictures like this one, found at http://chris.com/ascii/</p>
+
+<pre>
+                                 .ze$$e.
+              .ed$$$eee..      .$$$$$$$P""
+           z$$$$$$$$$$$$$$$$$ee$$$$$$"
+        .d$$$$$$$$$$$$$$$$$$$$$$$$$"
+      .$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$e..
+    .$$****""""***$$$$$$$$$$$$$$$$$$$$$$$$$$$be.
+                     ""**$$$$$$$$$$$$$$$$$$$$$$$L
+                       z$$$$$$$$$$$$$$$$$$$$$$$$$
+                     .$$$$$$$$P**$$$$$$$$$$$$$$$$
+                    d$$$$$$$"              4$$$$$
+                  z$$$$$$$$$                $$$P"
+                 d$$$$$$$$$F                $P"
+                 $$$$$$$$$$F
+                  *$$$$$$$$"
+                    "***""  Gilo94'
+</pre>
+
+<p>For now, we’ll be keeping things much simpler: we are going to do some very simple ASCII art of letters, numbers and symbols, in order to practice with if/else and for loops.</p>
+
+<p>The first few exercises will be very simple, but they get progressively more challenging.</p>
+
+<h2 id="an-example-for-you-to-follow-starl--a-namestarla">An example for you to follow: starL  <a name="starL"></a></h2>
+
+<p>As an example, we will write a C++ function that returns a C++ string that when printed to cout,  makes the shape of prints the letter L with stars, at any width or height, provided both width and height are &gt;= 2</p>
+
+<p>If either the parameter width or height is less than 2, the function returns an empty string.</p>
+
+<p>The function will have the following <em>function prototype:</em></p>
+
+<pre>string starL(int width, int height);</pre>
+
+<ul>
+  <li>
+    <p>As a reminder, a function prototype is the first line of the function definition (the header) followed by a semicolon instead of the function body—it is used to introduce the function to the compiler, in case the function definition isn’t coming until later.</p>
+  </li>
+  <li>
+    <p>You can read more about function prototypes here: <a href="https://ucsb-cs16.github.io/topics/cpp_function_prototypes/">C++: function prototypes</a></p>
+  </li>
+</ul>
+
+<p>The following table shows various calls to this function, along with what the string returned looks like when printed using <code> cout &lt;&lt; starL(w,h); </code></p>
+
+<p>The rule is that the L should have width at least 2, and height at least 2, otherwise the result is an empty string, and printing an empty string results in no output.</p>
+
+<p><img src="/lab/lab02/starL.png" alt="starL" height="400px" /></p>
+
+<p>So, this is a fairly easy function to write. This will do the job, and is provided for you as an example of how functions like this should be written.</p>
+
+<p>To test whether this function works, we can write a simple main that takes the command line arguments, converts them to integers with stoi,
+and then passes those to the function:</p>
+
+<h2 id="what-youll-be-doing-a-nameyourgoala">What you’ll be doing <a name="yourgoal"></a></h2>
+
+<p>What you’ll be doing in this lab is writing three similar functions: startT, starC and starZ.</p>
+
+<p><em>Sample values returned from starT</em></p>
+
+<p><img src="/lab/lab02/starT.png" alt="starT" height="400px" /></p>
+
+<p><em>Sample values returned from starC</em></p>
+
+<p>starC renders the letters C, but requires a minimum width of 2, and a minimum height of 3.  Otherwise it returns an empty string.</p>
+
+<p><img src="/lab/lab02/starC.png" alt="starC" height="400px" /></p>
+
+<p><em>Sample values returned from starZ</em></p>
+
+<p>starZ renders the letters Z, but requires a minimum width of 3.   It only takes one parameter, because the height and width are always assumed to be equal.</p>
+
+<p><img src="/lab/lab02/starZ.png" alt="starZ" height="400px" /></p>
+
+<h1 id="step-by-step-instructions-a-namestepbystepa">Step by Step Instructions <a name="stepbystep"></a></h1>
+
+<h2 id="step-1-practicing-with-the-starl-program">Step 1: Practicing with the starL program</h2>
+
+<p>First compile the starL.cpp file that you have in this week’s directory with the option (-std=c++11 ) as per the following command:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>g++ -std=c++11 -o starL starL.cpp
+</code></pre>
+</div>
+
+<p>Run the program with a few command line parameters. You’ll notice something special happens when you pass in the command line parameters -1 -1.</p>
+
+<pre>
+ ./starL 3 4
+ ./starL 4 3
+ ./starL
+ ./starL 2 1
+ ./starL -1 -1
+</pre>
+
+<p>With the command line parameters -1 -1, the program runs a set of tests on itself to make sure that the function starL inside the program is functioning correctly.  So, you should be able to get some feedback on whether your code is correct before you even send it to the submit program.  The code uses stoi to convert the argv[1] and argv[2] to integer values, and compare against -1.</p>
+
+<p>Look over the code and try to understand how it works.  When you feel ready, move on to the next step, and try tackling the starT.cpp, starC.cpp and starZ.cpp programs.</p>
+
+<h2 id="step-2-writing-the-start-program">Step 2: Writing the starT program</h2>
+
+<p>Your job now is to start edit the starT.cpp program, which has a function inside of it that is a “stub”.  That function does NOT produce the correct output—it always just returns the string “stub”.   You need to replace that code with a proper implementation of starT.  You can use the implementation of starL in the starL.cpp file as a model.</p>
+
+<p>Compile your starT.cpp to the execuatable star. Suppose we want your program to draw a T with width 3 and height 2, we will run your starT executable as follows:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$./starT 3 2
+</code></pre>
+</div>
+
+<p>In general the parameters to the startT program are width, followed by height. You should take this into consideration when writing your main function. To write the starT() function refer back to the description of starT earlier in this lab.   You can also run the program with arguments of -1 -1 to run the internal tests and see whether your implementation is correct.</p>
+
+<p>When you think you have a correct implementation, try submitting to the submit.cs system.  You can submit just your starT.cpp program to see how far along you’ve gotten:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>~submit/submit -p 922 starT.cpp 
+</code></pre>
+</div>
+
+<p>Note that this will show failures for <code>starC.cpp</code> and <code>starZ.cpp</code>, which are files that you’ll be working on at a later step.</p>
+
+<p>You could also just submit the “stubs” for those—though those will fail some or all of the tests:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>~submit/submit -p 922 starC.cpp starT.cpp starZ.cpp
+</code></pre>
+</div>
+
+<p>Either way, for now, concentrate only on the test failures that pertain to starT.cpp and try to address any problems you encounter.  If you fix these NOW before moving on to starC.cpp and/or starZ.cpp, you will likely have better success, because what you learn from fixing your mistakes will help you get those other parts solved more quickly and easily.</p>
+
+<p>Some rules to keep in mind for the starT function:</p>
+
+<ul>
+  <li>EVERY line of your T should have exactly the same number of characters, and should end in a newline—remember to pad out each line with spaces.</li>
+  <li>Return a string that represents the letter T with the correct width and height, but only if height &gt;=2, and width is an odd number &gt;=3</li>
+  <li>if the height and width values are not valid, return an empty string</li>
+</ul>
+
+<p>Hints: recall that:</p>
+
+<ul>
+  <li>the <code>%</code> operator can be used to test where a number is odd or even</li>
+  <li>the <code>&amp;&amp;</code> operator means “and”</li>
+  <li>the <code>||</code> operator means “or”</li>
+  <li>the opposite of &gt;= is &lt;, not &lt;=</li>
+</ul>
+
+<p>Also, for starT.cpp:</p>
+
+<ul>
+  <li>If there are not exactly two command line args after the program name (one for width and one for height), print a usage message:</li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Usage: ./starT width height
+</code></pre>
+</div>
+
+<ul>
+  <li>If the height and width are both -1, then invoke the internal tests.  Don’t change those.  If you do, then you may lose points.</li>
+</ul>
+
+<p>Save the new version of your code with the starT implementation by typing out the following commands:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git add starT.cpp
+git commit -m "Implemented starT()"
+git push origin master
+</code></pre>
+</div>
+
+<h2 id="step-3-writing-the-starc-program">Step 3: Writing the starC program</h2>
+
+<p>Next, write the starC program.   Follow the same basic procedure as for the starT.cpp program.</p>
+
+<p>To get started, look at the table near the top of this lab that shows correct output for the starC program, as well as looking at the test cases in the runTests() function of the starC.cpp file in your directory.</p>
+
+<p>Note that you’ll need to add some code to the main, but this time the rules are different.   The minimum width is 2, and the minimum height is 3—everything else returns a null string (except for the values -1 for width and -1 for height—when passed in combination, the tests should be run.)</p>
+
+<p>When:</p>
+
+<ul>
+  <li>You can run your code with: <code>./starC -1 -1</code> and all the tests pass</li>
+  <li>You can run your code on values such as <code>./starC 4 5</code> and <code>./starC 5 4 </code> and see the same output as what is shown in the table, AND</li>
+  <li>When typing in a command line that doesn’t have exactly two arguments after <code>./starC</code> produces the correct error message</li>
+</ul>
+
+<p>then, you are ready to try testing your code on the submit system.</p>
+
+<p>If you submit starC.cpp together with your starT.cpp program, your submit command will look like this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>~submit/submit -p 922 starC.cpp starT.cpp 
+</code></pre>
+</div>
+
+<p>(The order of the files doesn’t matter—list starT.cpp first, or starC.cpp first, aand either way, the result is the same.)</p>
+
+<p>Note that failures for <code>starZ.cpp</code> may still show up, but we need not be concerned about those yet.</p>
+
+<p>Concentrate only on the test failures that pertain to starC.cpp and starT.cpp and try to address any problems you encounter.  Once all of those pass, move on to the starZ.cpp program:</p>
+
+<p>Save the new version of your code with the starT and starC implementation by typing out the following commands:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git add starC.cpp
+git commit -m "Implemented starC()"
+git push origin master
+</code></pre>
+</div>
+
+<h2 id="step-4-writing-the-starz-program">Step 4: Writing the starZ program</h2>
+
+<p>For the starZ.cpp program, we have these rules:</p>
+
+<ul>
+  <li>Take only one command line parameter: the width. The height will automatically be set equal to the width.</li>
+</ul>
+
+<p>The starZ function follows these rules:</p>
+
+<ul>
+  <li>return a string that draws  the letter Z with the correct width and height, but only if width &gt;=3</li>
+  <li>return an empty string if the value passed in for width is not valid, print nothing at all.</li>
+</ul>
+
+<p>Hints for the middle part of the Z:</p>
+
+<ul>
+  <li>Take a look at the program backslash.cpp which is in your directory.   Try compiling and running it.  Look at the source code and see if there are any hints there.</li>
+  <li>As you can see, it produces a backslash.cpp produces a backslash of a given width, as shown here.   Look at the source code, and consider how you might turn backslash.c into forwardslash.c—in fact, that might be a good warm-up exercise for making the starZ.c program.     Note that the backslash.cpp program does not contain an internal test harness.</li>
+  <li>Note that the backslash.cpp program uses several “helper functions”.  You might find that to be a useful technique in writing your own code.   You may introduce whatever helper functions would be useful to you.</li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>-bash-4.1$  ./backslash
+Usage: ./backslash width
+-bash-4.1$ ./backslash 3
+*
+ *
+  *
+-bash-4.1$ ./backslash 5
+*
+ *
+  *
+   *
+    *
+-bash-4.1$ ./backslash 2
+*
+ *
+-bash-4.1$ ./backslash 4
+*
+ *
+  *
+   *
+-bash-4.1$
+</code></pre>
+</div>
+
+<p>As with starC.cpp, you should add code to starZ.cpp so that you are able to invoke the internal tests by typing <code>./starZ -1 </code>.  Note that this time, there is only one parameter.</p>
+
+<p>And, if there is not exactly one parameter, there should be an appropriate “usage” message that follows the pattern of the other programs—except that there is only a width parameter in this program.</p>
+
+<p>When you have a version that can pass its internal tests, try submitting it along with your starT.cpp and starC.cpp to the submit.cs system.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>~submit/submit -p 922 starC.cpp starT.cpp starZ.cpp
+</code></pre>
+</div>
+
+<p>If there are errors reported, fix them.</p>
+
+<p>When you have a clean build, you are nearly done with this lab.   I say “nearly” done, because you should take one last look over the grading rubric to see if there is anything you need to adjust before doing your final submit and calling it a day.</p>
+
+<p>Note:
+You MUST make one final submission that includes ALL of your files.  For getting incremental feedback while working on the lab, it is fine to submit one at a time, but for GRADING purposes, your LAST submission (in time) must be a complete submission of EVERYTHING.   In the ideal case (for you), that submission is completely “green”, i.e. all test cases pass, and you have a perfect score (at least from the standpoint of the points you are awarded for passing the test cases.)</p>
+
+<p>If there are parts you can’t figure out, be sure to submit all of your files anyway to maximize the number of points you receive based on the parts that ‘'’are’’’ working.</p>
+
+<p>Make sure you do a final <em>git add ..</em>, <em>git commit …</em> and <em>git push ..</em> to make sure the latest version of your code is available on github.</p>
+
+<h1 id="evaluation-and-grading-a-nameevala">Evaluation and Grading <a name="eval"></a></h1>
+
+<p>Correctness</p>
+
+<ul>
+  <li>(150 pts) 15 tests, ten points each, executed by submit.cs system</li>
+</ul>
+
+<p>End of lab check off points:</p>
+
+<ul>
+  <li>
+    <p>(10 pts) submission is on time and follows instructions</p>
+  </li>
+  <li>
+    <p>(10 pts) starT.cpp, starC.cpp and starZ.cpp files submitted  have good header comments</p>
+  </li>
+  <li>
+    <p>(10 pts) Correct creation of the lab02 github repo in our class organization following the naming conventions provided in the lab. Adding your partner as collaborator and partner accepting the invitation. Both partners joining the same group on submit.cs</p>
+  </li>
+  <li>
+    <p>(20 pts) All three programs have good programming style, including proper use of indentation, reasonable choices for variable names, readable code, reasonable use of whitespace, and other good programming practices. You must have good header comments as illustrated in the coding examples done in class. First line should be the name of your file, followed by date of creation, author and a brief description of the program. You must use curly braces in the body of all control structures (if-else, for and while) even if they contain a single statement. You should not mix tabs and spaces when indenting your code</p>
+  </li>
+</ul>
+
+        </div><!-- content -->
+        <div data-role="footer" class="footer">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io">this site on github</a></li>
+   <li><a href="https://ucsb-cs16.github.io/instructor">Instructor info</a></li>
+   <li><a href='https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io/edit/master/_lab/lab02.md'>edit this page on github</a></li>
+   <li><a href="https://foo.cs.ucsb.edu/16wiki">16wiki</a></li>
+
+  </ul>
+ </nav>
+</div>
+
+      </div><!-- container -->
+  </body>
+</html>

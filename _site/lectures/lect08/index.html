@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <!-- head.html; common header items for all layouts -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<link rel="stylesheet" href="/site.css" />
+<script src="/site.js"></script>
+ 
+  <title> Lect08 |  CS 16 Spring 2018</title>
+  </head>
+  <body id="page-top">
+    
+    <div id="container" data-role="page">
+    <div data-role="header" class="header">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+    <li><a href="https://ucsb-cs16.github.io">UCSB CS16 </a></li>
+    <li><a href="/" class="ui-btn-active">CS16 S18</a></li>
+     <li><a href="https://submit.cs.ucsb.edu">submit.cs</a></li>
+  </ul>
+ </nav>
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://gauchospace.ucsb.edu">Gauchospace</a></li>
+   <li><a href="https://piazza.com/configure-classes/spring2018/cs16">Piazza</a></li>
+  </ul>
+ </nav>
+ 
+</div>
+
+    <div id="content"  class="ui-content">
+    
+
+
+
+
+<table class="lecture_table">
+<tr>
+
+  <td><a href="/lectures/lect07/">Previous Lecture</a></td>
+  
+
+
+  <td>
+    lect08
+     
+        <a href="/lectures/CS16_Lecture8.pdf" data-ajax="false">
+        Before Slides 
+        </a> 
+     
+ </td>
+ <td>
+    lect08
+     
+        Annotated Slides 
+     
+ </td>
+
+ <td><a href="/lectures/lect09/">Next Lecture</a></td>
+
+</tr>
+</table> 
+    <h1 id="code-from-lecture">Code from lecture</h1>
+
+<h1 id="topics">Topics</h1>
+<p>This lecture and many of the coming lectures require that we understand how our programs interact with computer memory. This is not required to understanding some of the programming constructs like arrays and pointers but is crucial for reasoning about weird program behavior and debugging. So, we will begin with a model of computer memory and then delve into C++ arrays and pointers</p>
+
+<h2 id="data-and-number-representation">Data and number representation</h2>
+
+<ul>
+  <li>Positional encoding: binary, hex, decimal</li>
+  <li>Internal vs. external representation</li>
+  <li>Conversion between different representations</li>
+  <li>Key ideas: bits can represent ANYTHING. With n bits we can represent at most 2^N things</li>
+  <li>Apply above rule to represent characters (ASCII), unicode, colors ….</li>
+  <li>What is signed vs unsigned integer representation</li>
+  <li>Signed representation used by modern computers: two’s complement</li>
+  <li>The data type of a variable determines its representation in memory AND the number of bits used to store each variable</li>
+  <li>Model of memory</li>
+</ul>
+
+<h2 id="c-arrays">C++ arrays</h2>
+<ul>
+  <li>Intro to lab04</li>
+  <li>C/C++ arrays are like lists in Python and Arrays in Java. We will discuss the differences between these.</li>
+  <li>Declaring and initializing arrays in C++</li>
+  <li>Tracing code involving arrays</li>
+  <li>Array pitfalls: out of bound array access</li>
+</ul>
+
+<h2 id="test-driven-development">Test driven development</h2>
+
+<ul>
+  <li>Write test code and actual code side by side- so your implementation is always tested</li>
+  <li>Start with function stubs</li>
+  <li>Write the simplest test case and make your code pass that case</li>
+  <li>Write another test case, expect your code to fail, see it fail, then add code to pass that test case (and the previous one).</li>
+  <li>With every new test case, we have to make sure that all our previous tests still pass - this is a great way to make sure that things that were working before are not broken by new code!</li>
+</ul>
+
+    </div><!-- content -->
+    <div data-role="footer" class="footer">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io">this site on github</a></li>
+   <li><a href="https://ucsb-cs16.github.io/instructor">Instructor info</a></li>
+   <li><a href='https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io/edit/master/_lectures/lect08.md'>edit this page on github</a></li>
+   <li><a href="https://foo.cs.ucsb.edu/16wiki">16wiki</a></li>
+
+  </ul>
+ </nav>
+</div>
+
+    </div><!-- container -->
+  </body>
+</html>

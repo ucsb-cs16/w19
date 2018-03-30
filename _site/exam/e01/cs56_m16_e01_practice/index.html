@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- head_exam.html -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<link rel="stylesheet" href="/site.css" />
+<link rel="stylesheet" href="/exam.css" />
+<script src="/site.js"></script>
+<script src="/exam.js"></script>
+
+    <title>e01a - Practice Midterm Exam - </title>
+  </head>
+  <body id="page-top">
+    <div id="container" data-role="page">
+      <div data-role="header" class="header">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+    <li><a href="https://ucsb-cs16.github.io">UCSB CS16 </a></li>
+    <li><a href="/" class="ui-btn-active">CS16 S18</a></li>
+     <li><a href="https://submit.cs.ucsb.edu">submit.cs</a></li>
+  </ul>
+ </nav>
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://gauchospace.ucsb.edu">Gauchospace</a></li>
+   <li><a href="https://piazza.com/configure-classes/spring2018/cs16">Piazza</a></li>
+  </ul>
+ </nav>
+ 
+</div>
+
+      
+           
+      <div id="content"  class="ui-content">
+        <div class="exam-header">
+          <div class="exam-page-header exam-page-header-template">
+	    <table>
+  <tr>
+    <td class="page-num">1</td>
+  </tr>
+  <tr>
+    <td class="asn-num">e01a</td>
+  </tr>
+  <tr>
+    <td class="course-qtr">
+      CS16&#160;<span class="insert-qtr">S18</span>
+    </td>
+  </tr>
+</table>
+
+	  </div> <!-- exam-page-header -->
+
+	  <table class="exam-name-header-table exam-name-header-template" style="width:40%; margin-top: 0; padding-top: 0;">	   
+  <tr>
+    <th colspan="2" class="exam-header-name">Name:</th>
+    <!-- 
+	 <th rowspan="3" class="exam-header-section"> section<br>
+	   <span class="exam-header-section-subtext">9am or 10:30am</span>
+	 </th>
+    -->
+    
+  </tr>
+  <tr><th colspan="2" class="exam-header-subtext">(as it would appear on official course roster)</th></tr>
+  <tr>
+    <th class="exam-header-umail-label">  Umail address:</th>
+    <th class="exam-header-umail-entry"> @umail.ucsb.edu</th>
+  </tr>
+</table>
+
+
+	  <h1 style="clear:left;">EXAM: e01a: Practice Midterm Exam</h1>
+	  
+	  <table class="exam_table">
+	    <tr>
+	      <th class="exam_ready">ready?</th>
+	      <th class="exam_date" >date</th>
+	      <th class="exam_points" >points</th>
+	    </tr>
+	    <tr class="ready">
+	      <td class="exam_ready">true</td>
+	      <td class="exam_date" >Thu 07/07 09:30AM</td> 
+	      <td class="pointCount"></td>
+	    </tr>
+	  </table>
+	  
+	  <div style="font-size: 8pt !important; font-family:Arial Narrow, sans-serif; font-style:italic; line-height: 100%;">
+	    <p>You may not collaborate on this exam with anyone.   If you need to use the restroom, you must leave your cell phone with the exam proctor before leaving the room.  
+	    </p>
+	  </div>
+
+	  <div class="instructions">
+	    <ul>
+	      <!-- exam_instructions_li_elements.html  -->
+<li> Write your name at the top of this page <strong>AND EVERY ODD NUMBERED PAGE.</strong>
+</li>
+
+<li>Double check that you turned in ALL pages; look for "End of Exam" on the last page.</li>
+
+<li>
+  This exam is <strong>closed book, closed
+  notes</strong>, <strong>closed mouth, cell phone off.</strong>
+</li>
+
+<li >
+  You are permitted <strong>one sheet of paper</strong> (max size 8.5x11&quot;) on which to write notes.
+</li>
+<li>This sheet will be collected with the exam, and might not be returned.</li>
+<li> Please write your name on your notes sheet.</li>
+
+	    </ul>
+	  </div>
+	</div><!-- exam-header -->
+<hr />	
+        <ol>
+
+<li style="margin-bottom:8em;">
+    <p>(50 pts) In the space below (and on the next page if needed) write the code forthe <code class="highlighter-rouge">IndexEntry</code> class according to the instructions on the
+separate <a href="handout">handout</a> provided.</p>
+
+    <p class="instructions" style="margin-top:40em; margin-bottom:0pt; padding-bottom:0pt;">There is more room on the next page for your answer if you run out of room here.<br /></p>
+
+    <div class="page-break-before">
+      <p class="instructions">Extra space for your answer to question 1</p>
+    </div>
+
+  </li>
+
+
+<li class="page-break-before">
+
+    <p>In CS16,24,32, for C/C++ programming, we used the <code>make</code> utility to streamline the process of compiling code.</p>
+
+    <ol>
+<li style="margin-bottom:3em">
+        <p>(2 pts) What is the name of the utility we are using in this course instead of make, because it is more suitable for Java?</p>
+      </li>
+<li style="margin-bottom:3em">
+        <p>(2 pts) With <code class="highlighter-rouge">make</code> we use a file called <code class="highlighter-rouge">Makefile</code> to control our
+build.  What’s the corresponding file called with the utility we
+are using in this course?</p>
+      </li> 
+<li style="margin-bottom:20em">
+        <p>(8 pts) Within that utility, there are <em>tasks</em> and <em>targets</em>.</p>
+
+        <p>Describe an example of a target that would contain more than one task.</p>
+
+        <p>Your description should contain:</p>
+
+        <ul>
+          <li>the name of the target you are describing</li>
+          <li>the names of the two tasks it contains</li>
+          <li>a brief description of the purpose of the target</li>
+          <li>a brief description of the purpose of each of the two tasks.</li>
+        </ul>
+
+        <p>You do not need to give the full XML syntax for the target, and the two
+tasks. But if it will clarify your explanation, you may like to provide at least a general sense (perhaps with lots of bits left out) of how the target and task look in the XML code.</p>
+
+      </li> 
+</ol>
+  </li>
+
+<li class="page-break-before">
+
+    <p>(10 pts) For each of the following indicate if the line of code
+involves auto-boxing, and/or auto-unboxing.  If a line of code
+involves both, check both boxes.  If it involves neither, check
+neither box.  ASSUME THAT ALL THE LINES OF CODE ARE IN THE SAME <code class="highlighter-rouge">main</code>
+METHOD, CONSECUTIVELY.</p>
+
+    <p class="finePrint">(Grading: -2 for each incorrect answer, but no more than -10 total.)</p>
+
+    <table class="boxingTable">
+
+<tr>
+ <th width="60%">Code</th>
+ <th width="10%">auto-boxing</th>
+ <th width="10%">auto-unboxing</th>
+</tr>
+
+<tr>
+<td>
+          <p><code class="highlighter-rouge">ArrayList&lt;Integer&gt; mylist = new ArrayList&lt;Integer&gt;();</code></p>
+        </td>
+<td class="checkbox">&square;</td><td class="checkbox">&square;</td>
+</tr>
+
+<tr>
+<td>
+          <p><code class="highlighter-rouge">mylist.add(new Integer(7));</code></p>
+        </td>
+<td class="checkbox">&square;</td><td class="checkbox">&square;</td>
+</tr>
+
+
+<tr>
+<td>
+          <p><code class="highlighter-rouge">mylist.add(2);</code></p>
+        </td>
+<td class="checkbox">&square;</td><td class="checkbox">&square;</td>
+</tr>
+
+<tr>
+<td>
+          <p><code class="highlighter-rouge">mylist.add(mylist.get(0));</code></p>
+        </td>
+<td class="checkbox">&square;</td><td class="checkbox">&square;</td>
+</tr>
+
+<tr>
+<td>
+          <p><code class="highlighter-rouge">Integer x = mylist.get(0);</code></p>
+        </td>
+<td class="checkbox">&square;</td><td class="checkbox">&square;</td>
+</tr>
+
+<tr>
+<td>
+          <p><code class="highlighter-rouge">int y = mylist.get(1);</code></p>
+        </td>
+<td class="checkbox">&square;</td><td class="checkbox">&square;</td>
+</tr>
+
+<tr>
+ <td>
+          <p><code class="highlighter-rouge">Integer z = mylist.get(mylist.get(1));</code></p>
+        </td>
+<td class="checkbox">&square;</td><td class="checkbox">&square;</td>
+</tr>
+
+</table>
+
+  </li>
+
+
+<li class="pageBreakBefore" style="margin-bottom:15em;">
+
+    <p>(10 pts) Briefly describe the two main categories of exceptions in Java.</p>
+
+    <p>Be sure that your answer includes not only the names of the two kinds
+of exceptions, but also the reason that there are two different
+categories, and how they have to be treated differently.</p>
+
+    <p>Describe as if you were asked during a job interview.  You should
+include enough detail so that the interviewer knows that you are very
+familiar with exceptions in Java, but not so much that you are wasting
+the interviewer’s time.</p>
+
+  </li>
+
+
+
+<li style="margin-bottom:5em;" class="page-break-before">
+    <p>In lecture, we discussed the way that that Java compiler (or any 
+compiler, for that matter) deals with the problem of turning Java code
+into bytecodes that can be interpreted by the Java Virtual Machine.</p>
+
+    <p>We discussed that the first phase is often to turn a sequence of 
+characters into a sequence of <em>tokens</em>.</p>
+
+    <p>Here is some Java code.   List what the first twelve tokens
+in this code would be by filling in the blanks.</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;=</span><span class="n">p</span><span class="o">.</span><span class="na">getDegree</span><span class="o">();</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+   <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"coeff="</span> <span class="o">+</span> <span class="n">p</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">i</span><span class="o">));</span>
+<span class="o">}</span>
+</code></pre>
+    </div>
+
+    <div class="fill-in-blanks-table">
+
+      <table>
+        <thead>
+          <tr>
+            <th>1:</th>
+            <th>2:</th>
+            <th>3:</th>
+            <th>4:</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5:</td>
+            <td>6:</td>
+            <td>7:</td>
+            <td>8:</td>
+          </tr>
+          <tr>
+            <td>9:</td>
+            <td>10:</td>
+            <td>11:</td>
+            <td>12</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+    <!-- space box -->
+
+    <p class="finePrint">Grader: -1 for each incorrect answer, minimum grade of 0. </p>
+
+  </li>
+
+
+<li style="margin-bottom:3em;">
+
+    <p>(4 pts) Assume that the following line of code appears inside a java <code class="highlighter-rouge">main()</code> method.</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>    <span class="n">Dog</span> <span class="o">[]</span> <span class="n">pets</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dog</span><span class="o">[</span><span class="mi">7</span><span class="o">];</span>
+</code></pre>
+    </div>
+
+    <p>One, and only one of the following is a <em>completely</em> true statement?   Which one?  (Note that the others may be a mix of true and false statements.)</p>
+
+    <ol class="shuffle">
+
+<li>
+        <p><code class="highlighter-rouge">pets</code> is a local variable on the stack that refers
+ to an <code class="highlighter-rouge">Array</code> object. This is an array of seven <code class="highlighter-rouge">Dog</code> objects,
+ <code class="highlighter-rouge">pets[0]</code> through <code class="highlighter-rouge">pets[6]</code> each of which is allocated on the
+ heap. This statement is not legal if the Dog class does not contain a
+ default constructor.</p>
+      </li>
+
+<li>
+        <p><code class="highlighter-rouge">pets</code> is a local variable on the stack that refers
+  to an <code class="highlighter-rouge">Array</code> object. That array object is on the heap. The array
+  object contains seven <code class="highlighter-rouge">Dog</code> references <code class="highlighter-rouge">pets[0]</code> through <code class="highlighter-rouge">pets[6]</code>,
+  each of which is initially <code class="highlighter-rouge">null</code>. No <code class="highlighter-rouge">Dog</code> objects are created by
+  this statement.</p>
+      </li> 
+</ol>
+
+  </li>
+
+
+<li style="margin-bottom:16em;" class="page-break-before">
+    <p>(4 pts) Write a line of Java code that declares a variable <code class="highlighter-rouge">p</code> that is NOT of a reference type.</p>
+  </li>
+
+
+<li style="margin-bottom:16em;">
+    <p>(2 pts) Write a line of Java code that declares a variable <code class="highlighter-rouge">q</code> that is NOT of a primitive type.</p>
+  </li>
+
+<li style="margin-bottom:16em;">
+
+    <p>(4 pts) Under what conditions does the compiler create a no-arg constructor for you?</p>
+
+  </li>
+
+<li style="margin-bottom:16em;">
+
+    <p>(4 pts) Under what conditions does the compiler NOT create a no-arg constructor for you?</p>
+
+  </li>
+
+</ol>
+
+
+	<div class="end-of-exam">End of Exam</div>
+        </div><!-- content -->
+        <div data-role="footer" class="footer">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io">this site on github</a></li>
+   <li><a href="https://ucsb-cs16.github.io/instructor">Instructor info</a></li>
+   <li><a href='https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io/edit/master/_exam/e01/cs56_m16_e01_practice.md'>edit this page on github</a></li>
+   <li><a href="https://foo.cs.ucsb.edu/16wiki">16wiki</a></li>
+
+  </ul>
+ </nav>
+</div>
+
+      </div><!-- container -->
+
+      
+    </body>
+</html>

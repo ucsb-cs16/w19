@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- head_exam.html -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<link rel="stylesheet" href="/site.css" />
+<link rel="stylesheet" href="/exam.css" />
+<script src="/site.js"></script>
+<script src="/exam.js"></script>
+
+    <title>e01b - Practice Midterm Exam 'B'  - </title>
+  </head>
+  <body id="page-top">
+    <div id="container" data-role="page">
+      <div data-role="header" class="header">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+    <li><a href="https://ucsb-cs16.github.io">UCSB CS16 </a></li>
+    <li><a href="/" class="ui-btn-active">CS16 S18</a></li>
+     <li><a href="https://submit.cs.ucsb.edu">submit.cs</a></li>
+  </ul>
+ </nav>
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://gauchospace.ucsb.edu">Gauchospace</a></li>
+   <li><a href="https://piazza.com/configure-classes/spring2018/cs16">Piazza</a></li>
+  </ul>
+ </nav>
+ 
+</div>
+
+      
+           
+      <div id="content"  class="ui-content">
+        <div class="exam-header">
+          <div class="exam-page-header exam-page-header-template">
+	    <table>
+  <tr>
+    <td class="page-num">1</td>
+  </tr>
+  <tr>
+    <td class="asn-num">e01b</td>
+  </tr>
+  <tr>
+    <td class="course-qtr">
+      CS16&#160;<span class="insert-qtr">S18</span>
+    </td>
+  </tr>
+</table>
+
+	  </div> <!-- exam-page-header -->
+
+	  <table class="exam-name-header-table exam-name-header-template" style="width:40%; margin-top: 0; padding-top: 0;">	   
+  <tr>
+    <th colspan="2" class="exam-header-name">Name:</th>
+    <!-- 
+	 <th rowspan="3" class="exam-header-section"> section<br>
+	   <span class="exam-header-section-subtext">9am or 10:30am</span>
+	 </th>
+    -->
+    
+  </tr>
+  <tr><th colspan="2" class="exam-header-subtext">(as it would appear on official course roster)</th></tr>
+  <tr>
+    <th class="exam-header-umail-label">  Umail address:</th>
+    <th class="exam-header-umail-entry"> @umail.ucsb.edu</th>
+  </tr>
+</table>
+
+
+	  <h1 style="clear:left;">EXAM: e01b: Practice Midterm Exam 'B' </h1>
+	  
+	  <table class="exam_table">
+	    <tr>
+	      <th class="exam_ready">ready?</th>
+	      <th class="exam_date" >date</th>
+	      <th class="exam_points" >points</th>
+	    </tr>
+	    <tr class="ready">
+	      <td class="exam_ready">true</td>
+	      <td class="exam_date" >Thu 07/07 09:30AM</td> 
+	      <td class="pointCount"></td>
+	    </tr>
+	  </table>
+	  
+	  <div style="font-size: 8pt !important; font-family:Arial Narrow, sans-serif; font-style:italic; line-height: 100%;">
+	    <p>You may not collaborate on this exam with anyone.   If you need to use the restroom, you must leave your cell phone with the exam proctor before leaving the room.  
+	    </p>
+	  </div>
+
+	  <div class="instructions">
+	    <ul>
+	      <!-- exam_instructions_li_elements.html  -->
+<li> Write your name at the top of this page <strong>AND EVERY ODD NUMBERED PAGE.</strong>
+</li>
+
+<li>Double check that you turned in ALL pages; look for "End of Exam" on the last page.</li>
+
+<li>
+  This exam is <strong>closed book, closed
+  notes</strong>, <strong>closed mouth, cell phone off.</strong>
+</li>
+
+<li >
+  You are permitted <strong>one sheet of paper</strong> (max size 8.5x11&quot;) on which to write notes.
+</li>
+<li>This sheet will be collected with the exam, and might not be returned.</li>
+<li> Please write your name on your notes sheet.</li>
+
+	    </ul>
+	  </div>
+	</div><!-- exam-header -->
+<hr />	
+        <p>Note: This is not a “complete” 100 point practice exam.  This is a place I’ll put additional example problems as I encounter them
+between now and the exam on Thursday.</p>
+
+<p><a href="/exam/e01/cs56_m16_e01_practice/" data-ajax="false">For a full 100 point practice exam, click here.</a>.</p>
+
+<ol>
+
+<li style="margin-bottom:8em;">
+
+    <p>(20 pts) For practice exam purposes: This exercise is a variation on the exercise on p. 266 in HFJ.  The answer to that one appears in the book, so I suggest you try that one first, then check your answer before attempting this problem.</p>
+
+    <p>On the <a href="handout">handout</a> there is some code.    Your job: figure out after which line of main() each of the following objects is eligible for garbage collection.</p>
+
+    <p>If an object is still not eligible for garbage collection when the last line of main is reached, write “never”.    Your answer should be one of the line numbers that appears in comments in main (e.g. <code class="highlighter-rouge">/* 3 */</code> or <code class="highlighter-rouge">/* 7 */</code>) or the word “never”.</p>
+
+    <style>
+ .fill-in-blanks-smaller table {
+   width: 60%;
+ }
+ .fill-in-blanks-smaller table * td {
+    margin: 1em 1em 1em 1em;
+    padding: 1em 2em 2em 2em;
+ }
+</style>
+
+    <div class="fill-in-blanks-smaller">
+
+      <table>
+        <thead>
+          <tr>
+            <th>Object</th>
+            <th>Fill in line  here</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>(a) <code class="highlighter-rouge">Fido</code></td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>(b) <code class="highlighter-rouge">Rover</code></td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>(c) <code class="highlighter-rouge">Princess</code></td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>(d) <code class="highlighter-rouge">Spot</code></td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>(e) <code class="highlighter-rouge">Snoopy</code></td>
+            <td> </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+  </li>
+
+
+<li class="page-break-before">
+    <p>(Problem 12 from CS56 W12 Midterm 2) For this question, you need the additional  <a href="handout">handout</a> with code for these files: <code class="highlighter-rouge">Book.java</code>, <code class="highlighter-rouge">Product.java</code>, <code class="highlighter-rouge">Shippable.java</code>, <code class="highlighter-rouge">Song.java</code>.</p>
+
+    <p>You may assume that all of the code for Question 2 on the  <a href="handout">handout</a> compiles—I’ve checked that this is true. Now consider the code for the <code class="highlighter-rouge">Q2</code> class below, which does contain some errors, and as a result, will NOT compile.</p>
+
+    <p>Please do these things with this “broken” code for the Q2 class:</p>
+
+    <ol>
+<li>
+
+        <p>(10 pts) Several lines need to be eliminated from this file in order to make it compile. Find the lines that are bogus, and draw a line through each of them in the code listing above.
+Hint: By “several”, I mean more than 2, and fewer than 10. Start by determining which, if any, of the constructors are bogus. Then, eliminate any lines that refer to the variables created on those lines. Finally, check all of the remaining method calls.</p>
+
+        <p>You will lose two points each time you striking a line that is not bogus, and you will lose two points for failing to strike any line that IS bogus. So, choose wisely.</p>
+
+        <div class="highlighter-rouge"><pre class="highlight"><code><span class="cm">/* 1*/</span>	<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Q2</span> <span class="o">{</span>
+<span class="cm">/* 2*/</span>	  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="n">main</span> <span class="o">(</span><span class="n">String</span> <span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="cm">/* 3*/</span>	    
+<span class="cm">/* 4*/</span>      <span class="n">Book</span> <span class="n">gp</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Book</span><span class="o">(</span><span class="s">"Pratchett"</span><span class="o">,</span><span class="s">"Going Postal"</span><span class="o">,</span><span class="mi">799</span><span class="o">,</span><span class="mf">0.15</span><span class="o">);</span>
+<span class="cm">/* 5*/</span>      <span class="n">Song</span> <span class="n">br</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Song</span><span class="o">(</span><span class="s">"Lady Gaga"</span><span class="o">,</span><span class="s">"Bad Romance"</span><span class="o">);</span>
+<span class="cm">/* 6*/</span>      <span class="n">Product</span> <span class="n">slts</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Song</span><span class="o">(</span><span class="s">"Nirvana"</span><span class="o">,</span><span class="s">"Smells Like Teen Spirit"</span><span class="o">,</span><span class="mi">79</span><span class="o">);</span>
+<span class="cm">/* 7*/</span>      <span class="n">Shippable</span> <span class="n">hp</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Book</span><span class="o">(</span><span class="s">"Rowling"</span><span class="o">,</span><span class="s">"Harry Potter &amp; the Polymorphic Polyp"</span><span class="o">,</span><span class="mi">652</span><span class="o">,</span><span class="mf">1.5</span><span class="o">);</span>
+<span class="cm">/* 8*/</span>      <span class="n">Shippable</span> <span class="n">ttc</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Shippable</span><span class="o">(</span><span class="s">"Dickens"</span><span class="o">,</span><span class="s">"Tale of Two Cities"</span><span class="o">,</span><span class="mi">999</span><span class="o">,</span><span class="mf">1.5</span><span class="o">);</span>
+<span class="cm">/* 9*/</span> 					       
+<span class="cm">/*10*/</span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"a:"</span> <span class="o">+</span> <span class="n">gp</span><span class="o">.</span><span class="na">getTitle</span><span class="o">());</span>
+<span class="cm">/*11*/</span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"b:"</span> <span class="o">+</span> <span class="n">br</span><span class="o">.</span><span class="na">getArtist</span><span class="o">());</span>
+<span class="cm">/*12*/</span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"c:"</span> <span class="o">+</span> <span class="n">br</span><span class="o">.</span><span class="na">getPrice</span><span class="o">());</span>
+<span class="cm">/*13*/</span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"d:"</span> <span class="o">+</span> <span class="n">slts</span><span class="o">.</span><span class="na">getPrice</span><span class="o">());</span>
+<span class="cm">/*14*/</span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"e:"</span> <span class="o">+</span> <span class="n">slts</span><span class="o">.</span><span class="na">getTitle</span><span class="o">());</span>
+<span class="cm">/*15*/</span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"f:"</span> <span class="o">+</span> <span class="n">hp</span><span class="o">.</span><span class="na">getPrice</span><span class="o">());</span>
+<span class="cm">/*16*/</span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"g:"</span> <span class="o">+</span> <span class="n">hp</span><span class="o">.</span><span class="na">getWeight</span><span class="o">());</span>
+<span class="cm">/*17*/</span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"h:"</span> <span class="o">+</span> <span class="n">hp</span><span class="o">.</span><span class="na">getTitle</span><span class="o">());</span>
+<span class="cm">/*18*/</span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"i:"</span> <span class="o">+</span> <span class="n">ttc</span><span class="o">.</span><span class="na">getPrice</span><span class="o">());</span>
+<span class="cm">/*19*/</span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"j:"</span> <span class="o">+</span> <span class="n">ttc</span><span class="o">.</span><span class="na">getPrice</span><span class="o">());</span>
+<span class="cm">/*20*/</span> 
+<span class="cm">/*21*/</span>    <span class="o">}</span> <span class="c1">// main method</span>
+<span class="cm">/*22*/</span> <span class="o">}</span> <span class="c1">// class Q2</span>
+
+</code></pre>
+        </div>
+
+      </li>
+
+<li style="margin-bottom:10em;">
+
+        <p>(10 pts) After striking through the bogus lines, the remaining code should compile and run. So, indicate what the output will be (if any) below. Be precise. If there will no output, write “no output”.</p>
+
+      </li>
+
+</ol>
+
+  </li>
+
+</ol>
+
+<div style="display:none;">
+  <p>http://ucsb-cs56-m16.github.io/exam/e01/cs56_m16_e01_practice_b/</p>
+</div>
+
+	<div class="end-of-exam">End of Exam</div>
+        </div><!-- content -->
+        <div data-role="footer" class="footer">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io">this site on github</a></li>
+   <li><a href="https://ucsb-cs16.github.io/instructor">Instructor info</a></li>
+   <li><a href='https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io/edit/master/_exam/e01/cs56_m16_e01_practice_b.md'>edit this page on github</a></li>
+   <li><a href="https://foo.cs.ucsb.edu/16wiki">16wiki</a></li>
+
+  </ul>
+ </nav>
+</div>
+
+      </div><!-- container -->
+
+      
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<div data-role="header" class="header">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+    <li><a href="https://ucsb-cs56-pconrad.github.io">UCSB {{site.course}} pconrad</a></li>
+    <li><a href="/" class="ui-btn-active">{{site.course}} {{site.qtr}}</a></li>
+    <li><a href="{{site.legacy_wiki_url}}">{{site.legacy_wiki_name}}</a></li>
+    <li><a href="http://ucsb-cs56-m16.github.io/lab/lab02/repo_list/">Legacy Code Repos</a></li>
+  </ul>
+ </nav>
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://gauchospace.ucsb.edu/courses/course/view.php?id=12634">Gauchospace</a></li>
+   <li><a href="https://piazza.com/class/ip8n7rmttev4wi">Piazza</a></li>
+   <li><a href="https://github.com/UCSB-CS56-M16">M16 github</a></li>
+   <li><a href="https://github.com/UCSB-CS56-Projects">projects</a></li>
+  </ul>
+ </nav>
+ {% if page.layout == "hwk" %}
+ <nav data-role="navbar" data-grid-"d">
+  <ul class="hwk-nav-bar">
+  {% for asn in site.hwk %}
+    <li><a href="{{asn.url}}">{{asn.num}}</a></li>
+  {% endfor %}
+  </ul>
+ </nav>
+{% endif %}
+</div>

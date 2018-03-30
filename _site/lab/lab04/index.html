@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- head.html; common header items for all layouts -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<link rel="stylesheet" href="/site.css" />
+<script src="/site.js"></script>
+
+    <title>lab04 - Odds and primes: Fun with arrays and makefiles - </title>
+  </head>
+    <body id="page-top">
+      <div id="container" data-role="page">
+      <div data-role="header" class="header">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+    <li><a href="https://ucsb-cs16.github.io">UCSB CS16 </a></li>
+    <li><a href="/" class="ui-btn-active">CS16 S18</a></li>
+     <li><a href="https://submit.cs.ucsb.edu">submit.cs</a></li>
+  </ul>
+ </nav>
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://gauchospace.ucsb.edu">Gauchospace</a></li>
+   <li><a href="https://piazza.com/configure-classes/spring2018/cs16">Piazza</a></li>
+  </ul>
+ </nav>
+ 
+</div>
+
+        <div id="content"  class="ui-content">
+          <h1>lab04 : Odds and primes: Fun with arrays and makefiles</h1>
+          <table class="asn_table">
+            <!-- asn_table_header_row.html -->
+<tr>
+  <th class="asn_num"  >num</th>
+  <th class="asn_ready">ready?</th>
+  <th class="asn_desc" >description</th>
+  <th class="asn_date" >assigned</th>
+  <th class="asn_date" >due</th>
+</tr>
+
+
+            
+            <tr class="ready" >
+  <td class="asn_num"  ><a href="/lab/lab04/" data-ajax="false">lab04</a></td>
+  <td class="asn_ready">true</td>
+  <td class="asn_desc" >Odds and primes: Fun with arrays and makefiles</td>
+  <td class="asn_date" >Tue 05/01 10:00AM</td> 
+  <td class="asn_date" >Mon 05/07 11:59PM</td>
+</tr>
+
+
+
+          </table>
+          <div>
+
+  <h1>CS16: Programming Assignment 04</h1>
+  <h2>Introduction – Important: Read this!</h2>
+
+  <p>The mentors will be looking for (and grading) your programming style, such as proper use of comments, tab indentation, good variable names, and overall block and function designs. So, it is not enough for your lab to pass submit.cs! Please read the instructions herein <b>carefully</b>.</p>
+
+  <h3>Pair programming </h3>
+
+  <p>If working in a pair: Choose who will be the first driver and who will start as navigator, and then remember to switch (at least once) during the lab. But you should probably know the long-term goal too: each partner should participate in both roles in approximately equal parts over the course of the assignment. We realize it is not possible to equally split time in every lab perfectly, but it is worth trying, and it is possible to make up for unequal splits in future labs. We trust you will try to meet this goal. Thanks!</p>
+
+  <p><strong>PLEASE MAKE SURE YOU TRADE CONTACT INFORMATION WITH YOUR LAB PARTNER! This means emails, phone numbers, online chat handles, or whatever is necessary to continue working together when you are working remotely (like, say, if one of you goes home for the weekend).</strong></p>
+
+  <p>You should now have a familiarity with:
+* Creating a git repo on github
+* Cloning your github to your local machine
+* Integrating git command-line tools into your workflow (<em>git add…</em>, <em>git commit..</em>, <em>git push …</em>)</p>
+
+  <p>Be sure to commit and push or work to github at the end of EVERY work session. That way, if your pair partner bails on you, you can continue working without him/her. :)</p>
+
+  <h2>Step 1: Getting Ready</h2>
+  <ol>
+    <li>
+      <p>Decide if you are working alone, or working in a pair.</p>
+    </li>
+    <li>
+      <p>If you are working as a pair, go to submit.cs, navigate to this lab page and create a team for you and your pair partner. Do this by clicking on the blue “Join Groups” button, then follow directions.</p>
+    </li>
+    <li>
+      <p>Go to github and create a git repo for lab04 following the naming convention specified in previous labs. If you are working with a partner only one of you needs to create the repo.</p>
+    </li>
+    <li>
+      <p>If you are working with a partner and you are the one who created the github repo, add your partner as a collborator on the repo</p>
+    </li>
+    <li>
+      <p>Decide on initial navigator and driver.</p>
+    </li>
+    <li>
+      <p>Driver, log on to your CSIL account.</p>
+    </li>
+    <li>
+      <p>Open a terminal window and log into the correct machine.</p>
+    </li>
+    <li>
+      <p>Change into your CS 16 directory</p>
+    </li>
+  </ol>
+
+  <h2>Step 2: Getting the starter code</h2>
+
+  <p>This step is similar to lab02, first open terminal and go to the directory where you cloned the starter code in lab02 and pull the latest version of the starter code.</p>
+
+  <div class="highlighter-rouge"><pre class="highlight"><code>  cd ~/cs16/cs16-w18-starter-code
+  git pull
+</code></pre>
+  </div>
+  <p>Clone your github repo in the ~/cs16/ directory. Then cd into your repo directory.
+<code class="highlighter-rouge">
+  cd ../lab04_gaucho_ally
+</code>
+Copy the code from your starter code directory to your local lab04 repo using the following command.</p>
+
+  <div class="highlighter-rouge"><pre class="highlight"><code>  cp ~/cs16/cs16-w18-starter-code/lab04/* ./
+</code></pre>
+  </div>
+
+  <p>Typing the list (ls) command should show you the following files in your current directory</p>
+
+  <div class="highlighter-rouge"><pre class="highlight"><code>[dimirza@csil-03 lab04-startercode]$ ls
+arrayBoundsDemo.cpp    maxOfArray.cpp           sumOfArray.cpp
+arrayFuncs.h           maxOfArrayErrorTest.cpp  sumOfArrayTest.cpp
+arrayToString.cpp      maxOfArrayTest.cpp       tddFuncs.cpp
+arrayToStringTest.cpp  minOfArray.cpp           tddFuncs.h
+countEvens.cpp         minOfArrayErrorTest.cpp  utility.cpp
+countEvensTest.cpp     minOfArrayTest.cpp       utility.h
+countPrimes.cpp        README.md                utilityTest
+countPrimesTest.cpp    sumOdds.cpp              utilityTest.cpp
+Makefile               sumOddsTest.cpp
+[dimirza@csil-03 lab04-startercode]$
+
+</code></pre>
+  </div>
+
+  <p>Push the initial version of the code on github before making any changes by typing the following commands</p>
+
+  <div class="highlighter-rouge"><pre class="highlight"><code>git add .
+git commit -m "Initial version"
+git push origin master
+</code></pre>
+  </div>
+
+  <h2>Step 3: Reviewing Separate Compilation</h2>
+
+  <p>The files in your directory this week use separate compilation, that is each program is not necessarily taking all of its code from a single .cpp source file.</p>
+
+  <p>In Lecture, we will introduce the idea of separate compilation, where your C++ program may be divided among multiple source files. The following web page explains more about separate compilation, dividing your program up among multiple C++ and .h files, and using a Makefile. I strongly encourage you to read over it briefly before you proceed with the lab: <a href="https://foo.cs.ucsb.edu/16wiki/index.php/C%2B%2B:_Separate_Compilation_and_Makefiles">Separate Compilation and Makefiles</a></p>
+
+  <h2>Step 4: Writing isOdd(), isEven() and isPrime()</h2>
+
+  <p>Your first step is very simple to describe, but somewhat challenging. The challenge here is mostly C++ coding — we will not get into the details of the separate compilation until a bit later.</p>
+
+  <p>To get started, do the following steps:</p>
+
+  <h2 id="step-4a-make-clean">Step 4a: make clean</h2>
+
+  <p>Next type: <code class="highlighter-rouge">make clean</code></p>
+
+  <p>In your working directory, type <b>ls</b> and make note of the different files therein: some are .cpp types, some are .o (short for “object file”), some are .h (short for “header file”), and others do not have extensions (they are binary executables). Now, type <b>make clean</b>. This command cleans out any .o files and executables from your directory</p>
+
+  <p>That should look like this:</p>
+
+  <div class="highlighter-rouge"><pre class="highlight"><code>-bash-4.2$ make clean
+/bin/rm -f arrayToStringTest arrayBoundsDemo countEvensTest minOfArrayTest minOfArrayErrorTest
+countPrimesTest maxOfArrayTest maxOfArrayErrorTest sumOddsTest sumOfArrayTest utilityTest *.o
+
+-bash-4.2$
+</code></pre>
+  </div>
+
+  <p>Take a look at the <b>Makefile</b> file to understand why this happened.</p>
+
+  <h2 id="step-4b-make-utilitytest">Step 4b: make utilityTest</h2>
+
+  <p>Next type: <code class="highlighter-rouge">make utilityTest</code></p>
+
+  <p>This command makes the executable for a main program, defined in <code class="highlighter-rouge">utilityTest.cpp</code>, that tests the functions defined in <code class="highlighter-rouge">utility.cpp</code>.
+Recall that for functions defined in a file such as <code class="highlighter-rouge">utility.cpp</code> that has no <b>main()</b>, the function prototypes are defined in the file <code class="highlighter-rouge">utility.h</code>
+Look at the source code for both <code class="highlighter-rouge">utility.cpp</code> and <code class="highlighter-rouge">utility.h</code> to see what they contain.
+Recall that a “stub” is place-holder code that allows an incomplete function to compile. It is designed to fail all the tests, though for a boolean function, since there are only two possible values (true and false), any stub value you choose is going to pass at least some of the tests.</p>
+
+  <p>That should look like this:</p>
+
+  <div class="highlighter-rouge"><pre class="highlight"><code>-bash-4.2$ make utilityTest
+g++ -Wall -Wno-uninitialized   -c -o utilityTest.o utilityTest.cpp
+g++ -Wall -Wno-uninitialized   -c -o tddFuncs.o tddFuncs.cpp
+g++ -Wall -Wno-uninitialized   -c -o utility.o utility.cpp
+g++ -Wall -Wno-uninitialized  utilityTest.o tddFuncs.o utility.o -o utilityTest
+
+-bash-4.2$
+</code></pre>
+  </div>
+
+  <h2 id="step-4c-run-utilitytest">Step 4c: Run ./utilityTest</h2>
+
+  <p>Next, type <code class="highlighter-rouge">./utilityTest</code></p>
+
+  <p>This runs the <code class="highlighter-rouge">utilityTest</code> program that tests the three functions isOdd, isEven and isPrime. As we noted above, some of the tests will pass, even though the implementation of the three functions is totally bogus (hard coded to return false always).</p>
+
+  <p>Here is what that looks like (some output truncated)</p>
+
+  <div class="highlighter-rouge"><pre class="highlight"><code>-bash-4.2$ ./utilityTest
+	FAILED: isEven(2)
+		Expected: 1 Actual: 0
+	PASSED: isEven(3)
+	FAILED: isEven(4)
+		Expected: 1 Actual: 0
+	PASSED: isEven(55)
+
+[...      Some output omitted here... ]
+
+PASSED: isPrime(64507)
+	FAILED: isPrime(69997)
+		Expected: 1 Actual: 0
+PASSED: isPrime(-55)
+PASSED: isPrime(-80)
+PASSED: isPrime(0)
+PASSED: isPrime(1)
+
+-bash-4.2$
+</code></pre>
+  </div>
+
+  <h2 id="step-4d-repeat-edit-compile-run-until-all-tests-pass">Step 4d: Repeat: edit, compile, run, until all tests pass</h2>
+
+  <p>Now do these steps, repeatedly, until all tests pass:</p>
+
+  <p>edit utility.cpp (e.g. emacs utility.cpp, or vim utility.cpp)
+<br />
+make utilityTest
+<br />
+run utilityTest (e.g. ./utilityTest)</p>
+
+  <p>Submit working versions of your code on github using the commands:</p>
+
+  <div class="highlighter-rouge"><pre class="highlight"><code>git add *.cpp *.h
+git commit -m "implemented utility function - nameof function()"
+git push origin master
+</code></pre>
+  </div>
+
+  <p>You must only proceed with the rest of the lab once you have implemented all the utility functions and pass the provided test cases. This is because for other files that you will be editing later, you will NEED functions isOdd, isEven and isPrime. Once you get them working, you will be able to call them in other files and KNOW that they work properly. You will not have to repeat the function definition.</p>
+
+  <p>When all the tests for <code class="highlighter-rouge">utlityTest</code> pass, do a final push to github and move on to the next step.</p>
+
+  <p>If you are working with a pair partner, this is a good time to switch roles.</p>
+
+  <h2>Step 5: Reviewing the rest of the files and what your tasks are</h2>
+
+  <p>Now, let us look at the files you actually have in your directory, and what you need to do with them.
+You have the following .cpp files. This table indicates what you must do with each one to get full credit on this lab.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Filename</th>
+        <th>Your task</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>arrayBoundsDemo.cpp</td>
+        <td>NOTHING TO CHANGE OR SUBMIT.</td>
+        <td>This is here as example code only. You are encouraged to run it, study it, and learn about how array bounds work in C++</td>
+      </tr>
+      <tr>
+        <td>arrayToString.cpp</td>
+        <td>NOTHING TO CHANGE OR SUBMIT.</td>
+        <td>This code is part of your solution, but you do not have to submit it - we will use our own version, which matches the one in your sample directory. This file just has utiltiy funcitons for printing arrays as strings.</td>
+      </tr>
+      <tr>
+        <td>arrayToStringTest.cpp</td>
+        <td>NOTHING TO CHANGE OR SUBMIT.</td>
+        <td>This code is part of your solution, but you do not have to submit it - we will use our own version, which matches the one in your sample directory. This file is an example of how to test cases to determine whether the output of <code class="highlighter-rouge">arrayToString</code> works correctly.</td>
+      </tr>
+      <tr>
+        <td>countEvens.cpp</td>
+        <td>REPLACE STUB WITH CORRECT CODE.</td>
+        <td>You must replace the code in this file with correct code that returns the number of even integers in each array passed in.</td>
+      </tr>
+      <tr>
+        <td>countEvensTest.cpp</td>
+        <td>NO MODIFICATIONS NEEDED</td>
+        <td>This tests the changes you made in <em>countEvens.cpp</em>.</td>
+      </tr>
+      <tr>
+        <td>countPrimes.cpp</td>
+        <td>REPLACE STUB WITH CORRECT CODE.</td>
+        <td>You must replace the code in this file with correct code that returns the number of prime integers in each array passed in. Treat negative numbers, 0 and 1 as “not prime”. You may want to add a definition of <code class="highlighter-rouge">isPrime()</code> to the <em>utility.cpp</em> file and a function prototype to <em>utility.h</em> so that you can call function <code class="highlighter-rouge">isPrime</code> in your solution.</td>
+      </tr>
+      <tr>
+        <td>countPrimesTest.cpp</td>
+        <td>NO MODIFICATIONS NEEDED</td>
+        <td>This tests the changes you made in <em>countEvens.cpp</em>.</td>
+      </tr>
+      <tr>
+        <td>maxOfArray.cpp</td>
+        <td>REPLACE STUB WITH CORRECT CODE.</td>
+        <td>You can look at <em>minOfArray.cpp</em> for hints. This one should be easy.</td>
+      </tr>
+      <tr>
+        <td>maxOfArrayErrorTest.cpp</td>
+        <td>REPLACE EMPTY MAIN WITH TESTS.</td>
+        <td>Insert code to call maxOfArray with zero length array. Use <em>minOfArrayErrorTest.cpp</em> as a model.</td>
+      </tr>
+      <tr>
+        <td>maxOfArrayTest.cpp</td>
+        <td>REPLACE EMPTY MAIN WITH TESTS.</td>
+        <td>Insert code to call <code class="highlighter-rouge">assertEqual</code> exactly seven times testing whether <code class="highlighter-rouge">maxOfArray</code> returns correct values. Use <em>minOfArrayTest.cpp</em> as a model. It must be exactly “seven” calls to <code class="highlighter-rouge">assertEquals</code> to pass the submit.cs tests. You should call your arrays the same things that they are called in <code class="highlighter-rouge">minOfArrayTests</code>, and the lengths should be the same. So the messages you get out for passed tests should match the messages from <code class="highlighter-rouge">minOfArrayTests</code> except that the name of the function is <code class="highlighter-rouge">maxOfArray</code> instead of <code class="highlighter-rouge">minOfArray</code>. You MAY change the values in the arrays themselves, though, to make the tests better tests, if you need to. <strong>(Note that just hard coding a program that prints “PASSED” seven times with the apprpriate messages is not sufficient to get credit–you need to really have actual tests. Any attempt to “game the system”, i.e. to get submit.cs tests to pass without a bona-fide attempt to actually solve the problem will get zero credit.)</strong></td>
+      </tr>
+      <tr>
+        <td>minOfArray.cpp</td>
+        <td>NOTHING TO CHANGE.</td>
+        <td>This is a model of correct code that can serve as a hint for how to write <em>maxOfArray.cpp</em></td>
+      </tr>
+      <tr>
+        <td>minOfArrayErrorTest.cpp</td>
+        <td>NOTHING TO CHANGE.</td>
+        <td>This is an model of correct code for how to test whether a function behaves as expected when given input that should print a message to cerr and exit the progrm.</td>
+      </tr>
+      <tr>
+        <td>minOfArrayTest.cpp</td>
+        <td>NOTHING TO CHANGE.</td>
+        <td>This is a model of how to do unit testing on a function that returns an integer.</td>
+      </tr>
+      <tr>
+        <td>sumOdds.cpp</td>
+        <td>REPLACE STUB WITH CORRECT CODE.</td>
+        <td>You must replace the code in this file with correct code that returns the number of sum of the odd integers in each array passed in. Negative odd integers count as odd integers.</td>
+      </tr>
+      <tr>
+        <td>sumOddsTest.cpp</td>
+        <td>REPLACE EMPTY MAIN WITH TESTS</td>
+        <td>Insert code to call <code class="highlighter-rouge">assertEqual</code> exactly seven times testing whether <code class="highlighter-rouge">sumOdds</code> returns correct values. Use <em>sumOfArrayTest.cpp</em> as a model. It must be exactly “seven” calls to <code class="highlighter-rouge">assertEquals</code> to pass the submit.cs tests. You should call your arrays the same things that they are called in <code class="highlighter-rouge">sumOfArrayTests</code>, and the lengths should be the same. So the messages you get out for passed tests should match the messages from <code class="highlighter-rouge">sumOfArrayTests</code> except that the name of the function tested is <code class="highlighter-rouge">sumOdds</code> instead of <code class="highlighter-rouge">sumOfArray</code>. You MAY change the values in the arrays themselves, though, to make the tests better tests, if you need to. <strong>(Note that just hard coding a program that prints “PASSED” seven times with the apprpriate messages is not sufficient to get credit–you need to really have actual tests. Any attempt to “game the system”, i.e. to get submit.cs tests to pass without a bona-fide attempt to actually solve the problem will get zero credit.)</strong></td>
+      </tr>
+      <tr>
+        <td>sumOfArray.cpp</td>
+        <td>INCORRECT CODE FOR YOU TO FIX.</td>
+        <td>The sum is not initialized properly. So the tests should fail. Your job is to see that the tests fail, then fix the sum initialization so the tests pass. Should be easy.</td>
+      </tr>
+      <tr>
+        <td>sumOfArrayTest.cpp</td>
+        <td>NOTHING TO CHANGE.</td>
+        <td>This is a set of tests to verify whether <code class="highlighter-rouge">sumOfArray()</code> works correctly.</td>
+      </tr>
+      <tr>
+        <td>tddFuncs.cpp</td>
+        <td>NOTHING TO CHANGE.</td>
+        <td>These are two functions that can be used to test functions that return either int or string values.</td>
+      </tr>
+      <tr>
+        <td>utility.cpp</td>
+        <td>ADD FUNCTIONS HERE AS NEEDED.</td>
+        <td>If you need to write your own helper functions, e.g. <code class="highlighter-rouge">isPrime</code>, <code class="highlighter-rouge">isOdd</code>, <code class="highlighter-rouge">isEven</code>, to use in other files, here is where you can put those definitions.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Step 6: Actually Getting Started</h2>
+  <p>I suggest you start by typing: <code class="highlighter-rouge">make</code></p>
+
+  <p>You should see a lot of activity as programs are compiled. You then will have a lot of executables you can run. Here is a list. Try running each one and see what happens.</p>
+
+  <p>Note these are the programs listed under BINARIES in the Makefile.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>file</th>
+        <th>Anything to do?</th>
+        <th>explanation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>arrayToStringTest</td>
+        <td>no</td>
+        <td>Run this and all tests should pass. Nothing to do here.</td>
+      </tr>
+      <tr>
+        <td>arrayBoundsDemo</td>
+        <td>no</td>
+        <td>Run this, and look at the code. This is an opportunity to learn something about how we pass arrays to functions in C++, but there is nothing you have to turn in from this program for the lab. It is just here as an example for you to learn from.</td>
+      </tr>
+      <tr>
+        <td>countEvensTest</td>
+        <td><b><em>YES</em></b></td>
+        <td>Run this, and you will see all the tests fail. YOU NEED TO FIX THE <code class="highlighter-rouge">countEvens</code> function and then get all these tests to pass.</td>
+      </tr>
+      <tr>
+        <td>minOfArrayTest</td>
+        <td>no</td>
+        <td>Just run this and see the tests pass. You can use the .cpp file <em>minOfArrayTest.cpp</em> as a model for writing <em>maxOfArrayTest.cpp</em></td>
+      </tr>
+      <tr>
+        <td>minOfArrayErrorTest</td>
+        <td>no</td>
+        <td>Just run this and see the output. It should be <code class="highlighter-rouge">ERROR: minOfArray called with size &lt; 1</code> printed on cerr (the standard error output stream). The submit.cs system will check this as one of the acceptance tests for this lab, and it will also check that <code class="highlighter-rouge">maxOfArrayErrorTest</code> does the same thing. You can use the .cpp file <em>minOfArrayErrorTest.cpp</em> as a model for writing <em>maxOfArrayErrorTest.cpp</em></td>
+      </tr>
+      <tr>
+        <td>countPrimesTest</td>
+        <td><b><em>YES</em></b></td>
+        <td>Run this, and you will see all the tests fail. YOU NEED TO FIX THE <code class="highlighter-rouge">countPrimes</code> function and then get all these tests to pass.</td>
+      </tr>
+      <tr>
+        <td>maxOfArrayTest</td>
+        <td><b><em>YES</em></b></td>
+        <td>Run this, and you will see that initially there is no output. That is because the main is empty. YOU NEED TO REPLACE THIS MAIN with code that tests <code class="highlighter-rouge">maxOfArray</code>. Use <code class="highlighter-rouge">minOfArrayTest</code> as a model. Initially, just put in the tests, and keep <code class="highlighter-rouge">maxOfArray</code> returning the stub vaue -42. See all the tests fail. Then get <code class="highlighter-rouge">maxOfArray</code> to return the right values and see all the tests pass.</td>
+      </tr>
+      <tr>
+        <td>maxOfArrayErrorTest</td>
+        <td><b><em>YES</em></b></td>
+        <td>Run this, and you will see that initially there is no output. That is because the main() is empty. YOU NEED TO REPLACE THIS MAIN with code that tests <code class="highlighter-rouge">maxOfArray</code>. Use <code class="highlighter-rouge">minOfArrayTest</code> as a model. Initially, just put in the tests, and keep <code class="highlighter-rouge">maxOfArray</code> returning the stub vaue -42. See all the tests fail. Then get <code class="highlighter-rouge">maxOfArray</code> to return the right values and see all the tests pass.</td>
+      </tr>
+      <tr>
+        <td>sumOddsTest</td>
+        <td><b><em>YES</em></b></td>
+        <td>Run this, and you will see that initially there is no output. That is because the main() is empty. YOU NEED TO REPLACE THIS MAIN with code that tests <code class="highlighter-rouge">sumOdds</code>. Use <code class="highlighter-rouge">minOfArrayTest</code> as a model. Initially, just put in the tests, and keep <code class="highlighter-rouge">sumOdds</code> returning the stub vaue -42. See all the tests fail. Then get <code class="highlighter-rouge">sumOdds</code> to return the right values and see all the tests pass.</td>
+      </tr>
+      <tr>
+        <td>sumOfArrayTest</td>
+        <td><b><em>YES</em></b></td>
+        <td>Run <code class="highlighter-rouge">sumOfArrayTest</code> and you will see that all the tests fail. Getting them to pass is probably the easiest step in this lab. Just look at the <code class="highlighter-rouge">sumOfArray</code> function, which is almost correct - it just needs you to initialize sum correctly. Note that in C/C++ variables are NOT automatically initialized, and failing to initialize them does not always result in an error message or warning unless you specifically ask the compiler to tell you about those. For this lab, the Makefile deliberarly turns that warning OFF so that we have to catch that ourselves.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>So, if you go through that list, and do all the things indicated, you are finished with the lab and ready to submit.</p>
+
+  <h2>Step 7: Checking your work before submitting</h2>
+
+  <p>When you are finished, you should be able to type <code class="highlighter-rouge">make tests</code> and see the following output:</p>
+
+  <div class="highlighter-rouge"><pre class="highlight"><code>-bash-4.2$ make tests
+./arrayToStringTest
+PASSED: arrayToString(fiveThrees,5)
+PASSED: arrayToString(zeros,3)
+PASSED: arrayToString(empty,0)
+PASSED: arrayToString(primes,10)
+PASSED: arrayToString(meaning,1)
+PASSED: arrayToString(mix,10)
+./countEvensTest
+PASSED: countEvens(fiveThrees,5)
+PASSED: countEvens(zeros,3)
+PASSED: countEvens(fiveInts,5)
+PASSED: countEvens(empty,0)
+PASSED: countEvens(primes,10)
+PASSED: countEvens(meaning,1)
+PASSED: countEvens(mix,10)
+./countPrimesTest
+PASSED: countPrimes(fiveThrees,5)
+PASSED: countPrimes(zeros,3)
+PASSED: countPrimes(fiveInts,5)
+PASSED: countPrimes(empty,0)
+PASSED: countPrimes(primes,10)
+PASSED: countPrimes(meaning,1)
+PASSED: countPrimes(mix,10)
+./maxOfArrayTest
+PASSED: maxOfArray(fiveThrees,5)
+PASSED: maxOfArray(zeros,3)
+PASSED: maxOfArray(fiveInts,5)
+PASSED: maxOfArray(fiveInts,2)
+PASSED: maxOfArray(fiveInts,3)
+PASSED: maxOfArray(meaning,1)
+PASSED: maxOfArray(mix,10)
+./minOfArrayTest
+PASSED: minOfArray(fiveThrees,5)
+PASSED: minOfArray(zeros,3)
+PASSED: minOfArray(fiveInts,5)
+PASSED: minOfArray(fiveInts,2)
+PASSED: minOfArray(fiveInts,3)
+PASSED: minOfArray(meaning,1)
+PASSED: minOfArray(mix,10)
+./sumOddsTest
+PASSED: sumOdds(fiveThrees,5)
+PASSED: sumOdds(zeros,3)
+PASSED: sumOdds(fiveInts,5)
+PASSED: sumOdds(fiveInts,3)
+PASSED: sumOdds(fiveInts,2)
+PASSED: sumOdds(meaning,1)
+PASSED: sumOdds(mix,10)
+./sumOfArrayTest
+PASSED: sumOfArray(fiveThrees,5)
+PASSED: sumOfArray(zeros,3)
+PASSED: sumOfArray(fiveInts,5)
+PASSED: sumOfArray(fiveInts,3)
+PASSED: sumOfArray(fiveInts,2)
+PASSED: sumOfArray(meaning,1)
+PASSED: sumOfArray(mix,10)
+./utilityTest
+PASSED: isEven(2)
+PASSED: isEven(3)
+PASSED: isEven(4)
+PASSED: isEven(55)
+PASSED: isEven(-55)
+PASSED: isEven(-80)
+PASSED: isOdd(2)
+PASSED: isOdd(3)
+PASSED: isOdd(4)
+PASSED: isOdd(55)
+PASSED: isOdd(-55)
+PASSED: isOdd(-80)
+PASSED: isPrime(2)
+PASSED: isPrime(3)
+PASSED: isPrime(4)
+PASSED: isPrime(55)
+PASSED: isPrime(859)
+PASSED: isPrime(861)
+PASSED: isPrime(863)
+PASSED: isPrime(1337)
+PASSED: isPrime(1373)
+PASSED: isPrime(64507)
+PASSED: isPrime(69997)
+PASSED: isPrime(-55)
+PASSED: isPrime(-80)
+PASSED: isPrime(0)
+PASSED: isPrime(1)
+
+-bash-4.2$
+</code></pre>
+  </div>
+  <p>And, you should be able to type <code class="highlighter-rouge">make errorTests</code> and see the following output:</p>
+
+  <div class="highlighter-rouge"><pre class="highlight"><code>-bash-4.2$ make errorTests
+./minOfArrayErrorTest
+ERROR: minOfArray called with size &lt; 1
+make: [errorTests] Error 1 (ignored)
+./maxOfArrayErrorTest
+ERROR: maxOfArray called with size &lt; 1
+make: [errorTests] Error 1 (ignored)
+
+-bash-4.2$
+</code></pre>
+  </div>
+  <p>At that point, you are ready to try submitting on the submit.cs system.</p>
+
+  <h2>Step 8: Submit</h2>
+
+  <p>For this lab, since there are a lot of files to upload to submit.cs, your best course is to type the following from the Linux/UNIX prompt, that is, from the command line (terminal) on any CS machine, including from your computer when you are remotely logged into a CS machine (via ssh):</p>
+
+  <div class="highlighter-rouge"><pre class="highlight"><code>$ ~submit/submit -p 924 *.cpp *.h
+</code></pre>
+  </div>
+
+  <p>You can then copy the URL shown in the output of the above and paste into a web browser to reach the submission result page.</p>
+
+  <p>Push your code to github. We will use your github submission to give you points for coding style.</p>
+
+  <h2>Grading Rubric</h2>
+  <p>Points from automated submit.cs. system tests</p>
+
+  <p><b>Passed Tests</b></p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Test Group</th>
+        <th>Test Name</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>countEvens</td>
+        <td>countEvensTest</td>
+        <td>30 pts</td>
+      </tr>
+      <tr>
+        <td>countPrimes</td>
+        <td>countPrimesTest</td>
+        <td>30 pts</td>
+      </tr>
+      <tr>
+        <td>maxOfArray</td>
+        <td>maxOfArrayTest</td>
+        <td>30 pts</td>
+      </tr>
+      <tr>
+        <td>maxOfArrayErrorTest</td>
+        <td>maxOfArrayErrorTest</td>
+        <td>30 pts</td>
+      </tr>
+      <tr>
+        <td>sumOdds</td>
+        <td>sumOddsTest</td>
+        <td>30 pts</td>
+      </tr>
+      <tr>
+        <td>sumOfArray</td>
+        <td>sumOfArrayTest</td>
+        <td>30 pts</td>
+      </tr>
+      <tr>
+        <td>utilityTest</td>
+        <td>utilityTest</td>
+        <td>50 pts</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><b>Points assigned manually for coding style</b></p>
+
+  <p>(50 pts) Style:
+Good choice of variable names, code indented in ways that are consistent, and in line with good C++ practice. Where applicable, common code is factored out into functions (added to utility.h and utility.cpp as needed).</p>
+
+  <p>This last point may or may not arise, but if it does, utility.h and utility.cpp is a place where functions needed in multiple files can be put—prototypes in utility.h and function definitions in utility.cpp.</p>
+
+  <p>You will note that the submit.cs score is worth 230 points and the manual grading is worth 50 points, making the total points for this lab equal to 280. The grade will ultimately normalized to be out of 100 points. This lab is worth exactly the same as all the other labs done so far (i.e. the 300 points here are equivalent to 100 points in other labs).</p>
+
+  <h2>Step 9: Done!</h2>
+
+  <p>Once your submission receives a score of 230/230, you are done with this assignment. Remember that we will check your code for appropriate comments, formatting, and the use of required code, as stated earlier, based on your github submission</p>
+
+  <p>If you are in the Phelps lab or in CSIL, make sure to log out of the machine before you leave. Also, make sure to close all open programs before you log out. Some programs will not work next time if they are not closed. Remember to save all your open files before you close your text editor.</p>
+
+  <p>If you are logged in remotely, you can log out using the exit command:</p>
+
+  <p><code class="highlighter-rouge">$ exit</code></p>
+
+</div>
+
+        </div><!-- content -->
+        <div data-role="footer" class="footer">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io">this site on github</a></li>
+   <li><a href="https://ucsb-cs16.github.io/instructor">Instructor info</a></li>
+   <li><a href='https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io/edit/master/_lab/lab04.md'>edit this page on github</a></li>
+   <li><a href="https://foo.cs.ucsb.edu/16wiki">16wiki</a></li>
+
+  </ul>
+ </nav>
+</div>
+
+      </div><!-- container -->
+  </body>
+</html>

@@ -1,0 +1,8 @@
+<table id="lab_table" class="asn_table">
+  {% include asn_table_header_row.html %}
+{% for asn in site.lab %}
+ {% if asn.num %}
+   {% include asn_table_row.html %}
+ {% endif %}
+{% endfor %}
+</table>

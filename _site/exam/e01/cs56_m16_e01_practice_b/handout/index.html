@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- head_exam.html -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<link rel="stylesheet" href="/site.css" />
+<link rel="stylesheet" href="/exam.css" />
+<script src="/site.js"></script>
+<script src="/exam.js"></script>
+
+    <title>e01b - Handout for Practice Exam 'e01b' - </title>
+  </head>
+  <body id="page-top">
+    <div id="container" data-role="page">
+      <div data-role="header" class="header">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+    <li><a href="https://ucsb-cs16.github.io">UCSB CS16 </a></li>
+    <li><a href="/" class="ui-btn-active">CS16 S18</a></li>
+     <li><a href="https://submit.cs.ucsb.edu">submit.cs</a></li>
+  </ul>
+ </nav>
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://gauchospace.ucsb.edu">Gauchospace</a></li>
+   <li><a href="https://piazza.com/configure-classes/spring2018/cs16">Piazza</a></li>
+  </ul>
+ </nav>
+ 
+</div>
+
+      
+           
+      <div id="content"  class="ui-content">
+        <div class="exam-header">
+          <div class="exam-page-header exam-page-header-template">
+	    <table>
+  <tr>
+    <td class="page-num">1</td>
+  </tr>
+  <tr>
+    <td class="handout-asn-num">Handout for Practice Exam 'e01b'<br>for<br>e01b</td>
+  </tr>
+  <tr>
+    <td class="course-qtr">
+      CS16&#160;<span class="insert-qtr">S18</span>
+    </td>
+  </tr>
+</table>
+
+	  </div> <!-- exam-page-header -->
+
+	  <table class="exam-name-header-table exam-name-header-template" style="width:40%; margin-top: 0; padding-top: 0;">	   
+  <tr>
+    <th colspan="2" class="exam-header-name">Name:</th>
+    <!-- 
+	 <th rowspan="3" class="exam-header-section"> section<br>
+	   <span class="exam-header-section-subtext">9am or 10:30am</span>
+	 </th>
+    -->
+    
+  </tr>
+  <tr><th colspan="2" class="exam-header-subtext">(as it would appear on official course roster)</th></tr>
+  <tr>
+    <th class="exam-header-umail-label">  Umail address:</th>
+    <th class="exam-header-umail-entry"> @umail.ucsb.edu</th>
+  </tr>
+</table>
+
+
+	  <h1 style="clear:left;">e01b: Handout for Practice Exam 'e01b'</h1>
+	  
+	  <table class="exam_table">
+	    <tr>
+	      <th class="exam_ready">ready?</th>
+	      <th class="exam_date" >date</th>
+	      <th class="exam_points" >points</th>
+	    </tr>
+	    <tr class="ready">
+	      <td class="exam_ready">true</td>
+	      <td class="exam_date" >Thu 07/07 09:30AM</td> 
+	      <td class="pointCount"></td>
+	    </tr>
+	  </table>
+	  
+	</div><!-- exam-header -->
+<hr />	
+        <h2>CODE FOR QUESTION 1</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cm">/** Exercise based on p. 266 in HFJ, for H16, S12, CS56, UCSB, P. Conrad 
+*/</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Dog</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="n">Dog</span> <span class="n">dogOfTheWeek</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+    
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="n">setAsDogOfTheWeek</span><span class="o">()</span> <span class="o">{</span>
+	<span class="n">dogOfTheWeek</span> <span class="o">=</span> <span class="k">this</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="n">Dog</span> <span class="n">getDogOfTheWeek</span><span class="o">()</span> <span class="o">{</span>
+	<span class="k">return</span> <span class="n">dogOfTheWeek</span><span class="o">;</span>
+    <span class="o">}</span>
+    
+    <span class="kd">public</span> <span class="n">Dog</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span> <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="n">main</span><span class="o">(</span><span class="n">String</span> <span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+
+	<span class="n">Dog</span> <span class="n">d1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dog</span><span class="o">(</span><span class="s">"Fido"</span><span class="o">);</span> 
+	<span class="n">Dog</span> <span class="n">d2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dog</span><span class="o">(</span><span class="s">"Rover"</span><span class="o">);</span>
+	<span class="n">Dog</span> <span class="n">d3</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dog</span><span class="o">(</span><span class="s">"Princess"</span><span class="o">);</span> 
+	<span class="n">Dog</span> <span class="n">d4</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dog</span><span class="o">(</span><span class="s">"Spot"</span><span class="o">);</span> 
+	<span class="n">Dog</span> <span class="n">d5</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dog</span><span class="o">(</span><span class="s">"Snoopy"</span><span class="o">);</span> 
+
+
+	<span class="n">d1</span><span class="o">.</span><span class="na">setAsDogOfTheWeek</span><span class="o">();</span>    <span class="cm">/*  1 */</span>
+	<span class="n">d1</span> <span class="o">=</span> <span class="n">d2</span><span class="o">;</span>                   <span class="cm">/*  2 */</span>
+	<span class="n">Dog</span> <span class="n">d6</span> <span class="o">=</span> <span class="n">d3</span><span class="o">;</span>               <span class="cm">/*  3 */</span> 
+	<span class="n">Dog</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">d4</span><span class="o">;</span>             <span class="cm">/*  4 */</span>
+	<span class="n">d4</span> <span class="o">=</span> <span class="n">d3</span><span class="o">;</span>                   <span class="cm">/*  5 */</span>
+	<span class="n">d3</span> <span class="o">=</span> <span class="n">temp</span><span class="o">;</span>                 <span class="cm">/*  6 */</span>
+	<span class="n">d2</span> <span class="o">=</span> <span class="n">getDogOfTheWeek</span><span class="o">();</span>    <span class="cm">/*  7 */</span>
+	<span class="n">d4</span><span class="o">.</span><span class="na">setAsDogOfTheWeek</span><span class="o">();</span>    <span class="cm">/*  8 */</span>
+	<span class="n">d5</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>                 <span class="cm">/*  9 */</span>
+	<span class="n">d4</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>                 <span class="cm">/* 10 */</span>
+	<span class="n">d3</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>                 <span class="cm">/* 11 */</span>
+	<span class="n">d2</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>                 <span class="cm">/* 12 */</span>
+	<span class="n">d1</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>                 <span class="cm">/* 13 */</span>
+	<span class="n">temp</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>               <span class="cm">/* 14 */</span>
+    <span class="o">}</span>                              <span class="cm">/* 15 */</span>
+<span class="o">}</span>
+</code></pre>
+</div>
+
+<h2 class="page-break-before">Code for Question 2</h2>
+
+<p>Note: Line numbers are not part of the code. They are only there for reference.</p>
+
+<div style="font-size:80%;">
+
+  <h2 id="productjava">Product.java</h2>
+  <div class="highlighter-rouge"><pre class="highlight"><code><span class="mi">1</span>	<span class="cm">/** something that can be sold */</span>
+<span class="mi">2</span>	<span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Product</span> <span class="o">{</span>
+<span class="mi">3</span>
+<span class="mi">4</span>	<span class="cm">/** get the price (in cents) */</span>
+<span class="mi">5</span>	<span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">int</span> <span class="n">getPrice</span><span class="o">();</span>
+<span class="mi">6</span>
+<span class="mi">7</span>	<span class="o">}</span>
+</code></pre>
+  </div>
+
+  <h2 id="shippablejava">Shippable.java</h2>
+
+  <div class="highlighter-rouge"><pre class="highlight"><code><span class="mi">1</span>	<span class="cm">/** something that can be shipped */</span>
+<span class="mi">2</span>	<span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Shippable</span> <span class="o">{</span>
+<span class="mi">3</span>
+<span class="mi">4</span>	<span class="cm">/** get the shipping weight in pounds */</span>
+<span class="mi">5</span>	<span class="kd">public</span> <span class="kt">double</span> <span class="n">getWeight</span><span class="o">();</span>
+<span class="mi">6</span>	<span class="o">}</span>
+</code></pre>
+  </div>
+
+  <h2 id="bookjava">Book.java</h2>
+
+  <div class="highlighter-rouge"><pre class="highlight"><code><span class="mi">1</span>	<span class="cm">/** A Book */</span>
+<span class="mi">2</span>	<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Book</span> <span class="kd">extends</span> <span class="n">Product</span> <span class="kd">implements</span> <span class="n">Shippable</span> <span class="o">{</span>
+<span class="mi">3</span>
+<span class="mi">4</span>	<span class="kd">private</span> <span class="kt">int</span> <span class="n">price</span><span class="o">;</span>
+<span class="mi">5</span>	<span class="kd">private</span> <span class="kt">double</span> <span class="n">weight</span><span class="o">;</span>
+<span class="mi">6</span>	<span class="kd">private</span> <span class="n">String</span> <span class="n">author</span><span class="o">;</span>
+<span class="mi">7</span>	<span class="kd">private</span> <span class="n">String</span> <span class="n">title</span><span class="o">;</span>
+<span class="mi">8</span>
+<span class="mi">9</span>	<span class="kd">public</span> <span class="n">Book</span><span class="o">(</span><span class="n">String</span> <span class="n">author</span><span class="o">,</span> <span class="n">String</span> <span class="n">title</span><span class="o">,</span> <span class="kt">int</span> <span class="n">price</span><span class="o">,</span>
+<span class="mi">10</span>	<span class="kt">double</span> <span class="n">weight</span><span class="o">)</span> <span class="o">{</span>
+<span class="mi">11</span>	<span class="k">this</span><span class="o">.</span><span class="na">author</span> <span class="o">=</span> <span class="n">author</span><span class="o">;</span>
+<span class="mi">12</span>	<span class="k">this</span><span class="o">.</span><span class="na">title</span> <span class="o">=</span> <span class="n">title</span><span class="o">;</span>
+<span class="mi">13</span>	<span class="k">this</span><span class="o">.</span><span class="na">price</span> <span class="o">=</span> <span class="n">price</span><span class="o">;</span>
+<span class="mi">14</span>	<span class="k">this</span><span class="o">.</span><span class="na">weight</span> <span class="o">=</span> <span class="n">weight</span><span class="o">;</span>
+<span class="mi">15</span>	<span class="o">}</span>
+<span class="mi">16</span>
+<span class="mi">17</span>	<span class="kd">public</span> <span class="kt">int</span> <span class="n">getPrice</span><span class="o">()</span> <span class="o">{</span><span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">price</span><span class="o">;}</span>
+<span class="mi">18</span>	<span class="kd">public</span> <span class="n">String</span> <span class="n">getTitle</span><span class="o">()</span> <span class="o">{</span><span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">title</span><span class="o">;}</span>
+<span class="mi">19</span>	<span class="kd">public</span> <span class="n">String</span> <span class="n">getAuthor</span><span class="o">()</span> <span class="o">{</span><span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">author</span><span class="o">;}</span>
+<span class="mi">20</span>	<span class="kd">public</span> <span class="kt">double</span> <span class="n">getWeight</span><span class="o">()</span> <span class="o">{</span><span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">weight</span><span class="o">;}</span>
+<span class="mi">21</span>
+<span class="mi">22</span>	<span class="o">}</span>
+</code></pre>
+  </div>
+
+  <h2 id="songjava">Song.java</h2>
+
+  <div class="highlighter-rouge"><pre class="highlight"><code><span class="mi">1</span>	<span class="cm">/** A downloadable Song */</span>
+<span class="mi">2</span>	<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Song</span> <span class="kd">extends</span> <span class="n">Product</span> <span class="o">{</span>
+<span class="mi">3</span>
+<span class="mi">4</span>	<span class="kd">private</span> <span class="kt">int</span> <span class="n">price</span><span class="o">;</span>
+<span class="mi">5</span>	<span class="kd">private</span> <span class="n">String</span> <span class="n">artist</span><span class="o">;</span>
+<span class="mi">6</span>	<span class="kd">private</span> <span class="n">String</span> <span class="n">title</span><span class="o">;</span>
+<span class="mi">7</span>
+<span class="mi">8</span>	<span class="kd">public</span> <span class="n">Song</span><span class="o">(</span><span class="n">String</span> <span class="n">artist</span><span class="o">,</span> <span class="n">String</span> <span class="n">title</span><span class="o">,</span> <span class="kt">int</span> <span class="n">price</span><span class="o">)</span> <span class="o">{</span>
+<span class="mi">9</span>	<span class="k">this</span><span class="o">.</span><span class="na">artist</span> <span class="o">=</span> <span class="n">artist</span><span class="o">;</span>
+<span class="mi">10</span>	<span class="k">this</span><span class="o">.</span><span class="na">title</span> <span class="o">=</span> <span class="n">title</span><span class="o">;</span>
+<span class="mi">11</span>	<span class="k">this</span><span class="o">.</span><span class="na">price</span> <span class="o">=</span> <span class="n">price</span><span class="o">;</span>
+<span class="mi">12</span>	<span class="o">}</span>
+<span class="mi">13</span>
+<span class="mi">14</span>	<span class="kd">public</span> <span class="n">Song</span><span class="o">(</span><span class="n">String</span> <span class="n">artist</span><span class="o">,</span> <span class="n">String</span> <span class="n">title</span><span class="o">)</span> <span class="o">{</span>
+<span class="mi">15</span>	<span class="k">this</span><span class="o">(</span><span class="n">artist</span><span class="o">,</span><span class="n">title</span><span class="o">,</span><span class="mi">99</span><span class="o">);</span>
+<span class="mi">16</span>	<span class="o">}</span>
+<span class="mi">17</span>
+<span class="mi">18</span>	<span class="kd">public</span> <span class="kt">int</span> <span class="n">getPrice</span><span class="o">()</span> <span class="o">{</span><span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">price</span><span class="o">;}</span>
+<span class="mi">19</span>	<span class="kd">public</span> <span class="n">String</span> <span class="n">getTitle</span><span class="o">()</span> <span class="o">{</span><span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">title</span><span class="o">;}</span>
+<span class="mi">20</span>	<span class="kd">public</span> <span class="n">String</span> <span class="n">getArtist</span><span class="o">()</span> <span class="o">{</span><span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">artist</span><span class="o">;}</span>
+<span class="mi">21</span>
+<span class="mi">22</span>	<span class="o">}</span>
+</code></pre>
+  </div>
+
+</div>
+
+	<div class="end-of-exam">End of Exam Handout</div>
+        </div><!-- content -->
+        <div data-role="footer" class="footer">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io">this site on github</a></li>
+   <li><a href="https://ucsb-cs16.github.io/instructor">Instructor info</a></li>
+   <li><a href='https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io/edit/master/_exam/e01/cs56_m16_e01_practice_b/handout.md'>edit this page on github</a></li>
+   <li><a href="https://foo.cs.ucsb.edu/16wiki">16wiki</a></li>
+
+  </ul>
+ </nav>
+</div>
+
+      </div><!-- container -->
+
+      
+    </body>
+</html>

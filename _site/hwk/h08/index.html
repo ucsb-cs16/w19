@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- head_hwk.html -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<link rel="stylesheet" href="/site.css" />
+<link rel="stylesheet" href="/hwk.css" />
+<script src="/site.js"></script>
+<script src="/hwk.js"></script>
+
+    <title>Quiz08 - Chapter 9 and 13: Dynamic memory allocation and dynamic arrays), Linked-lists - </title>
+  </head>
+    <body id="page-top">
+      <div id="container" data-role="page">
+      <div data-role="header" class="header">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+    <li><a href="https://ucsb-cs16.github.io">UCSB CS16 </a></li>
+    <li><a href="/" class="ui-btn-active">CS16 S18</a></li>
+     <li><a href="https://submit.cs.ucsb.edu">submit.cs</a></li>
+  </ul>
+ </nav>
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://gauchospace.ucsb.edu">Gauchospace</a></li>
+   <li><a href="https://piazza.com/configure-classes/spring2018/cs16">Piazza</a></li>
+  </ul>
+ </nav>
+ 
+ <nav data-role="navbar" data-grid-"d">
+  <ul class="hwk-nav-bar">
+  
+    <li><a href="/hwk/h01/">Quiz01</a></li>
+  
+    <li><a href="/hwk/h02/">Quiz02</a></li>
+  
+    <li><a href="/hwk/h03/">Quiz03</a></li>
+  
+    <li><a href="/hwk/h04/">Quiz04</a></li>
+  
+    <li><a href="/hwk/h05/">Quiz05</a></li>
+  
+    <li><a href="/hwk/h06/">Quiz06</a></li>
+  
+    <li><a href="/hwk/h07/">Quiz07</a></li>
+  
+    <li><a href="/hwk/h08/">Quiz08</a></li>
+  
+    <li><a href="/hwk/h09/">Quiz09</a></li>
+  
+    <li><a href="/hwk/h10/">Quiz10</a></li>
+  
+  </ul>
+ </nav>
+
+</div>
+
+      
+           
+        <div id="content"  class="ui-content">
+        <div class="hwk-header">
+          <div class="hwk-page-header hwk-page-header-template">
+	    <table>
+	      <tr> <td class="page-num">1</td>  </tr>
+	      <tr> <td class="asn-num">Quiz08</td>  </tr>
+	      <tr> <td class="course-qtr">CS16&#160;<span class="insert-qtr">S18</span></td>  </tr>
+	    </table>
+	  </div>
+	  
+	  <table class="hwk-header-table">
+
+	    <tr><th colspan="5" class="hwk-header-name">Name:</th></tr>
+	    <tr><th colspan="5" class="hwk-header-subtext">(as it would appear on official course roster)</th></tr>
+	    <tr>
+	      <th class="hwk-header-umail-label">  Umail address:</th>
+	      <th class="hwk-header-umail-entry"> @umail.ucsb.edu</th>
+	      <th rowspan="3" class="hwk-header-section"> section<br></th>
+	    </tr>
+	    <tr>
+	      <th colspan="2" style="text-align:left; vertical-align:middle; font-size: 8pt !important; font-family:Arial Narrow, sans-serif; line-height:105%;"> Optional: name you wish to be called<br />if different from name above.
+	    </th></tr>
+	    <tr>
+	      <th colspan="2" style="text-align:left; vertical-align:middle; font-size: 8pt !important; font-family:Arial Narrow, sans-serif; line-height: 105%;"> Optional: name of "homework buddy"<br />(leaving this blank signifies "I worked alone"
+	  </th></tr></table>
+
+
+<h1>Quiz08: Chapter 9 and 13: Dynamic memory allocation and dynamic arrays), Linked-lists</h1>
+
+	  <table class="asn_table">
+	    <tr>
+	      <th class="asn_ready">ready?</th>
+	      <th class="asn_date" >assigned</th>
+	      <th class="asn_date" >due</th>
+	      <th class="asn_date" >points</th>
+	    </tr>
+	    <tr class="ready">
+	      <td class="asn_ready">true</td>
+	      <td class="asn_date" >Fri 05/18 10:00AM</td> 
+	      <td class="asn_date" >Fri 05/25 11:59PM</td>
+	      <td class="pointCount"></td>
+	    </tr>
+	   </table>
+
+  <div style="font-size: 8pt !important; font-family:Arial Narrow, sans-serif; font-style:italic; line-height: 100%;">
+<p>You may collaborate on this homework with AT MOST one person, an optional "homework buddy".
+</p>
+</div>
+
+<p>MAY ONLY BE TURNED IN IN THE LECTURE/LAB LISTED ABOVE AS THE DUE DATE,<br />
+OR IF APPLICABLE, SUBMITTED ON GRADESCOPE.   There is NO MAKEUP for missed assignments;<br />
+in place of that, we drop the three lowest scores (if you have zeros, those are the three lowest scores.)
+</p>
+<hr />
+
+          
+        </div><!-- hwk-header -->  
+          <p>Read Chapter 9, sections 9.1-9.2 (pages 508 - 533), Chapter 13, section 13.1 (pages 740- 759). The key learning goals are dynamic memory allocation and its use in dynamic arrays and linked-lists. If you do not have a copy of the textbook yet, there is one on reserve at the library under “COMP000-STAFF - Permanent Reserve”.</p>
+
+<p><b>PLEASE MARK YOUR HOMEWORK CLEARLY, REGARDLESS OF IF YOU WRITE IT OUT IN INK OR PENCIL! FOR BEST RESULTS, SAVE THIS PAGE AS A PDF, THEN PRINT THE PDF.</b></p>
+
+<p>1.(10 pts) What is the output of the following program? Using a pointer diagram show the evolution of all data objects in memory, clearly marking elements on the run-time stack and on the heap. Mark the size of all data objects. Assume the code is embedded in a correct and complete program.</p>
+<div>
+  <div class="highlighter-rouge"><pre class="highlight"><code><span class="kt">int</span> <span class="o">*</span><span class="n">p1</span><span class="p">,</span> <span class="o">*</span><span class="n">p2</span><span class="p">,</span> <span class="o">*</span><span class="n">p3</span><span class="p">;</span>
+<span class="n">p1</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">;</span>
+<span class="n">p2</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">;</span>
+<span class="n">p3</span> <span class="o">=</span> <span class="n">p1</span><span class="p">;</span>
+<span class="o">*</span><span class="n">p1</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+<span class="o">*</span><span class="n">p2</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+<span class="n">cout</span><span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p1</span><span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p2</span><span class="o">&lt;&lt;</span><span class="s">" "</span><span class="o">&lt;&lt;*</span><span class="n">p3</span><span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="n">p1</span> <span class="o">=</span> <span class="n">p2</span><span class="p">;</span>
+<span class="n">cout</span><span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p1</span><span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p2</span><span class="o">&lt;&lt;</span><span class="s">" "</span><span class="o">&lt;&lt;*</span><span class="n">p3</span><span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="o">*</span><span class="n">p3</span> <span class="o">=</span> <span class="o">*</span><span class="n">p2</span><span class="p">;</span>
+<span class="n">cout</span><span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p1</span><span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p2</span><span class="o">&lt;&lt;</span><span class="s">" "</span><span class="o">&lt;&lt;*</span><span class="n">p3</span><span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</code></pre>
+  </div>
+</div>
+
+<div style="margin-bottom:2em"></div>
+
+<p>2.(10 pts) What is the output of the following program? Using a pointer diagram show the evolution of all data objects in memory, clearly marking elements on the run-time stack and on the heap. Mark the size of all data objects. Assume the code is embedded in a correct and complete program.</p>
+<div>
+  <div class="highlighter-rouge"><pre class="highlight"><code><span class="kt">int</span> <span class="n">array_size</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="o">*</span><span class="n">a</span> <span class="p">;</span>
+<span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">array_size</span><span class="p">];</span>
+<span class="kt">int</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span>
+<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span> <span class="n">array_size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="o">*</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="p">;</span>
+<span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span> <span class="n">array_size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="s">" "</span><span class="p">;</span>
+<span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</code></pre>
+  </div>
+</div>
+
+<div class="pagebreak"></div>
+<p>3.(2 pts) Consider the ‘head’ variable on page 741. What is the value of head for an empty list?</p>
+<div style="margin-bottom:1em"></div>
+
+<p>4.(6 pts)  Assume you are given a pointer to the head of an existing list (named head). The nodes of the linked-list are of type struct Node (as defined on display 13.7 on page 754). Write a for-loop to iterate through the list and print the data of every other element of the list (starting with the first element).</p>
+<div style="margin-bottom:8em"></div>
+
+<p>5.(12 pts) Consider a linked list where each node is of the same type as in the previous question. Complete the definition of the function deleteNode given below, that takes as input a pointer to the head of the list, and an integer value. The function should delete all the nodes in the list whose data members have the given value. If the list is empty or if there is no node with the given value, the function should not do anything.</p>
+<div>
+  <div class="highlighter-rouge"><pre class="highlight"><code><span class="kt">void</span> <span class="n">deleteNode</span><span class="p">(</span><span class="k">struct</span> <span class="n">Node</span><span class="o">*&amp;</span> <span class="n">head</span><span class="p">,</span> <span class="kt">int</span> <span class="n">value</span><span class="p">){</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="p">}</span>
+
+</code></pre>
+  </div>
+
+  <div class="pagebreak"></div>
+
+  <p>For all the following questions, use the definitions of the struct Node and struct LinkedList from lab 06.</p>
+
+  <div style="margin-bottom:1em"></div>
+
+  <p>6.(10 pts) Implement a function that returns the number of even elements in a linked list. Test your code before writing it out. Illegible code will receive 0 credit.</p>
+  <div>
+    <div class="highlighter-rouge"><pre class="highlight"><code><span class="kt">int</span> <span class="n">countEven</span><span class="p">(</span><span class="n">LinkedList</span><span class="o">*</span> <span class="n">list</span><span class="p">){</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="p">}</span>
+</code></pre>
+    </div>
+
+  </div>
+  <p>7.(2 pts) In the implementation of a linked list, why does struct Node contain a pointer member variable of type Node *?</p>
+  <div style="margin-bottom:6em"></div>
+
+  <div class="pagebreak"></div>
+  <p>8.(10 pts) You are given the following memory map, where the numbers on the left column are memory locations and the numbers on the right are 4 byte values stored at each location. Suppose that a linked-list is stored in the given memory segment. In the memory map there exists a pointer (named ‘list’) to a LinkedList object. You are given the location of list to be 0x8008. Draw the pointer diagram for the linked list showing all the nodes in the linked-list, the data stored in each node and all pointers, starting with the variable ‘list’. The LinkedList and Node types are the same as those defined in lab06</p>
+  <div style="margin-bottom:1em"></div>
+  <div>
+    <pre><code class="language-code">Memory
+Address  Value
+0x8000  0x8008
+0x8004  0x8020
+0x8008  0x803C
+0x800C  0x000A
+0x8010  0x8018
+0x8014  0x0002
+0x8018  0x8030
+0x801C  0x0004
+0x8020  0x0005
+0x8024  0x8014
+0x8028  0x0020
+0x802C  0x0000
+0x8030  0x0003
+0x8034  0x8028
+0x8038  0x8008
+0x803C  0x8000
+0x8040  0x8028
+</code></pre>
+  </div>
+  <div style="margin-bottom:1em"></div>
+  <p>9.(10 pts) Implement a function that takes a linked list as an input and returns a dynamic array containing the data elements of the linked list. Test your code before writing it out. Illegible code will receive 0 credit.</p>
+  <div>
+    <div class="highlighter-rouge"><pre class="highlight"><code><span class="kt">int</span><span class="o">*</span> <span class="n">linkedListToArray</span><span class="p">(</span><span class="n">LinkedList</span> <span class="o">*</span> <span class="n">list</span><span class="p">);</span>
+</code></pre>
+    </div>
+
+  </div>
+</div>
+
+        </div><!-- content -->
+        <div data-role="footer" class="footer">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io">this site on github</a></li>
+   <li><a href="https://ucsb-cs16.github.io/instructor">Instructor info</a></li>
+   <li><a href='https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io/edit/master/_hwk/h08.md'>edit this page on github</a></li>
+   <li><a href="https://foo.cs.ucsb.edu/16wiki">16wiki</a></li>
+
+  </ul>
+ </nav>
+</div>
+
+      </div><!-- container -->
+  </body>
+</html>

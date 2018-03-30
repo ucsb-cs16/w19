@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head_hwk.html %}
+    <title>{{ page.num }} - {{ page.desc }} - {{course}}</title>
+  </head>
+    <body id="page-top">
+      <div id="container" data-role="page">
+      {% include nav.html %}
+      {% if page.ready %}
+      {% else %}
+      {% include not_ready_warning.html %}
+      {% endif %}     
+        <div id="content"  class="ui-content">
+        <div class="hwk-header">
+          <div class="hwk-page-header hwk-page-header-template">
+	    <table>
+	      <tr> <td class="page-num">1</td>  </tr>
+	      <tr> <td class="asn-num">{{page.num}}</td>  </tr>
+	      <tr> <td class="course-qtr">CS16&#160;<span class="insert-qtr">{{site.qtr}}</span></td>  </tr>
+	    </table>
+	  </div>
+	  
+	  <table class="hwk-header-table">
+
+	    <tr><th colspan="5" class="hwk-header-name">Name:</th></tr>
+	    <tr><th colspan="5" class="hwk-header-subtext">(as it would appear on official course roster)</th></tr>
+	    <tr>
+	      <th class="hwk-header-umail-label">  Umail address:</th>
+	      <th class="hwk-header-umail-entry"> @umail.ucsb.edu</th>
+	      <th rowspan="3" class="hwk-header-section"> section<br></th>
+	    </tr>
+	    <tr>
+	      <th colspan="2" style="text-align:left; vertical-align:middle; font-size: 8pt !important; font-family:Arial Narrow, sans-serif; line-height:105%;"> Optional: name you wish to be called<br />if different from name above.
+	    </th></tr>
+	    <tr>
+	      <th colspan="2" style="text-align:left; vertical-align:middle; font-size: 8pt !important; font-family:Arial Narrow, sans-serif; line-height: 105%;"> Optional: name of "homework buddy"<br />(leaving this blank signifies "I worked alone"
+	  </th></tr></table>
+
+
+<h1>{{page.num}}: {{ page.desc }}</h1>
+
+	  <table class="asn_table">
+	    <tr>
+	      <th class="asn_ready">ready?</th>
+	      <th class="asn_date" >assigned</th>
+	      <th class="asn_date" >due</th>
+	      <th class="asn_date" >points</th>
+	    </tr>
+	    <tr class={% if page.ready %}"ready"{% else %}"not-ready"{% endif %}>
+	      <td class="asn_ready">{{page.ready}}</td>
+	      <td class="asn_date" >{{page.assigned | date: "%a %m/%d %I:%M%p"  }}</td> 
+	      <td class="asn_date" >{{page.due | date: "%a %m/%d %I:%M%p" }}</td>
+	      <td class="pointCount"></td>
+	    </tr>
+	   </table>
+
+  <div style="font-size: 8pt !important; font-family:Arial Narrow, sans-serif; font-style:italic; line-height: 100%;">
+<p>You may collaborate on this homework with AT MOST one person, an optional "homework buddy".
+</p>
+</div>
+
+<p>MAY ONLY BE TURNED IN IN THE LECTURE/LAB LISTED ABOVE AS THE DUE DATE,<br />
+OR IF APPLICABLE, SUBMITTED ON GRADESCOPE.   There is NO MAKEUP for missed assignments;<br />
+in place of that, we drop the three lowest scores (if you have zeros, those are the three lowest scores.)
+</p>
+<hr />
+
+          
+        </div><!-- hwk-header -->  
+          {{ content }}
+        </div><!-- content -->
+        {% include footer.html %}
+      </div><!-- container -->
+  </body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- head_exam.html -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<link rel="stylesheet" href="/site.css" />
+<link rel="stylesheet" href="/exam.css" />
+<script src="/site.js"></script>
+<script src="/exam.js"></script>
+
+    <title>e01 - Midterm Exam Handout - </title>
+  </head>
+  <body id="page-top">
+    <div id="container" data-role="page">
+      <div data-role="header" class="header">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+    <li><a href="https://ucsb-cs16.github.io">UCSB CS16 </a></li>
+    <li><a href="/" class="ui-btn-active">CS16 S18</a></li>
+     <li><a href="https://submit.cs.ucsb.edu">submit.cs</a></li>
+  </ul>
+ </nav>
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://gauchospace.ucsb.edu">Gauchospace</a></li>
+   <li><a href="https://piazza.com/configure-classes/spring2018/cs16">Piazza</a></li>
+  </ul>
+ </nav>
+ 
+</div>
+
+      
+           
+      <div id="content"  class="ui-content">
+        <div class="exam-header">
+          <div class="exam-page-header exam-page-header-template">
+	    <table>
+  <tr>
+    <td class="page-num">1</td>
+  </tr>
+  <tr>
+    <td class="handout-asn-num">Midterm Exam Handout<br>for<br>e01</td>
+  </tr>
+  <tr>
+    <td class="course-qtr">
+      CS16&#160;<span class="insert-qtr">S18</span>
+    </td>
+  </tr>
+</table>
+
+	  </div> <!-- exam-page-header -->
+<div markdown="1" class="exam-name-header-table exam-name-header-template"></div>
+	</div><!-- exam-header -->
+<hr />	
+        <h2 id="instructions-for-question-1">INSTRUCTIONS FOR QUESTION 1</h2>
+
+<p>The <code class="highlighter-rouge">Aircraft</code> class is intended to represent one of the rows in the table shown here,
+which is a portion of the United Airlines fleet:</p>
+
+<style>
+  div.aircraft {
+    margin: 1em; padding: 1em;
+  }
+  div.aircraft table * td {
+    font-family: Arial Narrow, sans-serif;
+    font-size: 90%;
+    padding: 3px;
+  }
+
+</style>
+
+<div class="aircraft">
+
+  <table>
+    <tbody>
+      <tr>
+        <td>Boeing 747-400 (744)</td>
+        <td>wifi</td>
+        <td>52 Business First</td>
+        <td>240 Economy</td>
+        <td>70 Economy Plus</td>
+        <td>12 Global First</td>
+      </tr>
+      <tr>
+        <td>Boeing 767-300 (763)</td>
+        <td>wifi</td>
+        <td>26 BusinessFirst</td>
+        <td>80 Economy</td>
+        <td>71 Economy Plus</td>
+        <td>6 Global First</td>
+      </tr>
+      <tr>
+        <td>Boeing 787-8 (788)</td>
+        <td>wifi</td>
+        <td>36 BusinessFirst</td>
+        <td>113 Economy</td>
+        <td>70 Economy Plus</td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>Boeing 787-9 (789)</td>
+        <td>wifi</td>
+        <td>48 BusinessFirst</td>
+        <td>116 Economy</td>
+        <td>88 Economy Plus</td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>Embraer EMB 170</td>
+        <td>wifi</td>
+        <td>48 Economy</td>
+        <td>16 Economy Plus</td>
+        <td>6 First</td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>Embraer EMB 175</td>
+        <td>no wifi</td>
+        <td>48 Economy</td>
+        <td>16 Economy Plus</td>
+        <td>12 First</td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>Bombardier CRJ-200</td>
+        <td>no wifi</td>
+        <td>46 Economy</td>
+        <td>4 Economy Plus</td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>Bombardier CRJ-700</td>
+        <td>no wifi</td>
+        <td>28 Economy</td>
+        <td>32 Economy Plus</td>
+        <td>6 First</td>
+        <td> </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<p>As you can see, for each Aircraft in a fleet, we need to be able to store:</p>
+
+<ul>
+  <li>a <code class="highlighter-rouge">name</code>, such as <code class="highlighter-rouge">"Boeing 747-400 (744)"</code><br /> or <code class="highlighter-rouge">"Embraer EMB 175"</code></li>
+  <li>an indication of whether the plane has wifi or not</li>
+  <li>a collection of Cabins</li>
+</ul>
+
+<p>For your convenience, you may assume that there is a <code class="highlighter-rouge">Cabin</code> class available to you with:</p>
+
+<ul>
+  <li>a constructor: <code class="highlighter-rouge">public Cabin(String name, int seats)</code></li>
+  <li>public getter methods:<br /> <code class="highlighter-rouge">String getName()</code> and <code class="highlighter-rouge">int getSeats()</code></li>
+  <li>a public <code class="highlighter-rouge">String toString()</code> method that returns a cabin in the format shown in the table, e.g. <code class="highlighter-rouge">"28 Economy"</code></li>
+</ul>
+
+<p>Your job is to write the public class <code class="highlighter-rouge">Aircraft</code>, with all of the following:</p>
+
+<style>
+  div.enclosed-list-uses-lower-alpha ol li {
+  list-style-type: lower-alpha;
+  }
+</style>
+
+<div class="enclosed-list-uses-lower-alpha">
+
+  <ol>
+    <li>(10 pts) Correct syntax and structure of a Java class.</li>
+    <li>(8 pts) Private instance variables for the data members (attributes)</li>
+    <li>
+      <p>(8 pts) A two-argument constructor that takes arguments for the name of the aircraft, and
+whether or not the aircraft has wifi: 
+Example invocation:</p>
+
+      <div class="highlighter-rouge"><pre class="highlight"><code>    <span class="n">Aircraft</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Aircraft</span><span class="o">(</span><span class="s">"Boeing 747-400 (744)"</span><span class="o">,</span><span class="kc">true</span><span class="o">);</span>
+    <span class="n">Aircraft</span> <span class="n">b</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Aircraft</span><span class="o">(</span><span class="s">"Embraer EMB 175"</span><span class="o">,</span><span class="kc">false</span><span class="o">);</span>
+</code></pre>
+      </div>
+    </li>
+    <li>(8 pts) getter methods called <code class="highlighter-rouge">getName</code> and <code class="highlighter-rouge">hasWifi</code> that return appropriate values</li>
+    <li>
+      <p>(8 pts) a method <code class="highlighter-rouge">addCabin</code> that adds a Cabin object to the aircraft.  For example,</p>
+
+      <div class="highlighter-rouge"><pre class="highlight"><code>    <span class="n">Aircraft</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Aircraft</span><span class="o">(</span><span class="s">"Boeing 747-400 (744)"</span><span class="o">,</span><span class="kc">true</span><span class="o">);</span>
+    <span class="n">Cabin</span> <span class="n">bf</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Cabin</span><span class="o">(</span><span class="s">"Business First"</span><span class="o">,</span><span class="mi">52</span><span class="o">);</span>
+    <span class="n">a</span><span class="o">.</span><span class="na">addCabin</span><span class="o">(</span><span class="n">bf</span><span class="o">);</span>
+    <span class="n">Cabin</span> <span class="n">e</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Cabin</span><span class="o">(</span><span class="s">"Economy"</span><span class="o">,</span><span class="mi">240</span><span class="o">);</span>
+    <span class="n">a</span><span class="o">.</span><span class="na">addCabin</span><span class="o">(</span><span class="n">e</span><span class="o">);</span>
+</code></pre>
+      </div>
+    </li>
+    <li>
+      <p>(8 pts) a correct <code class="highlighter-rouge">toString()</code> method.  The method should return a representation of
+the aircraft object in a format that follows these examples.</p>
+
+      <div class="highlighter-rouge"><pre class="highlight"><code>Boeing 747-400 (744) (Capacity: 374 )
+Bombardier CRJ-200 V1 (Capacity: 50)
+</code></pre>
+      </div>
+
+      <p>The capacity should be the
+sum of the capacities of all cabins that have been added to the Aircraft.</p>
+    </li>
+  </ol>
+
+</div>
+
+<p>Note that for <em>this</em> exam, you do NOT need to include Javadoc comments
+or write a <code class="highlighter-rouge">.equals</code> method.</p>
+
+<p>Total Points: <span class="pointCount">Total points: ?</span></p>
+
+<div style="font-size: 10px; font-family: Arial Narrow, sans-serif;">
+  <p>The list contains data for the United Airlines fleet as shown on the website
+SeatGuru, Copyright © TripAdvisor LLC, 2016.  Reproduced here under “fair use” doctrine
+for classroom use.</p>
+</div>
+
+<h2 class="page-break-before">Code for Question 6</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Dog</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="n">Dog</span> <span class="n">dogOfTheWeek</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+    
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="n">setAsDogOfTheWeek</span><span class="o">()</span> <span class="o">{</span>
+	<span class="n">dogOfTheWeek</span> <span class="o">=</span> <span class="k">this</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="n">Dog</span> <span class="n">getDogOfTheWeek</span><span class="o">()</span> <span class="o">{</span>
+	<span class="k">return</span> <span class="n">dogOfTheWeek</span><span class="o">;</span>
+    <span class="o">}</span>
+    
+    <span class="kd">public</span> <span class="n">Dog</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span> <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="n">main</span><span class="o">(</span><span class="n">String</span> <span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+
+	<span class="n">Dog</span> <span class="n">d1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dog</span><span class="o">(</span><span class="s">"Snoopy"</span><span class="o">);</span> 
+	<span class="n">Dog</span> <span class="n">d2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dog</span><span class="o">(</span><span class="s">"Princess"</span><span class="o">);</span> 
+	<span class="n">Dog</span> <span class="n">d3</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dog</span><span class="o">(</span><span class="s">"Rover"</span><span class="o">);</span>
+	<span class="n">Dog</span> <span class="n">d4</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dog</span><span class="o">(</span><span class="s">"Spot"</span><span class="o">);</span> 
+	<span class="n">Dog</span> <span class="n">d5</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dog</span><span class="o">(</span><span class="s">"Fido"</span><span class="o">);</span> 
+
+
+	<span class="n">d5</span><span class="o">.</span><span class="na">setAsDogOfTheWeek</span><span class="o">();</span>    <span class="cm">/*  1 */</span>
+	<span class="n">d2</span> <span class="o">=</span> <span class="n">d1</span><span class="o">;</span>                   <span class="cm">/*  2 */</span>
+	<span class="n">Dog</span> <span class="n">d3</span> <span class="o">=</span> <span class="n">d6</span><span class="o">;</span>               <span class="cm">/*  3 */</span> 
+	<span class="n">Dog</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">d2</span><span class="o">;</span>             <span class="cm">/*  4 */</span>
+	<span class="n">d2</span> <span class="o">=</span> <span class="n">d5</span><span class="o">;</span>                   <span class="cm">/*  5 */</span>
+	<span class="n">d5</span> <span class="o">=</span> <span class="n">temp</span><span class="o">;</span>                 <span class="cm">/*  6 */</span>
+	<span class="n">d3</span> <span class="o">=</span> <span class="n">getDogOfTheWeek</span><span class="o">();</span>    <span class="cm">/*  7 */</span>
+	<span class="n">d1</span><span class="o">.</span><span class="na">setAsDogOfTheWeek</span><span class="o">();</span>    <span class="cm">/*  8 */</span>
+	<span class="n">d1</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>                 <span class="cm">/*  9 */</span>
+	<span class="n">d2</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>                 <span class="cm">/* 10 */</span>
+	<span class="n">d3</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>                 <span class="cm">/* 11 */</span>
+	<span class="n">d4</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>                 <span class="cm">/* 12 */</span>
+	<span class="n">d5</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>                 <span class="cm">/* 13 */</span>
+	<span class="n">temp</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>               <span class="cm">/* 14 */</span>
+    <span class="o">}</span>                              <span class="cm">/* 15 */</span>
+<span class="o">}</span>
+</code></pre>
+</div>
+
+	<div class="end-of-exam">End of Handout</div>
+        </div><!-- content -->
+        <div data-role="footer" class="footer">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io">this site on github</a></li>
+   <li><a href="https://ucsb-cs16.github.io/instructor">Instructor info</a></li>
+   <li><a href='https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io/edit/master/_exam/e01/cs56_m16_e01/handout.md'>edit this page on github</a></li>
+   <li><a href="https://foo.cs.ucsb.edu/16wiki">16wiki</a></li>
+
+  </ul>
+ </nav>
+</div>
+
+      </div><!-- container -->
+
+      
+    </body>
+</html>

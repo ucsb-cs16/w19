@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <!-- head.html; common header items for all layouts -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<link rel="stylesheet" href="/site.css" />
+<script src="/site.js"></script>
+ 
+  <title> Lect04 |  CS 16 Spring 2018</title>
+  </head>
+  <body id="page-top">
+    
+    <div id="container" data-role="page">
+    <div data-role="header" class="header">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+    <li><a href="https://ucsb-cs16.github.io">UCSB CS16 </a></li>
+    <li><a href="/" class="ui-btn-active">CS16 S18</a></li>
+     <li><a href="https://submit.cs.ucsb.edu">submit.cs</a></li>
+  </ul>
+ </nav>
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://gauchospace.ucsb.edu">Gauchospace</a></li>
+   <li><a href="https://piazza.com/configure-classes/spring2018/cs16">Piazza</a></li>
+  </ul>
+ </nav>
+ 
+</div>
+
+    <div id="content"  class="ui-content">
+    
+
+
+
+
+<table class="lecture_table">
+<tr>
+
+  <td><a href="/lectures/lect03/">Previous Lecture</a></td>
+  
+
+
+  <td>
+    lect04
+     
+        <a href="/lectures/CS16_Lecture4.pdf" data-ajax="false">
+        Before Slides 
+        </a> 
+     
+ </td>
+ <td>
+    lect04
+     
+        Annotated Slides 
+     
+ </td>
+
+ <td><a href="/lectures/lect05/">Next Lecture</a></td>
+
+</tr>
+</table> 
+    <h1 id="code-from-lecture">Code from lecture</h1>
+
+<h2 id="working-with-doubles">Working with doubles</h2>
+<ul>
+  <li>Evaluating expressions with mixed numeric types</li>
+  <li>Typecasting int to double</li>
+  <li>Formatted output with doubles:</li>
+</ul>
+
+<p>Comment each line of code. What is the output of the code?
+<code class="highlighter-rouge">
+int i = 10;
+double j = 1/static_cast&lt;double&gt;(i);
+cout.setf(ios::fixed);
+cout.setf(ios::showpoint);
+cout.precision(3);
+cout&lt;&lt;j&lt;&lt;endl;
+</code></p>
+
+<h2 id="practice-with-single-for-loops">Practice with single for loops</h2>
+<ul>
+  <li>Summing a series:</li>
+</ul>
+
+<p><strong>Exercise: Write a program that takes a parameter n as a command line arguments and computes the following:</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>1 + 1/2 + 1/3 + ....+ 1/n
+</code></pre>
+</div>
+<p>where n is the number of terms in the series. Sample run of the program is below:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$./sumSeries 2
+Sum of the first 2 terms is: 1.500
+</code></pre>
+</div>
+<p>## Nested Loops</p>
+
+<p>ASCII Art with nested loops</p>
+
+<p><strong>Exercise: Write a program to draw a square of a given width</strong>
+Example usage:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$./drawSquare 
+Enter the width of the square: 5
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+</code></pre>
+</div>
+<p>Complete the code below</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>#include &lt;iostream&gt;
+using namespace std;
+
+void drawSquare(int n); // Function to draw a square of side n
+
+int main(){
+  // Complete the code below:
+  
+  
+  cout&lt;&lt;"Enter the width of the square : "
+  cin&gt;&gt; num;
+    
+}
+</code></pre>
+</div>
+
+<div class="pagebreak"></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>
+// Write the definition of a function drawSquare that takes one parameter
+void drawSquare(int n){
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+</code></pre>
+</div>
+
+<p><strong>Exercise: Write a program to draw a triangle of a given width</strong>
+Example usage:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$./drawTriangle
+Enter the width of the triangle: 5
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+</code></pre>
+</div>
+
+<p>Complete the code below</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>#include &lt;iostream&gt;
+using namespace std;
+
+void drawTriangle(int n); // Function to draw a triangle of side n
+
+int main(){
+  // Complete the code below:
+  
+  
+  cout&lt;&lt;"Enter the width of the triangle : "
+  cin&gt;&gt; num;
+  
+  
+}
+
+// Which line of code do you need to modify
+void drawTriangle(int n){
+  for(int j = 0 ; j &lt; n; j++){   //A
+    for(int i = 0 ; j &lt; n; j++){ //B
+      cout&lt;&lt;"* ";  //C
+    }
+    cout&lt;&lt;endl;    //D
+  }
+  cout&lt;&lt;endl;      //E
+}
+
+</code></pre>
+</div>
+
+<p><strong>Math Puzzle</strong>
+One of the powers of computing is being able to do a brute-force search for a solution to a problem. Trial and error works just fine for some problems. In fact, computers can be especially good at such problems. Consider this:</p>
+
+<p>Horses cost $10, pigs cost $3, and rabbits are only $0.50. A farmer buys 100 animals for $100, How many of each animal did he buy?</p>
+
+<p>Write a program to do this.</p>
+
+    </div><!-- content -->
+    <div data-role="footer" class="footer">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io">this site on github</a></li>
+   <li><a href="https://ucsb-cs16.github.io/instructor">Instructor info</a></li>
+   <li><a href='https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io/edit/master/_lectures/lect04.md'>edit this page on github</a></li>
+   <li><a href="https://foo.cs.ucsb.edu/16wiki">16wiki</a></li>
+
+  </ul>
+ </nav>
+</div>
+
+    </div><!-- container -->
+  </body>
+</html>

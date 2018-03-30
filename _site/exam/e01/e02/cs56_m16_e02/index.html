@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- head_exam.html -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<link rel="stylesheet" href="/site.css" />
+<link rel="stylesheet" href="/exam.css" />
+<script src="/site.js"></script>
+<script src="/exam.js"></script>
+
+    <title>e02 - Final Exam - </title>
+  </head>
+  <body id="page-top">
+    <div id="container" data-role="page">
+      <div data-role="header" class="header">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+    <li><a href="https://ucsb-cs16.github.io">UCSB CS16 </a></li>
+    <li><a href="/" class="ui-btn-active">CS16 S18</a></li>
+     <li><a href="https://submit.cs.ucsb.edu">submit.cs</a></li>
+  </ul>
+ </nav>
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://gauchospace.ucsb.edu">Gauchospace</a></li>
+   <li><a href="https://piazza.com/configure-classes/spring2018/cs16">Piazza</a></li>
+  </ul>
+ </nav>
+ 
+</div>
+
+      
+           
+      <div id="content"  class="ui-content">
+        <div class="exam-header">
+          <div class="exam-page-header exam-page-header-template">
+	    <table>
+  <tr>
+    <td class="page-num">1</td>
+  </tr>
+  <tr>
+    <td class="asn-num">e02</td>
+  </tr>
+  <tr>
+    <td class="course-qtr">
+      CS16&#160;<span class="insert-qtr">S18</span>
+    </td>
+  </tr>
+</table>
+
+	  </div> <!-- exam-page-header -->
+
+	  <table class="exam-name-header-table exam-name-header-template" style="width:40%; margin-top: 0; padding-top: 0;">	   
+  <tr>
+    <th colspan="2" class="exam-header-name">Name:</th>
+    <!-- 
+	 <th rowspan="3" class="exam-header-section"> section<br>
+	   <span class="exam-header-section-subtext">9am or 10:30am</span>
+	 </th>
+    -->
+    
+  </tr>
+  <tr><th colspan="2" class="exam-header-subtext">(as it would appear on official course roster)</th></tr>
+  <tr>
+    <th class="exam-header-umail-label">  Umail address:</th>
+    <th class="exam-header-umail-entry"> @umail.ucsb.edu</th>
+  </tr>
+</table>
+
+
+	  <h1 style="clear:left;">EXAM: e02: Final Exam</h1>
+	  
+	  <table class="exam_table">
+	    <tr>
+	      <th class="exam_ready">ready?</th>
+	      <th class="exam_date" >date</th>
+	      <th class="exam_points" >points</th>
+	    </tr>
+	    <tr class="ready">
+	      <td class="exam_ready">true</td>
+	      <td class="exam_date" >Thu 07/28 09:30AM</td> 
+	      <td class="pointCount"></td>
+	    </tr>
+	  </table>
+	  
+	  <div style="font-size: 8pt !important; font-family:Arial Narrow, sans-serif; font-style:italic; line-height: 100%;">
+	    <p>You may not collaborate on this exam with anyone.   If you need to use the restroom, you must leave your cell phone with the exam proctor before leaving the room.  
+	    </p>
+	  </div>
+
+	  <div class="instructions">
+	    <ul>
+	      <!-- exam_instructions_li_elements.html  -->
+<li> Write your name at the top of this page <strong>AND EVERY ODD NUMBERED PAGE.</strong>
+</li>
+
+<li>Double check that you turned in ALL pages; look for "End of Exam" on the last page.</li>
+
+<li>
+  This exam is <strong>closed book, closed
+  notes</strong>, <strong>closed mouth, cell phone off.</strong>
+</li>
+
+<li >
+  You are permitted <strong>one sheet of paper</strong> (max size 8.5x11&quot;) on which to write notes.
+</li>
+<li>This sheet will be collected with the exam, and might not be returned.</li>
+<li> Please write your name on your notes sheet.</li>
+
+	    </ul>
+	  </div>
+	</div><!-- exam-header -->
+<hr />	
+        <ol>
+
+<li style="margin-bottom:10em;">
+    <p>(10 pts) A common misconception about Java threads is that when you invoke the <code class="highlighter-rouge">.start()</code> method on them, they begin running immediately.     Explain what happens instead.</p>
+  </li>
+
+
+<li style="margin-bottom:10em;">
+    <p>(10 pts) What is special or different about instances of inner classes (versus instances of objects that are not inner classes?)</p>
+
+    <style>
+  .fine-print { 
+   font-size: 90%;
+   font-family: Arial Narrow, sans-serif;
+  }
+</style>
+
+    <p class="fine-print">Clarification: The question is asking about
+“non-static inner classes”.<br />  <b>If you don’t know what that means, that’s
+fine</b>: we didn’t really talk about static vs. non-static inner classes.
+<br /><b>Just answer the question from the standpoint of “inner classes” as
+discussed in the HFJ textbook, and in lecture.</b> <br />If you know what
+“static inner classes” are, then answer the question about
+“non-static” inner classes.</p>
+
+  </li>
+
+<li>
+    <p>(10 pts) From a “big picture” standpoint, what is the role of <em>design patterns</em> in object oriented software development?</p>
+
+  </li>
+
+
+<li class="page-break-before" style="margin-bottom:1em;">
+    <p>(10 pts) This problem and several that follow will make to the following handouts.
+Please refer to them while answering these problems.</p>
+
+    <ul>
+      <li>p. 1 of <a href="handout_a/">Handout A</a> which has several reminders about <code class="highlighter-rouge">Comparable</code>, <code class="highlighter-rouge">Comparator</code>, etc.</li>
+      <li>p. 1 of <a href="handout_b/">Handout B</a> which has incomplete code for a <code class="highlighter-rouge">Student</code> class.</li>
+    </ul>
+
+    <p>Consider the following class that uses <code class="highlighter-rouge">Student</code>, called <code class="highlighter-rouge">StudentSort</code>.</p>
+
+    <style>
+ figure.highlight { margin-left: 0px; margin-right: 0px;}
+</style>
+
+    <figure class="highlight">
+      <pre><code class="language-java" data-lang="java"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre></td><td class="code"><pre><span class="c1">// StudentSort.java</span>
+<span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+
+<span class="kd">class</span> <span class="nc">StudentSort</span> <span class="o">{</span>
+    
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="n">main</span><span class="o">(</span><span class="n">String</span> <span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+	<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Student</span><span class="o">&gt;</span> <span class="n">roster</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Student</span><span class="o">&gt;();</span>
+	<span class="n">roster</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">Student</span><span class="o">(</span><span class="mi">6234567</span><span class="o">,</span><span class="s">"Bob"</span><span class="o">,</span><span class="mf">3.25</span><span class="o">,</span><span class="s">"CMPSC"</span><span class="o">));</span>
+	<span class="n">roster</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">Student</span><span class="o">(</span><span class="mi">7152353</span><span class="o">,</span><span class="s">"Charlie"</span><span class="o">,</span><span class="mf">3.96</span><span class="o">,</span><span class="s">"CMPSC"</span><span class="o">));</span>
+	<span class="n">roster</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">Student</span><span class="o">(</span><span class="mi">2352353</span><span class="o">,</span><span class="s">"Alice"</span><span class="o">,</span><span class="mf">3.97</span><span class="o">,</span><span class="s">"CMPEN"</span><span class="o">));</span>
+	<span class="n">roster</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">Student</span><span class="o">(</span><span class="mi">2888888</span><span class="o">,</span><span class="s">"Danielle"</span><span class="o">,</span><span class="mf">4.00</span><span class="o">,</span><span class="s">"CMPSC"</span><span class="o">));</span>
+	<span class="n">roster</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">Student</span><span class="o">(</span><span class="mi">1152353</span><span class="o">,</span><span class="s">"Ed"</span><span class="o">,</span><span class="mf">2.90</span><span class="o">,</span><span class="s">"CMPEN"</span><span class="o">));</span>
+
+	<span class="n">java</span><span class="o">.</span><span class="na">util</span><span class="o">.</span><span class="na">Collections</span><span class="o">.</span><span class="na">sort</span><span class="o">(</span><span class="n">roster</span><span class="o">);</span>
+	
+	<span class="k">for</span> <span class="o">(</span><span class="n">Student</span> <span class="nl">s:</span> <span class="n">roster</span><span class="o">)</span> <span class="o">{</span>
+	    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s</span><span class="o">);</span>
+	<span class="o">}</span>	
+    <span class="o">}</span>
+<span class="o">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre>
+    </figure>
+
+    <p>Suppose we want line 14 of this code, <code class="highlighter-rouge">java.util.Collections.sort(roster);</code> to sort in lexicographic order by name (Alice, Bob, Charlie, Danielle, Ed).   In order for this code to work properly, and indeed for the <code class="highlighter-rouge">Student.java</code> class to even compile, at least one extra method must be added.</p>
+
+    <p>Please write the additional method that would be added Student.java in the space below. <br />
+Please try to avoid writing too close to the end of the page (it doesn’t scan well.)</p>
+
+  </li>
+
+<li class="page-break-before">
+    <p>(10 pts) Please continue to refer to:</p>
+
+    <ul>
+      <li>The <code class="highlighter-rouge">StudentSort.java</code> file on p. 2 of the exam.</li>
+      <li>p. 1 of <a href="handout_a/">Handout A</a></li>
+      <li>p. 1 of <a href="handout_b/">Handout B</a></li>
+    </ul>
+
+    <p>Assume that you’ve added the necessary method from the previous problem so that Student.java now compiles, and
+line 14 will sort the <code class="highlighter-rouge">ArrayList&lt;Student&gt;</code> in the correct order.</p>
+
+    <p>Below, you see some two examples of output.  The output on the left is
+what we got, but the output on the right is what we want.</p>
+
+    <style>
+ table.output-examples * th { text-align: center; }
+ table.output-examples * td { padding: 1em; }	
+</style>
+
+    <table class="output-examples">
+<tr>
+<th>What We Got</th>
+<th>What We Want</th>
+</tr>
+<tr>
+<td>
+          <div class="highlighter-rouge"><pre class="highlight"><code>Student@7852e922
+Student@4e25154f
+Student@70dea4e
+Student@5c647e05
+Student@33909752
+</code></pre>
+          </div>
+        </td>
+<td>
+          <div class="highlighter-rouge"><pre class="highlight"><code>Student(2352353,"Alice",3.97,CMPEN)
+Student(6234567,"Bob",3.25,CMPSC)
+Student(7152353,"Charlie",3.96,CMPSC)
+Student(2888888,"Danielle",4.00,CMPSC)
+Student(1152353,"Ed",2.90,CMPEN)
+</code></pre>
+          </div>
+        </td>
+</tr>
+</table>
+
+    <p>Below please write the additional code that would need to be added to <code class="highlighter-rouge">Student.java</code> to make this change. <br />
+As always, please avoid writing too close to the edge of the page.</p>
+
+  </li>
+
+<li class="page-break-before">
+    <p>(10 pts) Please continue to refer to:</p>
+
+    <ul>
+      <li>The <code class="highlighter-rouge">StudentSort.java</code> file on p. 2 of the exam.</li>
+      <li>p. 1 of <a href="handout_a/">Handout A</a></li>
+      <li>p. 1 of <a href="handout_b/">Handout B</a></li>
+    </ul>
+
+    <p>Consider the following Java code that also makes use of the <code class="highlighter-rouge">Student</code> class.   As you can see, in order for this code to compile,
+four additional methods would have to be added to the <code class="highlighter-rouge">Student</code> class, namely the ones invoked on lines 16,17,18 and 19.</p>
+
+    <p>On p. 2 of <a href="handout_a/">Handout A</a>, you will see the output of various invocations of this program (assuming the necessary change are made to the code, including the methods you added Student.java in questions 4 and 5, and the implementations of these four additional methods.</p>
+
+    <p>For this question, we focus ONLY on the method <code class="highlighter-rouge">sortByName</code> invoked on line 16.</p>
+
+    <figure class="highlight">
+      <pre><code class="language-java" data-lang="java"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28</pre></td><td class="code"><pre><span class="c1">// StudentMain.java</span>
+<span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+
+<span class="kd">class</span> <span class="nc">StudentMain</span> <span class="o">{</span>
+    
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="n">main</span><span class="o">(</span><span class="n">String</span> <span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+	<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Student</span><span class="o">&gt;</span> <span class="n">roster</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Student</span><span class="o">&gt;();</span>
+	<span class="n">roster</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">Student</span><span class="o">(</span><span class="mi">6234567</span><span class="o">,</span><span class="s">"Bob"</span><span class="o">,</span><span class="mf">3.25</span><span class="o">,</span><span class="s">"CMPSC"</span><span class="o">));</span>
+	<span class="n">roster</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">Student</span><span class="o">(</span><span class="mi">7152353</span><span class="o">,</span><span class="s">"Charlie"</span><span class="o">,</span><span class="mf">3.96</span><span class="o">,</span><span class="s">"CMPSC"</span><span class="o">));</span>
+	<span class="n">roster</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">Student</span><span class="o">(</span><span class="mi">2352353</span><span class="o">,</span><span class="s">"Alice"</span><span class="o">,</span><span class="mf">3.97</span><span class="o">,</span><span class="s">"CMPEN"</span><span class="o">));</span>
+	<span class="n">roster</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">Student</span><span class="o">(</span><span class="mi">2888888</span><span class="o">,</span><span class="s">"Danielle"</span><span class="o">,</span><span class="mf">4.00</span><span class="o">,</span><span class="s">"CMPSC"</span><span class="o">));</span>
+	<span class="n">roster</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">Student</span><span class="o">(</span><span class="mi">1152353</span><span class="o">,</span><span class="s">"Ed"</span><span class="o">,</span><span class="mf">2.90</span><span class="o">,</span><span class="s">"CMPEN"</span><span class="o">));</span>
+	
+	<span class="k">if</span> <span class="o">(</span><span class="n">args</span><span class="o">.</span><span class="na">length</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">)</span> <span class="o">{</span>
+	    <span class="k">switch</span> <span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">0</span><span class="o">])</span> <span class="o">{</span>
+	    <span class="k">case</span> <span class="s">"name"</span><span class="o">:</span>      <span class="n">Student</span><span class="o">.</span><span class="na">sortByName</span><span class="o">(</span><span class="n">roster</span><span class="o">);</span> <span class="k">break</span><span class="o">;</span>
+	    <span class="k">case</span> <span class="s">"majorName"</span><span class="o">:</span> <span class="n">Student</span><span class="o">.</span><span class="na">sortByMajorThenName</span><span class="o">(</span><span class="n">roster</span><span class="o">);</span> <span class="k">break</span><span class="o">;</span>
+	    <span class="k">case</span> <span class="s">"gpaDesc"</span><span class="o">:</span>   <span class="n">Student</span><span class="o">.</span><span class="na">sortByGPADesc</span><span class="o">(</span><span class="n">roster</span><span class="o">);</span> <span class="k">break</span><span class="o">;</span>
+	    <span class="k">case</span> <span class="s">"perm"</span><span class="o">:</span>      <span class="n">Student</span><span class="o">.</span><span class="na">sortByPerm</span><span class="o">(</span><span class="n">roster</span><span class="o">);</span> <span class="k">break</span><span class="o">;</span>
+	    <span class="k">default</span><span class="o">:</span> <span class="k">break</span><span class="o">;</span>
+	    <span class="o">}</span>
+	<span class="o">}</span>
+	
+	<span class="k">for</span> <span class="o">(</span><span class="n">Student</span> <span class="nl">s:</span> <span class="n">roster</span><span class="o">)</span> <span class="o">{</span>
+	    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s</span><span class="o">);</span>
+	<span class="o">}</span>	
+    <span class="o">}</span>
+<span class="o">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre>
+    </figure>
+
+    <p>In the space below, please write an implementation of <code class="highlighter-rouge">sortByName</code> that sorts the roster by name as indicated
+on p. 2 of <a href="handout_a/">Handout A</a>.</p>
+
+    <p><em>For full credit</em>: please write the body of this method as a single line of code.<br />
+<em>Specifically</em>: use a line of code that takes advantage of the fact that <code class="highlighter-rouge">Student</code> implements <code class="highlighter-rouge">Comparable&lt;Student&gt;</code>.</p>
+
+    <p>For half-credit, you may use any technique that sorts the array correctly.</p>
+
+  </li>
+
+
+<li class="page-break-before">
+    <p>(10 pts) Please continue to refer to:</p>
+
+    <ul>
+      <li>The <code class="highlighter-rouge">StudentSort.java</code> file on p. 2 of the exam.</li>
+      <li>p. 1 and p. 2 of <a href="handout_a/">Handout A</a></li>
+      <li>p. 1 of <a href="handout_b/">Handout B</a></li>
+    </ul>
+
+    <p>Now, please write the code for the <code class="highlighter-rouge">sortByMajorThenName</code> method invoked on line 17 of <code class="highlighter-rouge">StudentMain.java</code>.</p>
+
+    <p><em>For Full Credit</em> the body of your method should use the <code class="highlighter-rouge">sort</code> method
+of java.util.ArrayList, passing in an object that implements <code class="highlighter-rouge">Comparator&lt;ArrayList&gt;</code> that is</p>
+
+    <ul>
+      <li>EITHER an instance of an anonymous class</li>
+      <li>OR an instance of an inner class of <code class="highlighter-rouge">Student</code>.</li>
+    </ul>
+
+    <p>If you choose the inner class technique, include the definition of the inner class in your answer.</p>
+
+    <p>For half credit: use any technique that will sort the array correctly.</p>
+
+  </li>
+
+<li class="page-break-before">
+    <p>(10 pts) Please continue to refer to:</p>
+
+    <ul>
+      <li>The <code class="highlighter-rouge">StudentSort.java</code> file on p. 2 of the exam.</li>
+      <li>p. 1 and p. 2 of <a href="handout_a/">Handout A</a></li>
+      <li>p. 1 of <a href="handout_b/">Handout B</a></li>
+    </ul>
+
+    <p>Now, please write the code for the <code class="highlighter-rouge">sortByPerm</code> method invoked on line 19 of <code class="highlighter-rouge">StudentMain.java</code>.</p>
+
+    <p><b>For Full Credit</b> you MUST use a <b>lambda expression</b>.</p>
+
+    <p>That is, the body of your method should use the <code class="highlighter-rouge">sort</code> method
+of <code class="highlighter-rouge">java.util.ArrayList</code>, passing in an object that implements
+<code class="highlighter-rouge">Comparator&lt;ArrayList&gt;</code> in the form of a <strong>lambda expression</strong>.</p>
+
+    <p>As a reminder, the general syntax of a Java lambda expression is as follows:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>parameters</th>
+          <th>syntax</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code class="highlighter-rouge">x</code></td>
+          <td><code class="highlighter-rouge">(x)   -&gt; return_value</code></td>
+        </tr>
+        <tr>
+          <td><code class="highlighter-rouge">x,y</code></td>
+          <td><code class="highlighter-rouge">(x,y) -&gt; return_value</code></td>
+        </tr>
+        <tr>
+          <td><em> etc… <em></em></em></td>
+          <td> </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>For half credit: use any technique that will sort the array correctly (e.g. inner class, anonymous class).   If you use
+an inner class, be sure to include the definition of that inner class in your answer.</p>
+
+  </li>
+
+<li class="page-break-before">
+    <p>(10 pts) Please continue to refer to:</p>
+
+    <ul>
+      <li>The <code class="highlighter-rouge">StudentSort.java</code> file on p. 2 of the exam.</li>
+      <li>p. 1 and p. 2 of <a href="handout_a/">Handout A</a></li>
+      <li>p. 1 of <a href="handout_b/">Handout B</a></li>
+    </ul>
+
+    <p>Now, finally please write the code for the <code class="highlighter-rouge">sortByGPADesc</code> method invoked on line 18 of <code class="highlighter-rouge">StudentMain.java</code>.</p>
+
+    <p>Take note of two things:
+* The fact that we want the order to be descending, not ascending
+* The fact that we are using <code class="highlighter-rouge">double</code> not int.<br />
+* The <code class="highlighter-rouge">java.lang.Math.signum</code> function described on p. 1 of <a href="handout_a/">Handout A</a>.</p>
+
+    <p><b>For Full Credit</b> the body of your method should use the <code class="highlighter-rouge">sort</code>
+method of <code class="highlighter-rouge">java.util.ArrayList</code>, passing in an object that implements
+<code class="highlighter-rouge">Comparator&lt;ArrayList&gt;</code>.</p>
+
+    <p>However, that object can be created using any reasonable technique, at your discretion, i.e. any of the following:</p>
+
+    <ul>
+      <li>anonymous class</li>
+      <li>inner class</li>
+      <li>lambda expression</li>
+    </ul>
+
+  </li>
+
+<li class="page-break-before" style="margin-bottom:10em;"> (4 pts) Briefly, at a "big picture" level, what was the task you were given to do in lab05, the parsing assignment?
+
+If you aren't sure what I'm asking for in this question, perhaps this will help.   You were given a working piece of code that did one thing, and you were asked to transform it into a working piece of code that did the same thing, plus something extra.
+
+What was the thing it did before your changes, and what was the extra part you added?
+
+
+</li>
+
+<li style="margin-bottom:16em;"> Again, at the "big picture" level, briefly describe each of the following, with <em>specific examples</em>&mdash;specific enough that there is no doubt in the grader's mind that you know what you are talking about, but not a lengthy essay.
+
+<ol>
+ <li style="margin-top: 1em; margin-bottom: 16em;"> (2 pts) tokens
+
+
+
+</li>
+ <li style="margin-bottom: 20em;">
+
+
+ <p>(2 pts) productions in a grammar, for example, each of the lines in the box at right.</p>
+
+<div style="width:90%; padding:0.5em; margin: 0.5em; border: 1px solid black; float:right; font-size: 80%;">
+          <div class="highlighter-rouge"><pre class="highlight"><code>expression ::= additive-expression
+additive-expression ::= multiplicative-expression ( ( '+' | '-' ) multiplicative-expression ) *
+multiplicative-expression ::= primary ( ( '*' | '/' ) primary ) *
+primary ::= '(' expression ')' | INTEGER | '-' primary
+</code></pre>
+          </div>
+        </div>
+
+
+</li>
+ <li style="margin-bottom: 16em;"> (2 pts) abstract syntax trees (ASTs) </li>	
+</ol>
+
+</li>
+
+
+</ol>
+
+
+	<div class="end-of-exam">End of Exam</div>
+        </div><!-- content -->
+        <div data-role="footer" class="footer">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io">this site on github</a></li>
+   <li><a href="https://ucsb-cs16.github.io/instructor">Instructor info</a></li>
+   <li><a href='https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io/edit/master/_exam/e01/e02/cs56_m16_e02.md'>edit this page on github</a></li>
+   <li><a href="https://foo.cs.ucsb.edu/16wiki">16wiki</a></li>
+
+  </ul>
+ </nav>
+</div>
+
+      </div><!-- container -->
+
+      
+    </body>
+</html>

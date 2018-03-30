@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- head_hwk.html -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<link rel="stylesheet" href="/site.css" />
+<link rel="stylesheet" href="/hwk.css" />
+<script src="/site.js"></script>
+<script src="/hwk.js"></script>
+
+    <title>h14 - Chapter 14: Recursion - </title>
+  </head>
+    <body id="page-top">
+      <div id="container" data-role="page">
+      <div data-role="header" class="header">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+    <li><a href="https://ucsb-cs16.github.io">UCSB CS16 </a></li>
+    <li><a href="/" class="ui-btn-active">CS16 S18</a></li>
+     <li><a href="https://submit.cs.ucsb.edu">submit.cs</a></li>
+  </ul>
+ </nav>
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://gauchospace.ucsb.edu">Gauchospace</a></li>
+   <li><a href="https://piazza.com/configure-classes/spring2018/cs16">Piazza</a></li>
+  </ul>
+ </nav>
+ 
+ <nav data-role="navbar" data-grid-"d">
+  <ul class="hwk-nav-bar">
+  
+    <li><a href="/hwk/h01/">h01 and quiz01</a></li>
+  
+    <li><a href="/hwk/h02/">h02 and quiz02</a></li>
+  
+    <li><a href="/hwk/h03/">h03 and quiz03</a></li>
+  
+    <li><a href="/hwk/h04/">h04 and quiz04</a></li>
+  
+    <li><a href="/hwk/h05/">h05 and quiz05</a></li>
+  
+    <li><a href="/hwk/h06/">h06 and quiz06</a></li>
+  
+    <li><a href="/hwk/h07/">h07 and quiz07</a></li>
+  
+    <li><a href="/hwk/h08/">h08 and quiz08</a></li>
+  
+    <li><a href="/hwk/h09/">h09 and quiz09</a></li>
+  
+    <li><a href="/hwk/h10/">h10 and quiz10</a></li>
+  
+    <li><a href="/hwk/h14/">h14</a></li>
+  
+  </ul>
+ </nav>
+
+</div>
+
+      
+           
+        <div id="content"  class="ui-content">
+        <div class="hwk-header">
+          <div class="hwk-page-header hwk-page-header-template">
+	    <table>
+	      <tr> <td class="page-num">1</td>  </tr>
+	      <tr> <td class="asn-num">h14</td>  </tr>
+	      <tr> <td class="course-qtr">CS16&#160;<span class="insert-qtr">S18</span></td>  </tr>
+	    </table>
+	  </div>
+	  
+	  <table class="hwk-header-table">
+
+	    <tr><th colspan="5" class="hwk-header-name">Name:</th></tr>
+	    <tr><th colspan="5" class="hwk-header-subtext">(as it would appear on official course roster)</th></tr>
+	    <tr>
+	      <th class="hwk-header-umail-label">  Umail address:</th>
+	      <th class="hwk-header-umail-entry"> @umail.ucsb.edu</th>
+	      <th rowspan="3" class="hwk-header-section"> section<br></th>
+	    </tr>
+	    <tr>
+	      <th colspan="2" style="text-align:left; vertical-align:middle; font-size: 8pt !important; font-family:Arial Narrow, sans-serif; line-height:105%;"> Optional: name you wish to be called<br />if different from name above.
+	    </th></tr>
+	    <tr>
+	      <th colspan="2" style="text-align:left; vertical-align:middle; font-size: 8pt !important; font-family:Arial Narrow, sans-serif; line-height: 105%;"> Optional: name of "homework buddy"<br />(leaving this blank signifies "I worked alone"
+	  </th></tr></table>
+
+
+<h1>h14: Chapter 14: Recursion</h1>
+
+	  <table class="asn_table">
+	    <tr>
+	      <th class="asn_ready">ready?</th>
+	      <th class="asn_date" >assigned</th>
+	      <th class="asn_date" >due</th>
+	      <th class="asn_date" >points</th>
+	    </tr>
+	    <tr class="ready">
+	      <td class="asn_ready">true</td>
+	      <td class="asn_date" >Tue 03/13 10:00AM</td> 
+	      <td class="asn_date" >Fri 03/16 09:00PM</td>
+	      <td class="pointCount"></td>
+	    </tr>
+	   </table>
+
+  <div style="font-size: 8pt !important; font-family:Arial Narrow, sans-serif; font-style:italic; line-height: 100%;">
+<p>You may collaborate on this homework with AT MOST one person, an optional "homework buddy".
+</p>
+</div>
+
+<p>MAY ONLY BE TURNED IN IN THE LECTURE/LAB LISTED ABOVE AS THE DUE DATE,<br />
+OR IF APPLICABLE, SUBMITTED ON GRADESCOPE.   There is NO MAKEUP for missed assignments;<br />
+in place of that, we drop the three lowest scores (if you have zeros, those are the three lowest scores.)
+</p>
+<hr />
+
+          
+        </div><!-- hwk-header -->  
+          <div style="float:right; width:20em; margin: 2em; padding:1em; border: 5px black inset; ">
+  <p>Please:</p>
+  <ul>
+ <li> <b>No Staples</b>.  </li>
+ <li> <b>No Paperclips</b>. </li>
+ <li> <b>No folded down corners</b>.</li>
+</ul>
+</div>
+
+<p>Read Chapter 14 and the lecture notes.    If you do not have a copy of the textbook yet, there is one on reserve at the library under “COMP000-STAFF - Permanent Reserve”.</p>
+
+<p><b>PLEASE MARK YOUR HOMEWORK CLEARLY, REGARDLESS OF IF YOU WRITE IT OUT IN INK OR PENCIL! FOR BEST RESULTS, SAVE THIS PAGE AS A PDF, THEN PRINT THE PDF.</b></p>
+
+<p>1.(2 pts) How does a recursive function know when to stop recursing?</p>
+<div style="margin-bottom:8em"></div>
+
+<p>2.(3 pts) What is a LIFO scheme and how does it relate to stacks?</p>
+<div style="margin-bottom:8em"></div>
+
+<p>3.(3 pts) What is stack overflow?</p>
+
+<div class="pagebreak"></div>
+
+<div>
+  <p>4.(15 pts) Copy the binary search function found at this URL:
+https://github.com/ucsb-cs16-wi17/hw14</p>
+
+  <p>It has a few mistakes: fix them and get the program to work correctly. I recommend you do this by examining the code, compiling it, see what errors come up, then edit the code, and repeat the process until you have it working.
+Do NOT turn in the completed, fixed program. Instead write out in bullet points in the space below, EVERYTHING you had to fix to get the program working.</p>
+  <div style="margin-bottom:16em"></div>
+
+  <p>5.(15 pts) Write a recursive function program to find the <em>n</em>th element in the following arithmetic numerical sequence: <strong>3, 11, 27, 59, 123, …</strong></p>
+
+  <p>Hint: You first have to figure out what is the recursive pattern. You also have to identify the base case.</p>
+
+</div>
+
+        </div><!-- content -->
+        <div data-role="footer" class="footer">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io">this site on github</a></li>
+   <li><a href="https://ucsb-cs16.github.io/instructor">Instructor info</a></li>
+   <li><a href='https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io/edit/master/_hwk/h14.md'>edit this page on github</a></li>
+   <li><a href="https://foo.cs.ucsb.edu/16wiki">16wiki</a></li>
+
+  </ul>
+ </nav>
+</div>
+
+      </div><!-- container -->
+  </body>
+</html>

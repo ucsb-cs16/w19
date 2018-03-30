@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <!-- head.html; common header items for all layouts -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<link rel="stylesheet" href="/site.css" />
+<script src="/site.js"></script>
+ 
+  <title> Vim_hints |  CS 16 Spring 2018</title>
+  </head>
+  <body id="page-top">
+    <div id="container" data-role="page">
+    <div data-role="header" class="header">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+    <li><a href="https://ucsb-cs16.github.io">UCSB CS16 </a></li>
+    <li><a href="/" class="ui-btn-active">CS16 S18</a></li>
+     <li><a href="https://submit.cs.ucsb.edu">submit.cs</a></li>
+  </ul>
+ </nav>
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://gauchospace.ucsb.edu">Gauchospace</a></li>
+   <li><a href="https://piazza.com/configure-classes/spring2018/cs16">Piazza</a></li>
+  </ul>
+ </nav>
+ 
+</div>
+
+    <div id="content"  class="ui-content">
+    <h1>vim hints</h1>
+    <p style="font-style:italic">Getting started if you've never used vim before</p>
+    <p><a href="../">Back</a></p>
+
+<p>To run vim from the terminal, just type in “vim” (or sometimes “vi” works).</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ vim hello.cpp
+</code></pre>
+</div>
+<p>Once vim is open, you can start editing the file immediately.</p>
+
+<h2>Basic use</h2>
+<p>&lt;Esc&gt; is the escape key or use &lt;ctrl&gt;[  sometimes written as C-[<br /></p>
+
+<p>vimtutor    : starts vim editing a copy of a tutorial file – very good.<br />
+i           : insert mode. Next keys typed are inserted into the file.<br />
+&lt;Esc&gt;     : Escape from insert mode so you can navigate and use edit commands (stop selecting)<br />
+h j k l     : move cursor ( h: ←  j: ↓  k: ↑  l: → )<br />
+A           : Append at end of line<br />
+o           : Insert at new line below<br />
+u           : undo last command, again and again<br />
+x           : delete character under cursor<br />
+dw          : delete everything right from the cursor to the start of next word (and put it into the default register)<br />
+dd          : delete line (and put it into the default register)<br />
+p           : paste the default register<br />
+<br />
+/myname     : search forward for myname<br />
+<br />
+:wq         : write and quit<br />
+:x          : write and quit<br />
+:w filename : write a copy of the file you are editing as filename<br />
+:q!         : quit without saving even if changes were made!<br />
+:help       : display help<br />
+&lt;Tab&gt;       : use tab completion to scroll through commands that start with what you typed<br />
+<br />
+COPY PASTE  (for CUTting lines use dd as described above)<br />
+v           : visual mode – use to select text with cursor movement or mouse<br />
+y           : use to yank (copy) what was selected<br />
+&lt;Esc&gt;       : esc gets you back to the main mode<br />
+<br />
+^ w e $     : bigger movements: beginning of line, word, end of word, end of line<br />
+<br />
+Modes:<br />
+ normal, insert and visual, there are others too<br />
+ &lt;Esc&gt;    takes you back to normal<br />
+<br />
+Enter a number before a command to repeat it, examples:<br />
+   10w      : skip forward 10 words<br />
+   10dd     : delete 10 lines<br />
+<br />
+Commands are case sensitive:<br />
+   c        : starts a change command<br />
+   C        : change to end of line (same as c$)<br />
+   ce       : change to end of word (a complete change command)<br />
+<br /></p>
+<h2>Other useful hints</h2>
+<p>www.vim.org   : Visit frequently<br />
+comp.editors  : Vim dominated newsgroup<br />
+* # g* g#     : find word under cursor (forwards/backwards)<br />
+%             : match brackets {}<a href=""></a><br />
+&lt;C-N&gt; &lt;C-P&gt;   : word completion in insert mode<br />
+&lt;C-X&gt;&lt;C-L&gt;    : Line complete SUPER USEFUL<br />
+/&lt;C-R&gt;&lt;C-W&gt;   : Pull cword onto search/command line<br />
+:set ignorecase : you nearly always want this<br />
+:set smartcase  : case-sensitive if search contains an uppercase character<br />
+:syntax on    : colour syntax in Perl,HTML,PHP etc<br />
+:h slash&lt;C-D&gt; : type control-D and get a list all help topics containing slash<br /></p>
+
+    </div><!-- content -->
+    <div data-role="footer" class="footer">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io">this site on github</a></li>
+   <li><a href="https://ucsb-cs16.github.io/instructor">Instructor info</a></li>
+   <li><a href='https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io/edit/master/_lab/lab00/vim_hints.md'>edit this page on github</a></li>
+   <li><a href="https://foo.cs.ucsb.edu/16wiki">16wiki</a></li>
+
+  </ul>
+ </nav>
+</div>
+
+    </div><!-- container -->
+  </body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- head_hwk.html -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<link rel="stylesheet" href="/site.css" />
+<link rel="stylesheet" href="/hwk.css" />
+<script src="/site.js"></script>
+<script src="/hwk.js"></script>
+
+    <title>Quiz03 - Chapter 3: Boolean expressions, multiway branches, more loops - </title>
+  </head>
+    <body id="page-top">
+      <div id="container" data-role="page">
+      <div data-role="header" class="header">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+    <li><a href="https://ucsb-cs16.github.io">UCSB CS16 </a></li>
+    <li><a href="/" class="ui-btn-active">CS16 S18</a></li>
+     <li><a href="https://submit.cs.ucsb.edu">submit.cs</a></li>
+  </ul>
+ </nav>
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://gauchospace.ucsb.edu">Gauchospace</a></li>
+   <li><a href="https://piazza.com/configure-classes/spring2018/cs16">Piazza</a></li>
+  </ul>
+ </nav>
+ 
+ <nav data-role="navbar" data-grid-"d">
+  <ul class="hwk-nav-bar">
+  
+    <li><a href="/hwk/h01/">Quiz01</a></li>
+  
+    <li><a href="/hwk/h02/">Quiz02</a></li>
+  
+    <li><a href="/hwk/h03/">Quiz03</a></li>
+  
+    <li><a href="/hwk/h04/">Quiz04</a></li>
+  
+    <li><a href="/hwk/h05/">Quiz05</a></li>
+  
+    <li><a href="/hwk/h06/">Quiz06</a></li>
+  
+    <li><a href="/hwk/h07/">Quiz07</a></li>
+  
+    <li><a href="/hwk/h08/">Quiz08</a></li>
+  
+    <li><a href="/hwk/h09/">Quiz09</a></li>
+  
+    <li><a href="/hwk/h10/">Quiz10</a></li>
+  
+  </ul>
+ </nav>
+
+</div>
+
+      
+           
+        <div id="content"  class="ui-content">
+        <div class="hwk-header">
+          <div class="hwk-page-header hwk-page-header-template">
+	    <table>
+	      <tr> <td class="page-num">1</td>  </tr>
+	      <tr> <td class="asn-num">Quiz03</td>  </tr>
+	      <tr> <td class="course-qtr">CS16&#160;<span class="insert-qtr">S18</span></td>  </tr>
+	    </table>
+	  </div>
+	  
+	  <table class="hwk-header-table">
+
+	    <tr><th colspan="5" class="hwk-header-name">Name:</th></tr>
+	    <tr><th colspan="5" class="hwk-header-subtext">(as it would appear on official course roster)</th></tr>
+	    <tr>
+	      <th class="hwk-header-umail-label">  Umail address:</th>
+	      <th class="hwk-header-umail-entry"> @umail.ucsb.edu</th>
+	      <th rowspan="3" class="hwk-header-section"> section<br></th>
+	    </tr>
+	    <tr>
+	      <th colspan="2" style="text-align:left; vertical-align:middle; font-size: 8pt !important; font-family:Arial Narrow, sans-serif; line-height:105%;"> Optional: name you wish to be called<br />if different from name above.
+	    </th></tr>
+	    <tr>
+	      <th colspan="2" style="text-align:left; vertical-align:middle; font-size: 8pt !important; font-family:Arial Narrow, sans-serif; line-height: 105%;"> Optional: name of "homework buddy"<br />(leaving this blank signifies "I worked alone"
+	  </th></tr></table>
+
+
+<h1>Quiz03: Chapter 3: Boolean expressions, multiway branches, more loops</h1>
+
+	  <table class="asn_table">
+	    <tr>
+	      <th class="asn_ready">ready?</th>
+	      <th class="asn_date" >assigned</th>
+	      <th class="asn_date" >due</th>
+	      <th class="asn_date" >points</th>
+	    </tr>
+	    <tr class="ready">
+	      <td class="asn_ready">true</td>
+	      <td class="asn_date" >Fri 04/13 09:00AM</td> 
+	      <td class="asn_date" >Fri 04/20 11:59PM</td>
+	      <td class="pointCount"></td>
+	    </tr>
+	   </table>
+
+  <div style="font-size: 8pt !important; font-family:Arial Narrow, sans-serif; font-style:italic; line-height: 100%;">
+<p>You may collaborate on this homework with AT MOST one person, an optional "homework buddy".
+</p>
+</div>
+
+<p>MAY ONLY BE TURNED IN IN THE LECTURE/LAB LISTED ABOVE AS THE DUE DATE,<br />
+OR IF APPLICABLE, SUBMITTED ON GRADESCOPE.   There is NO MAKEUP for missed assignments;<br />
+in place of that, we drop the three lowest scores (if you have zeros, those are the three lowest scores.)
+</p>
+<hr />
+
+          
+        </div><!-- hwk-header -->  
+          <div style="float:right; width:20em; margin: 2em; padding:1em; border: 5px black inset; ">
+  <p>Please:</p>
+  <ul>
+ <li> <b>No Staples</b>.  </li>
+ <li> <b>No Paperclips</b>. </li>
+ <li> <b>No folded down corners</b>.</li>
+</ul>
+</div>
+
+<p>Read Ch 3.1 -3.3, pages 112-118,120 -154 (If you do not have a copy of the textbook yet, there is one on reserve at the library under “COMP000-STAFF - Permanent Reserve”).</p>
+
+<p><b>PLEASE WRITE ALL YOUR ANSWERS IN THIS SHEET. HOMEWORKS SUBMITTED IN A FORMAT DIFFERENT FROM THE PROVIDED TEMPLATE WILL RECEIVE 0 POINTS. PLEASE MARK YOUR HOMEWORK CLEARLY, REGARDLESS OF IF YOU WRITE IT OUT IN INK OR PENCIL!</b></p>
+
+<ol>
+<!--Tag: Operator Precedence -->
+1.  (6 pts) Precedence rules determine how the compiler groups operators and operands when evaluating an expression in the absence of paranthesis. For each of the following expressions add paranthesis to show how the expression is evaluated according to the C++ precedence rules?
+
+<div>
+    <div class="highlighter-rouge"><pre class="highlight"><code>  a) x == 2 || y &gt; 20
+
+  b) !y &amp;&amp; x &lt; 9 * 2 || y &lt; x
+
+  c) x + 7 &gt; 10 || x + 23 &lt; -7
+</code></pre>
+    </div>
+  </div>
+<div style="margin-bottom:2em"></div>
+
+2.  (2 pts) Show the output of the following code AND also write the final value of x after the code is executed.
+<div>
+    <div class="highlighter-rouge"><pre class="highlight"><code>int x = 17;
+while ( x &gt; 0) {
+   cout &lt;&lt; x &lt;&lt; endl;
+   x = x – 5;
+ }
+</code></pre>
+    </div>
+  </div>
+<div style="margin-bottom:2em"></div>
+
+3.  (2 pts) What is the outcome of the following code?
+<div>
+    <div class="highlighter-rouge"><pre class="highlight"><code>int x = 0;
+while ( x = 2 &amp;&amp; x &lt;10) {
+   cout &lt;&lt; x &lt;&lt; endl;
+   x+=2;
+ }
+</code></pre>
+    </div>
+  </div>
+<div style="margin-bottom:2em"></div>
+
+<div class="pagebreak"></div>
+<div style="margin-bottom:2em"></div>
+<!--Tag: Boolean expressions -->
+5.  (6 pts)  What is the result (i.e. TRUE or FALSE) of the following Boolean expressions in C++, given that: x = 2, y = -1, z = 0 in each case
+  <div style="margin-bottom:0em"></div>
+<div>
+    <div class="highlighter-rouge"><pre class="highlight"><code>  a) (x == 6)
+  b) !(y &gt; 0)
+  c) ((x == 2) || (y &gt; 20))
+  d) ((x &gt;= 3) &amp;&amp; (z &lt;= 12))
+  e) ((x &gt; y) &amp;&amp; (y &lt; z))
+  f) ((!(x &lt; z) || (y &gt; z)) &amp;&amp; (z == 12) &amp;&amp; (y == 10))
+
+</code></pre>
+    </div>
+  </div>
+<div style="margin-bottom:2em"></div>
+
+
+<!--Tag: plain, nested  and multiway if-else -->
+
+6.  (9 pts) Using plain and/or multiway if-else statements ONLY write a program that outputs the grade of a student given an integer variable 'score'. The program should read the student's score from standard input. If the score is outside the range of 0 and 100, the program should output "Not a valid score" and exit. Otherwise it should output the string "Grade is X" where X is replaced by the student's letter grade according to the following rubric:
+<div>
+    <div class="highlighter-rouge"><pre class="highlight"><code>90 &lt;= score &lt;=100, grade = 'A'| 80 &lt;= score &lt; 90 , grade = 'B'| 70 &lt;= score &lt; 80 , grade = 'C'|
+60 &lt;= score &lt; 70 , grade = 'D' | 0 &lt;= score &lt; 60 , grade = 'F'
+</code></pre>
+    </div>
+    <div style="margin-bottom:1em"></div>
+    <div style="margin-bottom:0em"></div>
+    <p>…..a) Make your program easy to read and understand. Format your answers so that they are readable on the display. This means consider your use of “\n” characters.</p>
+    <div style="margin-bottom:0em"></div>
+    <p>…..b) Test this program out by compiling it and running it the same way you do with lab assignments. When you are sure that you have a working program, write it out in the space provided below. You will be graded for programming style as well as having a functionally correct program.</p>
+    <div style="margin-bottom:1em"></div>
+  </div>
+
+<div class="pagebreak"></div>
+
+<div style="margin-bottom:0em"></div>
+
+7.  (2 pts) What is a runtime error in C++?
+  <div style="margin-bottom:3em"></div>
+
+8.  (6 pts) Use precedence rules to re-write the following expressions:
+  <div style="margin-bottom:1em"></div>
+  (i) x / 4 - 3 == 1 &amp;&amp; 6 * x + y &gt; 0
+  <div style="margin-bottom:2em"></div>
+  (ii) a / b * b &lt; 0.5 || --flag &gt;= 0
+  <div style="margin-bottom:2em"></div>
+  (iii) z * m + n / v &gt;= 5 &amp;&amp; b + c - d != 0 || f &lt; g
+  <div style="margin-bottom:2em"></div>
+
+9.  (4 pts) What is the output of the following statements?
+  <div>
+    <div class="highlighter-rouge"><pre class="highlight"><code>int p = 5;
+while (--p &gt; 0)
+     cout &lt;&lt; p &lt;&lt; " ";
+</code></pre>
+    </div>
+  </div>
+  <div style="margin-bottom:2em"></div>
+
+10.  (4 pts) What is the output of the following statements?
+  <div>
+    <div class="highlighter-rouge"><pre class="highlight"><code>int s = 1;
+do
+     cout &lt;&lt; s &lt;&lt; " ";
+while (s++ &lt;= 5);
+</code></pre>
+    </div>
+  </div>
+  <div style="margin-bottom:2em"></div>
+
+
+11.  (4 pts) Same question as above, but the last statement now reads:
+
+  <div>
+    <div class="highlighter-rouge"><pre class="highlight"><code>while (++s &lt;= 5);
+</code></pre>
+    </div>
+  </div>
+  <div style="margin-bottom:2em"></div>
+  <div class="pagebreak"></div>
+
+12.  (10 pts) Write a function named 'check_descending' that takes three arguments of type int and returns true if the arguments are in descending order; otherwise, it returns false. You can use any type of C++ statements that we've gone over in class so far to accomplish this goal.
+  <div style="margin-bottom:30em"></div>
+
+13. (6 pts) The infinite series: s = 1 + (2/3) + (4/9) + (8/27) + .... is a geometric series that converges to a whole rational number (i.e. like 2 or 3 or 4). Below is an unfinished C++ program that will calculate s to the kth position (so, for example, if k = 1, then s = 1 + (2/3) = 1.666...). Fill in the missing code:
+  <div style="margin-bottom:1em"></div>
+
+  <div>
+    <div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="n">main</span><span class="p">(){</span>
+    <span class="kt">double</span> <span class="n">s</span><span class="p">(</span><span class="mf">0.0</span><span class="p">);</span>
+    <span class="kt">int</span> <span class="n">k</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Enter k: "</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">k</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">____________________________________________________</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="n">s</span> <span class="o">=</span> <span class="n">____________________________________________________</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Series converges to: "</span> <span class="o">&lt;&lt;</span> <span class="n">s</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+    </div>
+  </div>
+
+14. (8 pts) Compile and run the above completed program. What is the value of s if k = 6? if k = 19 ? What whole rational number does s look like it's approaching? What is the smallest value of k for s to be shown by the program as exactly equal to that whole number?
+
+</ol>
+
+
+        </div><!-- content -->
+        <div data-role="footer" class="footer">
+ <nav data-role="navbar" data-grid-"d">
+  <ul>
+   <li><a href="https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io">this site on github</a></li>
+   <li><a href="https://ucsb-cs16.github.io/instructor">Instructor info</a></li>
+   <li><a href='https://github.com/ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io/edit/master/_hwk/h03.md'>edit this page on github</a></li>
+   <li><a href="https://foo.cs.ucsb.edu/16wiki">16wiki</a></li>
+
+  </ul>
+ </nav>
+</div>
+
+      </div><!-- container -->
+  </body>
+</html>
