@@ -31,15 +31,14 @@ ready: true
   <i> "Hi! I’m Zhiyu, a first year graduate student of computer science. I’m very excited to be the TA for CS16 class this quarter. This class gives you deeper knowledge of computer science world and guides you to be a great programmer. I hope all of you will enjoy it. Outside the class I would be happy to share and discuss with you everything related to computer science studies, advice on programming, careers or research, etc. Feel free to contact me on Piazza" </i>
   </td>
   </tr>
-  <tr>
 
+  <tr>
   <td>
-    <img src="/info/mentorPhotos/CS16-W18-Taylor-McCreary.jpg" alt="Taylor" width="150px" style="float: left; margin: 10px 10px 10px 10px;">
-    <b> Taylor McCreary (Tutor)   </b>
-    <i> " Hi! I'm Taylor; I was a tutor last quarter for CS8, and I am thrilled to be back for CS16. I'm hoping this class will help you gain confidence with programming and a deeper understanding of programming concepts. I'm a third year, and am part of the UCSB Data Science club. Outside of school I enjoy playing board games and watching movies with my 9 housemates in Isla Vista, and sometimes going on runs or trying yoga classes. Last summer I was able to intern at InTouch Health, a local telehealth company. Feel free to reach out to me about classes, data science, statistics, or general advice. Contact me on Piazza " </i>
-    </td>
-    </tr>
-    <tr>
+  <img src="/info/mentorPhotos/CS24-W18-Bryanna-Phan.JPG" alt="Bryanna" width="150px" style="float: left; margin: 10px 10px 10px 10px;">
+  <b> Bryanna Phan (Tutor)    </b>
+  <i> "Hi everyone, my name is Bryanna and I’m very excited to be a tutor this quarter! You’ll probably see me at Coders SB meetings, so ask me about our events if you’re looking to get more involved on campus whether it be through this club, SB Hacks or the other wide variety of options. This quarter I’d definitely like to focus on helping students to solidify their problem-solving skills and to not be daunted by the programming assignments (trust me, I know how that can feel). Outside of class, I really love traveling, dogs, ping pong/badminton (even tho I’m not great), and tea :-) Feel free to reach out with any questions you may have on Piazza." </i>
+  </td>
+  </tr>
 
   <td>
   <img src="/info/mentorPhotos/CS16-W18-Sato-Koa.jpg" alt="Koa" width="150px" style="float: left; margin: 10px 10px 10px 10px;">
@@ -107,13 +106,7 @@ Please do not hesitate to reach out to me with any questions on Piazza.
   <i> "Hello! I’m Dana, and I’m a third-year computer science student. I’m excited to be working with some of you in CS16. Because CS16 is a foundation computer science course, some topics can be challenging at first (I know it was for me!), but I’m here to help you get through it! Not only do I want to help you succeed in CS16, I also want to be a resource for you in terms of your CS pathway/career. In addition to being a CS student, I’m a researcher in the CS department and a past software engineer intern at NASA Ames Research Center. Outside of class, I love playing the ukulele and calligraphy.  If you have any questions about researching or internships or want advice in general, feel free to reach out with me at dananguyen@ucsb.edu. I look forward to meeting you! " </i>
   </td>
   </tr>
-  <tr>
-  <td>
-  <img src="/info/mentorPhotos/CS16-W18-Carly-Larsson.jpg" alt=" Carly"  width="150px"  style="float: left; margin: 10px 10px 10px 10px;">
-  <b>  Carly	Larsson (Tutor)    </b>
-  <i> "Salutations and welcome to CS 16. In the next nine weeks we will both be learning something new: I will be tutoring CS 16 for the first time, and you all will be taking CS 16. I hope we can work together, and get as much computer science knowledge into our brains as possible. Currently I’m a third year CCS CS student, also enrolled in the MS/BS program. I’m the Treasurer for the Society of Women Engineers (S.W.E) and would love to recruit some new computer scientists! This coming summer and last summer, I interned as a Software Engineer at Microsoft. If you have questions about computer science, CS 16, internships, or S.W.E. please reach out to me at carly@umail.ucsb.edu. " </i>
-  </td>
-  </tr>
+ 
    <tr>
   <td>
   <img src="/info/mentorPhotos/CS16-W18-Isaac-Mackey.jpg" alt=" Isaac"  width="150px"  style="float: left; margin: 10px 10px 10px 10px;">
