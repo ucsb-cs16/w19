@@ -21,8 +21,8 @@ You must contact the instructor for clarification if you receive information fro
 ## Grade breakup by evaluation component
 * Lecture and section participation: 2%
 * Homeworks/Quizzes: 8%
-* Lab assignments: 40%
-* Midterm Exam: 20%
+* Lab assignments: 30%
+* Midterm Exams: 30%
 * Final Examination : 30%
 
 <p>To get credit for each homework, you must complete the corresponding quiz on gauchospace which is based on the homework. This will count as your homework turn in and is the only way to get credit for your homework. You must bring the homework to lecture the day after it is due for in-class discussion.<br />
@@ -220,9 +220,9 @@ be comfortable with all of the following:</p>
     <br />
   </li>
   <li><strong>(2) Homework/Quizzes</strong>
-    <br />The homeworks are practice for the exmas. These are typically pencil/paper type problems, though sometimes you'll need access to a computer to solve them. If you don't have reliable access to a computer at home (or in your dorm), please plan your schedule so that you can spend time in the CSIL computer lab between classes.<br />
+    <br />The homeworks are practice for the exams. These are typically pencil/paper type problems, though sometimes you'll need access to a computer to solve them. If you don't have reliable access to a computer at home (or in your dorm), please plan your schedule so that you can spend time in the CSIL computer lab between classes.<br />
     <br />
-    Homework assignments are completed on paper, followed by completing a quiz on gauchospace. You should bring your the paper copy of your homework to lecture the day after its due for in class discussions<br />
+    Homework assignments are completed on paper, followed by completing a quiz on gauchospace. You should bring your the paper copy of your homework to lecture the day after its due for in class discussions. We will not collect the homeworks<br />
     <br />
     <br />
      <br />
@@ -247,23 +247,9 @@ be comfortable with all of the following:</p>
         </ul>
   </li>
 
-<li><strong>(5) Exams</strong>&mdash;There are two exams in this course—one midterm and a final. No Makeups will be given for the final exam. Please make sure that you have no conflicts with the final if you are taking this course</li>
+<li><strong>(5) Exams</strong>&mdash;There are three exams in this course— two midterms and a final. No Makeups will be given for the final exam. Please make sure that you have no conflicts with the final if you are taking this course</li>
 
 
-<!--
-You may wonder why there are two midterms in a course that is only ten weeks long. The reason is that I've found that in order to succeed at learning the material in this course, many students need two opportunities for feedback on how they are doing before the final exam. Students sometimes are doing better than they think they are, or not as well as think they are, and the exams provide a &quot;reality check&quot;
--->
-
-<!--
-You may find the workload heavy
-
-The workload in this course may feel heavy. It may even feel unreasonable compared to your other courses.
-
-However, I assure you that it is not unreasonable, given the goal of making you an skilled beginning programmer. Programming is a skill, and the only way to get good at it is lots and lots of practice, which takes lots and lots of time.
-
-The usual &quot;folklore&quot; rule of thumb is 8–12 hours per week for a normal college class. That means you should expect, at a minimum to put in 5–9 hours per week on this course, on top of the 3 hours 20 minutes you spend in lecture and lab each week.
-
--->
 
 </ul>
 

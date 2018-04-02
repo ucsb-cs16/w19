@@ -1,7 +1,7 @@
 ---
 num: "lect12"
 desc: "Dynamic memory allocation, Heap vs Stack"
-ready: true
+ready: false
 pdfurl: /lectures/CS16_Lecture12.pdf
 annotatedpdfurl: /lectures/CS16_Lecture12_ann.pdf
 annotatedready: false

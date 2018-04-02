@@ -1,7 +1,7 @@
 ---
 layout: lab
 num: lab01
-ready: true
+ready: false
 desc: "Crunching numbers: Loops and functions "
 assigned: 2018-04-10 09:00:00.00-8
 due: 2018-04-16 23:59:00.00-7
@@ -259,42 +259,42 @@ Run your executable with different inputs to test it out.
 Upload your files to your repo on github using github's web interface.
 
 
+
+
+
 ## Step 5: Submit your code<a name="submit"></a>
 
-Once you are satisfied that your programs are correct, it is time to submit them. If you are working in a pair you should do the following steps to join the same group on submit.cs
-
-### Joining the same group
-
-* Navigate to https://submit.cs.ucsb.edu
-* Go to CS16_w18_mirza
-* Click on the lab page. You will see a blue button named “Join Groups” on top of the page, Click on the button
-* Click on you and your partner’s name. Create group.
 
 
-### Submitting the assignment
-Note: Please remember that you must submit the programs to obtain any credit for the assignment; just completing the programs is not enough.
-
-*Submitting via the web interface*
-
-* Login at https://submit.cs.ucsb.edu, then navigate to “CS16_Mirza_w18” and click on “lab01”. Then click “Make Submission”, and make your submission. Remember to submit all of the .cpp files.
-* Once you submit, you should see a page detailing your submission. The system will automatically grade your program and will show you the results on this page after a 1 minute delay.
-
-*Submitting via command line*
-
-You can alternatively submit your code from the command line (terminal) on any CS machine, including the Phelps lab machines or the CSIL server. You can use this method when logged in remotely or while on the csil machines. This is the preferred method of submitting
-
-Submit all the source files to this assignment by running the command:
-`~submit/submit -p 920 block.cpp min4.cpp pi.cp`
-(691 is from the lab link https://submit.cs.ucsb.edu/p/920/group )
-
-You can copy the URL shown in the output of the above and paste into a web browser to reach the submission result page.
+TBD
 
 
-## Check Submission Results<a name="checksubmission"></a>
 
-After the 1 minute delay, the submit system will show your score and give you feedback on your submission. Refresh the webpage after a minute to see this information.
+## Create a repo on github in our class organization
 
-You may submit this lab multiple times. You should submit only after local compilation does not produce any errors and runs as expected. The score of the last submission uploaded before the deadline will be used as your assignment grade.
+For this lab and all subsequent programming assignments, you should start by creating a repo in the ucsb-cs24-s18 organization following these steps
+
+* Navigate to your dashboard on [www.github.com](www.github.com). From the left drop down menu, select the class organization as shown in the figure below:
+![select-org](/lab/lab00/select-org.png){:height="500px"}
+
+* Click on the green "New repository" button to create a new repository.
+
+* Type the name of your repo following the naming convention lab00_your-github-username. For example if your github username is jgaucho, you should name your repo as lab00_jgaucho. If you are working with a partner, include your partner's github username in the name of the repo. e.g. lab00_jgaucho_alily
+
+* Select the "Private" visibility option so that other students in the org cannot view your code.
+
+* Add the C++ .ignore option from the frop down menu and click on "Create repository". See screenshot below.
+
+![new-repo](/lab/lab00/enter-org/pic5.png){:height="500px"}
+
+
+## Upload your code using github's web interface 
+
+* Upload your files for this assignment to the new repo you created in the previous step. To do this, you should be physically present on a lab machine or in CSIL where you have access to a web browser and a local copy of your hello.cpp program. On your web browser, navigate to your repo on github. Click on the "Upload files" button.
+
+* Now either drag and drop the files: from your machine or use the "Choose your files" option to browse through your local directory and upload the file. Then press the green "Commit new files" button. Navigate back to your repo to see that the hello.cpp file is correctly listed along with the other files. Click on it and you should see your code on github's web interface. Continue to explore the web interface of your github repo. For example, try clicking on the "commits" link in your repo. What does that show you and what do you think it means?
+
+
 
 
 ## Done!<a name="done"></a>
@@ -322,6 +322,31 @@ In addition to the points given by submit.cs, our staff will be manually grading
 
 * (1pt) Demonstrate an understanding of the use of for-loops and if-else structure to mentor. Mentor will ask you to explain your block program at check out
 * (1pt) Demonstrate an understanding of pair programming to your mentor.
+
+
+
+# Github Resources
+* Overview of git: [https://ucsb-cs56-pconrad.github.io/topics/git_overview/](https://ucsb-cs56-pconrad.github.io/topics/git_overview/)
+
+* [Creating a github repo under an organization](https://ucsb-cs16.github.io/topics/github_com_create_private_repo_under_org/).
+
+* [About gitignore](https://ucsb-cs56-pconrad.github.io/topics/git_gitignore/)
+
+
+
+![git-file-upload](/lab/lab00/git-repo-pic_ink-upload.jpg){:height="500px"}
+
+<p>You should see the following screen:</p>
+
+![git-upload-hello](/lab/lab00/upload-hello-cpp.png){:height="500px"}
+
+* Now either drag and drop the "hello.cpp" file from your machine or use the "Choose your files" option to browse through your local directory and upload the file. Then press the green "Commit new files" button. Navigate back to your repo to see that the hello.cpp file is correctly listed along with the other files. Click on it and you should see your code on github's web interface. Continue to explore the web interface of your github repo. For example, try clicking on the "commits" link in your repo. What does that show you and what do you think it means?
+
+Congratulations on completing your introductory exercise to github. We will continue to explore git in the subsequent assignments.
+
+
+
+
 
 
 </div>

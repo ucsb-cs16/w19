@@ -1,7 +1,7 @@
 ---
 layout: lab
 num: lab08
-ready: true
+ready: false
 desc: "Anagrams, palindromes: Strings and recursion"
 assigned: 2018-05-29 09:00:00.00-8
 due: 2018-06-04 23:59:00.00-7

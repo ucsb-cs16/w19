@@ -1,7 +1,7 @@
 ---
 num: "lect02"
 desc: "Git, Control Structures, I/O in programs"
-ready: true
+ready: false
 pdfurl:  /lectures/CS16_Lecture2.pdf
 annotatedpdfurl: /lectures/CS16_Lecture2_ann.pdf
 annotatedready: false
@@ -12,7 +12,10 @@ lecture_date: 2018-04-04
 
 # Topics
 
-## Git
+## Github intro
+* What is github? How and why we plan to use it in this class
+* What is a git repo?
+* Creating a github repo and using github's web interface to store your first program
 * Basics - organization, repos
 * Using github's web interface
 	* creating a repo
@@ -41,3 +44,6 @@ lecture_date: 2018-04-04
 * Evaluating C++ expressions
 * lvalue and rvalue
 * Boolean expressions
+
+
+

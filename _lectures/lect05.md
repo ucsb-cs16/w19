@@ -1,7 +1,7 @@
 ---
 num: "lect05"
 desc: "Gentle intro to TDD, intro to lab02 "
-ready: true
+ready: false
 pdfurl: /lectures/CS16_Lecture5.pdf
 annotatedpdfurl: /lectures/CS16_Lecture5_ann.pdf
 annotatedready: false

@@ -1,7 +1,7 @@
 ---
 layout: lab
 num: lab06
-ready: true
+ready: false
 desc: "Linked lists and array lists"
 assigned: 2018-05-15 09:00:00.00-8
 due: 2018-05-21 23:59:00.00-7

@@ -1,7 +1,7 @@
 ---
 num: "lect16"
 desc: "Strings"
-ready: true
+ready: false
 pdfurl: /lectures/CS16_Lecture16.pdf
 annotatedpdfurl: /lectures/CS16_Lecture16_ann.pdf
 annotatedready: false

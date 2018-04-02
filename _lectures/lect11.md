@@ -1,7 +1,7 @@
 ---
 num: "lect11"
 desc: "Arrays of structs, pointer arithmetic"
-ready: true
+ready: false
 pdfurl: /lectures/CS16_Lecture11.pdf
 annotatedpdfurl: /lectures/CS16_Lecture11_ann.pdf
 annotatedready: false

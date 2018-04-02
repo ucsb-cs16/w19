@@ -1,7 +1,7 @@
 ---
 num: "lect04"
 desc: "More loops, working with floats and doubles"
-ready: true
+ready: false
 pdfurl: /lectures/CS16_Lecture4.pdf
 annotatedpdfurl: /lectures/CS16_Lecture4_ann.pdf
 annotatedready: false
@@ -9,21 +9,6 @@ lecture_date: 2018-04-11
 ---
 
 # Code from lecture
-
-## Working with doubles
-* Evaluating expressions with mixed numeric types
-* Typecasting int to double 
-* Formatted output with doubles:
-
-Comment each line of code. What is the output of the code?
-```
-int i = 10;
-double j = 1/static_cast<double>(i);
-cout.setf(ios::fixed);
-cout.setf(ios::showpoint);
-cout.precision(3);
-cout<<j<<endl;
-```
 
 ## Practice with single for loops
 * Summing a series: 

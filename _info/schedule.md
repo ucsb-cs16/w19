@@ -6,8 +6,8 @@ layout: default
 
 # Schedule <a name="schedule"></a>
 
-* **Lecture**: Tues and Thurs 3:30pm-4:45pm BUCHN 1920, ATTENDANCE IS HIGHLY RECOMMENDED.
-* **Lab**:(50 minute discussion sections) Tuesdays starting at 9am, 10am, 11a, 12pm PHELPS 3525, ATTENDANCE REQUIRED.
+* **Lecture**: Mon and Wed 2:00pm-3:15pm CHEM 1171, ATTENDANCE IS HIGHLY RECOMMENDED.
+* **Lab**:(50 minute discussion sections) Tuesdays starting at 11am, noon, 1p, 2p PHELPS 3525, ATTENDANCE REQUIRED.
 
 * **Open labs**: All open labs will be held in Phelps 3525. Please see [the detailed open lab schedule](/info/cs16_open_lab_hours/)
 

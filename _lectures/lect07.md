@@ -1,7 +1,7 @@
 ---
 num: "lect07"
 desc: "Separate compilation with makefiles"
-ready: true
+ready: false
 pdfurl: /lectures/CS16_Lecture7.pdf
 annotatedpdfurl: /lectures/CS16_Lecture7_ann.pdf
 annotatedready: false
@@ -10,7 +10,6 @@ lecture_date: 2018-04-23
 
 
 # Topics
-
 
 ## Under the hood of program compilation and execution
 * From high-level programs to machine code

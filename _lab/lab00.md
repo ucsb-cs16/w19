@@ -2,81 +2,62 @@
 layout: lab
 num: lab00
 ready: true
-desc: "Getting started with C++ functions and github's web interface"
+desc: "Getting started"
 assigned: 2018-04-03 09:00:00.00-8
 due: 2018-04-09 23:59:00.00-7
 ---
 
 # Introduction
 
-Your first lab for this week is an introduction to your mentor group and programming on CSIL and in the Computer Science (Phelps) lab. The intended outcomes are:
 
-* Getting to know your mentor and pair programming partner
-* Writing a simple C++ program
-* Learning about github's web interface
+Your first lab for this week is an introduction to programming on CSIL and the tools you'll need for this course. The intended outcomes are:
+
+* Help us get to know you 
+* Learn about the tools you will be using in this class viz gradescope and github
+
 
 This lab must be completed INDIVIDUALLY. In the subsequent labs you are encouraged to work with your programming partner.
 
-## Get to know your mentor and programming partner:
+# Tell us about yourself 
 
-* Take note of your course mentor and pair programming partner at  [mentor group](/info/mentor_groups/). Get to know your mentor:
+Please fill out the following form to tell us about yourself. We will use the information to pair you with your preferred programming partner or someone in the class with the similar skill levels as your self. Here is the link to the form:
 
-	* Meet them during the open lab hours on Monday or Friday. The exact time and location can be found at [lab and office hours schedule](/info/schedule/)
-	* Contact your mentor via Piazza or email to confirm your meeting in Week1. During your meeting, set up a time when you can regularly meet for the remainder of the quarter. Your mentor will send you feedback on your work to your umail account. Make sure your line of communication with your mentor is working and talk about any preferences you may have. Your mentor will be your first point of contact for the quarter!
+[http://bit.ly/CS16-ic00-AboutYouForm](http://bit.ly/CS16-ic00-AboutYouForm)
 
-* Connect with your programming partner via email or in person and determine times when you can work together outside the prescribed lab hours. You will need to set aside 2 to 3 hours each week to work on assignments. Get your partner's contact: phone number or email.
-
-This lab must be completed INDIVIDUALLY. In the subsequent labs you are encouraged to work with a programming partner.
-
-You may now go ahead and complete the following steps:
-
-* [Create a College of Engineering computer account, a github account and sign into our github organization](#step1){: data-ajax="false"}
-* [Learn how to open a terminal on a lab or personal computer.](#step2){: data-ajax="false"}
-* [Learn basic unix commands and create your lab00 directory.](#step3){: data-ajax="false"}
-* [Learn how to edit a text file used for writing programming code.](#step4){: data-ajax="false"}
-* [Write an actual program in C++.](#step5){: data-ajax="false"}
-* [Compile your program and see if it runs.](#step6){: data-ajax="false"}
-* [Submit your program for grading.](#step7){: data-ajax="false"}
-* [Check Submission Results](#step8){: data-ajax="false"}
-* [Create a github account and explore its web interface](#step9){: data-ajax="false"}
-* [Perform basic git configurations](#step10)
+Answer all the questions in the form to earn credit for this part (50 points). 
 
 
-## Step 1: Create an Engineering (CoE) Account, a github account and sign into our class github organization <a name="step1"></a>
+# Get setup with the tools for this course
 
-### Create an CoE account if you don't have one already
+## Create a CoE account if you don't have one already
 
-To log in to the machines in the Computer Science labs, or to connect remotely, you will need a **College of Engineering account**.
+We encourage you to complete all programming assignments by logging in to the machines in the Computer Science labs, or to connect remotely. To do this you will need a **College of Engineering account**. You can create an account online at <a href="https://accounts.engr.ucsb.edu/create" target="_blank">https://accounts.engr.ucsb.edu/create</a>.
 
-You can create an account online at <a href="https://accounts.engr.ucsb.edu/create" target="_blank">https://accounts.engr.ucsb.edu/create</a>.
+If you are enrolled in <i>any</i> CoE course this quarter (including CS24), you can create your account immediately. If you are not, you will need to contact the ECI Help Desk at <a href="mailto:help@engineering.ucsb.edu">help@engineering.ucsb.edu</a>.
 
-If you are enrolled in <i>any</i> CoE course this quarter (including CS16), you can create your account immediately. If you are not, you will need to contact the ECI Help Desk at <a href="mailto:help@engineering.ucsb.edu">help@engineering.ucsb.edu</a>.
+## Get setup with github
 
-### Step 1: Create a github account
+We will be using github.com in this course.   We have created an organization called ucsb-cs16-s18-mirza on github.com where you can create repositories (repos) for your assignments in this course.   The advantage of creating private repos under that organization is that the course staff (your instructors, TAs and mentors) will be able to see your code and provide you with help, without you having to do anything special.
 
-Sign up for a free account on [Github](https://github.com/). Use your official ucsb email when signing up. Sign into [Github](https://github.com/) with your github account.
+To join this organization, you need to do three things.
 
-### Sign up to be added into our class organization
+1. If you don't already have a github.com account, create one on the "free" plan. Visit [www.github.com](www.github.com)
 
-To join our github organization, follow these easy steps :
+2. If you don't already have your @umail.ucsb.edu email address associated with your github.com account. go to "settings", add that email, and confirm that email address.
 
-* click on this link:[ https://ucsb-cs16-w18-signup.herokuapp.com/]( https://ucsb-cs16-w18-signup.herokuapp.com/). You should see the following welcome message (with the org name as ucsb-cs16-w18), click on the blue "sign in with Github" button:
+3. Visit [our Github Sign Up Tool](https://ucsb-cs-github-linker.herokuapp.com/), login with your github.com account, click "Home", find this course (CS16-S18), and click the "join course button".   That will automatically send you an invitation to join the course organization on github. 
 
-![welcome](/lab/lab00/enter-org/pic1.png){:height="500px"}
+4. Accept the invitation that appears in your browser (from step 3) or log into your account on [www.github.com](www.github.com) to accept the invitation.
 
-* The next screen asks you to authorize our app to add you to our class organization. Click on the green "authorize application" button.
+## Get setup with gradescope
 
-![authorize](/lab/lab00/enter-org/pic2.png){:height="500px"}
+We will use gradescope to grade all your homeworks, exams and lab/programming assignments. You should have received an email notification with instructions about logging into gradescope.
 
- Enter your github and you should see the following screen that shows you were successfully added to our class organization:
+Log into our class site on [www.gradescope.com](www.gradescope.com): CS16 Spring 2018 and navigate to the lab00 assignment. Keep this page open to submit your code at the end of the lab
 
-![success](/lab/lab00/enter-org/pic4.png){:height="500px"}
+# Implement and submit a simple C++ program 
 
-
-
-<hr>
-
-## Step 2: Open a Terminal <a name="step2"></a>
+## Step 1: Open a Terminal and write a "Hello World" program 
 
 The first step in every assignment will be to open a <b>terminal window</b>, which will be the environment you use to write, compile, and run your programs.
 
@@ -84,9 +65,7 @@ The first step in every assignment will be to open a <b>terminal window</b>, whi
 * If you are working on a machine in the Phelps 3525
     please see [Step 2a](#step2a){: data-ajax="false"} for further instructions.
 
-* If you are working on a machine in the Computer Science Instruction Lab (CSIL), you'll be working
-    on one of the following machines: `csil-01.cs.ucsb.edu`, `csil-02.cs.ucsb.edu`, etc.
-    (though `csil-48.cs.ucsb.edu`).   Please see [Step 2a](#step2a){: data-ajax="false"} for further instructions.
+* If you are working on a machine in the Computer Science Instruction Lab (CSIL), you'll be working on one of the following machines: `csil-01.cs.ucsb.edu`, `csil-02.cs.ucsb.edu`, etc.(though `csil-48.cs.ucsb.edu`).   Please see [Step 2a](#step2a){: data-ajax="false"} for further instructions.
 
 If you are working on your laptop, whether Windows, Mac or Linux, the instructions below
 will tell you how to connect to `csil.cs.ucsb.edu`. For now its okay to connect to that server, however in the future please connect to one of the following machines:
@@ -99,13 +78,12 @@ will tell you how to connect to `csil.cs.ucsb.edu`. For now its okay to connect 
 You'll get much better performance on those individual machines, because they are much less heavily loaded and have newer hardware, as compared to `csil.cs.ucsb.edu`.
 
 * If you are working on your laptop and it is a Mac or Linux machine, go to [Step 2b](#step2b){: data-ajax="false"}.
+
 * If you are working on your laptop and it is a Windows machine, go to [Step 2c](#step2c){: data-ajax="false"}.
 
 
 ### Step 2a: Opening a Terminal on a Phelps or CSIL Lab Machine <a name="step2a"></a>
-<!--
-<h4><i><a name="step2a"></a>Step 2a: Opening a Terminal on a Phelps Lab Machine</i></h4>
--->
+
 
 1. Log in to the machine using your CoE account credentials (i.e. your username and password) created in Step 1.
 
@@ -113,16 +91,13 @@ You'll get much better performance on those individual machines, because they ar
 
 3. Next, type "shell" in the search box. Then click the "Terminal" application which appears.
 
-4. You should now see a terminal window open. You can open more tabs or windows from the Terminal application's menu.
+4. You should now see a terminal window open. You can open more tabs or windows from the Terminal application's menu. Skip to Step 3 and read the other steps later when you attempt to log in remotely
 
 ### Step 2b: Connecting to CSIL via SSH on Mac OS X or Linux <a name="step2b"></a>
-<!--
-<h4><i><a name="step2b"></a>Step 2b: Connecting to CSIL via SSH on Mac OS X or Linux</i></h4>
--->
 
 To get started on Mac OS X or Linux, you first need to open a terminal program. This involves slightly different steps on either OS.
 
-*On Ubuntu (an example of a Linux OS):*
+* On Ubuntu (an example of a Linux OS):*
 
 1. Find the search menu. It appears at the top of the Unity bar:
 
@@ -186,9 +161,6 @@ X windows is almost always installed on graphical Linux, and can be installed on
 
 ### Step 2c: Connecting to CSIL via SSH on Windows with PuTTY <a name="step2c"></a>
 
-<!--
-<h4><i><a name="step2c"></a>Step 2c: Connecting to CSIL via SSH on Windows with PuTTY</i></h4>
--->
 
 To connect remotely on Windows machines, we recommend using a program called <em>PuTTY</em>. This program is a well-known and widely-used SSH client for the Windows OS.
 
@@ -224,10 +196,6 @@ This command should output <b>csil.cs.ucsb.edu</b>. You can now do anything in t
 
 If you want to run graphical applications, instead of using puTTY, you can use other programs, such as [MobaXterm](http://mobaxterm.mobatek.net/){: target="_blank"}.
 
-
-
-
-<hr>
 
 ## Step 3: Create cs16 and lab00 directories<a name="step3"></a>
 
@@ -269,19 +237,8 @@ At any time, you can check what directory you are current in with the command **
 ```
 
 Knowing how to navigate a UNIX environment and issue UNIX commands is VERY valuable to computer scientists and engineers. To learn more UNIX commands, there are lot of cool Web resources and books on the topic. This is one website I found that's a good introductory page: [Useful unix commands](http://mally.stanford.edu/~sr/computing/basic-unix.html)
-<!--This link doesn't seem to work anymore
-<a href="https://www.tjhsst.edu/~dhyatt/superap/unixcmd.html" target="_blank">https://www.tjhsst.edu/~dhyatt/superap/unixcmd.html</a>.
--->
 
-<!--
-<h3>Step 4: Create a C++ File</h3>
 
-<p>Now that we have a directory to contain our work for the assignment, let's start writing our code. Create a file called <b>hello.cpp</b> with the <b>touch</b> command:</p>
-<pre>$ touch hello.cpp</pre>
-
-<p><span class="code">hello.cpp</span> is now a completely empty file that you will use throughout the rest of the assignment to write your C++ code.</p> -->
-
-<hr>
 
 ## Step 4: Editing text files for programming <a name="step4"></a>
 
@@ -298,74 +255,70 @@ As you progress in your Computer Science education and, subsequently, your caree
 
 1. <b>emacs</b> for UNIX-based OS
 
-	emacs is a very popular editor that's available on just about every UNIX machine (including the ones that you're using in the CS labs) and UNIX-based machines (like MacOS computers).
+emacs is a very popular editor that's available on just about every UNIX machine (including the ones that you're using in the CS labs) and UNIX-based machines (like MacOS computers).
 
-	To run emacs on a UNIX machine or a MacOS machine, open up a terminal (see above for how to do that on Macs) and type:
-
-
-		$ emacs
+To run emacs on a UNIX machine or a MacOS machine, open up a terminal (see above for how to do that on Macs) and type:
 
 
-	To edit a file (let's say it's called "filename"), you'd type:
+	$ emacs
 
-		$ emacs <filename>
 
-	Go ahead and edit a file named "hello.cpp"
+To edit a file (let's say it's called "filename"), you'd type:
 
-	In the editor type a few comments on the first line as follows:
+	$ emacs <filename>
+
+Go ahead and edit a file named "hello.cpp"
+
+In the editor type a few comments on the first line as follows:
 	
 		// hello.cpp
 		// Your name
 		// Your perm number
 
-	Note that in C++, you can insert comments by preceding the comment with <code>//</code>
+Note that in C++, you can insert comments by preceding the comment with <code>//</code>
 
-	To save the file, press Ctrl-x, Ctrl-s. To exit emacs and return to the unix shell, press Ctrl-x, Ctrl-c
+To save the file, press Ctrl-x, Ctrl-s. To exit emacs and return to the unix shell, press Ctrl-x, Ctrl-c
 
-	To learn how to use emacs, there is no substitute for PRACTICE!!! Of course, there are multiple online resources that you can look at (especially given emacs' popularity) and here are some of them:
+To learn how to use emacs, there is no substitute for PRACTICE!!! Of course, there are multiple online resources that you can look at (especially given emacs' popularity) and here are some of them:
 
-	* <a href="https://www.gnu.org/software/emacs/tour/" target="_blank">emacs tour from the GNU organization (makers of emacs)</a>
+* <a href="https://www.gnu.org/software/emacs/tour/" target="_blank">emacs tour from the GNU organization (makers of emacs)</a>
 
-	* <a href="https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf" target="_blank">emacs commands - a handy reference card</a>
+* <a href="https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf" target="_blank">emacs commands - a handy reference card</a>
 
-	* <a href="http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs" target="_blank">a beginner's guide to emacs</a>
+* <a href="http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs" target="_blank">a beginner's guide to emacs</a>
 
 
 2. <b>vim</b> for UNIX-based OS
 
-	vim (or sometimes called vi) is another popular editor that's also available on just about every UNIX machine (including the ones that you're using in the CS labs) and UNIX-based machines (like MacOS computers).
+vim (or sometimes called vi) is another popular editor that's also available on just about every UNIX machine (including the ones that you're using in the CS labs) and UNIX-based machines (like MacOS computers).
 
-	To run vim on a UNIX machine or a MacOS machine, open up a terminal (see above for how to do that on Macs) and type:
+To run vim on a UNIX machine or a MacOS machine, open up a terminal (see above for how to do that on Macs) and type:
 
-		$ vim
+	$ vim
 
-	To edit a file (let's say it's called "filename"), you'd type:
+To edit a file (let's say it's called "filename"), you'd type:
 
-		$ vim <filename>
+	$ vim <filename>
 
-	To customize your vim environment for a better coding experience with C/C++ copy this .vimrc file from the instructor folder to your home folder using the following command:
+To customize your vim environment for a better coding experience with C/C++ copy this .vimrc file from the instructor folder to your home folder using the following command:
 
-	```
-	cp /cs/faculty/dimirza/cs16-wi17/labs/example_dotvimrc/.vimrc ~/
-	```
+```
+cp /cs/faculty/dimirza/cs16-wi17/labs/example_dotvimrc/.vimrc ~/
+```
 
-	Again, to learn how to use vim, there is no substitute for PRACTICE!!! Again, there are multiple online resources that you can look at and here are some of them:
+Again, to learn how to use vim, there is no substitute for PRACTICE!!! Again, there are multiple online resources that you can look at and here are some of them:
 
-	* <a href="http://www.vim.org/about.php" target="_blank">About vim</a>
+* <a href="http://www.vim.org/about.php" target="_blank">About vim</a>
 
-	* <a href="http://tnerual.eriogerg.free.fr/vimqrc.html" target="_blank">vim commands - a handy reference card</a>
+* <a href="http://tnerual.eriogerg.free.fr/vimqrc.html" target="_blank">vim commands - a handy reference card</a>
 
-	* <a href="https://www.fprintf.net/vimCheatSheet.html" target="_blank">another reference cheat sheet for vim</a>
+* <a href="https://www.fprintf.net/vimCheatSheet.html" target="_blank">another reference cheat sheet for vim</a>
 
 3. <b>Sublime Text 2</b> for Windows OS and MacOS X --- see <a href="https://www.sublimetext.com/" target="_blank">the product website</a> (it's a program that you'd have to download)
 
 4. <b>Notepad++</b> for Windows OS --- see <a href="https://notepad-plus-plus.org/" target="_blank">the product website</a> (it's a program that you'd have to download)
 
 
-
-<hr>
-
-** We will go over the material for the  next few steps in lecture. For now just read the lab, attempt it but if you like, you may wait to complete the remaining steps after lecture **
 
 ## Step 5: Create and edit a file containing a C++ program <a name="step5"></a>
 
@@ -391,20 +344,21 @@ int main() {
     return 0;
 }
 ```
-<p>Go ahead and type this in to the <b>hello.cpp</b> file. Alternatively, you can copy and paste it directly from this page.</p>
+Go ahead and type this in to the **hello.cpp** file. Alternatively, you can copy and paste it directly from this page.
 
-<p>Next, you will need to replace the comment with code to print out the expected output. Comments in C++ are lines that start with <b>//</b> or text between <b>/*</b> and <b>*/</b>. The second type can span multiple lines.</p>
+Next, you will need to replace the comment with code to print out the expected output. Comments in C++ are lines that start with <b>//</b> or text between <b>/*</b> and <b>*/</b>. The second type can span multiple lines.
 
-<p><em>Important note: For students familiar with Python, remember that lines starting with the <b>#</b> character are not comments in C++. Rather, they are important include lines that allow your program to use the input and output functionality. Make sure to copy those lines in your program as well. Only <b>//</b> or <b>/*</b> create comments in C++.</em></p>
+Important note: For students familiar with Python, remember that lines starting with the <b>#</b> character are not comments in C++. Rather, they are important include lines that allow your program to use the input and output functionality. Make sure to copy those lines in your program as well. Only <b>//</b> or <b>/*</b> create comments in C++.
 
-<p>To print out text to the terminal, you can use the <b>cout</b> stream. To output something use the <b>&lt;&lt;</b> operator as shown below:</p>
-<pre>cout &lt;&lt; "This will be printed out to the terminal" &lt;&lt; endl;</pre>
+To print out text to the terminal, you can use the <b>cout</b> stream. To output something use the <b>&lt;&lt;</b> operator as shown below:</p>
 
-<p>The <b>endl</b> command will cause a newline (i.e. a carriage return) to be printed and the next print to go on the next line.</p>
+```
+cout << "This will be printed out to the terminal" << endl;
+```
+The <b>endl</b> command will cause a newline (i.e. a carriage return) to be printed and the next print to go on the next line.
 
-<p>You can adapt this line to achieve the objective of the assignment. <b>Remember that we need to print two lines, each with a newline at the end.</b> You can do this with one or two statements.</p>
+You can adapt this line to achieve the objective of the assignment. <b>Remember that we need to print two lines, each with a newline at the end.</b> You can do this with one or two statements.
 
-<hr>
 
 ## Step 6: Compile the Code <a name="step6"></a>
 
@@ -437,114 +391,20 @@ The compiler will try to give you hints on the line (in this case, it's complain
 
 If you encounter an error, use the compiler hints and examine the line in question. If the compiler messsage is not sufficient to identify the error (which happens more than sometimes), you can search online to see when the error occurs in general. Once you have fixed the error, run the compilation command again. De-bugging a program code is a necessary ritual in almost all programs written (even those written by expert coders). More on that in a later class.
 
-<!--
-<p>You can find a list of common C++ errors and possible solutions at <a href="http://charlottehill.com/cpperrors.html">http://charlottehill.com/cpperrors.html</a>.</p>
--->
-
-<hr>
-
 
 ## Step 7: Submit your program for grading <a name="step7"></a>
 
 Once you are satisfied that your program is correct, then it's time to submit it.
 
-<strong>Please remember that you must submit the program to obtain any credit for the assignment; just completing the program is not enough.</strong>
 
-In this course we will use the <a href="https://submit.cs.ucsb.edu/" target="_blank">submit.cs.ucsb.edu</a> system. You can make a submission from either the command line on any CS machine, or from a Web browser.
+Log into your account on [www.gradescope.com](www.gradescope.com) and navigate to our course site: CS16 Spring 2018. Select this assignment. Then click on the "Submit" button on the bottom right corner to make a submission. You will be given the option of  uploading files from your local machine or submitting the code that is in a github repo. For now choose the first option and follow the steps to upload hello.cpp to gradescope. We will use the second method later on in the course.
 
-If you don't have a submit.cs account, you will first need to create one. This can be done at
-<a href="https://submit.cs.ucsb.edu/form/user" target="_blank">https://submit.cs.ucsb.edu/form/user</a>.
+You should receive 50/50 for a correct "Hello World " program
 
-Once you have an account created, login at <a href="https://submit.cs.ucsb.edu/session" target="_blank">https://submit.cs.ucsb.edu/session</a>.
+Congratulations on completing your first C++ program!
 
-Next, you need to join the CS16 course. Look for the "Join Class" link at the top of the page. It is in the top bar, as seen below:
+If you are in the Phelps lab or in CSIL, <b>make sure to log out of the machine before you leave</b>. Also, make sure to close all open programs before you log out. Some programs will not work next time if they are not closed. Remember to save all your open files before you close your text editor.
 
-<img src="submit-topbar.png" width="542" alt="submit.cs Top Bar" />
+If you are logged in remotely, you can log out using the <b>exit</b> command in UNIX:
 
-Once you see the list of all courses, click on the <b>"Join CS16_w18_mirza"</b> button.
-
-You should then see CS16 appear on your homepage when logging in to the submit.cs system. Click on the course now.
-
-Now find "lab00" and click on the "Make Submission" button. It looks like this:
-
-<img src="make-submission-button.png" width="154" alt="Make Submission Button" />
-
-This is the Web interface for submitting your code for the assignment. You can now upload your source file directly on this page. The browser will open a dialog box and you will need to navigate to the directory containing your <b>hello.cpp</b> file and select it.
-
-Once your file is uploaded, click "Submit 1 File":
-
-<img src="submit-file-button.png" width="129" alt="Submit 1 File Button" />
-
-Once you submit, you should see a page detailing your submission. The system will automatically grade your program and will show you the results on this page after about a 1 minute delay.
-
-You can <em>alternatively</em> submit your code from the command line (i.e. in the terminal) on any CS machine, including the Phelps lab machines or the CSIL server. You can also use this method when logged in remotely. To submit the the <b>hello.cpp</b> file to this assignment by running the command:
-
-	$ ~submit/submit -p 919 hello.cpp
-
-The program will ask you to login <b>with your submit.cs username and password</b>. The password will not be printed to the terminal, but what you type will be used. It will also offer the option to save your credentials, so that you do not have login next time you submit. You may choose to do this or not. After the submission succeeds, you should see the program output something like:
-
-	Results will be available at: https://submit.cs.ucsb.edu/submission/xxxxx
-
-You can copy this URL and paste into a Web browser to reach the same submission result page as described above.
-
-<hr>
-
-## Step 8: Check Submission Results <a name="step8"></a>
-
-YOU MUST ALWAYS CHECK THAT YOUR FILE WAS CORRECTLY UPLOADED
-After the 1 minute delay, the submit system will show your score and give you feedback on your submission. <em>Refresh the webpage after a minute to see this information.</em> This usually takes one of three forms:
-
-<p>A correct submission with a score of 100. This means that your program passed all the tests for this assignment. Once you get to this point, you are finished with the assignment and will receive full credit. This case will look like this:</p>
-<img src="correct-submission.png" width="233" alt="Correct Submission." />
-
-<p>An incorrect submission with a score of 0 to 99. This means that your program failed 1 or more of the tests. For this assignment, the system will show both the expected output and the output your program generated side-by-side so that you can see what went wrong. You will need to fix your program, and then do Step 7 again to re-submit. This case will look like this:</p>
-<img src="incorrect-submission.png" width="706" alt="Incorrect Submission." />
-
-<p>Or a submission for which compilation failed. This means that your program caused compilation errors when the system tried to compile it. You will need to interpret the compiler output and fix the errors. The system will show you the compilation command that failed along with the full error message. This case will look like this:</p>
-<img src="compilation-failure.png" width="499" alt="Compilation Failure." />
-
-<p>You may submit your program multiple times before the deadline. You should really only submit after local compilation does not produce any errors and runs as expected - that's the most efficient and preferred way to do things. The score of the last submission uploaded before the deadline will be used as your assignment grade.</p>
-
-<hr>
-
-
-## Step 9: Explore github's web interface and declare a partner <a name="step9"></a>
-
-If you have made it to this step, then you have successfully created a C++ program, tested it on a remote server (csil.cs.ucsb.edu) and made a successful submission. We would however like you to do one more step to get familiarized with git and github. Here is some motivation: When developing large programs, it is very useful to save working versions of your code that you can always revert to. Trying to do this manually often leads to total chaos!! That's why professional programmers use some kind of version control system (VCS). We will use a popular VCS called Git. With Git all versions of your code will be available to you and your collaborators (in later labs this would be your pair-programming partner) anytime, anywhere! It will also help the course staff view your progress as you work on the assignments.
-
-* Before we begin, read this article to get an overview of git: [https://ucsb-cs56-pconrad.github.io/topics/git_overview/](https://ucsb-cs56-pconrad.github.io/topics/git_overview/)
-
-* You will now create a git repo. The concept of a repo was explained in the article that you just read. New projects always start with this step. Since Github promotes "open source" projects, repos created under your default github account are *public*. This means that they are visible to everyone on the internet. However, for this class your assignments have to be "closed source", and not open to your classmates and others on the internet. This requires that you create *private* repos. These are repos that are only visible to you, your pair-partner and the instructional staff. You can only create private repos within our class organization on github: ucsb-cs16-w18. So, the next step is to join our class organization.
-
-* Read this article on [creating a github repo under an organization](https://ucsb-cs16.github.io/topics/github_com_create_private_repo_under_org/). Open a browser and navigate to our class organization on github: [ucsb-cs16-w18](https://github.com/orgs/ucsb-cs16-w18/dashboard). Click on the green button that says "New repository", and follow the steps from the ["creating a github repo under an organization"](https://ucsb-cs16.github.io/topics/github_com_create_private_repo_under_org/) article, to create a PRIVATE repo containing only a README.md and a .gitignore. See screenshot below:
-
-![new-repo](/lab/lab00/enter-org/pic5.png){:height="500px"}
-
-
-Your repo name should be lab00_your-github-username. For example if your github username is jgaucho, you should name your repo as lab00_jgaucho. Make sure you select the PRIVATE option when creating your repo.
-
-* Check to see if you have the files: README.txt and .gitignore in your repo. If you don't see these files, contact an instructor or ask for help on Piazza. To learn more about the .gitignore, read this article: [About gitignore](https://ucsb-cs56-pconrad.github.io/topics/git_gitignore/)
-
-5. Use github's web interface to edit the README file. In the README, add your and your partners name and perm number. If you don't know how to do this yet, wait until I demonstrate it in the next lecture. You may proceed to the next step
-
-6. Upload your hello.cpp file. To do this step you should be physically present on a lab machine or in CSIL where you have access to a web browser and a local copy of your hello.cpp program. On your web browser, navigate to your repo on github. If your repo name is lab00_jgaucho, the link to the repo is: [https://github.com/ucsb-cs16-w18/lab00_jgaucho](https://github.com/ucsb-cs16-w18/lab00_jgaucho). Click on the "Upload files" button as shown below.
-
-![git-file-upload](/lab/lab00/git-repo-pic_ink-upload.jpg){:height="500px"}
-
-<p>You should see the following screen:</p>
-
-![git-upload-hello](/lab/lab00/upload-hello-cpp.png){:height="500px"}
-
-* Now either drag and drop the "hello.cpp" file from your machine or use the "Choose your files" option to browse through your local directory and upload the file. Then press the green "Commit new files" button. Navigate back to your repo to see that the hello.cpp file is correctly listed along with the other files. Click on it and you should see your code on github's web interface. Continue to explore the web interface of your github repo. For example, try clicking on the "commits" link in your repo. What does that show you and what do you think it means?
-
-Congratulations on completing your introductory exercise to github. We will continue to explore git in the subsequent assignments.
-
-
-## Step 10: Done!
-
-<p>You can continue to make submissions on submit.cs until your submission receives a score of 100/100. If you have a perfect score and  have also successfully uploaded your code to your github repo, you are done with this assignment. We will be grading the git part of this assignment manually on github. Congratulations on completing your first C++ program!</p>
-
-<p>If you are in the Phelps lab or in CSIL, <b>make sure to log out of the machine before you leave</b>. Also, make sure to close all open programs before you log out. Some programs will not work next time if they are not closed. Remember to save all your open files before you close your text editor.</p>
-
-<p>If you are logged in remotely, you can log out using the <b>exit</b> command in UNIX:</p>
 <pre>$ exit</pre>
