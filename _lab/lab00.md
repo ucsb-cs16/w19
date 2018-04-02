@@ -45,7 +45,7 @@ To join this organization, you need to do three things.
 
 2. If you don't already have your @umail.ucsb.edu email address associated with your github.com account. go to "settings", add that email, and confirm that email address.
 
-3. Visit [our Github Sign Up Tool](https://ucsb-cs-github-linker.herokuapp.com/), login with your github.com account, click "Home", find this course (CS16-S18), and click the "join course button".   That will automatically send you an invitation to join the course organization on github. 
+3. Visit our Github Sign Up Tool at [https://ucsb-cs-github-linker.herokuapp.com/](https://ucsb-cs-github-linker.herokuapp.com/), login with your github.com account, click "Home", find this course (CS16-S18-Mirza), and click the "join course button".   That will automatically send you an invitation to join the course organization on github. 
 
 4. Accept the invitation that appears in your browser (from step 3) or log into your account on [www.github.com](www.github.com) to accept the invitation.
 
