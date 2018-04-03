@@ -1,0 +1,324 @@
+Writing objects: 100% (4/4), 402.55 KiB | 23.68 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io.git
+   813cc31..06edb52  master -> master
+169-231-114-195:ucsb-cs16-s18-mirza.github.io diba$ ssh dimirza@csil-01.cs.ucsb.edu
+dimirza@csil-01.cs.ucsb.edu's password: 
+Last login: Sun Apr  1 05:43:52 2018 from 68.6.100.22
+[dimirza@csil-01 ~]$ ls
+all-cs16                   Desktop            PRIVATE_lec06
+all-cs24                   Documents          Public
+backup                     Downloads          public_html
+bin                        gdb1.cpp           st04
+cs16                       git                Templates
+cs16-w18                   lab02_abbywysopal  test.cpp~
+cs24-w18-lab-starter-code  lectures           Videos
+cs24-w18-lecture-12        Music              vim-configuration
+cs8                        Pictures           wordpress
+[dimirza@csil-01 ~]$ cd cs16
+[dimirza@csil-01 cs16]$ ls
+backup  cs16-sp17-starter-code  labs  lectures
+[dimirza@csil-01 cs16]$ clear
+
+[dimirza@csil-01 cs16]$ cd ../
+[dimirza@csil-01 ~]$ ls
+all-cs16                   Desktop            PRIVATE_lec06
+all-cs24                   Documents          Public
+backup                     Downloads          public_html
+bin                        gdb1.cpp           st04
+cs16                       git                Templates
+cs16-w18                   lab02_abbywysopal  test.cpp~
+cs24-w18-lab-starter-code  lectures           Videos
+cs24-w18-lecture-12        Music              vim-configuration
+cs8                        Pictures           wordpress
+[dimirza@csil-01 ~]$ emacs test.cpp~ 
+[dimirza@csil-01 ~]$ emacs test.cpp
+[dimirza@csil-01 ~]$ emacs test.cpp
+[dimirza@csil-01 ~]$ emacs test.cpp
+[dimirza@csil-01 ~]$ exit
+logout
+Connection to csil-01.cs.ucsb.edu closed.
+169-231-114-195:ucsb-cs16-s18-mirza.github.io diba$ 
+
+
+
+
+
+  [Restored Apr 2, 2018 at 12:53:21 PM]
+Last login: Mon Apr  2 12:53:18 on console
+Restored session: Mon Apr  2 12:51:34 PDT 2018
+RVM used your Gemfile for selecting Ruby, it is all fine - Heroku does that too,
+you can ignore these warnings with 'rvm rvmrc warning ignore /Users/diba/git/ucsb-cs16-s18-mirza.github.io/Gemfile'.
+To ignore the warning for all files run 'rvm rvmrc warning ignore allGemfiles'.
+
+MacBook-Pro-5:ucsb-cs16-s18-mirza.github.io diba$ cd ..
+MacBook-Pro-5:git diba$ ls
+a.out				ucsb-cs16-s18-mirza.github.io
+cs16				ucsb-cs24-s18.github.io
+cs24				w18-cs16
+gradescope			w18-cs24
+lecture-1.cpp
+MacBook-Pro-5:git diba$ cd cs16
+MacBook-Pro-5:cs16 diba$ ls
+PRIVATE-CS16-s18-gradescope-lab00	PRIVATE-lab00-solutions
+MacBook-Pro-5:cs16 diba$ cd ../
+MacBook-Pro-5:git diba$ ls
+a.out				ucsb-cs16-s18-mirza.github.io
+cs16				ucsb-cs24-s18.github.io
+cs24				w18-cs16
+gradescope			w18-cs24
+lecture-1.cpp
+MacBook-Pro-5:git diba$ cd w18-cs16
+MacBook-Pro-5:w18-cs16 diba$ ls
+cs16-w18-lectures	cs16exams		ucsb-cs16-w18.github.io
+cs16-w18-starter-code	lab05
+MacBook-Pro-5:w18-cs16 diba$ cd cs16-w18-
+-bash: cd: cs16-w18-: No such file or directory
+MacBook-Pro-5:w18-cs16 diba$ cd cs16-w18-lectures/
+MacBook-Pro-5:cs16-w18-lectures diba$ ls
+README.md	lec-05		lec-09		lec-12		lec-15
+lec-02		lec-06		lec-10		lec-13		lec-16
+lec-03		lec-07		lec-11		lec-14		lec-17
+MacBook-Pro-5:cs16-w18-lectures diba$ cd lec-02/
+MacBook-Pro-5:lec-02 diba$ ls
+fizzbuzz_0.cpp	fizzbuzz_1.cpp	fizzbuzz_2.cpp
+MacBook-Pro-5:lec-02 diba$ cd ../
+MacBook-Pro-5:cs16-w18-lectures diba$ ls
+README.md	lec-05		lec-09		lec-12		lec-15
+lec-02		lec-06		lec-10		lec-13		lec-16
+lec-03		lec-07		lec-11		lec-14		lec-17
+MacBook-Pro-5:cs16-w18-lectures diba$ ssh -X dimirza@csil-01.cs.ucsb.edu
+dimirza@csil-01.cs.ucsb.edu's password: 
+Warning: untrusted X11 forwarding setup failed: xauth key data not generated
+Last login: Mon Apr  2 12:05:47 2018 from 169.231.114.195
+[dimirza@csil-01 ~]$ ls
+all-cs16                   Documents          public_html
+all-cs24                   Downloads          st04
+backup                     gdb1.cpp           Templates
+bin                        git                test.cpp
+cs16                       lab02_abbywysopal  test.cpp~
+cs16-w18                   lectures           Videos
+cs24-w18-lab-starter-code  Music              vim-configuration
+cs24-w18-lecture-12        Pictures           wordpress
+cs8                        PRIVATE_lec06
+Desktop                    Public
+[dimirza@csil-01 ~]$ cd cs16-w18
+[dimirza@csil-01 cs16-w18]$ ls
+lec-01
+[dimirza@csil-01 cs16-w18]$ cd lec-01
+[dimirza@csil-01 lec-01]$ ls
+a.out  hello.cpp  hello.cpp~
+[dimirza@csil-01 lec-01]$ vim hello.cpp
+[dimirza@csil-01 lec-01]$ ls
+a.out  hello.cpp  hello.cpp~
+[dimirza@csil-01 lec-01]$ vim hello.cpp
+[dimirza@csil-01 lec-01]$ exirt
+bash: exirt: command not found...
+  
+
+
+^C
+[dimirza@csil-01 lec-01]$ exit
+logout
+Connection to csil-01.cs.ucsb.edu closed.
+MacBook-Pro-5:cs16-w18-lectures diba$ ls
+README.md	lec-06		lec-11		lec-15
+lec-02		lec-07		lec-12		lec-16
+lec-03		lec-09		lec-13		lec-17
+lec-05		lec-10		lec-14
+MacBook-Pro-5:cs16-w18-lectures diba$ cd ../
+MacBook-Pro-5:w18-cs16 diba$ ls
+cs16-w18-lectures	cs16exams		ucsb-cs16-w18.github.io
+cs16-w18-starter-code	lab05
+MacBook-Pro-5:w18-cs16 diba$ cd ..
+MacBook-Pro-5:git diba$ ls
+a.out				ucsb-cs16-s18-mirza.github.io
+cs16				ucsb-cs24-s18.github.io
+cs24				w18-cs16
+gradescope			w18-cs24
+lecture-1.cpp
+MacBook-Pro-5:git diba$ cd ucsb-cs16-s18-mirza.github.io/
+RVM used your Gemfile for selecting Ruby, it is all fine - Heroku does that too,
+you can ignore these warnings with 'rvm rvmrc warning ignore /Users/diba/git/ucsb-cs16-s18-mirza.github.io/Gemfile'.
+To ignore the warning for all files run 'rvm rvmrc warning ignore allGemfiles'.
+
+MacBook-Pro-5:ucsb-cs16-s18-mirza.github.io diba$ ls
+#index.md#		_includes		hwk.css
+CS16_Lecture16.pdf	_info			hwk.js
+Gemfile			_lab			images
+Gemfile.lock		_layouts		index.md
+LICENSE			_lectures		jekyll.sh
+README.md		_site			jquery-dateFormat.js
+README.md~		calendar.css		setup.sh
+_config.yml		cert.pem		site.css
+_config.yml~		exam.css		site.js
+_exam			exam.js			vendor
+_hwk			handout.css
+MacBook-Pro-5:ucsb-cs16-s18-mirza.github.io diba$ git add .
+gMacBook-Pro-5:ucsb-cs16-s18-mirza.github.io diba$ git commit -m "lec -01"
+[master a0f54b8] lec -01
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+MacBook-Pro-5:ucsb-cs16-s18-mirza.github.io diba$ git push origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 226.88 KiB | 10.80 MiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0)
+MacBook-Pro-5:ucsb-cs16-s18-mirza.github.io diba$ git add .
+MacBook-Pro-5:ucsb-cs16-s18-mirza.github.io diba$ git commit -m "lec -01"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+MacBook-Pro-5:ucsb-cs16-s18-mirza.github.io diba$ git push origin master
+Everything up-to-date
+MacBook-Pro-5:ucsb-cs16-s18-mirza.github.io diba$ git add .
+MacBook-Pro-5:ucsb-cs16-s18-mirza.github.io diba$ git commit -m "lec -01"
+[master c3bf88b] lec -01
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .DS_Store
+MacBook-Pro-5:ucsb-cs16-s18-mirza.github.io diba$ git push origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 194.56 KiB | 12.16 MiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To github.com:ucsb-cs16-s18-mirza/ucsb-cs16-s18-mirza.github.io.git
+   a0f54b8..c3bf88b  master -> master
+MacBook-Pro-5:ucsb-cs16-s18-mirza.github.io diba$ clear
+
+MacBook-Pro-5:ucsb-cs16-s18-mirza.github.io diba$ cd
+MacBook-Pro-5:~ diba$ 
+
+
+
+
+
+
+
+
+MacBook-Pro-5:~ diba$ /Users/diba pwd
+-bash: /Users/diba: is a directory
+MacBook-Pro-5:~ diba$ pwd
+/Users/diba
+MacBook-Pro-5:~ diba$ pwd
+/Users/diba
+MacBook-Pro-5:~ diba$ ls
+Applications	Downloads	Movies		Public
+Desktop		Google Drive	Music		git
+Documents	Library		Pictures	recos
+MacBook-Pro-5:~ diba$ cd git
+MacBook-Pro-5:git diba$ ls
+a.out				ucsb-cs16-s18-mirza.github.io
+cs16				ucsb-cs24-s18.github.io
+cs24				w18-cs16
+gradescope			w18-cs24
+lecture-1.cpp
+MacBook-Pro-5:git diba$ 
+MacBook-Pro-5:git diba$ 
+MacBook-Pro-5:git diba$ 
+MacBook-Pro-5:git diba$ ls
+a.out
+cs16
+cs24
+gradescope
+lecture-1.cpp
+ucsb-cs16-s18-mirza.github.io
+ucsb-cs24-s18.github.io
+w18-cs16
+w18-cs24
+MacBook-Pro-5:git diba$ ls
+a.out
+cs16
+cs24
+gradescope
+lecture-1.cpp
+ucsb-cs16-s18-mirza.github.io
+ucsb-cs24-s18.github.io
+w18-cs16
+w18-cs24
+MacBook-Pro-5:git diba$ ls -al
+total 80
+drwxr-xr-x  12 diba  staff    384 Apr  2 10:43 .
+drwxr-xr-x+ 35 diba  staff   1120 Apr  1 21:36 ..
+-rw-r--r--@  1 diba  staff  12292 Apr  2 13:37 .DS_Store
+-rwxr-xr-x   1 diba  staff  16524 Apr  2 10:43 a.out
+drwxr-xr-x   5 diba  staff    160 Apr  1 16:56 cs16
+drwxr-xr-x  10 diba  staff    320 Apr  2 09:05 cs24
+drwxr-xr-x   6 diba  staff    192 Apr  1 08:03 gradescope
+-rw-r--r--@  1 diba  staff    502 Apr  2 10:44 lecture-1.cpp
+drwxr-xr-x  38 diba  staff   1216 Apr  2 13:37 ucsb-cs16-s18-mirza.github.io
+drwxr-xr-x  38 diba  staff   1216 Mar 31 20:53 ucsb-cs24-s18.github.io
+drwxr-xr-x   7 diba  staff    224 Apr  1 08:01 w18-cs16
+drwxr-xr-x   9 diba  staff    288 Apr  1 23:07 w18-cs24
+MacBook-Pro-5:git diba$ ls -al
+total 80
+drwxr-xr-x  12 diba  staff    384 Apr  2 10:43 .
+drwxr-xr-x+ 35 diba  staff   1120 Apr  1 21:36 ..
+-rw-r--r--@  1 diba  staff  12292 Apr  2 13:37 .DS_Store
+-rwxr-xr-x   1 diba  staff  16524 Apr  2 10:43 a.out
+drwxr-xr-x   5 diba  staff    160 Apr  1 16:56 cs16
+drwxr-xr-x  10 diba  staff    320 Apr  2 09:05 cs24
+drwxr-xr-x   6 diba  staff    192 Apr  1 08:03 gradescope
+-rw-r--r--@  1 diba  staff    502 Apr  2 10:44 lecture-1.cpp
+drwxr-xr-x  38 diba  staff   1216 Apr  2 13:37 ucsb-cs16-s18-mirza.github.io
+drwxr-xr-x  38 diba  staff   1216 Mar 31 20:53 ucsb-cs24-s18.github.io
+drwxr-xr-x   7 diba  staff    224 Apr  1 08:01 w18-cs16
+drwxr-xr-x   9 diba  staff    288 Apr  1 23:07 w18-cs24
+MacBook-Pro-5:git diba$ cd cs16
+MacBook-Pro-5:cs16 diba$ ls
+PRIVATE-CS16-s18-gradescope-lab00
+PRIVATE-lab00-solutions
+MacBook-Pro-5:cs16 diba$ mkdir lec-01
+MacBook-Pro-5:cs16 diba$ ls
+PRIVATE-CS16-s18-gradescope-lab00
+PRIVATE-lab00-solutions
+lec-01
+MacBook-Pro-5:cs16 diba$ ssh -X dimirza@csil-01.cs.ucsb.edu
+dimirza@csil-01.cs.ucsb.edu's password: 
+Warning: untrusted X11 forwarding setup failed: xauth key data not generated
+Last login: Mon Apr  2 13:09:39 2018 from 169.231.114.195
+[dimirza@csil-01 ~]$ ls
+all-cs16                   Documents          public_html
+all-cs24                   Downloads          st04
+backup                     gdb1.cpp           Templates
+bin                        git                test.cpp
+cs16                       lab02_abbywysopal  test.cpp~
+cs16-w18                   lectures           Videos
+cs24-w18-lab-starter-code  Music              vim-configuration
+cs24-w18-lecture-12        Pictures           wordpress
+cs8                        PRIVATE_lec06
+Desktop                    Public
+[dimirza@csil-01 ~]$ cd cs16
+[dimirza@csil-01 cs16]$ ls
+backup  cs16-sp17-starter-code  labs  lectures
+[dimirza@csil-01 cs16]$ mkdir s18
+[dimirza@csil-01 cs16]$ ls
+backup  cs16-sp17-starter-code  labs  lectures  s18
+[dimirza@csil-01 cs16]$ cd s18
+[dimirza@csil-01 s18]$ ;ls
+-bash: syntax error near unexpected token `;'
+[dimirza@csil-01 s18]$ ls
+[dimirza@csil-01 s18]$ vim hello.cpp
+[dimirza@csil-01 s18]$ g++ hello.cpp
+[dimirza@csil-01 s18]$ ls
+a.out  hello.cpp
+[dimirza@csil-01 s18]$ vim a.out 
+[dimirza@csil-01 s18]$ ./a.out 
+Hello World! 
+[dimirza@csil-01 s18]$ vim hello.cpp
+[dimirza@csil-01 s18]$ g++ hello.cpp
+hello.cpp: In function ‘int main()’:
+hello.cpp:12:5: error: expected ‘;’ before ‘return’
+     return 0;
+     ^~~~~~
+[dimirza@csil-01 s18]$ vim hello.cpp
+[dimirza@csil-01 s18]$ emacs hello.cpp 
+[dimirza@csil-01 s18]$ ls
+a.out  hello.cpp  hello.cpp~
+[dimirza@csil-01 s18]$ ./a.out 
+Hello World! 
+[dimirza@csil-01 s18]$ packet_write_wait: Connection to 128.111.43.21 port 22: Broken pipe
+MacBook-Pro-5:cs16 diba$ 
