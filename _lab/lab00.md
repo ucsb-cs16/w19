@@ -53,7 +53,7 @@ To join this organization, you need to do three things.
 
 We will use gradescope to grade all your homeworks, exams and lab/programming assignments. You should have received an email notification with instructions about logging into gradescope.
 
-Log into our class site on [www.gradescope.com](www.gradescope.com): CS16 Spring 2018 and navigate to the lab00 assignment. Keep this page open to submit your code at the end of the lab
+Log into our class site on [https://www.gradescope.com/](https://www.gradescope.com/): CS16 Spring 2018 and navigate to the lab00 assignment. Keep this page open to submit your code at the end of the lab
 
 # Implement and submit a simple C++ program 
 
