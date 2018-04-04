@@ -1,7 +1,7 @@
 ---
 num: "lect02"
 desc: "Git, Control Structures, I/O in programs"
-ready: false
+ready: true
 pdfurl:  /lectures/CS16_Lecture2.pdf
 annotatedpdfurl: /lectures/CS16_Lecture2_ann.pdf
 annotatedready: false
