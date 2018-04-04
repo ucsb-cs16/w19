@@ -4,11 +4,13 @@ desc: "Git, Control Structures, I/O in programs"
 ready: true
 pdfurl:  /lectures/CS16_Lecture2.pdf
 annotatedpdfurl: /lectures/CS16_Lecture2_ann.pdf
-annotatedready: false
+annotatedready: true
 lecture_date: 2018-04-04
 ---
 
 # Code from lecture
+
+[https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-02](https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-02)
 
 # Topics
 
