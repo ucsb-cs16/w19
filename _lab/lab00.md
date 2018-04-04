@@ -53,7 +53,7 @@ To join this organization, you need to do three things.
 
 We will use gradescope to grade all your homeworks, exams and lab/programming assignments. You should have received an email notification with instructions about logging into gradescope.
 
-Log into our class site on [www.gradescope.com](www.gradescope.com): CS16 Spring 2018 and navigate to the lab00 assignment. Keep this page open to submit your code at the end of the lab
+Log into our class site on [https://www.gradescope.com/](https://www.gradescope.com/): CS16 Spring 2018 and navigate to the lab00 assignment. Keep this page open to submit your code at the end of the lab
 
 # Implement and submit a simple C++ program 
 
@@ -397,7 +397,7 @@ If you encounter an error, use the compiler hints and examine the line in questi
 Once you are satisfied that your program is correct, then it's time to submit it.
 
 
-Log into your account on [www.gradescope.com](www.gradescope.com) and navigate to our course site: CS16 Spring 2018. Select this assignment. Then click on the "Submit" button on the bottom right corner to make a submission. You will be given the option of  uploading files from your local machine or submitting the code that is in a github repo. For now choose the first option and follow the steps to upload hello.cpp to gradescope. We will use the second method later on in the course.
+Log into your account on [https://www.gradescope.com/](https://www.gradescope.com/) and navigate to our course site: CS16 Spring 2018. Select this assignment. Then click on the "Submit" button on the bottom right corner to make a submission. You will be given the option of  uploading files from your local machine or submitting the code that is in a github repo. For now choose the first option and follow the steps to upload hello.cpp to gradescope. We will use the second method later on in the course.
 
 You should receive 50/50 for a correct "Hello World " program
 
