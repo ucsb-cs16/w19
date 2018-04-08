@@ -1,6 +1,6 @@
 ---
 num: "lect02"
-desc: "Git, Control Structures, I/O in programs"
+desc: " Control Structures, I/O in programs"
 ready: true
 pdfurl:  /lectures/CS16_Lecture2.pdf
 annotatedpdfurl: /lectures/CS16_Lecture2_ann.pdf
@@ -14,17 +14,6 @@ lecture_date: 2018-04-04
 
 # Topics
 
-## Github intro
-* What is github? How and why we plan to use it in this class
-* What is a git repo?
-* Creating a github repo and using github's web interface to store your first program
-* Basics - organization, repos
-* Using github's web interface
-	* creating a repo
-	* adding files to the repo
-	* adding collaborators to the repo
-	* updating files and viewing the version history
-* Show command line usage - but won't go into too much detail
 
 ## Learn multiple important topics using a game of fizzbuzz
 
