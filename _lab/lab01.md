@@ -12,47 +12,46 @@ due: 2018-04-16 23:59:00.00-7
 ## Goals for this lab
 
 In this lab you will get practice 
+* working in pairs
+* learn to use github's web interface
 * for loops and while loops
-* nested loops
 * calculating a series using for loops and if-else statements
 * working with other data types (doubles)
+* nested loops
 * functions
-* more practice with using git's web interface
 
-You are not expected to finish the entire lab in one sitting. Please don't rush through it and read all instructions carefully. We encourage you to work in pairs for this lab. Please sit with your pair partner on the same terminal. Decide who will be the 'driver' and who will be the 'navigator'. If you don't know what those terms mean, be sure to see the following video on pair programming:
+
+## Working in Pairs
+
+You are not expected to finish the entire lab in one sitting. Please don't rush through it and read all instructions carefully. We encourage you to work in pairs for this lab. You have been assigned a partner who has reported the same level of confidence and experience in programming as yourself. Find your pair partner at this link:
+
+[Pair partners and mentor groups for CS16](/info/mentor_groups/)
+
+Please sit with your pair partner on the same terminal. Decide who will be the 'driver' and who will be the 'navigator'. Choose who will be the driver for the first part of the lab. The driver should sit down in front of the computer now. The navigator gets a chair and sits next to the driver. You should exchange roles after awhile, before the driver gets tired, and before the navigator gets bored or distracted. See the following video on pair programming to work well with your partner:
 
 [http://bit.ly/pair-programming-video](http://bit.ly/pair-programming-video)
 
-To complete the lab follow these steps in order:
-
-
-# Step by Step Instructions
-
-## Step 0: Get to know your mentor
+You have also been assigned a mentor who will be your first point of contact, and will provide you with regular feedback during the rest of the quarter. Your mentor is an important resource. Do these steps to make the most of it
 
 * Read your [mentor's profile](/info/staff/)
-* At the start of every lab, you and your partner should get together with your mentor group and mentor. We encourage you to sit next to your partner and near your mentor group. Your mentor will come to you, but if they don't do so in the first 5 minutes, raise your hand to get their attention. Your mentor will give you any initial instructions as required for the lab, guiding you on  key learning goals and any challenging aspects that you need to pay special attention to. They will also take your attendance for that lab. This is also a time when you will check in about your progress in the programming assignments. Make sure that you always have the latest version of your code pushed to github before your weekly check-in with your mentor.
+* At the start of every lab, you and your partner should get together with your mentor group and mentor. We encourage you to sit next to your partner and near your mentor group. Check in with your mentor about your progress. Make sure that you always have the latest version of your code pushed to github before your weekly check-in with your mentor.
 
 * If you have questions about pair programming, ask your mentor.
 
 * If you reported a different partner to your mentor last week, please update your mentor before you proceed with the rest of the lab
 
-* Choose who will be the pilot for the first part of the lab. The pilot should sit down in front of the computer now. The navigator gets a chair and sits next to the pilot. You should exchange roles after awhile, before the pilot gets tired, and before the navigator gets bored or distracted.
 
 * If your partner shows up late, let your mentor know. Points will be deducted for students who don't show up on time. If you face difficulties with pair programming consult your mentor.
 
 
-## Step 1: Log on, and create a repo for this lab on github and create a local directory
+## Log on and create a local directory
 
-* Log into the pilot's CoE account on CSIL and open a terminal.
-* Pilot log into github: www.github.com. Create a new repo for lab01 in our class organization: ucsb-cs16-w18. You should follow the instructions from lab00 to do this
-* While on github, navigate to your repo. Click on the "Settings" tab, then click on the "Collaborators and teams". Search for your partner under collaborators and add them. Log out of github.
-* Navigator, log into github and accept the invitation.
-* Under your cs16 directory, pilot create a new directory named lab01 (refer to lab00 for instructions if you have forgotten how to do this)
+* Log into the driver's CoE account on CSIL and open a terminal.
+* Under your cs16 directory, driver create a new directory named lab01 (refer to lab00 for instructions if you have forgotten how to do this)
 
 You are now ready to get the starter code.
 
-## Step 2: Getting the starter code  <a name="getstarter"></a>
+## Getting the starter code  <a name="getstarter"></a>
 
 Copy the code from the instructor's account on the CSIL server into your local lab01 directory by issuing the following command:
 
@@ -69,8 +68,33 @@ min2.cpp  min3v1.cpp  min3v2.cpp README.md
 
 If you don't see those files, work with your pair partner to go back through the instructions and make sure you didn't miss a step. If you still have trouble, ask your mentor for assistance.
 
+## Create a repo on github in our class organization
 
-## Step 3: Solving the problems for this lab<a name="programs"></a>
+For this lab and all subsequent programming assignments, you should start by creating a repo in the ucsb-cs16-s18-mirza organization. Follow these steps
+
+* Navigate to your dashboard on [www.github.com](www.github.com). From the left drop down menu, select the class organization as shown in the figure below:
+![select-org](/lab/lab00/select-org.png){:height="500px"}
+
+* Click on the green "New repository" button to create a new repository.
+
+* Type the name of your repo following the naming convention lab01_your-github-username. For example if your github username is jgaucho, you should name your repo as lab01_jgaucho. If you are working with a partner, include your partner's github username in the name of the repo. e.g. lab01_jgaucho_alily
+
+* Select the "Private" visibility option so that other students in the org cannot view your code.
+
+* Add the C++ .ignore option from the frop down menu and click on "Create repository". See screenshot below.
+
+![new-repo](/lab/lab00/enter-org/pic5.png){:height="500px"}
+
+* Click on the "Create repo button"
+
+* Click on the "Settings" tab, then click on the "Collaborators and teams". Search for your partner's github username under collaborators and add them. Log out of github.
+
+* Navigator, log into github and accept the invitation.
+
+* You now have shared ownership of all the code that you will write for this lab.
+
+
+## Solving the problems for this lab<a name="programs"></a>
 
 If you are in a pair, make sure you switch the driver and navigator roles at this point. You must switch roles twice more before the end of the lab.
 This assignment consists of 3 problems, each of which is described below. The first one is worth 20 points each, and the last two are worth 40 points each. Each should be solved in its own file and all three must be submitted for full assignment credit. These exercises are inspired by the ones from the textbook (in Ch. 2 and Ch. 3) - but they are NOT the same, so follow the instructions on THIS sheet carefully.
@@ -204,7 +228,6 @@ cout.precision(3);         // Set the number of digits to display after the deci
 ```
 
 
-
 <hr>
 
 We recommend you complete the next section after the Wed(04/12) lecture because it involves functions and passing command line arguments to main, which we have not yet covered in class. Consider skipping over to the step "Submit your code". Make sure you check in with your mentor befor leaving the labs
@@ -260,32 +283,13 @@ Upload your files to your repo on github using github's web interface.
 
 
 
-
-
-## Step 5: Submit your code<a name="submit"></a>
-
-
-
-TBD
+## Submit your code on gradescope<a name="submit"></a>
 
 
 
-## Create a repo on github in our class organization
 
-For this lab and all subsequent programming assignments, you should start by creating a repo in the ucsb-cs24-s18 organization following these steps
 
-* Navigate to your dashboard on [www.github.com](www.github.com). From the left drop down menu, select the class organization as shown in the figure below:
-![select-org](/lab/lab00/select-org.png){:height="500px"}
 
-* Click on the green "New repository" button to create a new repository.
-
-* Type the name of your repo following the naming convention lab00_your-github-username. For example if your github username is jgaucho, you should name your repo as lab00_jgaucho. If you are working with a partner, include your partner's github username in the name of the repo. e.g. lab00_jgaucho_alily
-
-* Select the "Private" visibility option so that other students in the org cannot view your code.
-
-* Add the C++ .ignore option from the frop down menu and click on "Create repository". See screenshot below.
-
-![new-repo](/lab/lab00/enter-org/pic5.png){:height="500px"}
 
 
 ## Upload your code using github's web interface 
@@ -293,7 +297,6 @@ For this lab and all subsequent programming assignments, you should start by cre
 * Upload your files for this assignment to the new repo you created in the previous step. To do this, you should be physically present on a lab machine or in CSIL where you have access to a web browser and a local copy of your hello.cpp program. On your web browser, navigate to your repo on github. Click on the "Upload files" button.
 
 * Now either drag and drop the files: from your machine or use the "Choose your files" option to browse through your local directory and upload the file. Then press the green "Commit new files" button. Navigate back to your repo to see that the hello.cpp file is correctly listed along with the other files. Click on it and you should see your code on github's web interface. Continue to explore the web interface of your github repo. For example, try clicking on the "commits" link in your repo. What does that show you and what do you think it means?
-
 
 
 
@@ -311,19 +314,18 @@ If you are logged in remotely, you can log out using the exit command:
 
 
 ## Grading rubric
-In addition to the points given by submit.cs, our staff will be manually grading your work and giving you points based on the following rubric:
-* (1 pt) Submitting on time, per instructions
-* (2 pts) Code style, including but not limited to:
+
+In addition to the points given by gradescope, our staff will be manually grading your code for style. Code style, includes but is not limited to the following:
+
 1. Code can be easily understood by humans familiar with C++ (including both the author(s) of the code, and non-authors of the code.)
 2. Code is neatly indented and formatted, following standard code indentation practices for C++ as illustrated in either the textbook, or example code given in lectures and labs
 3. Variable names choices are reasonable
 4. Code is reasonably "DRY" (as in "don't repeat yourself")&mdash;where appropriate, common code is factored out into functions
 5. Code is not unnecessarily or unreasonably complex when a simpler solution is available
 
-* (1pt) Demonstrate an understanding of the use of for-loops and if-else structure to mentor. Mentor will ask you to explain your block program at check out
-* (1pt) Demonstrate an understanding of pair programming to your mentor.
-
-
+In completing this lab you must also demonstrate an understanding of the following: 
+* for-loops and if-else structure. Mentor may ask you to explain your block program 
+* pair programming - ask your mentor for feedback on how you are doing as a pair!
 
 # Github Resources
 * Overview of git: [https://ucsb-cs56-pconrad.github.io/topics/git_overview/](https://ucsb-cs56-pconrad.github.io/topics/git_overview/)
@@ -331,21 +333,6 @@ In addition to the points given by submit.cs, our staff will be manually grading
 * [Creating a github repo under an organization](https://ucsb-cs16.github.io/topics/github_com_create_private_repo_under_org/).
 
 * [About gitignore](https://ucsb-cs56-pconrad.github.io/topics/git_gitignore/)
-
-
-
-![git-file-upload](/lab/lab00/git-repo-pic_ink-upload.jpg){:height="500px"}
-
-<p>You should see the following screen:</p>
-
-![git-upload-hello](/lab/lab00/upload-hello-cpp.png){:height="500px"}
-
-* Now either drag and drop the "hello.cpp" file from your machine or use the "Choose your files" option to browse through your local directory and upload the file. Then press the green "Commit new files" button. Navigate back to your repo to see that the hello.cpp file is correctly listed along with the other files. Click on it and you should see your code on github's web interface. Continue to explore the web interface of your github repo. For example, try clicking on the "commits" link in your repo. What does that show you and what do you think it means?
-
-Congratulations on completing your introductory exercise to github. We will continue to explore git in the subsequent assignments.
-
-
-
 
 
 
