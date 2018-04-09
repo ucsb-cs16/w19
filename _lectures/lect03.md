@@ -1,7 +1,7 @@
 ---
 num: "lect03"
-desc:  "For loops, functions, intro to lab01 "
-ready: false
+desc:  "Git, Loops, intro to lab01 "
+ready: true
 pdfurl: /lectures/CS16_Lecture3.pdf
 annotatedpdfurl: /lectures/CS16_Lecture3_ann.pdf
 annotatedready: false
