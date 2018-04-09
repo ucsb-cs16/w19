@@ -1,7 +1,7 @@
 ---
 layout: lab
 num: lab01
-ready: false
+ready: true
 desc: "Crunching numbers: Loops and functions "
 assigned: 2018-04-10 09:00:00.00-8
 due: 2018-04-16 23:59:00.00-7
@@ -303,7 +303,28 @@ If you DO use nested if/else statements, though, be sure that you indent and for
 
 Follow the pattern in min2 and min3v1/min3v2 in terms of all other issues and how they are handled, including the usage message, etc. Your program should look exactly like these except that it works on 4 inputs (note, there are no trailing whitespacse):
 
-<img src="min4.png" width="500" alt="min4 program example" />
+```
+./min4
+Usage: ./min4 num1 num2 num3 num4
+ Prints smallest of the four numbers
+```
+Here is the output of the program with the correct number of inputs:
+
+```
+$ ./min4 3 4 5 6
+3
+```
+Here are two more example runs:
+
+```
+$ ./min4 92 35 12 17
+12
+
+$ ./min4 92 -35 12 17
+-35
+
+```
+
 
 To compile your code use the g++ command as before.
 
@@ -317,6 +338,10 @@ Upload your files to your repo on github using github's web interface.
 
 ## Submit your code on gradescope<a name="submit"></a>
 
+Once you are satisfied that your program is correct, then it's time to submit it.
+
+
+Log into your account on [https://www.gradescope.com/](https://www.gradescope.com/) and navigate to our course site: CS16 Spring 2018. Select this assignment. Then click on the "Submit" button on the bottom right corner to make a submission. You will be given the option of  uploading files from your local machine or submitting the code that is in a github repo. Select the second option and select your github repo for this assignment. You should receive 100/100 for a completely correct program.
 
 
 
