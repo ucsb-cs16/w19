@@ -93,6 +93,13 @@ For this lab and all subsequent programming assignments, you should start by cre
 
 * You now have shared ownership of all the code that you will write for this lab.
 
+## Upload the initial version of your code using github's web interface 
+
+* Upload the files in your lab01 directory to the new repo you created in the previous step. To do this, you should be physically present on a lab machine or in CSIL where you have access to a web browser and a local copy of your files (min2.cpp  min3v1.cpp  min3v2.cpp README.md). On your web browser, navigate to your repo on github. Click on the "Upload files" button.
+
+* Now either drag and drop the files: from your machine or use the "Choose your files" option to browse through your local directory and upload the file. Then press the green "Commit new files" button. Navigate back to your repo to see that the files you uploaded are correctly listed. Click on it and you should see your code on github's web interface. 
+
+
 
 ## Solving the problems for this lab<a name="programs"></a>
 
@@ -112,15 +119,42 @@ For all the subproblems given in this assignment you must compile your code freq
 
 * Navigate to your lab01 directory using the cd command
 * open a file called `block.cpp` using the same editor you used for the previous labs.
-* In that file, write a program that takes an input from a user for the number of rows and number of columns and prints out a block of characters that is based on these 2 parameters. The program should keep asking the user for input, and printing out the result, until the user enters zero for each of the input parameters.
+* In that file, write a program that takes an input from a user for the number of rows and number of columns and prints out a block of characters that is based on these 2 parameters. The program should keep asking the user for input, and printing out the result, until the user enters zero for *either* of the input parameters.
 
 A session should look <b><i>exactly</i></b> like the following example (including whitespace and formatting - note that there is no whitespace at the end of each of these lines), for all the different inputs and the output:
 
-<img src="block.png" width="700" alt="block program example" />
+```
+$ ./block
+Enter number of rows and columns:
+1 5
+X.X.X.X.X.
+Enter number of rows and columns:
+2 2
+X.X.
+X.X.
+Enter number of rows and columns:
+2 5
+X.X.X.X.X.
+X.X.X.X.X.
+Enter number of rows and columns:
+10 5
+X.X.X.X.X.
+X.X.X.X.X.
+X.X.X.X.X.
+X.X.X.X.X.
+X.X.X.X.X.
+X.X.X.X.X.
+X.X.X.X.X.
+X.X.X.X.X.
+X.X.X.X.X.
+X.X.X.X.X.
+Enter number of rows and columns:
+0 1
+```
 
 Each string printed by the program should include a newline at the end, but no other trailing whitespace (i.e. extra space characters at the end of the line).
 
-For this problem you have to use a for-loop and a while loop. We covered for-loops in class. While loops are similar in that the code inside the body of the while is repeated as long as the while condition is true. We will talk about this more in the next lecture. Here is the syntax for while
+For this problem you have to use a for-loop and a while or do-while loop. We covered for-loops in class. While loops are similar in that the code inside the body of the while is repeated as long as the while condition is true. We will talk about this more in the next lecture. Here is the syntax for while
 
 ```
 while('expression'){
@@ -162,7 +196,7 @@ Run your executable as follows to test it out.
 
 Remember to re-compile the relevant files after you make any changes to the C++ code.
 
-Upload your files to your repo on github using github's web interface.
+Upload your files to your repo on github using github's web interface following the instructions at the beginning of this lab.
 
 
 <hr>
@@ -172,7 +206,7 @@ Upload your files to your repo on github using github's web interface.
 
 Switch roles with your partner.
 
-Write a C++ program that approximates the value of the constant π. Once again you should not resort to using predefind constants and functions for π, that are provided by C++ standard libraries. Instead you should compute the value of π based on the Leibniz formula for π. The formula is given below:
+Write a C++ program in a file named pi.cpp that approximates the value of the constant π. Once again you should not resort to using predefind constants and functions for π, that are provided by C++ standard libraries. Instead you should compute the value of π based on the Leibniz formula for π. The formula is given below:
 
 ```
  1 – 1/3 + 1/5 – 1/7 + 1/9 ...  = pi/4
@@ -226,13 +260,11 @@ cout.setf(ios::fixed); 	   // Display in fixed point notation. For example, disp
 cout.setf(ios::showpoint); // Always display the decimal point.
 cout.precision(3);         // Set the number of digits to display after the decimal point to 3
 ```
-
+To calculate x to the power of y, use the pow(x,y) function from the standard library. To do this you will need to include the header file: cmath
 
 <hr>
 
-We recommend you complete the next section after the Wed(04/12) lecture because it involves functions and passing command line arguments to main, which we have not yet covered in class. Consider skipping over to the step "Submit your code". Make sure you check in with your mentor befor leaving the labs
-
-Upload your files to your repo on github using github's web interface.
+Upload your files to your repo on github using github's web interface. (You will need to be on a csil machine and not remotely logged in to do this step)
 
 ### Calculate the minimum of 4 numbers
 
@@ -292,13 +324,6 @@ Upload your files to your repo on github using github's web interface.
 
 
 
-## Upload your code using github's web interface 
-
-* Upload your files for this assignment to the new repo you created in the previous step. To do this, you should be physically present on a lab machine or in CSIL where you have access to a web browser and a local copy of your hello.cpp program. On your web browser, navigate to your repo on github. Click on the "Upload files" button.
-
-* Now either drag and drop the files: from your machine or use the "Choose your files" option to browse through your local directory and upload the file. Then press the green "Commit new files" button. Navigate back to your repo to see that the hello.cpp file is correctly listed along with the other files. Click on it and you should see your code on github's web interface. Continue to explore the web interface of your github repo. For example, try clicking on the "commits" link in your repo. What does that show you and what do you think it means?
-
-
 
 ## Done!<a name="done"></a>
 
@@ -328,7 +353,7 @@ In completing this lab you must also demonstrate an understanding of the followi
 * pair programming - ask your mentor for feedback on how you are doing as a pair!
 
 # Github Resources
-* Overview of git: [https://ucsb-cs56-pconrad.github.io/topics/git_overview/](https://ucsb-cs56-pconrad.github.io/topics/git_overview/)
+* [Overview of git](https://ucsb-cs56-pconrad.github.io/topics/git_overview/)
 
 * [Creating a github repo under an organization](https://ucsb-cs16.github.io/topics/github_com_create_private_repo_under_org/).
 
