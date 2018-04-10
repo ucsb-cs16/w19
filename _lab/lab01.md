@@ -72,9 +72,7 @@ If you don't see those files, work with your pair partner to go back through the
 
 For this lab and all subsequent programming assignments, you should start by creating a repo in the ucsb-cs16-s18-mirza organization. Follow these steps
 
-* Navigate to your dashboard on [www.github.com](www.github.com). From the left drop down menu, select the class organization as shown in the figure below:
-![select-org](/lab/lab00/select-org.png){:height="500px"}
-
+* Navigate to your dashboard on [https://github.com/](https://github.com/). From the left drop down menu, select the class organization
 * Click on the green "New repository" button to create a new repository.
 
 * Type the name of your repo following the naming convention lab01_your-github-username. For example if your github username is jgaucho, you should name your repo as lab01_jgaucho. If you are working with a partner, include your partner's github username in the name of the repo. e.g. lab01_jgaucho_alily
