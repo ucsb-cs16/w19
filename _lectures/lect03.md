@@ -4,13 +4,13 @@ desc:  "Git, Loops (for, while, do-while), doubles, intro to lab01 "
 ready: true
 pdfurl: /lectures/CS16_Lecture3.pdf
 annotatedpdfurl: /lectures/CS16_Lecture3_ann.pdf
-annotatedready: false
+annotatedready: true
 lecture_date: 2018-04-09
 ---
 
 
 # Code from lecture
-
+[https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-03](https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-03)
 
 
 # Topics
