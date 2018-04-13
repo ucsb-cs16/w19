@@ -9,7 +9,7 @@ lecture_date: 2018-04-11
 ---
 
 # Code from lecture
- 
+[https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-04](https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-04)
 
 ## Review: Designing nested loops
 * When do we need a loop?
