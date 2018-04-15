@@ -31,7 +31,7 @@ By now, we expect that you are comfortable with these basic skills from lab00 an
 * Compiling and running C++ programs
 * Using the computers in both the CSIL and the Phelps labs to do basic things:
     * Performing basic management of directories and files with Unix commands such as mkdir, cd, pwd, ls, cp, mv
-    * Submitting assignments in this class with the submit.cs system, and checking your results
+    * Submitting assignments in this class with the gradescope system, and checking your results
 
 
 ## Step 0: Check-in with your mentor
@@ -148,9 +148,9 @@ Note 1: Everytime you add a new piece of logic to your code you should save a sn
 
 Congratulations on integrating git into your workflow! Now proceed to the programming part of this assignment.
 
-## Step 4: Create a team on submit.cs
+## Step 4: Create a team on gradescope
 
-* Go to submit.cs, navigate to CS16, W18, lab02, and create a team for you and your pair partner.
+* Go to gradescope, navigate to CS16, S18, lab02, and create a team for you and your pair partner.
 
 
 
@@ -251,7 +251,7 @@ Run the program with a few command line parameters. You’ll notice something sp
  ./starL -1 -1
 </pre>
 
-With the command line parameters -1 -1, the program runs a set of tests on itself to make sure that the function starL inside the program is functioning correctly.  So, you should be able to get some feedback on whether your code is correct before you even send it to the submit program.  The code uses stoi to convert the argv[1] and argv[2] to integer values, and compare against -1.
+With the command line parameters -1 -1, the program runs a set of tests on itself to make sure that the function starL inside the program is functioning correctly.  So, you should be able to get some feedback on whether your code is correct before you even send it to gradescope.  The code uses stoi to convert the argv[1] and argv[2] to integer values, and compare against -1.
 
 Look over the code and try to understand how it works.  When you feel ready, move on to the next step, and try tackling the starT.cpp, starC.cpp and starZ.cpp programs.
 
@@ -268,19 +268,11 @@ $./starT 3 2
 In general the parameters to the startT program are width, followed by height. You should take this into consideration when writing your main function. To write the starT() function refer back to the description of starT earlier in this lab.   You can also run the program with arguments of -1 -1 to run the internal tests and see whether your implementation is correct.
 
 
-When you think you have a correct implementation, try submitting to the submit.cs system.  You can submit just your starT.cpp program to see how far along you've gotten:
-
-```
-~submit/submit -p 922 starT.cpp 
-```
+When you think you have a correct implementation, try submitting to the gradescope system.  You can submit just your starT.cpp program to see how far along you've gotten.
 
 Note that this will show failures for <code>starC.cpp</code> and <code>starZ.cpp</code>, which are files that you'll be working on at a later step.
 
-You could also just submit the "stubs" for those&mdash;though those will fail some or all of the tests:
-
-```
-~submit/submit -p 922 starC.cpp starT.cpp starZ.cpp
-```
+You could also just submit the "stubs" for those&mdash;though those will fail some or all of the tests.
 
 Either way, for now, concentrate only on the test failures that pertain to starT.cpp and try to address any problems you encounter.  If you fix these NOW before moving on to starC.cpp and/or starZ.cpp, you will likely have better success, because what you learn from fixing your mistakes will help you get those other parts solved more quickly and easily.
 
@@ -330,15 +322,7 @@ When:
 * You can run your code on values such as <code>./starC 4 5</code> and <code>./starC 5 4 </code> and see the same output as what is shown in the table, AND
 * When typing in a command line that doesn't have exactly two arguments after <code>./starC</code> produces the correct error message
 
-then, you are ready to try testing your code on the submit system.
-
-If you submit starC.cpp together with your starT.cpp program, your submit command will look like this:
-
-```
-~submit/submit -p 922 starC.cpp starT.cpp 
-```
-
-(The order of the files doesn't matter&mdash;list starT.cpp first, or starC.cpp first, aand either way, the result is the same.)
+then, you are ready to try testing your code on gradescope.
 
 Note that failures for <code>starZ.cpp</code> may still show up, but we need not be concerned about those yet.  
 
@@ -399,12 +383,7 @@ As with starC.cpp, you should add code to starZ.cpp so that you are able to invo
 
 And, if there is not exactly one parameter, there should be an appropriate "usage" message that follows the pattern of the other programs&mdash;except that there is only a width parameter in this program.
 
-When you have a version that can pass its internal tests, try submitting it along with your starT.cpp and starC.cpp to the submit.cs system.  
-
-```
-~submit/submit -p 922 starC.cpp starT.cpp starZ.cpp
-```
-
+When you have a version that can pass its internal tests, try submitting it along with your starT.cpp and starC.cpp to gradescope.  
 If there are errors reported, fix them.    
 
 When you have a clean build, you are nearly done with this lab.   I say "nearly" done, because you should take one last look over the grading rubric to see if there is anything you need to adjust before doing your final submit and calling it a day.
@@ -422,7 +401,7 @@ Make sure you do a final *git add ..*, *git commit ...* and *git push ..* to mak
 
 Correctness
 
-* (150 pts) 15 tests, ten points each, executed by submit.cs system
+* (100 pts) 15 tests, 5-10 points each, executed by the gradescope system
 
 End of lab check off points:
 
@@ -430,6 +409,6 @@ End of lab check off points:
 
 * (10 pts) starT.cpp, starC.cpp and starZ.cpp files submitted  have good header comments
 
-* (10 pts) Correct creation of the lab02 github repo in our class organization following the naming conventions provided in the lab. Adding your partner as collaborator and partner accepting the invitation. Both partners joining the same group on submit.cs
+* (10 pts) Correct creation of the lab02 github repo in our class organization following the naming conventions provided in the lab. Adding your partner as collaborator and partner accepting the invitation. Both partners joining the same group on gradescope.
 
 * (20 pts) All three programs have good programming style, including proper use of indentation, reasonable choices for variable names, readable code, reasonable use of whitespace, and other good programming practices. You must have good header comments as illustrated in the coding examples done in class. First line should be the name of your file, followed by date of creation, author and a brief description of the program. You must use curly braces in the body of all control structures (if-else, for and while) even if they contain a single statement. You should not mix tabs and spaces when indenting your code
