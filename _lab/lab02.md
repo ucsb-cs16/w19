@@ -1,7 +1,7 @@
 ---
 layout: lab
 num: lab02
-ready: false
+ready: true
 desc: "ASCII Art: Logical operators, integrating github into your workflow"
 assigned: 2018-04-17 09:00:00.00-8
 due: 2018-04-23 23:59:00.00-7
@@ -72,29 +72,13 @@ Below are the links to different sections of the lab:
 
 * Next, generate a private/public key pair and upload your public key to your github account. To do this refer to this tutorial: [https://ucsb-cs56-pconrad.github.io/topics/github_ssh_keys/](https://ucsb-cs56-pconrad.github.io/topics/github_ssh_keys/) In the process of setting up your key pair, when asked for a passphrase just press enter. By doing this step you will avoid having to enter a password or passphrase everytime you push your code to git.
 
-* Clone the starter code repo from our class organization to the pilot's local account by typing the following commands
-
-```
-  git clone git@github.com:ucsb-cs16-w18/cs16-w18-starter-code.git
-```
-Note that this repo contains the starter code for all labs (although only the code for the current is up to date). So, you don't have to repeat the above step in subsequent labs.
-
 
 ## Step 1b: Create a new repo, add your partner as collaborator and clone the git repo that contains the starter code
 
-* Create a repo for this lab on the pilot's github account (just like you did in lab00): To do this, open a browser and navigate to [www.github.com](www.github.com). Log into the pilot's github account. From the drop down menu on the left, select our class organization: ucsb-cs16-w18 and proceed to create a new repo. You may refer to the instructions in lab00. Follow this naming convention: If your github username is jgaucho and your partner's is alily, your should name your repo lab02_agaucho_alily (usernames appear in alphabetical order). Also you must set the visibity of your repo to be 'PRIVATE' when creating it. We will not repeat these instructions in subsequent labs.
+* Create a repo for this lab on the pilot's github account (just like you did in lab00): To do this, open a browser and navigate to [www.github.com](www.github.com). Log into the pilot's github account. From the drop down menu on the left, select our class organization: ucsb-cs16-s18-mirza and proceed to create a new repo. You may refer to the instructions in lab00. Follow this naming convention: If your github username is jgaucho and your partner's is alily, your should name your repo lab02_agaucho_alily (usernames appear in alphabetical order). Also you must set the visibity of your repo to be 'PRIVATE' when creating it. We will not repeat these instructions in subsequent labs.
 
 * The pilot should add the navigator as a collaborator on github. To do this navigate to the git repo you just created. Choose the settings tab. Then click on the 'Collaborators and teams' option on the left. Scroll all the way down and add the navigator's github account. Then press on the 'Add collaborator' button. Now you and the navigator share the ownership of your git repo. You won't work with your new repo until the end of the lab.
 
-
-* Now navigate to the cs16-w18-starter-code directory, and do a git pull to get the latest version of the lab starter code. You must do this step again in subsequent labs
-
-```
-  cd cs16-w18-starter-code
-  git pull
-```
-
-Never modify the code in the cs16-w18-starter-code repo directly because you are not the owner of that repo. Instead you should work on a copy of those files.
 
 ## Step 2: Clone the repo in the pilot's account and get the starter code
 
@@ -104,10 +88,10 @@ Never modify the code in the cs16-w18-starter-code repo directly because you are
 cd ~/cs16
 ```
 
-* Using the web-browser, navigate to your newly created repo on github. Find the address of your git repo. Click on the green "clone or download button". If your git repo was named lab02_alily_jgaucho, then the git address should something like: "git@github.com:ucsb-cs16-w18/lab02_alily_jgaucho.git". Now clone your repo into your csil account by typing the following on the terminal, replacing the last argument with the address of your git repo
+* Using the web-browser, navigate to your newly created repo on github. Find the address of your git repo. Click on the green "clone or download button". If your git repo was named lab02_alily_jgaucho, then the git address should something like: "git@github.com:ucsb-cs16-s18-mirza/lab02_alily_jgaucho.git". Now clone your repo into your csil account by typing the following on the terminal, replacing the last argument with the address of your git repo
 
 ```
-git clone git@github.com:ucsb-cs16-w18/lab02_alily_jgaucho.git
+git clone git@github.com:ucsb-cs16-s18-mirza/lab02_alily_jgaucho.git
 ```
 
 * Type ls to see your new git repo directory and change into that directory
@@ -120,7 +104,7 @@ cd lab02_alily_jgaucho
 * Copy the starter code by typing the following command:
 
 ```
-cp ~/cs16/cs16-w18-starter-code/lab02/* ./
+cp /cs/faculty/dimirza/cs16/labs/lab02/* ./
 ```
 
 You should see the following files:
@@ -397,18 +381,12 @@ Make sure you do a final *git add ..*, *git commit ...* and *git push ..* to mak
 
 # Evaluation and Grading <a name="eval"></a>
 
-
-
 Correctness
 
 * (100 pts) 15 tests, 5-10 points each, executed by the gradescope system
 
 End of lab check off points:
 
-* (10 pts) submission is on time and follows instructions
-
-* (10 pts) starT.cpp, starC.cpp and starZ.cpp files submitted  have good header comments
-
 * (10 pts) Correct creation of the lab02 github repo in our class organization following the naming conventions provided in the lab. Adding your partner as collaborator and partner accepting the invitation. Both partners joining the same group on gradescope.
 
-* (20 pts) All three programs have good programming style, including proper use of indentation, reasonable choices for variable names, readable code, reasonable use of whitespace, and other good programming practices. You must have good header comments as illustrated in the coding examples done in class. First line should be the name of your file, followed by date of creation, author and a brief description of the program. You must use curly braces in the body of all control structures (if-else, for and while) even if they contain a single statement. You should not mix tabs and spaces when indenting your code
+* (10 pts) All three programs have good programming style, including proper use of indentation, reasonable choices for variable names, readable code, reasonable use of whitespace, and other good programming practices. You must have good header comments as illustrated in the coding examples done in class. First line should be the name of your file, followed by date of creation, author and a brief description of the program. You must use curly braces in the body of all control structures (if-else, for and while) even if they contain a single statement. You should not mix tabs and spaces when indenting your code
