@@ -45,9 +45,9 @@
 
 
             
-            <tr class="not-ready" >
+            <tr class="ready" >
   <td class="asn_num"  ><a href="/lab/lab01/" data-ajax="false">lab01</a></td>
-  <td class="asn_ready">false</td>
+  <td class="asn_ready">true</td>
   <td class="asn_desc" >Crunching numbers: Loops and functions </td>
   <td class="asn_date" >Tue 04/10 10:00AM</td> 
   <td class="asn_date" >Mon 04/16 11:59PM</td>
@@ -61,27 +61,30 @@
   <h2 id="goals-for-this-lab">Goals for this lab</h2>
 
   <p>In this lab you will get practice 
+* working in pairs
+* learn to use github’s web interface
 * for loops and while loops
-* nested loops
 * calculating a series using for loops and if-else statements
 * working with other data types (doubles)
-* functions
-* more practice with using git’s web interface</p>
+* nested loops
+* functions</p>
 
-  <p>You are not expected to finish the entire lab in one sitting. Please don’t rush through it and read all instructions carefully. We encourage you to work in pairs for this lab. Please sit with your pair partner on the same terminal. Decide who will be the ‘driver’ and who will be the ‘navigator’. If you don’t know what those terms mean, be sure to see the following video on pair programming:</p>
+  <h2 id="working-in-pairs">Working in Pairs</h2>
+
+  <p>You are not expected to finish the entire lab in one sitting. Please don’t rush through it and read all instructions carefully. We encourage you to work in pairs for this lab. You have been assigned a partner who has reported the same level of confidence and experience in programming as yourself. Find your pair partner at this link:</p>
+
+  <p><a href="/info/mentor_groups/">Pair partners and mentor groups for CS16</a></p>
+
+  <p>Please sit with your pair partner on the same terminal. Decide who will be the ‘driver’ and who will be the ‘navigator’. Choose who will be the driver for the first part of the lab. The driver should sit down in front of the computer now. The navigator gets a chair and sits next to the driver. You should exchange roles after awhile, before the driver gets tired, and before the navigator gets bored or distracted. See the following video on pair programming to work well with your partner:</p>
 
   <p><a href="http://bit.ly/pair-programming-video">http://bit.ly/pair-programming-video</a></p>
 
-  <p>To complete the lab follow these steps in order:</p>
-
-  <h1 id="step-by-step-instructions">Step by Step Instructions</h1>
-
-  <h2 id="step-0-get-to-know-your-mentor">Step 0: Get to know your mentor</h2>
+  <p>You have also been assigned a mentor who will be your first point of contact, and will provide you with regular feedback during the rest of the quarter. Your mentor is an important resource. Do these steps to make the most of it</p>
 
   <ul>
     <li>Read your <a href="/info/staff/">mentor’s profile</a></li>
     <li>
-      <p>At the start of every lab, you and your partner should get together with your mentor group and mentor. We encourage you to sit next to your partner and near your mentor group. Your mentor will come to you, but if they don’t do so in the first 5 minutes, raise your hand to get their attention. Your mentor will give you any initial instructions as required for the lab, guiding you on  key learning goals and any challenging aspects that you need to pay special attention to. They will also take your attendance for that lab. This is also a time when you will check in about your progress in the programming assignments. Make sure that you always have the latest version of your code pushed to github before your weekly check-in with your mentor.</p>
+      <p>At the start of every lab, you and your partner should get together with your mentor group and mentor. We encourage you to sit next to your partner and near your mentor group. Check in with your mentor about your progress. Make sure that you always have the latest version of your code pushed to github before your weekly check-in with your mentor.</p>
     </li>
     <li>
       <p>If you have questions about pair programming, ask your mentor.</p>
@@ -89,25 +92,19 @@
     <li>
       <p>If you reported a different partner to your mentor last week, please update your mentor before you proceed with the rest of the lab</p>
     </li>
-    <li>
-      <p>Choose who will be the pilot for the first part of the lab. The pilot should sit down in front of the computer now. The navigator gets a chair and sits next to the pilot. You should exchange roles after awhile, before the pilot gets tired, and before the navigator gets bored or distracted.</p>
-    </li>
     <li>If your partner shows up late, let your mentor know. Points will be deducted for students who don’t show up on time. If you face difficulties with pair programming consult your mentor.</li>
   </ul>
 
-  <h2 id="step-1-log-on-and-create-a-repo-for-this-lab-on-github-and-create-a-local-directory">Step 1: Log on, and create a repo for this lab on github and create a local directory</h2>
+  <h2 id="log-on-and-create-a-local-directory">Log on and create a local directory</h2>
 
   <ul>
-    <li>Log into the pilot’s CoE account on CSIL and open a terminal.</li>
-    <li>Pilot log into github: www.github.com. Create a new repo for lab01 in our class organization: ucsb-cs16-w18. You should follow the instructions from lab00 to do this</li>
-    <li>While on github, navigate to your repo. Click on the “Settings” tab, then click on the “Collaborators and teams”. Search for your partner under collaborators and add them. Log out of github.</li>
-    <li>Navigator, log into github and accept the invitation.</li>
-    <li>Under your cs16 directory, pilot create a new directory named lab01 (refer to lab00 for instructions if you have forgotten how to do this)</li>
+    <li>Log into the driver’s CoE account on CSIL and open a terminal.</li>
+    <li>Under your cs16 directory, driver create a new directory named lab01 (refer to lab00 for instructions if you have forgotten how to do this)</li>
   </ul>
 
   <p>You are now ready to get the starter code.</p>
 
-  <h2 id="step-2-getting-the-starter-code--a-namegetstartera">Step 2: Getting the starter code  <a name="getstarter"></a></h2>
+  <h2 id="getting-the-starter-code--a-namegetstartera">Getting the starter code  <a name="getstarter"></a></h2>
 
   <p>Copy the code from the instructor’s account on the CSIL server into your local lab01 directory by issuing the following command:</p>
 
@@ -124,7 +121,53 @@ min2.cpp  min3v1.cpp  min3v2.cpp README.md
 
   <p>If you don’t see those files, work with your pair partner to go back through the instructions and make sure you didn’t miss a step. If you still have trouble, ask your mentor for assistance.</p>
 
-  <h2 id="step-3-solving-the-problems-for-this-laba-nameprogramsa">Step 3: Solving the problems for this lab<a name="programs"></a></h2>
+  <h2 id="create-a-repo-on-github-in-our-class-organization">Create a repo on github in our class organization</h2>
+
+  <p>For this lab and all subsequent programming assignments, you should start by creating a repo in the ucsb-cs16-s18-mirza organization. Follow these steps</p>
+
+  <ul>
+    <li>Navigate to your dashboard on <a href="https://github.com/">https://github.com/</a>. From the left drop down menu, select the class organization</li>
+    <li>
+      <p>Click on the green “New repository” button to create a new repository.</p>
+    </li>
+    <li>
+      <p>Type the name of your repo following the naming convention lab01_your-github-username. For example if your github username is jgaucho, you should name your repo as lab01_jgaucho. If you are working with a partner, include your partner’s github username in the name of the repo. e.g. lab01_jgaucho_alily</p>
+    </li>
+    <li>
+      <p>Select the “Private” visibility option so that other students in the org cannot view your code.</p>
+    </li>
+    <li>Add the C++ .ignore option from the frop down menu and click on “Create repository”. See screenshot below.</li>
+  </ul>
+
+  <p><img src="/lab/lab00/enter-org/pic5.png" alt="new-repo" height="500px" /></p>
+
+  <ul>
+    <li>
+      <p>Click on the “Create repo button”</p>
+    </li>
+    <li>
+      <p>Click on the “Settings” tab, then click on the “Collaborators and teams”. Search for your partner’s github username under collaborators and add them. Log out of github.</p>
+    </li>
+    <li>
+      <p>Navigator, log into github and accept the invitation.</p>
+    </li>
+    <li>
+      <p>You now have shared ownership of all the code that you will write for this lab.</p>
+    </li>
+  </ul>
+
+  <h2 id="upload-the-initial-version-of-your-code-using-githubs-web-interface">Upload the initial version of your code using github’s web interface</h2>
+
+  <ul>
+    <li>
+      <p>Upload the files in your lab01 directory to the new repo you created in the previous step. To do this, you should be physically present on a lab machine or in CSIL where you have access to a web browser and a local copy of your files (min2.cpp  min3v1.cpp  min3v2.cpp README.md). On your web browser, navigate to your repo on github. Click on the “Upload files” button.</p>
+    </li>
+    <li>
+      <p>Now either drag and drop the files: from your machine or use the “Choose your files” option to browse through your local directory and upload the file. Then press the green “Commit new files” button. Navigate back to your repo to see that the files you uploaded are correctly listed. Click on it and you should see your code on github’s web interface.</p>
+    </li>
+  </ul>
+
+  <h2 id="solving-the-problems-for-this-laba-nameprogramsa">Solving the problems for this lab<a name="programs"></a></h2>
 
   <p>If you are in a pair, make sure you switch the driver and navigator roles at this point. You must switch roles twice more before the end of the lab.
 This assignment consists of 3 problems, each of which is described below. The first one is worth 20 points each, and the last two are worth 40 points each. Each should be solved in its own file and all three must be submitted for full assignment credit. These exercises are inspired by the ones from the textbook (in Ch. 2 and Ch. 3) - but they are NOT the same, so follow the instructions on THIS sheet carefully.</p>
@@ -143,16 +186,43 @@ Each corresponds to one of the problems listed below, which make up this lab.</p
   <ul>
     <li>Navigate to your lab01 directory using the cd command</li>
     <li>open a file called <code class="highlighter-rouge">block.cpp</code> using the same editor you used for the previous labs.</li>
-    <li>In that file, write a program that takes an input from a user for the number of rows and number of columns and prints out a block of characters that is based on these 2 parameters. The program should keep asking the user for input, and printing out the result, until the user enters zero for each of the input parameters.</li>
+    <li>In that file, write a program that takes an input from a user for the number of rows and number of columns and prints out a block of characters that is based on these 2 parameters. The program should keep asking the user for input, and printing out the result, until the user enters zero for <em>either</em> of the input parameters.</li>
   </ul>
 
   <p>A session should look <b><i>exactly</i></b> like the following example (including whitespace and formatting - note that there is no whitespace at the end of each of these lines), for all the different inputs and the output:</p>
 
-  <p><img src="block.png" width="700" alt="block program example" /></p>
+  <div class="highlighter-rouge"><pre class="highlight"><code>$ ./block
+Enter number of rows and columns:
+1 5
+X.X.X.X.X.
+Enter number of rows and columns:
+2 2
+X.X.
+X.X.
+Enter number of rows and columns:
+2 5
+X.X.X.X.X.
+X.X.X.X.X.
+Enter number of rows and columns:
+10 5
+X.X.X.X.X.
+X.X.X.X.X.
+X.X.X.X.X.
+X.X.X.X.X.
+X.X.X.X.X.
+X.X.X.X.X.
+X.X.X.X.X.
+X.X.X.X.X.
+X.X.X.X.X.
+X.X.X.X.X.
+Enter number of rows and columns:
+0 1
+</code></pre>
+  </div>
 
   <p>Each string printed by the program should include a newline at the end, but no other trailing whitespace (i.e. extra space characters at the end of the line).</p>
 
-  <p>For this problem you have to use a for-loop and a while loop. We covered for-loops in class. While loops are similar in that the code inside the body of the while is repeated as long as the while condition is true. We will talk about this more in the next lecture. Here is the syntax for while</p>
+  <p>For this problem you have to use a for-loop and a while or do-while loop. We covered for-loops in class. While loops are similar in that the code inside the body of the while is repeated as long as the while condition is true. We will talk about this more in the next lecture. Here is the syntax for while</p>
 
   <div class="highlighter-rouge"><pre class="highlight"><code>while('expression'){
 	//Repeat these statements
@@ -192,7 +262,7 @@ while(x&gt;0){
 
   <p>Remember to re-compile the relevant files after you make any changes to the C++ code.</p>
 
-  <p>Upload your files to your repo on github using github’s web interface.</p>
+  <p>Upload your files to your repo on github using github’s web interface following the instructions at the beginning of this lab.</p>
 
   <hr />
 
@@ -200,7 +270,7 @@ while(x&gt;0){
 
   <p>Switch roles with your partner.</p>
 
-  <p>Write a C++ program that approximates the value of the constant π. Once again you should not resort to using predefind constants and functions for π, that are provided by C++ standard libraries. Instead you should compute the value of π based on the Leibniz formula for π. The formula is given below:</p>
+  <p>Write a C++ program in a file named pi.cpp that approximates the value of the constant π. Once again you should not resort to using predefind constants and functions for π, that are provided by C++ standard libraries. Instead you should compute the value of π based on the Leibniz formula for π. The formula is given below:</p>
 
   <div class="highlighter-rouge"><pre class="highlight"><code> 1 – 1/3 + 1/5 – 1/7 + 1/9 ...  = pi/4
 </code></pre>
@@ -254,12 +324,11 @@ cout.setf(ios::showpoint); // Always display the decimal point.
 cout.precision(3);         // Set the number of digits to display after the decimal point to 3
 </code></pre>
   </div>
+  <p>To calculate x to the power of y, use the pow(x,y) function from the standard library. To do this you will need to include the header file: cmath</p>
 
   <hr />
 
-  <p>We recommend you complete the next section after the Wed(04/12) lecture because it involves functions and passing command line arguments to main, which we have not yet covered in class. Consider skipping over to the step “Submit your code”. Make sure you check in with your mentor befor leaving the labs</p>
-
-  <p>Upload your files to your repo on github using github’s web interface.</p>
+  <p>Upload your files to your repo on github using github’s web interface. (You will need to be on a csil machine and not remotely logged in to do this step)</p>
 
   <h3 id="calculate-the-minimum-of-4-numbers">Calculate the minimum of 4 numbers</h3>
 
@@ -302,7 +371,27 @@ cout.precision(3);         // Set the number of digits to display after the deci
 
   <p>Follow the pattern in min2 and min3v1/min3v2 in terms of all other issues and how they are handled, including the usage message, etc. Your program should look exactly like these except that it works on 4 inputs (note, there are no trailing whitespacse):</p>
 
-  <p><img src="min4.png" width="500" alt="min4 program example" /></p>
+  <div class="highlighter-rouge"><pre class="highlight"><code>./min4
+Usage: ./min4 num1 num2 num3 num4
+ Prints smallest of the four numbers
+</code></pre>
+  </div>
+  <p>Here is the output of the program with the correct number of inputs:</p>
+
+  <div class="highlighter-rouge"><pre class="highlight"><code>$ ./min4 3 4 5 6
+3
+</code></pre>
+  </div>
+  <p>Here are two more example runs:</p>
+
+  <div class="highlighter-rouge"><pre class="highlight"><code>$ ./min4 92 35 12 17
+12
+
+$ ./min4 92 -35 12 17
+-35
+
+</code></pre>
+  </div>
 
   <p>To compile your code use the g++ command as before.</p>
 
@@ -312,45 +401,11 @@ cout.precision(3);         // Set the number of digits to display after the deci
 
   <p>Upload your files to your repo on github using github’s web interface.</p>
 
-  <h2 id="step-5-submit-your-codea-namesubmita">Step 5: Submit your code<a name="submit"></a></h2>
+  <h2 id="submit-your-code-on-gradescopea-namesubmita">Submit your code on gradescope<a name="submit"></a></h2>
 
-  <p>TBD</p>
+  <p>Once you are satisfied that your program is correct, then it’s time to submit it.</p>
 
-  <h2 id="create-a-repo-on-github-in-our-class-organization">Create a repo on github in our class organization</h2>
-
-  <p>For this lab and all subsequent programming assignments, you should start by creating a repo in the ucsb-cs24-s18 organization following these steps</p>
-
-  <ul>
-    <li>
-      <p>Navigate to your dashboard on <a href="www.github.com">www.github.com</a>. From the left drop down menu, select the class organization as shown in the figure below:
-<img src="/lab/lab00/select-org.png" alt="select-org" height="500px" /></p>
-    </li>
-    <li>
-      <p>Click on the green “New repository” button to create a new repository.</p>
-    </li>
-    <li>
-      <p>Type the name of your repo following the naming convention lab00_your-github-username. For example if your github username is jgaucho, you should name your repo as lab00_jgaucho. If you are working with a partner, include your partner’s github username in the name of the repo. e.g. lab00_jgaucho_alily</p>
-    </li>
-    <li>
-      <p>Select the “Private” visibility option so that other students in the org cannot view your code.</p>
-    </li>
-    <li>
-      <p>Add the C++ .ignore option from the frop down menu and click on “Create repository”. See screenshot below.</p>
-    </li>
-  </ul>
-
-  <p><img src="/lab/lab00/enter-org/pic5.png" alt="new-repo" height="500px" /></p>
-
-  <h2 id="upload-your-code-using-githubs-web-interface">Upload your code using github’s web interface</h2>
-
-  <ul>
-    <li>
-      <p>Upload your files for this assignment to the new repo you created in the previous step. To do this, you should be physically present on a lab machine or in CSIL where you have access to a web browser and a local copy of your hello.cpp program. On your web browser, navigate to your repo on github. Click on the “Upload files” button.</p>
-    </li>
-    <li>
-      <p>Now either drag and drop the files: from your machine or use the “Choose your files” option to browse through your local directory and upload the file. Then press the green “Commit new files” button. Navigate back to your repo to see that the hello.cpp file is correctly listed along with the other files. Click on it and you should see your code on github’s web interface. Continue to explore the web interface of your github repo. For example, try clicking on the “commits” link in your repo. What does that show you and what do you think it means?</p>
-    </li>
-  </ul>
+  <p>Log into your account on <a href="https://www.gradescope.com/">https://www.gradescope.com/</a> and navigate to our course site: CS16 Spring 2018. Select this assignment. Then click on the “Submit” button on the bottom right corner to make a submission. You will be given the option of  uploading files from your local machine or submitting the code that is in a github repo. Select the second option and select your github repo for this assignment. You should receive 100/100 for a completely correct program.</p>
 
   <h2 id="donea-namedonea">Done!<a name="done"></a></h2>
 
@@ -365,24 +420,25 @@ If you are in the Phelps lab or in CSIL, make sure to log out of the machine bef
   <p><code class="highlighter-rouge">$ exit</code></p>
 
   <h2 id="grading-rubric">Grading rubric</h2>
-  <p>In addition to the points given by submit.cs, our staff will be manually grading your work and giving you points based on the following rubric:
-* (1 pt) Submitting on time, per instructions
-* (2 pts) Code style, including but not limited to:
-1. Code can be easily understood by humans familiar with C++ (including both the author(s) of the code, and non-authors of the code.)
-2. Code is neatly indented and formatted, following standard code indentation practices for C++ as illustrated in either the textbook, or example code given in lectures and labs
-3. Variable names choices are reasonable
-4. Code is reasonably “DRY” (as in “don’t repeat yourself”)—where appropriate, common code is factored out into functions
-5. Code is not unnecessarily or unreasonably complex when a simpler solution is available</p>
 
-  <ul>
-    <li>(1pt) Demonstrate an understanding of the use of for-loops and if-else structure to mentor. Mentor will ask you to explain your block program at check out</li>
-    <li>(1pt) Demonstrate an understanding of pair programming to your mentor.</li>
-  </ul>
+  <p>In addition to the points given by gradescope, our staff will be manually grading your code for style. Code style, includes but is not limited to the following:</p>
+
+  <ol>
+    <li>Code can be easily understood by humans familiar with C++ (including both the author(s) of the code, and non-authors of the code.)</li>
+    <li>Code is neatly indented and formatted, following standard code indentation practices for C++ as illustrated in either the textbook, or example code given in lectures and labs</li>
+    <li>Variable names choices are reasonable</li>
+    <li>Code is reasonably “DRY” (as in “don’t repeat yourself”)—where appropriate, common code is factored out into functions</li>
+    <li>Code is not unnecessarily or unreasonably complex when a simpler solution is available</li>
+  </ol>
+
+  <p>In completing this lab you must also demonstrate an understanding of the following: 
+* for-loops and if-else structure. Mentor may ask you to explain your block program 
+* pair programming - ask your mentor for feedback on how you are doing as a pair!</p>
 
   <h1 id="github-resources">Github Resources</h1>
   <ul>
     <li>
-      <p>Overview of git: <a href="https://ucsb-cs56-pconrad.github.io/topics/git_overview/">https://ucsb-cs56-pconrad.github.io/topics/git_overview/</a></p>
+      <p><a href="https://ucsb-cs56-pconrad.github.io/topics/git_overview/">Overview of git</a></p>
     </li>
     <li>
       <p><a href="https://ucsb-cs16.github.io/topics/github_com_create_private_repo_under_org/">Creating a github repo under an organization</a>.</p>
@@ -391,18 +447,6 @@ If you are in the Phelps lab or in CSIL, make sure to log out of the machine bef
       <p><a href="https://ucsb-cs56-pconrad.github.io/topics/git_gitignore/">About gitignore</a></p>
     </li>
   </ul>
-
-  <p><img src="/lab/lab00/git-repo-pic_ink-upload.jpg" alt="git-file-upload" height="500px" /></p>
-
-  <p>You should see the following screen:</p>
-
-  <p><img src="/lab/lab00/upload-hello-cpp.png" alt="git-upload-hello" height="500px" /></p>
-
-  <ul>
-    <li>Now either drag and drop the “hello.cpp” file from your machine or use the “Choose your files” option to browse through your local directory and upload the file. Then press the green “Commit new files” button. Navigate back to your repo to see that the hello.cpp file is correctly listed along with the other files. Click on it and you should see your code on github’s web interface. Continue to explore the web interface of your github repo. For example, try clicking on the “commits” link in your repo. What does that show you and what do you think it means?</li>
-  </ul>
-
-  <p>Congratulations on completing your introductory exercise to github. We will continue to explore git in the subsequent assignments.</p>
 
 </div>
 

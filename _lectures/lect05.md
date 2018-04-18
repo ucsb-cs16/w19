@@ -1,10 +1,10 @@
 ---
 num: "lect05"
-desc: "Gentle intro to TDD, Makefiles lab02 "
+desc: "Gentle intro to TDD, lab02 "
 ready: true
 pdfurl: /lectures/CS16_Lecture5.pdf
 annotatedpdfurl: /lectures/CS16_Lecture5_ann.pdf
-annotatedready: false
+annotatedready: true
 lecture_date: 2018-04-16
 ---
 

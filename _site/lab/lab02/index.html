@@ -45,9 +45,9 @@
 
 
             
-            <tr class="not-ready" >
+            <tr class="ready" >
   <td class="asn_num"  ><a href="/lab/lab02/" data-ajax="false">lab02</a></td>
-  <td class="asn_ready">false</td>
+  <td class="asn_ready">true</td>
   <td class="asn_desc" >ASCII Art: Logical operators, integrating github into your workflow</td>
   <td class="asn_date" >Tue 04/17 10:00AM</td> 
   <td class="asn_date" >Mon 04/23 11:59PM</td>
@@ -89,7 +89,7 @@
   <li>Using the computers in both the CSIL and the Phelps labs to do basic things:
     <ul>
       <li>Performing basic management of directories and files with Unix commands such as mkdir, cd, pwd, ls, cp, mv</li>
-      <li>Submitting assignments in this class with the submit.cs system, and checking your results</li>
+      <li>Submitting assignments in this class with the gradescope system, and checking your results</li>
     </ul>
   </li>
 </ul>
@@ -145,39 +145,19 @@
 </div>
 
 <ul>
-  <li>
-    <p>Next, generate a private/public key pair and upload your public key to your github account. To do this refer to this tutorial: <a href="https://ucsb-cs56-pconrad.github.io/topics/github_ssh_keys/">https://ucsb-cs56-pconrad.github.io/topics/github_ssh_keys/</a> In the process of setting up your key pair, when asked for a passphrase just press enter. By doing this step you will avoid having to enter a password or passphrase everytime you push your code to git.</p>
-  </li>
-  <li>
-    <p>Clone the starter code repo from our class organization to the pilot’s local account by typing the following commands</p>
-  </li>
+  <li>Next, generate a private/public key pair and upload your public key to your github account. To do this refer to this tutorial: <a href="https://ucsb-cs56-pconrad.github.io/topics/github_ssh_keys/">https://ucsb-cs56-pconrad.github.io/topics/github_ssh_keys/</a> In the process of setting up your key pair, when asked for a passphrase just press enter. By doing this step you will avoid having to enter a password or passphrase everytime you push your code to git.</li>
 </ul>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>  git clone git@github.com:ucsb-cs16-w18/cs16-w18-starter-code.git
-</code></pre>
-</div>
-<p>Note that this repo contains the starter code for all labs (although only the code for the current is up to date). So, you don’t have to repeat the above step in subsequent labs.</p>
 
 <h2 id="step-1b-create-a-new-repo-add-your-partner-as-collaborator-and-clone-the-git-repo-that-contains-the-starter-code">Step 1b: Create a new repo, add your partner as collaborator and clone the git repo that contains the starter code</h2>
 
 <ul>
   <li>
-    <p>Create a repo for this lab on the pilot’s github account (just like you did in lab00): To do this, open a browser and navigate to <a href="www.github.com">www.github.com</a>. Log into the pilot’s github account. From the drop down menu on the left, select our class organization: ucsb-cs16-w18 and proceed to create a new repo. You may refer to the instructions in lab00. Follow this naming convention: If your github username is jgaucho and your partner’s is alily, your should name your repo lab02_agaucho_alily (usernames appear in alphabetical order). Also you must set the visibity of your repo to be ‘PRIVATE’ when creating it. We will not repeat these instructions in subsequent labs.</p>
+    <p>Create a repo for this lab on the pilot’s github account (just like you did in lab00): To do this, open a browser and navigate to <a href="www.github.com">www.github.com</a>. Log into the pilot’s github account. From the drop down menu on the left, select our class organization: ucsb-cs16-s18-mirza and proceed to create a new repo. You may refer to the instructions in lab00. Follow this naming convention: If your github username is jgaucho and your partner’s is alily, your should name your repo lab02_agaucho_alily (usernames appear in alphabetical order). Also you must set the visibity of your repo to be ‘PRIVATE’ when creating it. We will not repeat these instructions in subsequent labs.</p>
   </li>
   <li>
     <p>The pilot should add the navigator as a collaborator on github. To do this navigate to the git repo you just created. Choose the settings tab. Then click on the ‘Collaborators and teams’ option on the left. Scroll all the way down and add the navigator’s github account. Then press on the ‘Add collaborator’ button. Now you and the navigator share the ownership of your git repo. You won’t work with your new repo until the end of the lab.</p>
   </li>
-  <li>
-    <p>Now navigate to the cs16-w18-starter-code directory, and do a git pull to get the latest version of the lab starter code. You must do this step again in subsequent labs</p>
-  </li>
 </ul>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>  cd cs16-w18-starter-code
-  git pull
-</code></pre>
-</div>
-
-<p>Never modify the code in the cs16-w18-starter-code repo directly because you are not the owner of that repo. Instead you should work on a copy of those files.</p>
 
 <h2 id="step-2-clone-the-repo-in-the-pilots-account-and-get-the-starter-code">Step 2: Clone the repo in the pilot’s account and get the starter code</h2>
 
@@ -190,10 +170,10 @@
 </div>
 
 <ul>
-  <li>Using the web-browser, navigate to your newly created repo on github. Find the address of your git repo. Click on the green “clone or download button”. If your git repo was named lab02_alily_jgaucho, then the git address should something like: “git@github.com:ucsb-cs16-w18/lab02_alily_jgaucho.git”. Now clone your repo into your csil account by typing the following on the terminal, replacing the last argument with the address of your git repo</li>
+  <li>Using the web-browser, navigate to your newly created repo on github. Find the address of your git repo. Click on the green “clone or download button”. If your git repo was named lab02_alily_jgaucho, then the git address should something like: “git@github.com:ucsb-cs16-s18-mirza/lab02_alily_jgaucho.git”. Now clone your repo into your csil account by typing the following on the terminal, replacing the last argument with the address of your git repo</li>
 </ul>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>git clone git@github.com:ucsb-cs16-w18/lab02_alily_jgaucho.git
+<div class="highlighter-rouge"><pre class="highlight"><code>git clone git@github.com:ucsb-cs16-s18-mirza/lab02_alily_jgaucho.git
 </code></pre>
 </div>
 
@@ -209,7 +189,7 @@
   <li>Copy the starter code by typing the following command:</li>
 </ul>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>cp ~/cs16/cs16-w18-starter-code/lab02/* ./
+<div class="highlighter-rouge"><pre class="highlight"><code>cp /cs/faculty/dimirza/cs16/labs/lab02/* ./
 </code></pre>
 </div>
 
@@ -237,10 +217,10 @@ git push origin master
 
 <p>Congratulations on integrating git into your workflow! Now proceed to the programming part of this assignment.</p>
 
-<h2 id="step-4-create-a-team-on-submitcs">Step 4: Create a team on submit.cs</h2>
+<h2 id="step-4-create-a-team-on-gradescope">Step 4: Create a team on gradescope</h2>
 
 <ul>
-  <li>Go to submit.cs, navigate to CS16, W18, lab02, and create a team for you and your pair partner.</li>
+  <li>Go to gradescope, navigate to CS16, S18, lab02, and create a team for you and your pair partner.</li>
 </ul>
 
 <h2 id="what-well-be-doing-in-this-lab-ascii-art-a-nameasciiarta">What we’ll be doing in this lab: ASCII Art <a name="asciiart"></a></h2>
@@ -341,7 +321,7 @@ and then passes those to the function:</p>
  ./starL -1 -1
 </pre>
 
-<p>With the command line parameters -1 -1, the program runs a set of tests on itself to make sure that the function starL inside the program is functioning correctly.  So, you should be able to get some feedback on whether your code is correct before you even send it to the submit program.  The code uses stoi to convert the argv[1] and argv[2] to integer values, and compare against -1.</p>
+<p>With the command line parameters -1 -1, the program runs a set of tests on itself to make sure that the function starL inside the program is functioning correctly.  So, you should be able to get some feedback on whether your code is correct before you even send it to gradescope.  The code uses stoi to convert the argv[1] and argv[2] to integer values, and compare against -1.</p>
 
 <p>Look over the code and try to understand how it works.  When you feel ready, move on to the next step, and try tackling the starT.cpp, starC.cpp and starZ.cpp programs.</p>
 
@@ -357,19 +337,11 @@ and then passes those to the function:</p>
 
 <p>In general the parameters to the startT program are width, followed by height. You should take this into consideration when writing your main function. To write the starT() function refer back to the description of starT earlier in this lab.   You can also run the program with arguments of -1 -1 to run the internal tests and see whether your implementation is correct.</p>
 
-<p>When you think you have a correct implementation, try submitting to the submit.cs system.  You can submit just your starT.cpp program to see how far along you’ve gotten:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>~submit/submit -p 922 starT.cpp 
-</code></pre>
-</div>
+<p>When you think you have a correct implementation, try submitting to the gradescope system.  You can submit just your starT.cpp program to see how far along you’ve gotten.</p>
 
 <p>Note that this will show failures for <code>starC.cpp</code> and <code>starZ.cpp</code>, which are files that you’ll be working on at a later step.</p>
 
-<p>You could also just submit the “stubs” for those—though those will fail some or all of the tests:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>~submit/submit -p 922 starC.cpp starT.cpp starZ.cpp
-</code></pre>
-</div>
+<p>You could also just submit the “stubs” for those—though those will fail some or all of the tests.</p>
 
 <p>Either way, for now, concentrate only on the test failures that pertain to starT.cpp and try to address any problems you encounter.  If you fix these NOW before moving on to starC.cpp and/or starZ.cpp, you will likely have better success, because what you learn from fixing your mistakes will help you get those other parts solved more quickly and easily.</p>
 
@@ -428,15 +400,7 @@ git push origin master
   <li>When typing in a command line that doesn’t have exactly two arguments after <code>./starC</code> produces the correct error message</li>
 </ul>
 
-<p>then, you are ready to try testing your code on the submit system.</p>
-
-<p>If you submit starC.cpp together with your starT.cpp program, your submit command will look like this:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>~submit/submit -p 922 starC.cpp starT.cpp 
-</code></pre>
-</div>
-
-<p>(The order of the files doesn’t matter—list starT.cpp first, or starC.cpp first, aand either way, the result is the same.)</p>
+<p>then, you are ready to try testing your code on gradescope.</p>
 
 <p>Note that failures for <code>starZ.cpp</code> may still show up, but we need not be concerned about those yet.</p>
 
@@ -501,13 +465,8 @@ Usage: ./backslash width
 
 <p>And, if there is not exactly one parameter, there should be an appropriate “usage” message that follows the pattern of the other programs—except that there is only a width parameter in this program.</p>
 
-<p>When you have a version that can pass its internal tests, try submitting it along with your starT.cpp and starC.cpp to the submit.cs system.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>~submit/submit -p 922 starC.cpp starT.cpp starZ.cpp
-</code></pre>
-</div>
-
-<p>If there are errors reported, fix them.</p>
+<p>When you have a version that can pass its internal tests, try submitting it along with your starT.cpp and starC.cpp to gradescope.<br />
+If there are errors reported, fix them.</p>
 
 <p>When you have a clean build, you are nearly done with this lab.   I say “nearly” done, because you should take one last look over the grading rubric to see if there is anything you need to adjust before doing your final submit and calling it a day.</p>
 
@@ -523,23 +482,17 @@ You MUST make one final submission that includes ALL of your files.  For getting
 <p>Correctness</p>
 
 <ul>
-  <li>(150 pts) 15 tests, ten points each, executed by submit.cs system</li>
+  <li>(100 pts) 15 tests, 5-10 points each, executed by the gradescope system</li>
 </ul>
 
 <p>End of lab check off points:</p>
 
 <ul>
   <li>
-    <p>(10 pts) submission is on time and follows instructions</p>
+    <p>(10 pts) Correct creation of the lab02 github repo in our class organization following the naming conventions provided in the lab. Adding your partner as collaborator and partner accepting the invitation. Both partners joining the same group on gradescope.</p>
   </li>
   <li>
-    <p>(10 pts) starT.cpp, starC.cpp and starZ.cpp files submitted  have good header comments</p>
-  </li>
-  <li>
-    <p>(10 pts) Correct creation of the lab02 github repo in our class organization following the naming conventions provided in the lab. Adding your partner as collaborator and partner accepting the invitation. Both partners joining the same group on submit.cs</p>
-  </li>
-  <li>
-    <p>(20 pts) All three programs have good programming style, including proper use of indentation, reasonable choices for variable names, readable code, reasonable use of whitespace, and other good programming practices. You must have good header comments as illustrated in the coding examples done in class. First line should be the name of your file, followed by date of creation, author and a brief description of the program. You must use curly braces in the body of all control structures (if-else, for and while) even if they contain a single statement. You should not mix tabs and spaces when indenting your code</p>
+    <p>(10 pts) All three programs have good programming style, including proper use of indentation, reasonable choices for variable names, readable code, reasonable use of whitespace, and other good programming practices. You must have good header comments as illustrated in the coding examples done in class. First line should be the name of your file, followed by date of creation, author and a brief description of the program. You must use curly braces in the body of all control structures (if-else, for and while) even if they contain a single statement. You should not mix tabs and spaces when indenting your code</p>
   </li>
 </ul>
 

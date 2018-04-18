@@ -48,14 +48,17 @@
   <td>
     lect05
      
+        <a href="/lectures/CS16_Lecture5.pdf" data-ajax="false">
         Before Slides 
+        </a> 
      
  </td>
  <td>
     lect05
      
-        Annotated Slides 
-     
+        <a href="/lectures/CS16_Lecture5_ann.pdf" data-ajax="false">   Annotated Slides
+        </a> 
+    
  </td>
 
  <td><a href="/lectures/lect06/">Next Lecture</a></td>
@@ -63,21 +66,71 @@
 </tr>
 </table> 
     <h1 id="code-from-lecture">Code from lecture</h1>
+<p><a href="https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-05">https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-05</a></p>
 
 <h1 id="topics">Topics</h1>
 
 <h2 id="intro-to-lab02---ascii-art">Intro to lab02 - ASCII Art</h2>
 <ul>
   <li>Understanding what is expected</li>
-  <li>Introducing more flexibility into your code with command line arguments</li>
 </ul>
 
-<h2 id="review-designing-nested-loops">Review: Designing nested loops</h2>
+<h2 id="test-driven-development">Test driven development</h2>
+
 <ul>
-  <li>When do we need a loop?</li>
-  <li>When do we need a nested loop?</li>
-  <li>Checking for limits</li>
+  <li>Write test code and actual code side by side- so your implementation is always tested</li>
+  <li>Start with function stubs</li>
+  <li>Write the simplest test case and make your code pass that case</li>
+  <li>Write another test case, expect your code to fail, see it fail, then add code to pass that test case (and the previous one).</li>
+  <li>With every new test case, we have to make sure that all our previous tests still pass - this is a great way to make sure that things that were working before are not broken by new code!</li>
 </ul>
+
+<h2 id="under-the-hood-of-program-compilation-and-execution">Under the hood of program compilation and execution</h2>
+<ul>
+  <li>From high-level programs to machine code
+    <ul>
+      <li>What are .h, .o and .cpp file?</li>
+      <li>What is an execuatble</li>
+      <li>Steps in compilation
+ 	* Creating object files and linking programs with g++</li>
+    </ul>
+  </li>
+  <li>Separate compilation with Makefiles <a href="https://foo.cs.ucsb.edu/16wiki/index.php/C%2B%2B:_Separate_Compilation_and_Makefiles">read about Makefile</a></li>
+  <li>Compile-time errors</li>
+  <li>Linker errors</li>
+  <li>Header guards</li>
+</ul>
+
+<h2 id="lesson-plan">Lesson plan</h2>
+
+<ul>
+  <li>We will start with the code that we wrote earlier for drawing shapes and testing the functions we wrote with our home grown test framework</li>
+  <li>
+    <p>Our first goal is to split our original implementation into multiple files in a way that maximizes reuse. For example we can reuse our drawTriangle and drawSquare functions to draw a house. However, this is not possible with the file structure in lecture 5. We’ll discuss why that is.</p>
+  </li>
+  <li>
+    <p>Once we have broken down our single cpp file into logical separate files, its time to compile the code. Our goal will be to select and combine the pieces that make a complete program</p>
+  </li>
+  <li>
+    <p>If we tried to compile any one file (independent of the others), we are likely to get compiler errors and linker errors. You should be able to distinguish between these two types of errors and why they occur. To understand this distinction we need to peek under the hood of the compilation process and the intermediate steps that g++ takes to create an executable (see slides for more information). You will be introduced to object files - a very important concept for later lessons.</p>
+  </li>
+  <li>We will first try to compile each file separately on the command line using the g++ option -c. For example</li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>g++ -c shapes.cpp
+</code></pre>
+</div>
+<p>The above command creates the object file shapes.o</p>
+
+<p>We will then look at how to link all the object files into an executable using the -o option as shown below</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>g++ file1.o file2.o file3.o -o finalexecuatble
+</code></pre>
+</div>
+<ul>
+  <li>Next we will automate this process by writing a makefile</li>
+</ul>
+
 
     </div><!-- content -->
     <div data-role="footer" class="footer">

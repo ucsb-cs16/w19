@@ -62,10 +62,7 @@
   <li>We will provide you with scratch paper</li>
   <li>We will provide you the table of operator precedence</li>
   <li>The format of the exam will be similar to midterm 1</li>
-  <li>
-    <p>Seating will be assigned - please check on Piazza</p>
-  </li>
-  <li>Consolidated <a href="https://docs.google.com/document/d/1SyE8iRpH-haLS06KGHZdZaOniGsh9V0lG8vfpStX43Y/edit?usp=sharing">exam notes</a> These cover some of the topics. Add to them to personalize your notes to bring to the exam.</li>
+  <li>Seating will be assigned - please check on Piazza</li>
 </ul>
 
 <h2 id="reference-material">Reference material</h2>
@@ -77,9 +74,9 @@
 
 <h2 id="code-written-in-lecture">Code written in lecture</h2>
 <p><a href="https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures">https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures</a>
-* Lecture 1 to lecture 12
-* Homeworks 1 to 10
-* Labs 0 to 5</p>
+* Lecture 1 to lecture 6
+* Homeworks 1 to 3
+* Labs 0 to 2</p>
 
 <h2 id="pracice-problems">Pracice problems:</h2>
 
@@ -88,7 +85,7 @@
 <ul>
   <li><a href="https://docs.google.com/document/d/1-hpeFpfTvdcvNeTgvdJpWsLrkXrpdrq4-ZA1Dg7fC6w/edit?usp=sharing">Practice Problems -I</a></li>
   <li><a href="https://docs.google.com/document/d/1ezZK5Xh2zax86bvSy2o9gaNp2bPWDMLDwJX0oP_SGoQ/edit?usp=sharing">Solutions to the practice problems -I</a></li>
-  <li><a href="https://drive.google.com/drive/folders/0B1z9k2M7uTvJaE9rR0F0OVV5ZWs?usp=sharing">Concept Inventory on Pointers and Arrays</a>.</li>
+  <li><a href="https://drive.google.com/drive/folders/0B1z9k2M7uTvJaE9rR0F0OVV5ZWs?usp=sharing">Concept Inventory on Arrays</a>.</li>
 </ul>
 
 <p>We recommend that you try these problems after you have studied/contributed to the collaborative notes (see above) and gone through the labs, homeworks and lectures.</p>
@@ -142,64 +139,6 @@
       <li>Identify the occurrence of infinite loops</li>
     </ul>
   </li>
-  <li>Memory
-    <ul>
-      <li>Basic model of memory (addressable bytes)</li>
-      <li>Representing multi-byte data like ints, address of multi-byte variables</li>
-      <li>Program layout in memory during runtime</li>
-      <li>Interaction of programs with memory (run-time stack vs. heap) (general theme in all the following topics, almost every lecture talks about this)</li>
-    </ul>
-  </li>
-  <li>Data representation:
-    <ul>
-      <li>Conversions between difference bases using positional encoding (hex decimal binary)</li>
-      <li>Finding the range of values with fixed numbers of bits for unsigned representation</li>
-    </ul>
-  </li>
-  <li>Arrays: <a href="/hwk/h08/">hw 08</a>,  <a href="/lab/lab04/">lab 04</a>, <a href="/lectures/lect08/">lec 08</a>, <a href="/lectures/lect09/">lec 09</a>, <a href="/lectures/lect11/">lec11</a>
-    <ul>
-      <li>declaration <a href="/lectures/lect08/">lec 08</a></li>
-      <li>initialization <a href="/lectures/lect08/">lec 08</a></li>
-      <li>representation in memory <a href="/lectures/lect08/">lec 08</a></li>
-      <li>accessng elements via index-based and range-based for loops <a href="/lectures/lect08/">lec 08</a></li>
-      <li>passing arrays to functions <a href="/lectures/lect09/">lec 09</a>, <a href="/lectures/lect11/">lec11</a></li>
-      <li><strong>tracing/writing code involving arrays and showing program dynamics via pointer diagrams</strong></li>
-    </ul>
-  </li>
-  <li>Pointers: <a href="/hwk/h10/">hw 10</a>,  <a href="/lab/lab05/">lab 05</a>, <a href="/lectures/lect09/">lec 09</a>
-    <ul>
-      <li>purpose</li>
-      <li>declaration, size of a pointer</li>
-      <li>initialization to null value, initialization using ‘&amp;’ operator</li>
-      <li>pointer diagrams showing relationship between pointer and pointee</li>
-      <li>derefencing pointers using the ‘*’ operator</li>
-      <li>assignment involving pointers: making two pointers point to the same object</li>
-      <li>changing where a pointer points to</li>
-      <li><strong>tracing/writing code involving pointers and showing program dynamics via pointer diagrams</strong></li>
-    </ul>
-  </li>
-  <li>References: <a href="/hwk/h08/">hw 08</a>, <a href="/lab/lab05/">lab 05</a>, <a href="/lectures/lect10/">lec 10</a>
-    <ul>
-      <li>Definition</li>
-      <li>Assignment</li>
-      <li>Call by reference</li>
-      <li>Differences between pointers and references (when would you use each and why)</li>
-      <li><strong>tracing/writing code involving pointers, references and showing program dynamics via pointer diagrams</strong></li>
-    </ul>
-  </li>
-  <li>Structs: <a href="/hwk/h10/">hw 10</a>, <a href="/lab/lab05/">lab 05</a>, <a href="/lectures/lect10/">lec 10</a>, <a href="/lectures/lect13/">lec 13</a>, also review <a href="https://github.com/ucsb-cs16-wi17/lecture-02-16">code covered in lec 11</a>
-    <ul>
-      <li>Defining a struct as a data type <a href="/lectures/lect10/">lec 10</a></li>
-      <li>Declaring objects of struct on the stack <a href="/lectures/lect10/">lec 10</a></li>
-      <li>Accessing memory variables using the dot (.) operator <a href="/lectures/lect10/">lec 10</a></li>
-      <li>Pointers to structure (declaration and initialization) <a href="/lectures/lect10/">lec 10</a></li>
-      <li>References to structure [See code covered in lecture]</li>
-      <li>Arrays of structs [See code covered in lec 12]</li>
-      <li>Passing structs to functions by value, address and reference [See code covered in lec 12]</li>
-      <li>Passing arrays of structs to functions [See code covered in lec 12]</li>
-      <li><strong>tracing/writing code involving structs, pointers and references to structs, arrays of structs and showing program dynamics via pointer diagrams</strong></li>
-    </ul>
-  </li>
   <li>Program translation
     <ul>
       <li>Steps (preprocessing, compiling, linking)</li>
@@ -215,7 +154,7 @@
   <li><a href="https://docs.google.com/document/d/1ntjJnT3H9DAeQbygjyJoC6PLHIM9xyarSTFpOGF9KsU/edit?usp=sharing">Spring’17 - midterm 2</a></li>
   <li><a href="midterm1-sp17.pdf" data-ajax="false">Spring’17 - midterm 1</a></li>
   <li><a href="https://drive.google.com/file/d/0B__7284Jee0fS1hYSW1yMUpYd2s/view?usp=sharing">Winter’17 - midterm 1</a></li>
-  <li><a href="https://drive.google.com/open?id=0B1z9k2M7uTvJQlVPZnZMM2JiQkk">Winter’17 - midterm 2</a> (Ignore questions in Part 3)</li>
+  <li><a href="https://drive.google.com/open?id=0B1z9k2M7uTvJQlVPZnZMM2JiQkk">Winter’17 - midterm 2</a></li>
   <li><a href="http://www.cs.ucsb.edu/~pconrad/cs16/10S/exams/">Spring’10</a></li>
   <li><a href="http://www.cs.ucsb.edu/~pconrad/cs16/10W/exams/">Winter’10</a></li>
   <li><a href="http://www.cs.ucsb.edu/~pconrad/cs16/09F/exams">Fall’09</a></li>

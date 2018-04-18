@@ -48,14 +48,17 @@
   <td>
     lect04
      
+        <a href="/lectures/CS16_Lecture4.pdf" data-ajax="false">
         Before Slides 
+        </a> 
      
  </td>
  <td>
     lect04
      
-        Annotated Slides 
-     
+        <a href="/lectures/CS16_Lecture4_ann.pdf" data-ajax="false">   Annotated Slides
+        </a> 
+    
  </td>
 
  <td><a href="/lectures/lect05/">Next Lecture</a></td>
@@ -63,129 +66,22 @@
 </tr>
 </table> 
     <h1 id="code-from-lecture">Code from lecture</h1>
+<p><a href="https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-04">https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-04</a></p>
 
-<h2 id="practice-with-single-for-loops">Practice with single for loops</h2>
+<h2 id="review-designing-nested-loops">Review: Designing nested loops</h2>
 <ul>
-  <li>Summing a series:</li>
+  <li>When do we need a loop?</li>
+  <li>When do we need a nested loop?</li>
+  <li>Checking for limits</li>
+  <li>Practice with ASCII art (also topic of lab02)</li>
 </ul>
 
-<p><strong>Exercise: Write a program that takes a parameter n as a command line arguments and computes the following:</strong></p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>1 + 1/2 + 1/3 + ....+ 1/n
-</code></pre>
-</div>
-<p>where n is the number of terms in the series. Sample run of the program is below:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>$./sumSeries 2
-Sum of the first 2 terms is: 1.500
-</code></pre>
-</div>
-<p>## Nested Loops</p>
-
-<p>ASCII Art with nested loops</p>
-
-<p><strong>Exercise: Write a program to draw a square of a given width</strong>
-Example usage:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>$./drawSquare 
-Enter the width of the square: 5
-* * * * *
-* * * * *
-* * * * *
-* * * * *
-* * * * *
-</code></pre>
-</div>
-<p>Complete the code below</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>#include &lt;iostream&gt;
-using namespace std;
-
-void drawSquare(int n); // Function to draw a square of side n
-
-int main(){
-  // Complete the code below:
-  
-  
-  cout&lt;&lt;"Enter the width of the square : "
-  cin&gt;&gt; num;
-    
-}
-</code></pre>
-</div>
-
-<div class="pagebreak"></div>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>
-// Write the definition of a function drawSquare that takes one parameter
-void drawSquare(int n){
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-</code></pre>
-</div>
-
-<p><strong>Exercise: Write a program to draw a triangle of a given width</strong>
-Example usage:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>$./drawTriangle
-Enter the width of the triangle: 5
-* * * * *
-* * * * *
-* * * * *
-* * * * *
-* * * * *
-</code></pre>
-</div>
-
-<p>Complete the code below</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>#include &lt;iostream&gt;
-using namespace std;
-
-void drawTriangle(int n); // Function to draw a triangle of side n
-
-int main(){
-  // Complete the code below:
-  
-  
-  cout&lt;&lt;"Enter the width of the triangle : "
-  cin&gt;&gt; num;
-  
-  
-}
-
-// Which line of code do you need to modify
-void drawTriangle(int n){
-  for(int j = 0 ; j &lt; n; j++){   //A
-    for(int i = 0 ; j &lt; n; j++){ //B
-      cout&lt;&lt;"* ";  //C
-    }
-    cout&lt;&lt;endl;    //D
-  }
-  cout&lt;&lt;endl;      //E
-}
-
-</code></pre>
-</div>
-
-<p><strong>Math Puzzle</strong>
-One of the powers of computing is being able to do a brute-force search for a solution to a problem. Trial and error works just fine for some problems. In fact, computers can be especially good at such problems. Consider this:</p>
-
-<p>Horses cost $10, pigs cost $3, and rabbits are only $0.50. A farmer buys 100 animals for $100, How many of each animal did he buy?</p>
-
-<p>Write a program to do this.</p>
+<h2 id="three-key-aspects-of-functions">Three key aspects of functions</h2>
+<ul>
+  <li>Declaration (what are the inputs, outputs?)</li>
+  <li>Definition  (actual code for achieving the desired behavior)</li>
+  <li>Function call (using function)</li>
+</ul>
 
     </div><!-- content -->
     <div data-role="footer" class="footer">

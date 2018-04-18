@@ -63,53 +63,19 @@
 </tr>
 </table> 
     <h1 id="topics">Topics</h1>
-
-<h2 id="under-the-hood-of-program-compilation-and-execution">Under the hood of program compilation and execution</h2>
-<ul>
-  <li>From high-level programs to machine code
-    <ul>
-      <li>What are .h, .o and .cpp file?</li>
-      <li>What is an execuatble</li>
-      <li>Steps in compilation
- 	* Creating object files and linking programs with g++</li>
-    </ul>
-  </li>
-  <li>Separate compilation with Makefiles <a href="https://foo.cs.ucsb.edu/16wiki/index.php/C%2B%2B:_Separate_Compilation_and_Makefiles">read about Makefile</a></li>
-  <li>Compile-time errors</li>
-  <li>Linker errors</li>
-  <li>Header guards</li>
-</ul>
-
-<h2 id="lesson-plan">Lesson plan</h2>
+<p>## Data and number representation</p>
 
 <ul>
-  <li>We will start with the code that we wrote in lecture 5 for drawing shapes and testing the functions we wrote with our home grown test framework</li>
-  <li>
-    <p>Our first goal is to split our original implementation into multiple files in a way that maximizes reuse. For example we can reuse our drawTriangle and drawSquare functions to draw a house. However, this is not possible with the file structure in lecture 5. We’ll discuss why that is.</p>
-  </li>
-  <li>
-    <p>Once we have broken down our single cpp file into logical separate files, its time to compile the code. Our goal will be to select and combine the pieces that make a complete program</p>
-  </li>
-  <li>
-    <p>If we tried to compile any one file (independent of the others), we are likely to get compiler errors and linker errors. You should be able to distinguish between these two types of errors and why they occur. To understand this distinction we need to peek under the hood of the compilation process and the intermediate steps that g++ takes to create an executable (see slides for more information). You will be introduced to object files - a very important concept for later lessons.</p>
-  </li>
-  <li>We will first try to compile each file separately on the command line using the g++ option -c. For example</li>
+  <li>Positional encoding: binary, hex, decimal</li>
+  <li>Internal vs. external representation</li>
+  <li>Conversion between different representations</li>
+  <li>Key ideas: bits can represent ANYTHING. With n bits we can represent at most 2^N things</li>
+  <li>Apply above rule to represent characters (ASCII), unicode, colors ….</li>
+  <li>What is signed vs unsigned integer representation</li>
+  <li>Signed representation used by modern computers: two’s complement</li>
+  <li>The data type of a variable determines its representation in memory AND the number of bits used to store each variable</li>
+  <li>Model of memory</li>
 </ul>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>g++ -c shapes.cpp
-</code></pre>
-</div>
-<p>The above command creates the object file shapes.o</p>
-
-<p>We will then look at how to link all the object files into an executable using the -o option as shown below</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>g++ file1.o file2.o file3.o -o finalexecuatble
-</code></pre>
-</div>
-<ul>
-  <li>Next we will automate this process by writing a makefile</li>
-</ul>
-
 
     </div><!-- content -->
     <div data-role="footer" class="footer">
