@@ -26,18 +26,6 @@ lecture_date: 2018-04-16
 * With every new test case, we have to make sure that all our previous tests still pass - this is a great way to make sure that things that were working before are not broken by new code!
 
 
-## Under the hood of program compilation and execution
-* From high-level programs to machine code
-	* What are .h, .o and .cpp file?
-	* What is an execuatble 
-	* Steps in compilation
- 	* Creating object files and linking programs with g++
-* Separate compilation with Makefiles [read about Makefile](https://foo.cs.ucsb.edu/16wiki/index.php/C%2B%2B:_Separate_Compilation_and_Makefiles)
-* Compile-time errors
-* Linker errors
-* Header guards
-
-
 ## Lesson plan
 
 * We will start with the code that we wrote earlier for drawing shapes and testing the functions we wrote with our home grown test framework
@@ -59,6 +47,6 @@ We will then look at how to link all the object files into an executable using t
 ```
 g++ file1.o file2.o file3.o -o finalexecuatble
 ```
-* Next we will automate this process by writing a makefile
+
 
 
