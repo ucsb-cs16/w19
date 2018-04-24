@@ -11,7 +11,7 @@ due: 2018-05-07 23:59:00.00-7
 <h1>CS16: Programming Assignment 04</h1>
 <h2>Introduction -- Important: Read this!</h2>
 
-The mentors will be looking for (and grading) your programming style, such as proper use of comments, tab indentation, good variable names, and overall block and function designs. So, it is not enough for your lab to pass submit.cs! Please read the instructions herein <b>carefully</b>.
+The mentors will be looking for (and grading) your programming style, such as proper use of comments, tab indentation, good variable names, and overall block and function designs. So, it is not enough for your lab to pass gradescope tests! Please read the instructions herein <b>carefully</b>.
 
 <h3>Pair programming </h3>
 
