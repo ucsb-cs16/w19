@@ -217,7 +217,7 @@ Usage: ./countDucks inputFile
 -bash-4.2$
 ```
 
-Implement the countDucks program in countDucks.cpp so that when you run the program with argument animals01.txt as the filename, it produces the following output:
+IMPLEMENT THE COUNTDUCKS PROGRAM IN countDucks.cpp so that when you run the program with argument animals01.txt as the filename, it produces the following output:
 
 ```
 -bash-4.2$ ./countDucks animals01.txt
