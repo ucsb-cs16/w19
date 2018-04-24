@@ -1,7 +1,7 @@
 ---
 layout: lab
 num: lab03
-ready: false
+ready: true
 desc: "Counting ducks: File I/O and flow control"
 assigned: 2018-04-24 09:00:00.00-8
 due: 2018-04-30 23:59:00.00-7
@@ -58,17 +58,10 @@ In lab02,  we have done the same thing. So if you don't know to how to do that, 
 ## Step 3: Get the starter code from a local directory <a name="step3"></a>
 
 
-This step is aslo very similar to lab02, first open terminal and go to the directory where you cloned the starter code in lab02 and pull the latest version of the starter code.
+Copy the skeleton to your local lab03 repo using the following command, <strong>REMEMBER</strong> to change the directory name in the commands below to your own directory's name, in this lab we simply use lab03_agaucho_alily as a example for your local git directory:
 
 ```
-  cd ~/cs16/cs16-w18-starter-code
-  git pull
-```
-
-Copy the code from your starter code directory to your local lab03 repo using the following command, <strong>REMEMBER</strong> to change the directory name in the commands below to your own directory's name, in this lab we simply use lab03_agaucho_alily as a example for your local git directory:
-
-```
-  cp ~/cs16/cs16-w18-starter-code/lab03/* ~/cs16/lab03_agaucho_alily/
+  cp /cs/faculty/dimirza/cs16/labs/lab03/* ~/cs16/lab03_agaucho_alily/
 ```
 
 After doing this command, if you cd into ~/cs16/lab03_agaucho_alily/ and use the ls command, you should see several .cpp files:
@@ -109,19 +102,18 @@ Finally, use the Unix <code>cat</code> command to list the contents of the file 
 ```
 -bash-4.2$ cat sample01.cpp
 // sample01.cpp
-// by P. Conrad for CS16, Winter 2017
 #include <iostream>
 using namespace std;
-
+ 
 int main() {
     // Simple for loop that counts from 1 up to n
-
+ 
     int n=5;
-
+ 
     for (int i=1; i<=n; i++) {
        cout << "i=" << i << endl;
     }
-
+ 
     return 0;
 }
 -bash-4.2$
@@ -292,12 +284,10 @@ Note that we will also test your program on other input files, so you should too
 
 When you are satisfied that the count is correct and that format of the output is precise, you are ready to submit your code for grading.
 
-Note that the submit.cs system may give you feedback on whether your code is correct or not.    You can use this feedback to resubmit as many times as you need up until the deadline for the assignment.  So if it doesn't work on the first try, don't panic&mdash;just fix your code.
 
 
-## Step 8: Turn in your code  <a name="step8"></a>
+## Step 8: Turn in your code on gradescope <a name="step8"></a>
 
-Once you have joined the course, you should be able to submit your code by typing the sequence of commands shown below in a terminal window on CSIL:
 
 * Navigate to your ~/cs16/lab03_agaucho_alily directory, the one containing your code for this week's lab.
 <pre>
@@ -314,60 +304,8 @@ animals02.txt  myProg01.cpp    myProg02.cpp  sample01.cpp
 -bash-4.2$
 ```
 
-* Use the following command to turn in your files:
-<pre>
--bash-4.2$ ~submit/submit -p 923 myProg01.cpp myProg02.cpp
-</pre>
-
-The number 923 is the "project number" specfic to CS16 W18 lab03 for our class section.
-
-### What a successful turnin looks like
-
-```
-[dimirza@csil-02 lab03_agaucho_alily]$ pwd
-/cs/faculty/dimirza/cs16/lab03_agaucho_alily
-[dimirza@csil-02 lab03_agaucho_alily]$ ls
-animals01.txt  countDucks      myProg01      myProg02      README.md
-animals02.txt  countDucks.cpp  myProg01.cpp  myProg02.cpp  sample01.cpp
-[dimirza@csil-02 lab03_agaucho_alily]$ ~submit/submit -p 923 myProg01.cpp myProg02.cpp
-logged in as dimirza@cs.ucsb.edu
-Sending myProg01.cpp
-Sending myProg02.cpp
-Submission successful
-Results will be available at: https://submit.cs.ucsb.edu/submission/226377
-[dimirza@csil-02 lab03_agaucho_alily]$
-```
-
-Once you have done the submit, go to the link shown.  (Yours will have a different number from the one given above.)
-
-### What you'll see on submit.cs if the submission was successful
-
-If you see the following, it means you passed all the tests.  A successful submission will get 120 points. If you find any thing you want to change, you may resubmit as many times as needed up until the deadline.
-
-<div id="diff_table_div">
-<div class="row-fluid"><div class="pull-left well well-small"><h3 style="color:green">Passed Tests</h3><table border="1">
-  <tr><th>Test Group</th><th>Test Name</th><th>Value</th></tr><tr><td>myProg01</td><td><p style="color:green;margin:0;padding:0;">myProg01</p></td><td>30</td></tr><tr><td>myProg02</td><td><p style="color:green;margin:0;padding:0;">./myProg02 animals01.txt</p></td><td>30</td></tr><tr><td>myProg02</td><td><p style="color:green;margin:0;padding:0;">./myProg02 animals02.txt</p></td><td>30</td></tr><tr><td>myProg02</td><td><p style="color:green;margin:0;padding:0;">myProg02 empty command line</p></td><td>30</td></tr></table></div></div>
-
-</div>
-
-### What you might see if there were errors
-
-If instead, you see someting like this, it means you didn't pass some tests:
-
-![error](/lab/lab03/submit.cs.error-50pct.png){:height="500px"}
-
-If you are seeing something like that, try to understand the feedback you are getting before asking questions.  Then if you are still stuck, ask for help.  For example, the output above shows that the student forgot the "colon" (<code>:</code>) in the output.
-
-# Evaluation and Grading <a name="eval"></a>
-
-To earn full credit for this lab (120 pts) you should have successfully submitted both myProg01.cpp and myProg02.cpp  via submit.cs and received a "green" indication that it passed all the tests for expected output.
-
-<div id="diff_table_div">
-<div class="row-fluid"><div class="pull-left well well-small"><h3 style="color:green">Passed Tests</h3><table border="1">
-  <tr><th>Test Group</th><th>Test Name</th><th>Value</th></tr><tr><td>myProg01</td><td><p style="color:green;margin:0;padding:0;">myProg01</p></td><td>30</td></tr><tr><td>myProg02</td><td><p style="color:green;margin:0;padding:0;">./myProg02 animals01.txt</p></td><td>30</td></tr><tr><td>myProg02</td><td><p style="color:green;margin:0;padding:0;">./myProg02 animals02.txt</p></td><td>30</td></tr><tr><td>myProg02</td><td><p style="color:green;margin:0;padding:0;">myProg02 empty command line</p></td><td>30</td></tr></table></div></div>
-
-</div>
-
+Submit all the cpp files to lab03 assignment on gradescope. Then visit gradescope and check that you have a correct score.
+If you are working with a partner, make sure both of you join a team on gradescope, otherwise only one of you will get credit for the lab
 
 
 * You must check that you have followed these style guidelines:
@@ -376,9 +314,7 @@ To earn full credit for this lab (120 pts) you should have successfully submitte
 2. Variable name choice: variables should have sensible names.
 	More on indentation: Your code should be indented neatly.  Code that is inside braces should be indented, and code that is at the same "level" of nesting inside braces should be indented in a consistent way.    Follow the examples from lecture, the sample code, and from the textbook.   
 
-
 * Your submission should be on-time. If you miss the deadline, you are subject to getting a zero
 
 
-Note:
-*Regarding asking for "extensions": Extensions are granted only in TRUE emergencies (i.e. matters of life and death beyond the students control) and require PRIOR APPROVAL of the instructor AS SOON as the circumstances are known.   (Not weeks later "after the fact" approval.)  There must be documentation of some extra-ordinary circumstance beyond the students control (death/hospitalization of an immediate family member requiring emergency travel, hospitalization of student herself/himself), serious illness requiring medical intervention, etc.     Do not ask for extensions because of "heavy work load in my other courses", or other reasons that may  "feel" like an emergency to you, but are in fact, routine for all students.*
+
