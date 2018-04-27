@@ -43,7 +43,7 @@ account.
 
 In lab02,  we have done the same thing. So if you don't know to how to do that, please refer to lab02 for details. The basic steps are as follows:
 
-* Create a git repo on github following the correct naming convention, e.g., if your github username is jgaucho and your partner's is alily, your should name your repo lab03_agaucho_alily (usernames appear in alphabetical order). Don't forget to make it 'PRIVATE'.
+* Create a git repo on github following the correct naming convention, e.g., if your github username is jgaucho and your partner's is alily, your should name your repo lab04_agaucho_alily (usernames appear in alphabetical order). Don't forget to make it 'PRIVATE'.
 
 * Add your partner as a collaborator for the repo.
 
@@ -52,7 +52,7 @@ In lab02,  we have done the same thing. So if you don't know to how to do that, 
 ## Step 3: Get the starter code from a local directory <a name="step3"></a>
 
 
-Copy the skeleton to your local lab04 repo using the following command, <strong>REMEMBER</strong> to change the directory name in the commands below to your own directory's name, in this lab we simply use lab03_agaucho_alily as a example for your local git directory:
+Copy the skeleton to your local lab04 repo using the following command, <strong>REMEMBER</strong> to change the directory name in the commands below to your own directory's name, in this lab we simply use lab04_agaucho_alily as a example for your local git directory:
 
 ```
   cp /cs/faculty/dimirza/cs16/labs/lab04/* ~/cs16/lab04_agaucho_alily/
