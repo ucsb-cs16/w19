@@ -342,17 +342,42 @@ make: [errorTests] Error 1 (ignored)
 ```
 At that point, you are ready to try submitting on the gradescope system.
 
-<h2>Step 8: Submit</h2>
+## Step 8: Turn in your code on gradescope <a name="step8"></a>
 
-For this lab, since there are a lot of files to upload to submit.cs, your best course is to type the following from the Linux/UNIX prompt, that is, from the command line (terminal) on any CS machine, including from your computer when you are remotely logged into a CS machine (via ssh):
+
+* Navigate to your ~/cs16/lab04_agaucho_alily directory, the one containing your code for this week's lab.
+<pre>
+-bash-4.2$ cd ~/cs16/lab04_agaucho_alily
+</pre>
+
+* Use the <code>ls</code> command to list your files and to be sure that you have all .cpp files (that you received as starter files) in your directory.  It is ok if there are other files ( *.txt, *.o, etc.) along with the executables.  You only have to submit *.cpp files
 
 ```
-$ ~submit/submit -p 924 *.cpp *.h
+-bash-4.2$ cd ~/cs16/lab03_agaucho_alily
+-bash-4.2$ ls
+arrayBoundsDemo.cpp    maxOfArray.cpp           sumOfArray.cpp
+arrayFuncs.h           maxOfArrayErrorTest.cpp  sumOfArrayTest.cpp
+arrayToString.cpp      maxOfArrayTest.cpp       tddFuncs.cpp
+arrayToStringTest.cpp  minOfArray.cpp           tddFuncs.h
+countEvens.cpp         minOfArrayErrorTest.cpp  utility.cpp
+countEvensTest.cpp     minOfArrayTest.cpp       utility.h
+countPrimes.cpp        README.md                utilityTest
+countPrimesTest.cpp    sumOdds.cpp              utilityTest.cpp
+Makefile               sumOddsTest.cpp
+-bash-4.2$
 ```
 
-You can then copy the URL shown in the output of the above and paste into a web browser to reach the submission result page.
+Submit all the cpp files to lab04 assignment on gradescope. Then visit gradescope and check that you have a correct score.
+If you are working with a partner, make sure both of you join a team on gradescope, otherwise only one of you will get credit for the lab
 
-Push your code to github. We will use your github submission to give you points for coding style.
+
+* You must check that you have followed these style guidelines:
+
+1. Indentation is neat, consistent and follows good practice (see below)
+2. Variable name choice: variables should have sensible names.
+	More on indentation: Your code should be indented neatly.  Code that is inside braces should be indented, and code that is at the same "level" of nesting inside braces should be indented in a consistent way.    Follow the examples from lecture, the sample code, and from the textbook.   
+
+* Your submission should be on-time. If you miss the deadline, you are subject to getting a zero
 
 <h2>Grading Rubric</h2>
 Points from automated gradescope. system tests
@@ -378,7 +403,7 @@ This last point may or may not arise, but if it does, utility.h and utility.cpp 
 
 
 
-You will note that the gradescope score is worth 230 points and the manual grading is worth 50 points, making the total points for this lab equal to 280. The grade will ultimately normalized to be out of 100 points. This lab is worth exactly the same as all the other labs done so far (i.e. the 300 points here are equivalent to 100 points in other labs).
+You will note that the gradescope score is worth 230 points and the manual grading is worth 50 points, making the total points for this lab equal to 280. The grade will ultimately normalized to be out of 100 points. This lab is worth exactly the same as all the other labs done so far (i.e. the 280 points here are equivalent to 100 points in other labs).
 
 <h2>Step 9: Done!</h2>
 
