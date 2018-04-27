@@ -28,45 +28,40 @@ You should now have a familiarity with:
 
 Be sure to commit and push or work to github at the end of EVERY work session. That way, if your pair partner bails on you, you can continue working without him/her. :)
 
-<h2>Step 1: Getting Ready</h2>
-1. Decide if you are working alone, or working in a pair.
+## Step 1: Log on to CSIL and bring up a terminal window. <a name="step1"></a>
 
-2. If you are working as a pair, go to submit.cs, navigate to this lab page and create a team for you and your pair partner. Do this by clicking on the blue "Join Groups" button, then follow directions.
+I hope I can safely assume that you have all gotten a CoE account.
+ If your account is not working,  get the attention of the instructor.
 
-3. Go to github and create a git repo for lab04 following the naming convention specified in previous labs. If you are working with a partner only one of you needs to create the repo.
+Log into your account to make sure it works.
+As a reminder to get to the terminal go to <strong>Application</strong> Menu, then <strong>System Tools</strong>, then <strong>Terminal Window</strong>.
 
-4. If you are working with a partner and you are the one who created the github repo, add your partner as a collborator on the repo
+In the steps below, and in most future labs, you will create files on your own
+account.
 
-5. Decide on initial navigator and driver.
+## Step 2: Create a new repo, add your partner as collaborator and clone it to your local directory <a name="step2"></a>
 
-6. Driver, log on to your CSIL account.
+In lab02,  we have done the same thing. So if you don't know to how to do that, please refer to lab02 for details. The basic steps are as follows:
 
-7. Open a terminal window and log into the correct machine.
+* Create a git repo on github following the correct naming convention, e.g., if your github username is jgaucho and your partner's is alily, your should name your repo lab03_agaucho_alily (usernames appear in alphabetical order). Don't forget to make it 'PRIVATE'.
 
-8. Change into your CS 16 directory
+* Add your partner as a collaborator for the repo.
 
-<h2>Step 2: Getting the starter code</h2>
+* Go to your CS16 directory and clone the repo locally.
 
-This step is similar to lab02, first open terminal and go to the directory where you cloned the starter code in lab02 and pull the latest version of the starter code.
+## Step 3: Get the starter code from a local directory <a name="step3"></a>
 
-```
-  cd ~/cs16/cs16-w18-starter-code
-  git pull
-```
-Clone your github repo in the ~/cs16/ directory. Then cd into your repo directory.
-```
-  cd ../lab04_gaucho_ally
-```
-Copy the code from your starter code directory to your local lab04 repo using the following command.
+
+Copy the skeleton to your local lab03 repo using the following command, <strong>REMEMBER</strong> to change the directory name in the commands below to your own directory's name, in this lab we simply use lab03_agaucho_alily as a example for your local git directory:
 
 ```
-  cp ~/cs16/cs16-w18-starter-code/lab04/* ./
+  cp /cs/faculty/dimirza/cs16/labs/lab03/* ~/cs16/lab03_agaucho_alily/
 ```
 
 Typing the list (ls) command should show you the following files in your current directory
 
 ```
-[dimirza@csil-03 lab04-startercode]$ ls
+[-bash-4.2]$ ls
 arrayBoundsDemo.cpp    maxOfArray.cpp           sumOfArray.cpp
 arrayFuncs.h           maxOfArrayErrorTest.cpp  sumOfArrayTest.cpp
 arrayToString.cpp      maxOfArrayTest.cpp       tddFuncs.cpp
@@ -76,7 +71,7 @@ countEvensTest.cpp     minOfArrayTest.cpp       utility.h
 countPrimes.cpp        README.md                utilityTest
 countPrimesTest.cpp    sumOdds.cpp              utilityTest.cpp
 Makefile               sumOddsTest.cpp
-[dimirza@csil-03 lab04-startercode]$
+[-bash-4.2]$
 
 ```
 
@@ -88,21 +83,19 @@ git commit -m "Initial version"
 git push origin master
 ```
 
-<h2>Step 3: Reviewing Separate Compilation</h2>
+## Step 4: Reviewing Separate Compilation <a name="step3"></a>
 
 The files in your directory this week use separate compilation, that is each program is not necessarily taking all of its code from a single .cpp source file.
 
 In Lecture, we will introduce the idea of separate compilation, where your C++ program may be divided among multiple source files. The following web page explains more about separate compilation, dividing your program up among multiple C++ and .h files, and using a Makefile. I strongly encourage you to read over it briefly before you proceed with the lab: [Separate Compilation and Makefiles](https://foo.cs.ucsb.edu/16wiki/index.php/C%2B%2B:_Separate_Compilation_and_Makefiles)
 
-<h2>Step 4: Writing isOdd(), isEven() and isPrime()</h2>
+## Step 5: Writing isOdd(), isEven() and isPrime()<a name="step3"></a>
 
 Your first step is very simple to describe, but somewhat challenging. The challenge here is mostly C++ coding — we will not get into the details of the separate compilation until a bit later.
 
 To get started, do the following steps:
 
-## Step 4a: make clean
-
-Next type: `make clean`
+## Step 5a: make clean
 
 In your working directory, type <b>ls</b> and make note of the different files therein: some are .cpp types, some are .o (short for "object file"), some are .h (short for "header file"), and others do not have extensions (they are binary executables). Now, type <b>make clean</b>. This command cleans out any .o files and executables from your directory
 
@@ -118,9 +111,7 @@ countPrimesTest maxOfArrayTest maxOfArrayErrorTest sumOddsTest sumOfArrayTest ut
 
 Take a look at the <b>Makefile</b> file to understand why this happened.
 
-## Step 4b: make utilityTest
-
-Next type: `make utilityTest`
+## Step 5b: make utilityTest
 
 This command makes the executable for a main program, defined in `utilityTest.cpp`, that tests the functions defined in `utility.cpp`.
 Recall that for functions defined in a file such as `utility.cpp` that has no <b>main()</b>, the function prototypes are defined in the file `utility.h`
@@ -139,7 +130,7 @@ g++ -Wall -Wno-uninitialized  utilityTest.o tddFuncs.o utility.o -o utilityTest
 -bash-4.2$
 ```
 
-## Step 4c: Run ./utilityTest
+## Step 5c: Run ./utilityTest
 
 Next, type `./utilityTest`
 
@@ -169,7 +160,7 @@ PASSED: isPrime(1)
 -bash-4.2$
 ```
 
-## Step 4d: Repeat: edit, compile, run, until all tests pass
+## Step 5d: Repeat: edit, compile, run, until all tests pass
 
 Now do these steps, repeatedly, until all tests pass:
 
@@ -193,7 +184,7 @@ When all the tests for `utlityTest` pass, do a final push to github and move on 
 
 If you are working with a pair partner, this is a good time to switch roles.
 
-<h2>Step 5: Reviewing the rest of the files and what your tasks are</h2>
+<h2>Step 6: Reviewing the rest of the files and what your tasks are</h2>
 
 Now, let us look at the files you actually have in your directory, and what you need to do with them.
 You have the following .cpp files. This table indicates what you must do with each one to get full credit on this lab.
