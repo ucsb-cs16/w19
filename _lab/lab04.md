@@ -353,7 +353,7 @@ At that point, you are ready to try submitting on the gradescope system.
 * Use the <code>ls</code> command to list your files and to be sure that you have all .cpp files (that you received as starter files) in your directory.  It is ok if there are other files ( *.txt, *.o, etc.) along with the executables.  You only have to submit *.cpp files
 
 ```
--bash-4.2$ cd ~/cs16/lab03_agaucho_alily
+-bash-4.2$ cd ~/cs16/lab04_agaucho_alily
 -bash-4.2$ ls
 arrayBoundsDemo.cpp    maxOfArray.cpp           sumOfArray.cpp
 arrayFuncs.h           maxOfArrayErrorTest.cpp  sumOfArrayTest.cpp
