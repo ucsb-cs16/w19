@@ -213,7 +213,7 @@ You have the following .cpp files. This table indicates what you must do with ea
 |utility.cpp|ADD FUNCTIONS HERE AS NEEDED.|If you need to write your own helper functions, e.g. `isPrime`, `isOdd`, `isEven`, to use in other files, here is where you can put those definitions.
 
 
-<h2>Step 6: Actually Getting Started</h2>
+<h2>Step 7: Actually Getting Started</h2>
 I suggest you start by typing: `make`
 
 You should see a lot of activity as programs are compiled. You then will have a lot of executables you can run. Here is a list. Try running each one and see what happens.
@@ -235,7 +235,7 @@ Note these are the programs listed under BINARIES in the Makefile.
 
 So, if you go through that list, and do all the things indicated, you are finished with the lab and ready to submit.
 
-<h2>Step 7: Checking your work before submitting</h2>
+<h2>Step 8: Checking your work before submitting</h2>
 
 When you are finished, you should be able to type `make tests` and see the following output:
 
@@ -342,7 +342,7 @@ make: [errorTests] Error 1 (ignored)
 ```
 At that point, you are ready to try submitting on the gradescope system.
 
-## Step 8: Turn in your code on gradescope <a name="step8"></a>
+## Step 9: Turn in your code on gradescope <a name="step8"></a>
 
 
 * Navigate to your ~/cs16/lab04_agaucho_alily directory, the one containing your code for this week's lab.
@@ -405,7 +405,7 @@ This last point may or may not arise, but if it does, utility.h and utility.cpp 
 
 You will note that the gradescope score is worth 230 points and the manual grading is worth 50 points, making the total points for this lab equal to 280. The grade will ultimately normalized to be out of 100 points. This lab is worth exactly the same as all the other labs done so far (i.e. the 280 points here are equivalent to 100 points in other labs).
 
-<h2>Step 9: Done!</h2>
+<h2>Step 10: Done!</h2>
 
 Once your submission receives a score of 230/230, you are done with this assignment. Remember that we will check your code for appropriate comments, formatting, and the use of required code, as stated earlier, based on your github submission
 
