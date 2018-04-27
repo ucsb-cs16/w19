@@ -201,12 +201,12 @@ You have the following .cpp files. This table indicates what you must do with ea
 |countPrimesTest.cpp|NO MODIFICATIONS NEEDED|This tests the changes you made in *countEvens.cpp*.
 |maxOfArray.cpp|REPLACE STUB WITH CORRECT CODE.|You can look at *minOfArray.cpp* for hints. This one should be easy.
 |maxOfArrayErrorTest.cpp|REPLACE EMPTY MAIN WITH TESTS.|Insert code to call maxOfArray with zero length array. Use *minOfArrayErrorTest.cpp* as a model.
-|maxOfArrayTest.cpp|REPLACE EMPTY MAIN WITH TESTS.|Insert code to call `assertEqual` exactly seven times testing whether `maxOfArray` returns correct values. Use *minOfArrayTest.cpp* as a model. It must be exactly "seven" calls to `assertEquals` to pass the submit.cs tests. You should call your arrays the same things that they are called in `minOfArrayTests`, and the lengths should be the same. So the messages you get out for passed tests should match the messages from `minOfArrayTests` except that the name of the function is `maxOfArray` instead of `minOfArray`. You MAY change the values in the arrays themselves, though, to make the tests better tests, if you need to. **(Note that just hard coding a program that prints "PASSED" seven times with the apprpriate messages is not sufficient to get credit--you need to really have actual tests. Any attempt to "game the system", i.e. to get submit.cs tests to pass without a bona-fide attempt to actually solve the problem will get zero credit.)**
+|maxOfArrayTest.cpp|REPLACE EMPTY MAIN WITH TESTS.|Insert code to call `assertEqual` exactly seven times testing whether `maxOfArray` returns correct values. Use *minOfArrayTest.cpp* as a model. It must be exactly "seven" calls to `assertEquals` to pass the gradescope tests. You should call your arrays the same things that they are called in `minOfArrayTests`, and the lengths should be the same. So the messages you get out for passed tests should match the messages from `minOfArrayTests` except that the name of the function is `maxOfArray` instead of `minOfArray`. You MAY change the values in the arrays themselves, though, to make the tests better tests, if you need to. **(Note that just hard coding a program that prints "PASSED" seven times with the apprpriate messages is not sufficient to get credit--you need to really have actual tests. Any attempt to "game the system", i.e. to get gradescope tests to pass without a bona-fide attempt to actually solve the problem will get zero credit.)**
 |minOfArray.cpp|NOTHING TO CHANGE.|This is a model of correct code that can serve as a hint for how to write *maxOfArray.cpp*
 |minOfArrayErrorTest.cpp|NOTHING TO CHANGE.|This is an model of correct code for how to test whether a function behaves as expected when given input that should print a message to cerr and exit the progrm.
 |minOfArrayTest.cpp|NOTHING TO CHANGE.|This is a model of how to do unit testing on a function that returns an integer.
 |sumOdds.cpp|REPLACE STUB WITH CORRECT CODE.|You must replace the code in this file with correct code that returns the number of sum of the odd integers in each array passed in. Negative odd integers count as odd integers.
-|sumOddsTest.cpp|REPLACE EMPTY MAIN WITH TESTS|Insert code to call `assertEqual` exactly seven times testing whether `sumOdds` returns correct values. Use *sumOfArrayTest.cpp* as a model. It must be exactly "seven" calls to `assertEquals` to pass the submit.cs tests. You should call your arrays the same things that they are called in `sumOfArrayTests`, and the lengths should be the same. So the messages you get out for passed tests should match the messages from `sumOfArrayTests` except that the name of the function tested is `sumOdds` instead of `sumOfArray`. You MAY change the values in the arrays themselves, though, to make the tests better tests, if you need to. **(Note that just hard coding a program that prints "PASSED" seven times with the apprpriate messages is not sufficient to get credit--you need to really have actual tests. Any attempt to "game the system", i.e. to get submit.cs tests to pass without a bona-fide attempt to actually solve the problem will get zero credit.)**
+|sumOddsTest.cpp|REPLACE EMPTY MAIN WITH TESTS|Insert code to call `assertEqual` exactly seven times testing whether `sumOdds` returns correct values. Use *sumOfArrayTest.cpp* as a model. It must be exactly "seven" calls to `assertEquals` to pass the gradescope tests. You should call your arrays the same things that they are called in `sumOfArrayTests`, and the lengths should be the same. So the messages you get out for passed tests should match the messages from `sumOfArrayTests` except that the name of the function tested is `sumOdds` instead of `sumOfArray`. You MAY change the values in the arrays themselves, though, to make the tests better tests, if you need to. **(Note that just hard coding a program that prints "PASSED" seven times with the apprpriate messages is not sufficient to get credit--you need to really have actual tests. Any attempt to "game the system", i.e. to get gradescope tests to pass without a bona-fide attempt to actually solve the problem will get zero credit.)**
 |sumOfArray.cpp|INCORRECT CODE FOR YOU TO FIX.|The sum is not initialized properly. So the tests should fail. Your job is to see that the tests fail, then fix the sum initialization so the tests pass. Should be easy.
 |sumOfArrayTest.cpp|NOTHING TO CHANGE.|This is a set of tests to verify whether `sumOfArray()` works correctly.
 |tddFuncs.cpp|NOTHING TO CHANGE.|These are two functions that can be used to test functions that return either int or string values.
@@ -226,7 +226,7 @@ Note these are the programs listed under BINARIES in the Makefile.
 |arrayBoundsDemo|no|Run this, and look at the code. This is an opportunity to learn something about how we pass arrays to functions in C++, but there is nothing you have to turn in from this program for the lab. It is just here as an example for you to learn from.
 |countEvensTest|<b>*YES*</b>|Run this, and you will see all the tests fail. YOU NEED TO FIX THE `countEvens` function and then get all these tests to pass.
 |minOfArrayTest|no|Just run this and see the tests pass. You can use the .cpp file *minOfArrayTest.cpp* as a model for writing *maxOfArrayTest.cpp*
-|minOfArrayErrorTest|no|Just run this and see the output. It should be `ERROR: minOfArray called with size < 1` printed on cerr (the standard error output stream). The submit.cs system will check this as one of the acceptance tests for this lab, and it will also check that `maxOfArrayErrorTest` does the same thing. You can use the .cpp file *minOfArrayErrorTest.cpp* as a model for writing *maxOfArrayErrorTest.cpp*
+|minOfArrayErrorTest|no|Just run this and see the output. It should be `ERROR: minOfArray called with size < 1` printed on cerr (the standard error output stream). The gradescope system will check this as one of the acceptance tests for this lab, and it will also check that `maxOfArrayErrorTest` does the same thing. You can use the .cpp file *minOfArrayErrorTest.cpp* as a model for writing *maxOfArrayErrorTest.cpp*
 |countPrimesTest|<b>*YES*</b>|Run this, and you will see all the tests fail. YOU NEED TO FIX THE `countPrimes` function and then get all these tests to pass.
 |maxOfArrayTest|<b>*YES*</b>|Run this, and you will see that initially there is no output. That is because the main is empty. YOU NEED TO REPLACE THIS MAIN with code that tests `maxOfArray`. Use `minOfArrayTest` as a model. Initially, just put in the tests, and keep `maxOfArray` returning the stub vaue -42. See all the tests fail. Then get `maxOfArray` to return the right values and see all the tests pass.
 |maxOfArrayErrorTest|<b>*YES*</b>|Run this, and you will see that initially there is no output. That is because the main() is empty. YOU NEED TO REPLACE THIS MAIN with code that tests `maxOfArray`. Use `minOfArrayTest` as a model. Initially, just put in the tests, and keep `maxOfArray` returning the stub vaue -42. See all the tests fail. Then get `maxOfArray` to return the right values and see all the tests pass.
@@ -340,7 +340,7 @@ make: [errorTests] Error 1 (ignored)
 
 -bash-4.2$
 ```
-At that point, you are ready to try submitting on the submit.cs system.
+At that point, you are ready to try submitting on the gradescope system.
 
 <h2>Step 8: Submit</h2>
 
@@ -355,7 +355,7 @@ You can then copy the URL shown in the output of the above and paste into a web 
 Push your code to github. We will use your github submission to give you points for coding style.
 
 <h2>Grading Rubric</h2>
-Points from automated submit.cs. system tests
+Points from automated gradescope. system tests
 
 <b>Passed Tests</b>
 
@@ -378,7 +378,7 @@ This last point may or may not arise, but if it does, utility.h and utility.cpp 
 
 
 
-You will note that the submit.cs score is worth 230 points and the manual grading is worth 50 points, making the total points for this lab equal to 280. The grade will ultimately normalized to be out of 100 points. This lab is worth exactly the same as all the other labs done so far (i.e. the 300 points here are equivalent to 100 points in other labs).
+You will note that the gradescope score is worth 230 points and the manual grading is worth 50 points, making the total points for this lab equal to 280. The grade will ultimately normalized to be out of 100 points. This lab is worth exactly the same as all the other labs done so far (i.e. the 300 points here are equivalent to 100 points in other labs).
 
 <h2>Step 9: Done!</h2>
 
