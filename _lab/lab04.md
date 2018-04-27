@@ -52,10 +52,10 @@ In lab02,  we have done the same thing. So if you don't know to how to do that, 
 ## Step 3: Get the starter code from a local directory <a name="step3"></a>
 
 
-Copy the skeleton to your local lab03 repo using the following command, <strong>REMEMBER</strong> to change the directory name in the commands below to your own directory's name, in this lab we simply use lab03_agaucho_alily as a example for your local git directory:
+Copy the skeleton to your local lab04 repo using the following command, <strong>REMEMBER</strong> to change the directory name in the commands below to your own directory's name, in this lab we simply use lab03_agaucho_alily as a example for your local git directory:
 
 ```
-  cp /cs/faculty/dimirza/cs16/labs/lab03/* ~/cs16/lab03_agaucho_alily/
+  cp /cs/faculty/dimirza/cs16/labs/lab04/* ~/cs16/lab04_agaucho_alily/
 ```
 
 Typing the list (ls) command should show you the following files in your current directory
