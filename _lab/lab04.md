@@ -386,28 +386,27 @@ Points from automated gradescope. system tests
 
 |Test Group|Test Name|Value
 |--- |---|---
-|countEvens|countEvensTest|30 pts
-|countPrimes|countPrimesTest|30 pts
-|maxOfArray|maxOfArrayTest|30 pts
-|maxOfArrayErrorTest|maxOfArrayErrorTest |30 pts
-|sumOdds|sumOddsTest|30 pts
-|sumOfArray|sumOfArrayTest|10 pts
-|utilityTest|utilityTest|40 pts
+|countEvens|countEvensTest|25 pts
+|countPrimes|countPrimesTest|25 pts
+|maxOfArray|maxOfArrayTest|25 pts
+|maxOfArrayErrorTest|maxOfArrayErrorTest |25 pts
+|sumOdds|sumOddsTest|25 pts
+|sumOfArray|sumOfArrayTest|25ts
+|utilityTest|utilityTest|50pts
 
 <b>Points assigned manually for coding style</b>
 
-(50 pts) Style:
+Style:
 Good choice of variable names, code indented in ways that are consistent, and in line with good C++ practice. Where applicable, common code is factored out into functions (added to utility.h and utility.cpp as needed). 
 
 This last point may or may not arise, but if it does, utility.h and utility.cpp is a place where functions needed in multiple files can be put—prototypes in utility.h and function definitions in utility.cpp.
 
 
-
-You will note that the gradescope score is worth 230 points and the manual grading is worth 50 points, making the total points for this lab equal to 280. The grade will ultimately normalized to be out of 100 points. This lab is worth exactly the same as all the other labs done so far (i.e. the 280 points here are equivalent to 100 points in other labs).
+You will note that the gradescope score is worth 200 points. The grade will ultimately normalized to be out of 100 points. This lab is worth exactly the same as all the other labs done so far (i.e. the 200 points here are equivalent to 100 points in other labs).
 
 <h2>Step 10: Done!</h2>
 
-Once your submission receives a score of 230/230, you are done with this assignment. Remember that we will check your code for appropriate comments, formatting, and the use of required code, as stated earlier, based on your github submission
+Once your submission receives a score of 200/200, you are done with this assignment. Remember that we will check your code for appropriate comments, formatting, and the use of required code, as stated earlier, based on your github submission
 
 If you are in the Phelps lab or in CSIL, make sure to log out of the machine before you leave. Also, make sure to close all open programs before you log out. Some programs will not work next time if they are not closed. Remember to save all your open files before you close your text editor.
 
