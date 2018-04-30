@@ -68,8 +68,8 @@ arrayToString.cpp      maxOfArrayTest.cpp       tddFuncs.cpp
 arrayToStringTest.cpp  minOfArray.cpp           tddFuncs.h
 countEvens.cpp         minOfArrayErrorTest.cpp  utility.cpp
 countEvensTest.cpp     minOfArrayTest.cpp       utility.h
-countPrimes.cpp        README.md                utilityTest
-countPrimesTest.cpp    sumOdds.cpp              utilityTest.cpp
+countPrimes.cpp        README.md                utilityTest.cpp
+countPrimesTest.cpp    sumOdds.cpp              
 Makefile               sumOddsTest.cpp
 [-bash-4.2]$
 
