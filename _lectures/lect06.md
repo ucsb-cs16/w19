@@ -4,12 +4,12 @@ desc: "File IO, intro to lab03"
 ready: true
 pdfurl: /lectures/CS16_Lecture6.pdf
 annotatedpdfurl: /lectures/CS16_Lecture6_ann.pdf
-annotatedready: false
+annotatedready: true
 lecture_date: 2018-04-18
 ---
 
 # Code from lecture
-
+[https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-06](https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-06)
 
 # Topics
 ## File I/O basics

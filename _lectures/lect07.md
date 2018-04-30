@@ -4,12 +4,13 @@ desc: "Program compilation, Makefiles, Data representation"
 ready: true
 pdfurl: /lectures/CS16_Lecture7.pdf
 annotatedpdfurl: /lectures/CS16_Lecture7_ann.pdf
-annotatedready: false
+annotatedready: true
 lecture_date: 2018-04-23
 ---
 
 
 # Topics
+[https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-07](https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-07)
 
 ## Under the hood of program compilation and execution
 * From high-level programs to machine code
@@ -32,7 +33,5 @@ lecture_date: 2018-04-23
 * Conversion between different representations
 * Key ideas: bits can represent ANYTHING. With n bits we can represent at most 2^N things
 * Apply above rule to represent characters (ASCII), unicode, colors ....
-* What is signed vs unsigned integer representation
-* Signed representation used by modern computers: two's complement
 * The data type of a variable determines its representation in memory AND the number of bits used to store each variable
-* Model of memory
+
