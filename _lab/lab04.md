@@ -391,8 +391,8 @@ Points from automated gradescope. system tests
 |maxOfArray|maxOfArrayTest|30 pts
 |maxOfArrayErrorTest|maxOfArrayErrorTest |30 pts
 |sumOdds|sumOddsTest|30 pts
-|sumOfArray|sumOfArrayTest|30 pts
-|utilityTest|utilityTest|50 pts
+|sumOfArray|sumOfArrayTest|10 pts
+|utilityTest|utilityTest|40 pts
 
 <b>Points assigned manually for coding style</b>
 
