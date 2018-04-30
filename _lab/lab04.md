@@ -28,55 +28,50 @@ You should now have a familiarity with:
 
 Be sure to commit and push or work to github at the end of EVERY work session. That way, if your pair partner bails on you, you can continue working without him/her. :)
 
-<h2>Step 1: Getting Ready</h2>
-1. Decide if you are working alone, or working in a pair.
+## Step 1: Log on to CSIL and bring up a terminal window. <a name="step1"></a>
 
-2. If you are working as a pair, go to submit.cs, navigate to this lab page and create a team for you and your pair partner. Do this by clicking on the blue "Join Groups" button, then follow directions.
+I hope I can safely assume that you have all gotten a CoE account.
+ If your account is not working,  get the attention of the instructor.
 
-3. Go to github and create a git repo for lab04 following the naming convention specified in previous labs. If you are working with a partner only one of you needs to create the repo.
+Log into your account to make sure it works.
+As a reminder to get to the terminal go to <strong>Application</strong> Menu, then <strong>System Tools</strong>, then <strong>Terminal Window</strong>.
 
-4. If you are working with a partner and you are the one who created the github repo, add your partner as a collborator on the repo
+In the steps below, and in most future labs, you will create files on your own
+account.
 
-5. Decide on initial navigator and driver.
+## Step 2: Create a new repo, add your partner as collaborator and clone it to your local directory <a name="step2"></a>
 
-6. Driver, log on to your CSIL account.
+In lab02,  we have done the same thing. So if you don't know to how to do that, please refer to lab02 for details. The basic steps are as follows:
 
-7. Open a terminal window and log into the correct machine.
+* Create a git repo on github following the correct naming convention, e.g., if your github username is jgaucho and your partner's is alily, your should name your repo lab04_agaucho_alily (usernames appear in alphabetical order). Don't forget to make it 'PRIVATE'.
 
-8. Change into your CS 16 directory
+* Add your partner as a collaborator for the repo.
 
-<h2>Step 2: Getting the starter code</h2>
+* Go to your CS16 directory and clone the repo locally.
 
-This step is similar to lab02, first open terminal and go to the directory where you cloned the starter code in lab02 and pull the latest version of the starter code.
+## Step 3: Get the starter code from a local directory <a name="step3"></a>
 
-```
-  cd ~/cs16/cs16-w18-starter-code
-  git pull
-```
-Clone your github repo in the ~/cs16/ directory. Then cd into your repo directory.
-```
-  cd ../lab04_gaucho_ally
-```
-Copy the code from your starter code directory to your local lab04 repo using the following command.
+
+Copy the skeleton to your local lab04 repo using the following command, <strong>REMEMBER</strong> to change the directory name in the commands below to your own directory's name, in this lab we simply use lab04_agaucho_alily as a example for your local git directory:
 
 ```
-  cp ~/cs16/cs16-w18-starter-code/lab04/* ./
+  cp /cs/faculty/dimirza/cs16/labs/lab04/* ~/cs16/lab04_agaucho_alily/
 ```
 
 Typing the list (ls) command should show you the following files in your current directory
 
 ```
-[dimirza@csil-03 lab04-startercode]$ ls
+[-bash-4.2]$ ls
 arrayBoundsDemo.cpp    maxOfArray.cpp           sumOfArray.cpp
 arrayFuncs.h           maxOfArrayErrorTest.cpp  sumOfArrayTest.cpp
 arrayToString.cpp      maxOfArrayTest.cpp       tddFuncs.cpp
 arrayToStringTest.cpp  minOfArray.cpp           tddFuncs.h
 countEvens.cpp         minOfArrayErrorTest.cpp  utility.cpp
 countEvensTest.cpp     minOfArrayTest.cpp       utility.h
-countPrimes.cpp        README.md                utilityTest
-countPrimesTest.cpp    sumOdds.cpp              utilityTest.cpp
+countPrimes.cpp        README.md                utilityTest.cpp
+countPrimesTest.cpp    sumOdds.cpp              
 Makefile               sumOddsTest.cpp
-[dimirza@csil-03 lab04-startercode]$
+[-bash-4.2]$
 
 ```
 
@@ -88,21 +83,19 @@ git commit -m "Initial version"
 git push origin master
 ```
 
-<h2>Step 3: Reviewing Separate Compilation</h2>
+## Step 4: Reviewing Separate Compilation <a name="step3"></a>
 
 The files in your directory this week use separate compilation, that is each program is not necessarily taking all of its code from a single .cpp source file.
 
 In Lecture, we will introduce the idea of separate compilation, where your C++ program may be divided among multiple source files. The following web page explains more about separate compilation, dividing your program up among multiple C++ and .h files, and using a Makefile. I strongly encourage you to read over it briefly before you proceed with the lab: [Separate Compilation and Makefiles](https://foo.cs.ucsb.edu/16wiki/index.php/C%2B%2B:_Separate_Compilation_and_Makefiles)
 
-<h2>Step 4: Writing isOdd(), isEven() and isPrime()</h2>
+## Step 5: Writing isOdd(), isEven() and isPrime()<a name="step3"></a>
 
 Your first step is very simple to describe, but somewhat challenging. The challenge here is mostly C++ coding — we will not get into the details of the separate compilation until a bit later.
 
 To get started, do the following steps:
 
-## Step 4a: make clean
-
-Next type: `make clean`
+## Step 5a: make clean
 
 In your working directory, type <b>ls</b> and make note of the different files therein: some are .cpp types, some are .o (short for "object file"), some are .h (short for "header file"), and others do not have extensions (they are binary executables). Now, type <b>make clean</b>. This command cleans out any .o files and executables from your directory
 
@@ -118,9 +111,7 @@ countPrimesTest maxOfArrayTest maxOfArrayErrorTest sumOddsTest sumOfArrayTest ut
 
 Take a look at the <b>Makefile</b> file to understand why this happened.
 
-## Step 4b: make utilityTest
-
-Next type: `make utilityTest`
+## Step 5b: make utilityTest
 
 This command makes the executable for a main program, defined in `utilityTest.cpp`, that tests the functions defined in `utility.cpp`.
 Recall that for functions defined in a file such as `utility.cpp` that has no <b>main()</b>, the function prototypes are defined in the file `utility.h`
@@ -139,7 +130,7 @@ g++ -Wall -Wno-uninitialized  utilityTest.o tddFuncs.o utility.o -o utilityTest
 -bash-4.2$
 ```
 
-## Step 4c: Run ./utilityTest
+## Step 5c: Run ./utilityTest
 
 Next, type `./utilityTest`
 
@@ -169,7 +160,7 @@ PASSED: isPrime(1)
 -bash-4.2$
 ```
 
-## Step 4d: Repeat: edit, compile, run, until all tests pass
+## Step 5d: Repeat: edit, compile, run, until all tests pass
 
 Now do these steps, repeatedly, until all tests pass:
 
@@ -193,7 +184,7 @@ When all the tests for `utlityTest` pass, do a final push to github and move on 
 
 If you are working with a pair partner, this is a good time to switch roles.
 
-<h2>Step 5: Reviewing the rest of the files and what your tasks are</h2>
+<h2>Step 6: Reviewing the rest of the files and what your tasks are</h2>
 
 Now, let us look at the files you actually have in your directory, and what you need to do with them.
 You have the following .cpp files. This table indicates what you must do with each one to get full credit on this lab.
@@ -210,19 +201,19 @@ You have the following .cpp files. This table indicates what you must do with ea
 |countPrimesTest.cpp|NO MODIFICATIONS NEEDED|This tests the changes you made in *countEvens.cpp*.
 |maxOfArray.cpp|REPLACE STUB WITH CORRECT CODE.|You can look at *minOfArray.cpp* for hints. This one should be easy.
 |maxOfArrayErrorTest.cpp|REPLACE EMPTY MAIN WITH TESTS.|Insert code to call maxOfArray with zero length array. Use *minOfArrayErrorTest.cpp* as a model.
-|maxOfArrayTest.cpp|REPLACE EMPTY MAIN WITH TESTS.|Insert code to call `assertEqual` exactly seven times testing whether `maxOfArray` returns correct values. Use *minOfArrayTest.cpp* as a model. It must be exactly "seven" calls to `assertEquals` to pass the submit.cs tests. You should call your arrays the same things that they are called in `minOfArrayTests`, and the lengths should be the same. So the messages you get out for passed tests should match the messages from `minOfArrayTests` except that the name of the function is `maxOfArray` instead of `minOfArray`. You MAY change the values in the arrays themselves, though, to make the tests better tests, if you need to. **(Note that just hard coding a program that prints "PASSED" seven times with the apprpriate messages is not sufficient to get credit--you need to really have actual tests. Any attempt to "game the system", i.e. to get submit.cs tests to pass without a bona-fide attempt to actually solve the problem will get zero credit.)**
+|maxOfArrayTest.cpp|REPLACE EMPTY MAIN WITH TESTS.|Insert code to call `assertEqual` exactly seven times testing whether `maxOfArray` returns correct values. Use *minOfArrayTest.cpp* as a model. It must be exactly "seven" calls to `assertEquals` to pass the gradescope tests. You should call your arrays the same things that they are called in `minOfArrayTests`, and the lengths should be the same. So the messages you get out for passed tests should match the messages from `minOfArrayTests` except that the name of the function is `maxOfArray` instead of `minOfArray`. You MAY change the values in the arrays themselves, though, to make the tests better tests, if you need to. **(Note that just hard coding a program that prints "PASSED" seven times with the apprpriate messages is not sufficient to get credit--you need to really have actual tests. Any attempt to "game the system", i.e. to get gradescope tests to pass without a bona-fide attempt to actually solve the problem will get zero credit.)**
 |minOfArray.cpp|NOTHING TO CHANGE.|This is a model of correct code that can serve as a hint for how to write *maxOfArray.cpp*
 |minOfArrayErrorTest.cpp|NOTHING TO CHANGE.|This is an model of correct code for how to test whether a function behaves as expected when given input that should print a message to cerr and exit the progrm.
 |minOfArrayTest.cpp|NOTHING TO CHANGE.|This is a model of how to do unit testing on a function that returns an integer.
 |sumOdds.cpp|REPLACE STUB WITH CORRECT CODE.|You must replace the code in this file with correct code that returns the number of sum of the odd integers in each array passed in. Negative odd integers count as odd integers.
-|sumOddsTest.cpp|REPLACE EMPTY MAIN WITH TESTS|Insert code to call `assertEqual` exactly seven times testing whether `sumOdds` returns correct values. Use *sumOfArrayTest.cpp* as a model. It must be exactly "seven" calls to `assertEquals` to pass the submit.cs tests. You should call your arrays the same things that they are called in `sumOfArrayTests`, and the lengths should be the same. So the messages you get out for passed tests should match the messages from `sumOfArrayTests` except that the name of the function tested is `sumOdds` instead of `sumOfArray`. You MAY change the values in the arrays themselves, though, to make the tests better tests, if you need to. **(Note that just hard coding a program that prints "PASSED" seven times with the apprpriate messages is not sufficient to get credit--you need to really have actual tests. Any attempt to "game the system", i.e. to get submit.cs tests to pass without a bona-fide attempt to actually solve the problem will get zero credit.)**
+|sumOddsTest.cpp|REPLACE EMPTY MAIN WITH TESTS|Insert code to call `assertEqual` exactly seven times testing whether `sumOdds` returns correct values. Use *sumOfArrayTest.cpp* as a model. It must be exactly "seven" calls to `assertEquals` to pass the gradescope tests. You should call your arrays the same things that they are called in `sumOfArrayTests`, and the lengths should be the same. So the messages you get out for passed tests should match the messages from `sumOfArrayTests` except that the name of the function tested is `sumOdds` instead of `sumOfArray`. You MAY change the values in the arrays themselves, though, to make the tests better tests, if you need to. **(Note that just hard coding a program that prints "PASSED" seven times with the apprpriate messages is not sufficient to get credit--you need to really have actual tests. Any attempt to "game the system", i.e. to get gradescope tests to pass without a bona-fide attempt to actually solve the problem will get zero credit.)**
 |sumOfArray.cpp|INCORRECT CODE FOR YOU TO FIX.|The sum is not initialized properly. So the tests should fail. Your job is to see that the tests fail, then fix the sum initialization so the tests pass. Should be easy.
 |sumOfArrayTest.cpp|NOTHING TO CHANGE.|This is a set of tests to verify whether `sumOfArray()` works correctly.
 |tddFuncs.cpp|NOTHING TO CHANGE.|These are two functions that can be used to test functions that return either int or string values.
 |utility.cpp|ADD FUNCTIONS HERE AS NEEDED.|If you need to write your own helper functions, e.g. `isPrime`, `isOdd`, `isEven`, to use in other files, here is where you can put those definitions.
 
 
-<h2>Step 6: Actually Getting Started</h2>
+<h2>Step 7: Actually Getting Started</h2>
 I suggest you start by typing: `make`
 
 You should see a lot of activity as programs are compiled. You then will have a lot of executables you can run. Here is a list. Try running each one and see what happens.
@@ -235,7 +226,7 @@ Note these are the programs listed under BINARIES in the Makefile.
 |arrayBoundsDemo|no|Run this, and look at the code. This is an opportunity to learn something about how we pass arrays to functions in C++, but there is nothing you have to turn in from this program for the lab. It is just here as an example for you to learn from.
 |countEvensTest|<b>*YES*</b>|Run this, and you will see all the tests fail. YOU NEED TO FIX THE `countEvens` function and then get all these tests to pass.
 |minOfArrayTest|no|Just run this and see the tests pass. You can use the .cpp file *minOfArrayTest.cpp* as a model for writing *maxOfArrayTest.cpp*
-|minOfArrayErrorTest|no|Just run this and see the output. It should be `ERROR: minOfArray called with size < 1` printed on cerr (the standard error output stream). The submit.cs system will check this as one of the acceptance tests for this lab, and it will also check that `maxOfArrayErrorTest` does the same thing. You can use the .cpp file *minOfArrayErrorTest.cpp* as a model for writing *maxOfArrayErrorTest.cpp*
+|minOfArrayErrorTest|no|Just run this and see the output. It should be `ERROR: minOfArray called with size < 1` printed on cerr (the standard error output stream). The gradescope system will check this as one of the acceptance tests for this lab, and it will also check that `maxOfArrayErrorTest` does the same thing. You can use the .cpp file *minOfArrayErrorTest.cpp* as a model for writing *maxOfArrayErrorTest.cpp*
 |countPrimesTest|<b>*YES*</b>|Run this, and you will see all the tests fail. YOU NEED TO FIX THE `countPrimes` function and then get all these tests to pass.
 |maxOfArrayTest|<b>*YES*</b>|Run this, and you will see that initially there is no output. That is because the main is empty. YOU NEED TO REPLACE THIS MAIN with code that tests `maxOfArray`. Use `minOfArrayTest` as a model. Initially, just put in the tests, and keep `maxOfArray` returning the stub vaue -42. See all the tests fail. Then get `maxOfArray` to return the right values and see all the tests pass.
 |maxOfArrayErrorTest|<b>*YES*</b>|Run this, and you will see that initially there is no output. That is because the main() is empty. YOU NEED TO REPLACE THIS MAIN with code that tests `maxOfArray`. Use `minOfArrayTest` as a model. Initially, just put in the tests, and keep `maxOfArray` returning the stub vaue -42. See all the tests fail. Then get `maxOfArray` to return the right values and see all the tests pass.
@@ -244,7 +235,7 @@ Note these are the programs listed under BINARIES in the Makefile.
 
 So, if you go through that list, and do all the things indicated, you are finished with the lab and ready to submit.
 
-<h2>Step 7: Checking your work before submitting</h2>
+<h2>Step 8: Checking your work before submitting</h2>
 
 When you are finished, you should be able to type `make tests` and see the following output:
 
@@ -349,49 +340,73 @@ make: [errorTests] Error 1 (ignored)
 
 -bash-4.2$
 ```
-At that point, you are ready to try submitting on the submit.cs system.
+At that point, you are ready to try submitting on the gradescope system.
 
-<h2>Step 8: Submit</h2>
+## Step 9: Turn in your code on gradescope <a name="step8"></a>
 
-For this lab, since there are a lot of files to upload to submit.cs, your best course is to type the following from the Linux/UNIX prompt, that is, from the command line (terminal) on any CS machine, including from your computer when you are remotely logged into a CS machine (via ssh):
+
+* Navigate to your ~/cs16/lab04_agaucho_alily directory, the one containing your code for this week's lab.
+<pre>
+-bash-4.2$ cd ~/cs16/lab04_agaucho_alily
+</pre>
+
+* Use the <code>ls</code> command to list your files and to be sure that you have all .cpp files (that you received as starter files) in your directory.  It is ok if there are other files ( *.txt, *.o, etc.) along with the executables.  You only have to submit *.cpp files
 
 ```
-$ ~submit/submit -p 924 *.cpp *.h
+-bash-4.2$ cd ~/cs16/lab04_agaucho_alily
+-bash-4.2$ ls
+arrayBoundsDemo.cpp    maxOfArray.cpp           sumOfArray.cpp
+arrayFuncs.h           maxOfArrayErrorTest.cpp  sumOfArrayTest.cpp
+arrayToString.cpp      maxOfArrayTest.cpp       tddFuncs.cpp
+arrayToStringTest.cpp  minOfArray.cpp           tddFuncs.h
+countEvens.cpp         minOfArrayErrorTest.cpp  utility.cpp
+countEvensTest.cpp     minOfArrayTest.cpp       utility.h
+countPrimes.cpp        README.md                utilityTest
+countPrimesTest.cpp    sumOdds.cpp              utilityTest.cpp
+Makefile               sumOddsTest.cpp
+-bash-4.2$
 ```
 
-You can then copy the URL shown in the output of the above and paste into a web browser to reach the submission result page.
+Submit all the cpp files to lab04 assignment on gradescope. Then visit gradescope and check that you have a correct score.
+If you are working with a partner, make sure both of you join a team on gradescope, otherwise only one of you will get credit for the lab
 
-Push your code to github. We will use your github submission to give you points for coding style.
+
+* You must check that you have followed these style guidelines:
+
+1. Indentation is neat, consistent and follows good practice (see below)
+2. Variable name choice: variables should have sensible names.
+	More on indentation: Your code should be indented neatly.  Code that is inside braces should be indented, and code that is at the same "level" of nesting inside braces should be indented in a consistent way.    Follow the examples from lecture, the sample code, and from the textbook.   
+
+* Your submission should be on-time. If you miss the deadline, you are subject to getting a zero
 
 <h2>Grading Rubric</h2>
-Points from automated submit.cs. system tests
+Points from automated gradescope. system tests
 
 <b>Passed Tests</b>
 
 |Test Group|Test Name|Value
 |--- |---|---
-|countEvens|countEvensTest|30 pts
-|countPrimes|countPrimesTest|30 pts
-|maxOfArray|maxOfArrayTest|30 pts
-|maxOfArrayErrorTest|maxOfArrayErrorTest |30 pts
-|sumOdds|sumOddsTest|30 pts
-|sumOfArray|sumOfArrayTest|30 pts
-|utilityTest|utilityTest|50 pts
+|countEvens|countEvensTest|25 pts
+|countPrimes|countPrimesTest|25 pts
+|maxOfArray|maxOfArrayTest|25 pts
+|maxOfArrayErrorTest|maxOfArrayErrorTest |25 pts
+|sumOdds|sumOddsTest|25 pts
+|sumOfArray|sumOfArrayTest|25ts
+|utilityTest|utilityTest|50pts
 
 <b>Points assigned manually for coding style</b>
 
-(50 pts) Style:
+Style:
 Good choice of variable names, code indented in ways that are consistent, and in line with good C++ practice. Where applicable, common code is factored out into functions (added to utility.h and utility.cpp as needed). 
 
 This last point may or may not arise, but if it does, utility.h and utility.cpp is a place where functions needed in multiple files can be put—prototypes in utility.h and function definitions in utility.cpp.
 
 
+You will note that the gradescope score is worth 200 points. The grade will ultimately normalized to be out of 100 points. This lab is worth exactly the same as all the other labs done so far (i.e. the 200 points here are equivalent to 100 points in other labs).
 
-You will note that the submit.cs score is worth 230 points and the manual grading is worth 50 points, making the total points for this lab equal to 280. The grade will ultimately normalized to be out of 100 points. This lab is worth exactly the same as all the other labs done so far (i.e. the 300 points here are equivalent to 100 points in other labs).
+<h2>Step 10: Done!</h2>
 
-<h2>Step 9: Done!</h2>
-
-Once your submission receives a score of 230/230, you are done with this assignment. Remember that we will check your code for appropriate comments, formatting, and the use of required code, as stated earlier, based on your github submission
+Once your submission receives a score of 200/200, you are done with this assignment. Remember that we will check your code for appropriate comments, formatting, and the use of required code, as stated earlier, based on your github submission
 
 If you are in the Phelps lab or in CSIL, make sure to log out of the machine before you leave. Also, make sure to close all open programs before you log out. Some programs will not work next time if they are not closed. Remember to save all your open files before you close your text editor.
 
