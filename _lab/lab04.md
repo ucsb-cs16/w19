@@ -1,7 +1,7 @@
 ---
 layout: lab
 num: lab04
-ready: false
+ready: true
 desc: "Odds and primes: Fun with arrays and makefiles"
 assigned: 2018-05-01 09:00:00.00-8
 due: 2018-05-07 23:59:00.00-7
@@ -394,7 +394,6 @@ Points from automated gradescope. system tests
 |sumOfArray|sumOfArrayTest|25ts
 |utilityTest|utilityTest|50pts
 
-<b>Points assigned manually for coding style</b>
 
 Style:
 Good choice of variable names, code indented in ways that are consistent, and in line with good C++ practice. Where applicable, common code is factored out into functions (added to utility.h and utility.cpp as needed). 
