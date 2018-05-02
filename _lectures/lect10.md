@@ -1,6 +1,6 @@
 ---
 num: "lect10"
-desc: "Pointers and structs, references, call by value, address and reference, intro to lab05"
+desc: "References, structs, pointers and structs,  call by value, address and reference, intro to lab05"
 ready: false
 pdfurl: /lectures/CS16_Lecture10.pdf
 annotatedpdfurl: /lectures/CS16_Lecture10_ann.pdf
@@ -11,13 +11,6 @@ lecture_date:  2018-05-07
 # Topics
 
 ## Code from lecture
-## Pointers
-
-* Pointer declaration - difference/similarities with declaring basic types
-* Accessing variables "indirectly" via pointers
-* The address and indirection operators: "&" and "*"
-* Pointers and arrays - similarities and dfferences
-* Passing arrays to functions - specifically looking at how arrays degnerate to pointers on function calls.
 
 
 ## Pointers and structs
@@ -39,5 +32,9 @@ lecture_date:  2018-05-07
 * References as function formal arguments
 * More on the run-time stack
 
+## C++ Memory model
+* Barebones model of memory: value vs address
+* Scope: local vs. global
+* Layout of compiled C++ program in memory: text, global data , heap and stack
 
 ## Intro to lab05
