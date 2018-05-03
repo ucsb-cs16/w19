@@ -2,8 +2,8 @@
 num: "h06"
 desc: "Chapter 7 and 10: Pointers"
 ready: true
-assigned: 2018-05-11 9:00:00.00-8:00
-due: 2018-05-18 23:59:00.00-7:00
+assigned: 2018-05-04 9:00:00.00-8:00
+due: 2018-05-11 23:59:00.00-7:00
 ---
 {% include no_staples_box.html %}
 Read Chapter 7.1 - 7.2 up to page 397.  You don't need to turn this homework in. To earn credit for this homework, complete the corresponding quiz on gauchospace AFTER you have completed the pen and pencil version of the homework. The quiz will be available one day before the due date indicated on the homework.
