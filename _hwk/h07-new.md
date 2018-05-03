@@ -1,5 +1,5 @@
 ---
-num: "h08"
+num: "h07"
 desc: "Chapter 9 and 13: Dynamic memory allocation and dynamic arrays), Linked-lists"
 ready: false
 assigned: 2018-05-18 9:00:00.00-8:00
@@ -105,28 +105,10 @@ For all the following questions, use the definitions of the struct Node and stru
 
 <div style="margin-bottom:1em"></div>
 
-6.(10 pts) Implement a function that returns the number of even elements in a linked list. Test your code before writing it out. Illegible code will receive 0 credit.
+6.(10 pts) Implement a function that returns the number of even elements in a linked list. Test your code before writing it out. Illegible code will receive 0 credit. Below is the declaration of the function
 <div markdown="1">
 ```cpp
-int countEven(LinkedList* list){
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
+int countEven(LinkedList* list);
 ```
 
 </div>
@@ -164,5 +146,25 @@ Address  Value
 <div markdown="1">
 ```cpp
 int* linkedListToArray(LinkedList * list);
+```
+10.(8 pts) Write the definition of a structure type called UndergradStudents. This structure should contain student ID numbers, first and last names, major, and GPA scores for each undergraduate year.
+<div style="margin-bottom:8em"></div>
+
+11.(14 pts) Write a program that uses the definition of the structure UndergradStudents from the previous question to *declare* and then *initialize* an array of 3 objects of this structure (hint: you can do this with the same approach you define/initialize an array of any other type). You **must initialize the values in the program, not by user input**.  The initial values are shown in the table below. Then write the definition of a function with the signature <code> void printRecords(struct UndergradStudents *records, int numrecords);</code> The function should print out the values of the array of objects passed to it as shown in the sample below, along with each student's AVERAGE GPA score (calculated to a precision of 2 decimal places). You **must use a loop to print the output**. Your program should appropriately call the printRecords() function to print the student records and the average GPA.
+
+<div markdown="1">
+|---|---|---|---|---|---|---|---
+|ID | First name| Last Name| Major | GPA Yr1|  GPA Yr2| GPA Yr3| GPA Yr4
+|1 | Joe | Shmoe | EE | 3.8 | 3.3 | 3.4 | 3.9
+|2 | Macy | Chen | CS | 3.9 | 3.9 | 4.0 | 4.0
+|3 | Peter | Patrick | ME | 3.8 | 3.0 | 2.4 | 1.9
+
+OUTPUT:
+
+```
+These are the student records:
+ID# 1, Shmoe, Joe, Major: EE, Average GPA: 3.60
+ID# 2, Chen, Macy, Major: CS, Average GPA: 3.95
+ID# 3, Peter, Patrick, Major: ME, Average GPA: 2.77
 ```
 
