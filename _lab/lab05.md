@@ -232,12 +232,20 @@ Points from gradescope automatic grading:
 <tr><td>pointsApproxEqualTest</td><td><p style="color:green;margin:0;padding:0;">pointsApproxEqualTest output (should pass in base code, so no points)</p></td><td>(0 pts)</td></tr>
 </table>
 
-Other points:
+Style: Good choice of variable names, code indented in ways that are consistent, and in line with good C++ practice. Where applicable, common code is factored out into functions (added to utility.h and utility.cpp as needed).
 
-* (30 pts) Pointer diagram submitted to your repo on github
-* (60 pts) Code style, including but not limited to:
-	* Code can be easily understood by humans familiar with C++ (including both the author(s) of the code, and non-authors of the code.)
-	* Code is neatly indented and formatted, following standard code indentation practices for C++ as illustrated in either the textbook, or example code given in lectures and labs
-	* Variable names choices are reasonable
-	* Code is reasonably "DRY" (as in "don't repeat yourself")&mdash;where appropriate, common code is factored out into functions
-	* Code is not unnecessarily or unreasonably complex when a simpler solution is available
+This last point may or may not arise, but if it does, utility.h and utility.cpp is a place where functions needed in multiple files can be put—prototypes in utility.h and function definitions in utility.cpp.
+
+You will note that the gradescope score is worth 210 points. The grade will ultimately normalized to be out of 100 points. This lab is worth exactly the same as all the other labs done so far (i.e. the 210 points here are equivalent to 100 points in other labs).
+
+## Step 6: Done!
+
+Once your submission receives a score of 210/210, you are done with this assignment. Remember that we will check your code for appropriate comments, formatting, and the use of required code, as stated earlier, based on your github submission.
+
+If you are in the Phelps lab or in CSIL, make sure to log out of the machine before you leave. Also, make sure to close all open programs before you log out. Some programs will not work next time if they are not closed. Remember to save all your open files before you close your text editor.
+
+If you are logged in remotely, you can log out using the exit command:
+
+```
+$ exit
+```
