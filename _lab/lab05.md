@@ -17,52 +17,42 @@ The goal of this lab is to demonstrate how we can abstract "things" in the world
 
 ## Step 1: Getting Ready
 
-1. Decide if you are working alone, or working in a pair.
+1. If you are working as a pair, go to github and create a git repo for this lab following the naming convention specified in previous labs. If you are working with a partner only one of you needs to create the repo.
 
-2. If you are working as a pair, go to submit.cs, navigate to this lab page and create a team for you and your pair partner. Do this by clicking on the blue "Join Groups" button, then follow directions.
+2. If you are working with a partner and you are the one who created the github repo, add your partner as a collborator on the repo
 
-3. Go to github and create a git repo for this lab following the naming convention specified in previous labs (this step carries style points, see our feedback on previous labs to understand what we are looking for). If you are working with a partner only one of you needs to create the repo.
+3. Decide on initial navigator and driver.
 
-4. If you are working with a partner and you are the one who created the github repo, add your partner as a collborator on the repo
+4. Driver, log on to your CSIL account.
 
-5. Decide on initial navigator and driver.
+5. Open a terminal window and log into the correct machine.
 
-6. Driver, log on to your CSIL account.
-
-7. Open a terminal window and log into the correct machine.
-
-8. Change into your CS 16 directory
+6. Change into your CS 16 directory
 
 Remember to push your work to github at the end of EVERY work session. That way, both partners always have access to the latest version of the code even if the code is being developed on one partner's CoE account.
 
 
 ## Step 2: Obtain the starter code
 
-This step is similar to lab02, first open terminal and go to the directory where you cloned the starter code in lab02 and pull the latest version of the starter code.
-
+This step is similar to lab02, first clone your github repo in the ~/cs16/ directory. Then cd into your repo directory.
 ```
-  cd ~/cs16/cs16-w18-starter-code
-  git pull
-```
-Clone your github repo in the ~/cs16/ directory. Then cd into your repo directory.
-```
-  cd ../lab05_gaucho_ally
+  cd ~/cs16/lab05_gaucho_ally
 ```
 Copy the code from your starter code directory to your local lab05 repo using the following command.
 
 ```
-  cp ~/cs16/cs16-w18-starter-code/lab05/* ./
+  cp /cs/faculty/dimirza/cs16/labs/lab05/* ~/cs16/lab05_agaucho_alily/
 ```
 
 Typing the list (ls) command should show you the following files in your current directory
 
 ```
-[dimirza@csil-03 lab05-startercode]$ ls
+[dimirza@csil-03 lab05_agaucho_alily]$ ls
 areaOfBoxTest.cpp         initBoxTest.cpp            pointToStringTest.cpp  shapeFuncs.h  utility.cpp
 areaOfBoxTest.cpp~        initPointTest.cpp          README.md              shapes.h      utility.h
 boxesApproxEqualTest.cpp  Makefile                   #shapeFuncs.cpp#       tddFuncs.cpp
 distanceBetweenTest.cpp   pointsApproxEqualTest.cpp  shapeFuncs.cpp         tddFuncs.h
-[dimirza@csil-03 lab05-startercode]$
+[dimirza@csil-03 lab05_agaucho_alily]$
 ```
 
 
@@ -209,22 +199,26 @@ PASSED: boxToString(b1,6)
 -bash-4.2$
 ```
 
-At that point, you are ready to try submitting on the submit.cs system.
+At that point, you are ready to try submitting on gradescope.
 
-## Step 5: Submitting via submit.cs
+## Step 5: Submitting via gradescope
 
 
-Here is the command to submit this week's labs:
+Submit all the cpp files to lab05 assignment on gradescope. Then visit gradescope and check that you have a correct score. If you are working with a partner, make sure both of you join a team on gradescope, otherwise only one of you will get credit for the lab
 
-```
-~submit/submit -p 925 *.cpp *.h
-```
+* You must check that you have followed these style guidelines:
+
+1. Indentation is neat, consistent and follows good practice (see below)
+2. Variable name choice: variables should have sensible names.
+	More on indentation: Your code should be indented neatly.  Code that is inside braces should be indented, and code that is at the same "level" of nesting inside braces should be indented in a consistent way.    Follow the examples from lecture, the sample code, and from the textbook.   
+
+* Your submission should be on-time. If you miss the deadline, you are subject to getting a zero
 
 Commit and push the latest version of your code on github
 
 **Grading Rubric**
 
-Points from submit.cs automatic grading:
+Points from gradescope automatic grading:
 
 <table border="1">
 <tr>
