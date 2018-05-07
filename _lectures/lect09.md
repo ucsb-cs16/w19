@@ -4,13 +4,14 @@ desc: "Pointers"
 ready: true
 pdfurl: /lectures/CS16_Lecture9.pdf
 annotatedpdfurl: /lectures/CS16_Lecture9_ann.pdf
-annotatedready: false
+annotatedready: true
 lecture_date: 2018-05-02
 ---
 
 # Topics
 
 ## Code from lecture
+[https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-09](https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-09)
 
 ## Pointers
 

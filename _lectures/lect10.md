@@ -1,7 +1,7 @@
 ---
 num: "lect10"
-desc: "References, structs, pointers and structs,  call by value, address and reference, intro to lab05"
-ready: false
+desc: "structs, references,  call by value, address and reference, intro to lab05"
+ready: true
 pdfurl: /lectures/CS16_Lecture10.pdf
 annotatedpdfurl: /lectures/CS16_Lecture10_ann.pdf
 annotatedready: false
@@ -11,7 +11,7 @@ lecture_date:  2018-05-07
 # Topics
 
 ## Code from lecture
-
+[https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-10](https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-10)
 
 ## Pointers and structs
 * Declaring structs
@@ -32,9 +32,5 @@ lecture_date:  2018-05-07
 * References as function formal arguments
 * More on the run-time stack
 
-## C++ Memory model
-* Barebones model of memory: value vs address
-* Scope: local vs. global
-* Layout of compiled C++ program in memory: text, global data , heap and stack
 
 ## Intro to lab05

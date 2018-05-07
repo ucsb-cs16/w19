@@ -17,3 +17,8 @@ lecture_date:  2018-05-09
 * Passing arrays of structs to functions (revist passing arrays to functions)
 * Contrast arrays of ints and arrays of structs
 * Review of homework 10
+
+## C++ Memory model
+* Barebones model of memory: value vs address
+* Scope: local vs. global
+* Layout of compiled C++ program in memory: text, global data , heap and stack
