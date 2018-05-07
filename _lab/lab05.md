@@ -1,7 +1,7 @@
 ---
 layout: lab
 num: lab05
-ready: false
+ready: true
 desc: "Fun with shapes: Pointers"
 assigned: 2018-05-08 09:00:00.00-8
 due: 2018-05-14 23:59:00.00-7
@@ -17,52 +17,42 @@ The goal of this lab is to demonstrate how we can abstract "things" in the world
 
 ## Step 1: Getting Ready
 
-1. Decide if you are working alone, or working in a pair.
+1. If you are working as a pair, go to github and create a git repo for this lab following the naming convention specified in previous labs. If you are working with a partner only one of you needs to create the repo.
 
-2. If you are working as a pair, go to submit.cs, navigate to this lab page and create a team for you and your pair partner. Do this by clicking on the blue "Join Groups" button, then follow directions.
+2. If you are working with a partner and you are the one who created the github repo, add your partner as a collborator on the repo
 
-3. Go to github and create a git repo for this lab following the naming convention specified in previous labs (this step carries style points, see our feedback on previous labs to understand what we are looking for). If you are working with a partner only one of you needs to create the repo.
+3. Decide on initial navigator and driver.
 
-4. If you are working with a partner and you are the one who created the github repo, add your partner as a collborator on the repo
+4. Driver, log on to your CSIL account.
 
-5. Decide on initial navigator and driver.
+5. Open a terminal window and log into the correct machine.
 
-6. Driver, log on to your CSIL account.
-
-7. Open a terminal window and log into the correct machine.
-
-8. Change into your CS 16 directory
+6. Change into your CS 16 directory
 
 Remember to push your work to github at the end of EVERY work session. That way, both partners always have access to the latest version of the code even if the code is being developed on one partner's CoE account.
 
 
 ## Step 2: Obtain the starter code
 
-This step is similar to lab02, first open terminal and go to the directory where you cloned the starter code in lab02 and pull the latest version of the starter code.
-
+This step is similar to lab02, first clone your github repo in the ~/cs16/ directory. Then cd into your repo directory.
 ```
-  cd ~/cs16/cs16-w18-starter-code
-  git pull
-```
-Clone your github repo in the ~/cs16/ directory. Then cd into your repo directory.
-```
-  cd ../lab05_gaucho_ally
+  cd ~/cs16/lab05_gaucho_ally
 ```
 Copy the code from your starter code directory to your local lab05 repo using the following command.
 
 ```
-  cp ~/cs16/cs16-w18-starter-code/lab05/* ./
+  cp /cs/faculty/dimirza/cs16/labs/lab05/* ~/cs16/lab05_agaucho_alily/
 ```
 
 Typing the list (ls) command should show you the following files in your current directory
 
 ```
-[dimirza@csil-03 lab05-startercode]$ ls
+[dimirza@csil-03 lab05_agaucho_alily]$ ls
 areaOfBoxTest.cpp         initBoxTest.cpp            pointToStringTest.cpp  shapeFuncs.h  utility.cpp
 areaOfBoxTest.cpp~        initPointTest.cpp          README.md              shapes.h      utility.h
 boxesApproxEqualTest.cpp  Makefile                   #shapeFuncs.cpp#       tddFuncs.cpp
 distanceBetweenTest.cpp   pointsApproxEqualTest.cpp  shapeFuncs.cpp         tddFuncs.h
-[dimirza@csil-03 lab05-startercode]$
+[dimirza@csil-03 lab05_agaucho_alily]$
 ```
 
 
@@ -209,22 +199,26 @@ PASSED: boxToString(b1,6)
 -bash-4.2$
 ```
 
-At that point, you are ready to try submitting on the submit.cs system.
+At that point, you are ready to try submitting on gradescope.
 
-## Step 5: Submitting via submit.cs
+## Step 5: Submitting via gradescope
 
 
-Here is the command to submit this week's labs:
+Submit all the cpp files to lab05 assignment on gradescope. Then visit gradescope and check that you have a correct score. If you are working with a partner, make sure both of you join a team on gradescope, otherwise only one of you will get credit for the lab
 
-```
-~submit/submit -p 925 *.cpp *.h
-```
+* You must check that you have followed these style guidelines:
+
+1. Indentation is neat, consistent and follows good practice (see below)
+2. Variable name choice: variables should have sensible names.
+	More on indentation: Your code should be indented neatly.  Code that is inside braces should be indented, and code that is at the same "level" of nesting inside braces should be indented in a consistent way.    Follow the examples from lecture, the sample code, and from the textbook.   
+
+* Your submission should be on-time. If you miss the deadline, you are subject to getting a zero
 
 Commit and push the latest version of your code on github
 
 **Grading Rubric**
 
-Points from submit.cs automatic grading:
+Points from gradescope automatic grading:
 
 <table border="1">
 <tr>
@@ -238,12 +232,20 @@ Points from submit.cs automatic grading:
 <tr><td>pointsApproxEqualTest</td><td><p style="color:green;margin:0;padding:0;">pointsApproxEqualTest output (should pass in base code, so no points)</p></td><td>(0 pts)</td></tr>
 </table>
 
-Other points:
+Style: Good choice of variable names, code indented in ways that are consistent, and in line with good C++ practice. Where applicable, common code is factored out into functions (added to utility.h and utility.cpp as needed).
 
-* (30 pts) Pointer diagram submitted to your repo on github
-* (60 pts) Code style, including but not limited to:
-	* Code can be easily understood by humans familiar with C++ (including both the author(s) of the code, and non-authors of the code.)
-	* Code is neatly indented and formatted, following standard code indentation practices for C++ as illustrated in either the textbook, or example code given in lectures and labs
-	* Variable names choices are reasonable
-	* Code is reasonably "DRY" (as in "don't repeat yourself")&mdash;where appropriate, common code is factored out into functions
-	* Code is not unnecessarily or unreasonably complex when a simpler solution is available
+This last point may or may not arise, but if it does, utility.h and utility.cpp is a place where functions needed in multiple files can be put—prototypes in utility.h and function definitions in utility.cpp.
+
+You will note that the gradescope score is worth 210 points. The grade will ultimately normalized to be out of 100 points. This lab is worth exactly the same as all the other labs done so far (i.e. the 210 points here are equivalent to 100 points in other labs).
+
+## Step 6: Done!
+
+Once your submission receives a score of 210/210, you are done with this assignment. Remember that we will check your code for appropriate comments, formatting, and the use of required code, as stated earlier, based on your github submission.
+
+If you are in the Phelps lab or in CSIL, make sure to log out of the machine before you leave. Also, make sure to close all open programs before you log out. Some programs will not work next time if they are not closed. Remember to save all your open files before you close your text editor.
+
+If you are logged in remotely, you can log out using the exit command:
+
+```
+$ exit
+```
