@@ -10,7 +10,7 @@
 <script src="/site.js"></script>
 <script src="/hwk.js"></script>
 
-    <title>h07 - Chapter 7 and 10: Pointers - </title>
+    <title>h07 - Chapter 6: File IO, Chapter 9: Dynamic memory allocation - </title>
   </head>
     <body id="page-top">
       <div id="container" data-role="page">
@@ -58,20 +58,6 @@
 </div>
 
       
-      <div class="not-ready-warning">
-
-<h2>Warning</h2>
-
-<h3>This material has not yet been marked as "ready".</h3>
-
-It should be treated as a "draft", i.e. a "work in progress".
-
-If this is an assignment, and this message still appears after the
-"assigned" date, please post a question on Piazza requesting
-clarification.
-
-</div>
-
            
         <div id="content"  class="ui-content">
         <div class="hwk-header">
@@ -100,7 +86,7 @@ clarification.
 	  </th></tr></table>
 
 
-<h1>h07: Chapter 7 and 10: Pointers</h1>
+<h1>h07: Chapter 6: File IO, Chapter 9: Dynamic memory allocation</h1>
 
 	  <table class="asn_table">
 	    <tr>
@@ -109,8 +95,8 @@ clarification.
 	      <th class="asn_date" >due</th>
 	      <th class="asn_date" >points</th>
 	    </tr>
-	    <tr class="not-ready">
-	      <td class="asn_ready">false</td>
+	    <tr class="ready">
+	      <td class="asn_ready">true</td>
 	      <td class="asn_date" >Fri 05/11 10:00AM</td> 
 	      <td class="asn_date" >Fri 05/18 11:59PM</td>
 	      <td class="pointCount"></td>
@@ -130,110 +116,50 @@ in place of that, we drop the three lowest scores (if you have zeros, those are 
 
           
         </div><!-- hwk-header -->  
-          <div style="float:right; width:20em; margin: 2em; padding:1em; border: 5px black inset; ">
-  <p>Please:</p>
-  <ul>
- <li> <b>No Staples</b>.  </li>
- <li> <b>No Paperclips</b>. </li>
- <li> <b>No folded down corners</b>.</li>
-</ul>
-</div>
+          <p>Read Chapter 6, Chapter 9, sections 9.1-9.2 (pages 508 - 533). The key learning goals are dynamic memory allocation and its use in dynamic arrays and linked-lists. You don’t need to turn this homework in. To earn credit for this homework, complete the corresponding quiz on gauchospace AFTER you have completed the pen and pencil version of the homework. The quiz will be available one day before the due date indicated on the homework.</p>
 
-<p>Read Chapter 7.1 - 7.2 up to page 397.  You don’t need to turn this homework in. To earn credit for this homework, complete the corresponding quiz on gauchospace AFTER you have completed the pen and pencil version of the homework. The quiz will be available one day before the due date indicated on the homework.</p>
+<p><b>PLEASE MARK YOUR HOMEWORK CLEARLY, REGARDLESS OF IF YOU WRITE IT OUT IN INK OR PENCIL! FOR BEST RESULTS, SAVE THIS PAGE AS A PDF, THEN PRINT THE PDF.</b></p>
 
-<p><b>PLEASE MARK YOUR HOMEWORK CLEARLY, REGARDLESS OF IF YOU WRITE IT OUT IN INK OR PENCIL!<br />
-FOR BEST RESULTS, PRINT THIS PAGE AS A PDF, THEN PRINT THE PDF</b></p>
-
-<p>1.(5 pts) What is the output of the following code? If there’s an error that will not allow an output, point it out. Briefly justify your answer.</p>
-
+<p>1.(10 pts) What is the output of the following program? Using a pointer diagram show the evolution of all data objects in memory, clearly marking elements on the run-time stack and on the heap. Mark the size of all data objects. Assume the code is embedded in a correct and complete program.</p>
 <div>
-  <div class="highlighter-rouge"><pre class="highlight"><code><span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">5</span><span class="p">];</span>
-<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="sc">'a'</span><span class="p">;</span>
-  <span class="k">else</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="sc">'z'</span><span class="p">;</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>  <span class="p">}</span>
+  <div class="highlighter-rouge"><pre class="highlight"><code><span class="kt">int</span> <span class="o">*</span><span class="n">p1</span><span class="p">,</span> <span class="o">*</span><span class="n">p2</span><span class="p">,</span> <span class="o">*</span><span class="n">p3</span><span class="p">;</span>
+<span class="n">p1</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">;</span>
+<span class="n">p2</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">;</span>
+<span class="n">p3</span> <span class="o">=</span> <span class="n">p1</span><span class="p">;</span>
+<span class="o">*</span><span class="n">p1</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+<span class="o">*</span><span class="n">p2</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+<span class="n">cout</span><span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p1</span><span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p2</span><span class="o">&lt;&lt;</span><span class="s">" "</span><span class="o">&lt;&lt;*</span><span class="n">p3</span><span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="n">p1</span> <span class="o">=</span> <span class="n">p2</span><span class="p">;</span>
+<span class="n">cout</span><span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p1</span><span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p2</span><span class="o">&lt;&lt;</span><span class="s">" "</span><span class="o">&lt;&lt;*</span><span class="n">p3</span><span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="o">*</span><span class="n">p3</span> <span class="o">=</span> <span class="o">*</span><span class="n">p2</span><span class="p">;</span>
+<span class="n">cout</span><span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p1</span><span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">p2</span><span class="o">&lt;&lt;</span><span class="s">" "</span><span class="o">&lt;&lt;*</span><span class="n">p3</span><span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 </code></pre>
   </div>
 </div>
-<div style="margin-bottom:4em"></div>
-<p>2.(5 pts) What is the output of the following code? If there’s an error that will not allow an output, point it out.</p>
 
-<div>
-  <div class="highlighter-rouge"><pre class="highlight"><code><span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">5</span><span class="p">};</span>
-<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">7</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">i</span> <span class="o">&lt;&lt;</span><span class="s">" "</span><span class="p">;</span>
-</code></pre>
-  </div>
-</div>
-<div style="margin-bottom:4em"></div>
-<p>3.(5 pts) What is the output of the following code? If there’s an error that will not allow an output, point it out.</p>
+<div style="margin-bottom:2em"></div>
 
+<p>2.(10 pts) What is the output of the following program? Using a pointer diagram show the evolution of all data objects in memory, clearly marking elements on the run-time stack and on the heap. Mark the size of all data objects. Assume the code is embedded in a correct and complete program.</p>
 <div>
-  <div class="highlighter-rouge"><pre class="highlight"><code><span class="kt">int</span> <span class="n">codes</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">44</span><span class="p">,</span> <span class="mi">66</span><span class="p">,</span> <span class="mi">83</span><span class="p">,</span> <span class="mi">973</span><span class="p">,</span> <span class="o">-</span><span class="mi">977</span><span class="p">};</span>
-<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">count</span> <span class="o">:</span> <span class="n">codes</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span> <span class="p">(</span><span class="n">count</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">50</span> <span class="p">)</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">count</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-  <span class="k">else</span> <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"invalid"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span> <span class="p">}</span>
+  <div class="highlighter-rouge"><pre class="highlight"><code><span class="kt">int</span> <span class="n">array_size</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="o">*</span><span class="n">a</span> <span class="p">;</span>
+<span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">array_size</span><span class="p">];</span>
+<span class="kt">int</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span>
+<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span> <span class="n">array_size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="o">*</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="p">;</span>
+<span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span> <span class="n">array_size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="s">" "</span><span class="p">;</span>
+<span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
 </code></pre>
   </div>
 </div>
 
 <div class="pagebreak"></div>
 
-<p>4.(5 pts) Draw a diagram to show how the content of the array ‘nums’ changes in memory after every line of the following code is executed. Start by showing the elements of the array in memory when the array is initialized. Every time the element of an array changes, you may indicate the change by crossing out the old value and writing in the new value.</p>
-
-<div>
-  <div class="highlighter-rouge"><pre class="highlight"><code><span class="kt">int</span> <span class="n">nums</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">44</span><span class="p">,</span> <span class="mi">66</span><span class="p">,</span> <span class="mi">83</span><span class="p">};</span>
-<span class="kt">int</span> <span class="n">tmp</span> <span class="o">=</span> <span class="n">nums</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
-<span class="n">nums</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">nums</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
-<span class="n">nums</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">nums</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
-<span class="n">nums</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span> <span class="n">tmp</span><span class="p">;</span>
-</code></pre>
-  </div>
-</div>
-
-<p>5.(5 pts) Describe in your own words what the code in the previous question does. Your description of the code should be as abstract as possible. For example..”the above code sorts the elements of the array in ascending order…”</p>
-
+<p>3.(10 pts) Write the definition of a structure type called UndergradStudents. This structure should contain student ID numbers, first and last names, major, and GPA scores for each undergraduate year.</p>
 <div style="margin-bottom:8em"></div>
 
-<p>6.(10 pts) Write the definition of a function named ‘reverse’ that takes two parameters: an integer array and the number of elements of the array. The function should reverse the order of elements of the array. The function should not return anything. See below for an example of expected outcome when the reverse function is called:</p>
-
-<div>
-  <div class="highlighter-rouge"><pre class="highlight"><code><span class="kt">int</span> <span class="n">nums</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">50</span><span class="p">};</span>
-<span class="n">reverse</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span><span class="c1">// The order of elements should be reversed after this
-</span><span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">5</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-   <span class="n">cout</span><span class="o">&lt;&lt;</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="s">" "</span>
-</code></pre>
-  </div>
-</div>
-<p>The output of the above code should be: 50 40 30 20 10</p>
-<div class="pagebreak"></div>
-
-<p>7.(4 pts) List two reasons why you might choose to pass parameters to a function by address or reference, rather than by value in your C++ programs.</p>
-<div style="margin-bottom:4em"></div>
-
-<p>8.(6 pts) Draw a pointer diagram to demonstrate how the state of memory changes as the following code is executed. Cross out old values/arrows and draw new ones. Is this program likely to result in a segmentation fault? If so, why?</p>
-<div style="margin-bottom:1em"></div>
-
-<div>
-  <div class="highlighter-rouge"><pre class="highlight"><code>   int num = 10, *ptr1 = &amp;num, *ptr2=0;
-   if (ptr2) ptr1 = ptr2;
-   else if(ptr1) ptr2 = ptr1;
-   (*ptr1)++;
-</code></pre>
-  </div>
-
-</div>
-
-<p>9.(8 pts) On page 14 of the “Pointers and Memory” handout there is a reference to the “Amperand (&amp;)” Bug in the TAB() function. Draw a trace of the local variables of the functions Victim() and TAB() on the run-time stack as these functions are executed. Your diagram should be similar to the one provided on page 13. Your diagram should depict exactly three instances in program execution - T1: Right after the first statement of Victim(), T2: right before the return statement in TAB(), T3: Right after the call to TAB(). Use your diagram to explain the “Amperand (&amp;)” bug and why it is likely to lead to a runtime error when the last line of the Victim() is executed?</p>
-<div style="margin-bottom:20em"></div>
-
-<div class="pagebreak"></div>
-
-<p>10.(8 pts) Write the definition of a structure type called UndergradStudents. This structure should contain student ID numbers, first and last names, major, and GPA scores for each undergraduate year.</p>
-<div style="margin-bottom:8em"></div>
-
-<p>11.(14 pts) Write a program that uses the definition of the structure UndergradStudents from the previous question to <em>declare</em> and then <em>initialize</em> an array of 3 objects of this structure (hint: you can do this with the same approach you define/initialize an array of any other type). You <strong>must initialize the values in the program, not by user input</strong>.  The initial values are shown in the table below. Then write the definition of a function with the signature <code> void printRecords(struct UndergradStudents *records, int numrecords);</code> The function should print out the values of the array of objects passed to it as shown in the sample below, along with each student’s AVERAGE GPA score (calculated to a precision of 2 decimal places). You <strong>must use a loop to print the output</strong>. Your program should appropriately call the printRecords() function to print the student records and the average GPA.</p>
+<p>4.(20 pts) Write a program that uses the definition of the structure UndergradStudents from the previous question to <em>declare</em> and then <em>initialize</em> an array of 3 objects of this structure (hint: you can do this with the same approach you define/initialize an array of any other type). You <strong>must initialize the values in the program, not by user input</strong>.  The initial values are shown in the table below. Then write the definition of a function with the signature <code> void printRecords(struct UndergradStudents *records, int numrecords);</code> The function should print out the values of the array of objects passed to it as shown in the sample below, along with each student’s AVERAGE GPA score (calculated to a precision of 2 decimal places). You <strong>must use a loop to print the output</strong>. Your program should appropriately call the printRecords() function to print the student records and the average GPA.</p>
 
 <div>
   <table>
@@ -289,6 +215,117 @@ ID# 2, Chen, Macy, Major: CS, Average GPA: 3.95
 ID# 3, Peter, Patrick, Major: ME, Average GPA: 2.77
 </code></pre>
   </div>
+
+  <p>5.(10 pts) What is the output of this program?</p>
+  <div style="margin-bottom:1em"></div>
+
+  <div>
+    <div class="highlighter-rouge"><pre class="highlight"><code><span class="mi">1</span>  <span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">iostream</span><span class="o">&gt;</span>
+<span class="mi">2</span>  <span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="mi">4</span>  <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="mi">5</span>     <span class="kt">char</span> <span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">;</span>
+<span class="mi">6</span>     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Enter a word: "</span><span class="p">;</span>
+<span class="mi">7</span>     <span class="n">first</span> <span class="o">=</span> <span class="n">cin</span><span class="p">.</span><span class="n">get</span><span class="p">();</span>
+<span class="mi">8</span>     <span class="n">cin</span><span class="p">.</span><span class="n">sync</span><span class="p">();</span>
+<span class="mi">9</span>     <span class="n">second</span> <span class="o">=</span> <span class="n">cin</span><span class="p">.</span><span class="n">get</span><span class="p">();</span>
+<span class="mi">10</span>    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">first</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="mi">11</span>    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">second</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="mi">12</span>    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="mi">13</span>  <span class="p">}</span>
+</code></pre>
+    </div>
+  </div>
+
+  <div style="margin-bottom:1em"></div>
+  <div class="highlighter-rouge"><pre class="highlight"><code>(a) First
+</code></pre>
+  </div>
+  <div style="margin-bottom:.5em"></div>
+  <div class="highlighter-rouge"><pre class="highlight"><code>(b) Second
+</code></pre>
+  </div>
+  <div style="margin-bottom:.5em"></div>
+  <div class="highlighter-rouge"><pre class="highlight"><code>(c) Return first 2 letter of number from the entered word
+</code></pre>
+  </div>
+  <div style="margin-bottom:.5em"></div>
+
+  <p>6.(6 pts) In C++, all the files are opened in <strong>__</strong><strong>__</strong>__ mode:</p>
+  <div style="margin-bottom:1em"></div>
+  <div class="highlighter-rouge"><pre class="highlight"><code>(a) Binary
+</code></pre>
+  </div>
+  <div style="margin-bottom:.5em"></div>
+  <div class="highlighter-rouge"><pre class="highlight"><code>(b) Text    &lt;div style="margin-bottom:.5em"&gt;&lt;/div&gt;
+(c) Can't say
+</code></pre>
+  </div>
+  <div style="margin-bottom:.5em"></div>
+
+  <p>7.(6 pts) How many streams are automatically created when executing a program:</p>
+  <div style="margin-bottom:.1em"></div>
+  <p>(a) 1</p>
+  <div style="margin-bottom:.5em"></div>
+  <p>(b) 2</p>
+  <div style="margin-bottom:.5em"></div>
+  <p>(c) 3</p>
+  <div style="margin-bottom:.5em"></div>
+
+  <div class="pagebreak"></div>
+
+  <p>8.(12 pts)Please fill the program below to make it output the expected output:</p>
+  <div>
+    <p>```cpp
+      #include <fstream>
+      #include <iostream>
+      #include <string>
+      using namespace std;</string></iostream></fstream></p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  int main ()
+  {
+     string data;
+     _____________ outfile;
+     outfile.open("file.dat");
+     cout &lt;&lt; "Writing to the file" &lt;&lt; endl;
+     cout &lt;&lt; "Enter class name: ";
+     ___________________________________________
+     outfile &lt;&lt; data&lt;&lt; endl;
+     cout &lt;&lt; "Enter your id: ";
+     cin &gt;&gt; data;
+     cin.ignore();
+     outfile &lt;&lt; data&lt;&lt; endl;
+     outfile.close();
+     ifstream infile;
+     cout &lt;&lt; "Reading from the file" &lt;&lt; endl;
+     infile.open("file.dat");
+     ___________________________________________
+     cout &lt;&lt; data &lt;&lt; endl;
+     ___________________________________________
+     cout &lt;&lt; data &lt;&lt; endl;
+     infile.close();
+     return 0;
+  }   ```
+</code></pre>
+    </div>
+  </div>
+  <p><b>Output</b></p>
+  <div>
+    <p><code class="highlighter-rouge">cpp
+    Writing to the file
+    Enter class name: name
+    Enter your id: 123
+    Reading from the file
+    name
+    123
+  </code></p>
+  </div>
+  <div style="margin-bottom:1m"></div>
+
+  <p>9.(6 pts) The <tt>&lt;fstream&gt;</tt> header provides three clasees for operating file IO:  ifstream, ofstream and fstream. What are these three used for respectively?</p>
+  <div style="margin-bottom:8em"></div>
+
+  <p>10.(10 pts) Write number 1 to 100 in a data file NOTES.TXT in C++</p>
+  <div style="margin-bottom:5em"></div>
 </div>
 
         </div><!-- content -->

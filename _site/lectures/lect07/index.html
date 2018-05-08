@@ -48,14 +48,17 @@
   <td>
     lect07
      
+        <a href="/lectures/CS16_Lecture7.pdf" data-ajax="false">
         Before Slides 
+        </a> 
      
  </td>
  <td>
     lect07
      
-        Annotated Slides 
-     
+        <a href="/lectures/CS16_Lecture7_ann.pdf" data-ajax="false">   Annotated Slides
+        </a> 
+    
  </td>
 
  <td><a href="/lectures/lect08/">Next Lecture</a></td>
@@ -63,7 +66,28 @@
 </tr>
 </table> 
     <h1 id="topics">Topics</h1>
-<p>## Data and number representation</p>
+<p><a href="https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-07">https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-07</a></p>
+
+<h2 id="under-the-hood-of-program-compilation-and-execution">Under the hood of program compilation and execution</h2>
+<ul>
+  <li>From high-level programs to machine code
+    <ul>
+      <li>What are .h, .o and .cpp file?</li>
+      <li>What is an execuatble</li>
+      <li>Steps in compilation
+ 	* Creating object files and linking programs with g++</li>
+    </ul>
+  </li>
+  <li>Separate compilation with Makefiles <a href="https://foo.cs.ucsb.edu/16wiki/index.php/C%2B%2B:_Separate_Compilation_and_Makefiles">read about Makefile</a></li>
+  <li>Compile-time errors</li>
+  <li>Linker errors</li>
+  <li>
+    <p>Header guards</p>
+  </li>
+  <li>Automate the compilation of code from lecture 5 using makefiles</li>
+</ul>
+
+<h2 id="data-and-number-representation">Data and number representation</h2>
 
 <ul>
   <li>Positional encoding: binary, hex, decimal</li>
@@ -71,11 +95,9 @@
   <li>Conversion between different representations</li>
   <li>Key ideas: bits can represent ANYTHING. With n bits we can represent at most 2^N things</li>
   <li>Apply above rule to represent characters (ASCII), unicode, colors ….</li>
-  <li>What is signed vs unsigned integer representation</li>
-  <li>Signed representation used by modern computers: two’s complement</li>
   <li>The data type of a variable determines its representation in memory AND the number of bits used to store each variable</li>
-  <li>Model of memory</li>
 </ul>
+
 
     </div><!-- content -->
     <div data-role="footer" class="footer">

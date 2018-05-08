@@ -4,7 +4,7 @@ desc: "structs, references,  call by value, address and reference, intro to lab0
 ready: true
 pdfurl: /lectures/CS16_Lecture10.pdf
 annotatedpdfurl: /lectures/CS16_Lecture10_ann.pdf
-annotatedready: false
+annotatedready: true
 lecture_date:  2018-05-07
 ---
 
