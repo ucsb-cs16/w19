@@ -1,6 +1,6 @@
 ---
 num: "lect10"
-desc: "structs, references,  call by value, address and reference, intro to lab05"
+desc: "Defining your own data types, intro to lab05"
 ready: true
 pdfurl: /lectures/CS16_Lecture10.pdf
 annotatedpdfurl: /lectures/CS16_Lecture10_ann.pdf
@@ -14,11 +14,11 @@ lecture_date:  2018-05-07
 [https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-10](https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-10)
 
 ## Pointers and structs
-* Declaring structs
+* Defining your own data types using structs
 * Different ways of accessing member variables of a structs
 * Pointers to structs, why and when to use them?
 * Passing structs to functions by value, by reference and by address
-* Pointer pitfalls
+
 
 
 ## C++ References
