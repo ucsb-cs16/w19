@@ -4,7 +4,7 @@ desc: "The good, bad and ugly about pointers"
 ready: true
 pdfurl: /lectures/CS16_Lecture11.pdf
 annotatedpdfurl: /lectures/CS16_Lecture11_ann.pdf
-annotatedready: false
+annotatedready: true
 lecture_date:  2018-05-09
 ---
 
