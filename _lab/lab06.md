@@ -43,7 +43,7 @@ git clone git@github.com:ucsb-cs16-s18-mirza/lab06_alily_jgaucho.git
 ```
 * cd into this new directory
 ```
-cd lab02_alily_jgaucho
+cd lab06_alily_jgaucho
 ```
 
 * Copy the starter code by typing the following command:
