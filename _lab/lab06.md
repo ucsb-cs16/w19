@@ -272,8 +272,7 @@ Some of the points will be awarded based on gradescope automatic grading. Other 
 
 ## Code inspection human-assigned points
 
-* (10 pts) Submitting on time, per instructions
-* (30 pts) Code style, including but not limited to:
+* (10 pts) Code style, including but not limited to:
 1. Code can be easily understood by humans familiar with C++ (including both the author(s) of the code, and non-authors of the code.)
 2. Code is neatly indented and formatted, following standard code indentation practices for C++ as illustrated in either the textbook, or example code given in lectures and labs
 3. Variable names choices are reasonable
