@@ -37,30 +37,29 @@ Note: Remember to push your work to github at the end of EVERY work session. Tha
 
 ## Step 2: Obtaining the starter code
 
-This step is similar to lab02, first open terminal and go to the directory where you cloned the starter code in lab02 and pull the latest version of the starter code.
+* Navigate to your cs16 directory and clone the git repository you created
+```
+git clone git@github.com:ucsb-cs16-s18-mirza/lab06_alily_jgaucho.git
+```
+* cd into this new directory
+```
+cd lab02_alily_jgaucho
+```
+
+* Copy the starter code by typing the following command:
 
 ```
-  cd ~/cs16/cs16-w18-starter-code
-  git pull
-```
-Clone your github repo in the ~/cs16/ directory. Then cd into your repo directory.
-```
-  cd ../lab07_gaucho_ally
-```
-Copy the code from your starter code directory to your local lab06 repo using the following command.
-
-```
-  cp ~/cs16/cs16-w18-starter-code/lab07/* ./
+cp /cs/faculty/dimirza/cs16/labs/lab06/* ./
 ```
 
 Typing the list (ls) command should show you the following files in your current directory
 
 ```
-[dimirza@csil-03 lab07-startercode]$ ls
+[dimirza@csil-03 lab06-startercode]$ ls
 arrayFuncs.cpp  Makefile            README.md
 arrayFuncs.h    moreArrayFuncs.cpp  tddFuncs.cpp
 mafTest.cpp     moreArrayFuncs.h    tddFuncs.h
-[dimirza@csil-03 lab07-startercode]$
+[dimirza@csil-03 lab06-startercode]$
 
 ```
 
@@ -258,19 +257,17 @@ Some of the points will be awarded based on gradescope automatic grading. Other 
 
 ## Submit.cs system automatic points
 
-TODO: Update point values
-
 <table border="1">
 <tr><th>Test Name</th><th>Value</th></tr>
-<tr><td><p style="color:green;margin:0;padding:0;">indexOfMax</p></td><td>(X pts)</td></tr>
-<tr><td><p style="color:green;margin:0;padding:0;">indexOfMin</p></td><td>(X pts)</td></tr>
-<tr><td><p style="color:green;margin:0;padding:0;">largestValue</p></td><td>(X pts)</td></tr>
-<tr><td><p style="color:green;margin:0;padding:0;">smallestValue</p></td><td>(X pts)</td></tr>
-<tr><td><p style="color:green;margin:0;padding:0;">sum</p></td><td>(X pts)</td></tr>
-<tr><td><p style="color:green;margin:0;padding:0;">copyElements</p></td><td>(X pts)</td></tr>
-<tr><td><p style="color:green;margin:0;padding:0;">copyOddOnly</p></td><td>(X pts)</td></tr>
-<tr><td><p style="color:green;margin:0;padding:0;">multiplyPairwise</p></td><td>(X pts)</td></tr>
-<tr><td><p style="color:green;margin:0;padding:0;">createArray</p></td><td>(X pts)</td></tr>
+<tr><td><p style="color:green;margin:0;padding:0;">indexOfMax</p></td><td>(10 pts)</td></tr>
+<tr><td><p style="color:green;margin:0;padding:0;">indexOfMin</p></td><td>(10 pts)</td></tr>
+<tr><td><p style="color:green;margin:0;padding:0;">largestValue</p></td><td>(10 pts)</td></tr>
+<tr><td><p style="color:green;margin:0;padding:0;">smallestValue</p></td><td>(10 pts)</td></tr>
+<tr><td><p style="color:green;margin:0;padding:0;">sum</p></td><td>(10 pts)</td></tr>
+<tr><td><p style="color:green;margin:0;padding:0;">copyElements</p></td><td>(10 pts)</td></tr>
+<tr><td><p style="color:green;margin:0;padding:0;">copyOddOnly</p></td><td>(10 pts)</td></tr>
+<tr><td><p style="color:green;margin:0;padding:0;">multiplyPairwise</p></td><td>(10 pts)</td></tr>
+<tr><td><p style="color:green;margin:0;padding:0;">createArray</p></td><td>(10 pts)</td></tr>
 </table>
 
 ## Code inspection human-assigned points
