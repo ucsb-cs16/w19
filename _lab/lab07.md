@@ -1,7 +1,7 @@
 ---
 layout: lab
 num: lab07
-ready: false
+ready: true
 desc: "Linked lists"
 assigned: 2018-05-22 09:00:00.00-8
 due: 2018-05-29 23:59:00.00-7
@@ -73,11 +73,9 @@ Here is a list of your tasks for this lab:
 
 Type "make tests" and you will see some tests pass, but some fail.
 
-You are finished when all the tests pass.
+You are finished when all the tests pass. We have implemented a few function that involve linked lists in `linkedListFuncs.cpp`. There is only one file you need to edit this week:
 
-There is only one file you need to edit this week:
-
-* <code>moreLinkedListFuncs.cpp</code> contains more functions that deal with linked lists.  These are in addition to the linkedListFuncs.cpp that you worked with before in lab07.
+<code>moreLinkedListFuncs.cpp</code> contains more functions that deal with linked lists.  
 
 
 ### Step 3b: Work on the linked list functions
