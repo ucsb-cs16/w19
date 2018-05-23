@@ -1,7 +1,7 @@
 ---
 num: "lect14"
 desc: "More on linked-lists"
-ready: false
+ready: true
 pdfurl: /lectures/CS16_Lecture14.pdf
 annotatedpdfurl: /lectures/CS16_Lecture14_ann.pdf
 annotatedready: false
