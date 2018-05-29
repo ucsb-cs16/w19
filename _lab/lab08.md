@@ -1,7 +1,7 @@
 ---
 layout: lab
 num: lab08
-ready: false
+ready: true
 desc: "Anagrams, palindromes: Strings and recursion"
 assigned: 2018-05-29 09:00:00.00-8
 due: 2018-06-04 23:59:00.00-7
@@ -47,6 +47,7 @@ To get credit show the final screen of the completed survey to your mentor.
 
 Note: Remember to push your work to github at the end of EVERY work session. That way, both partners always have access to the latest version of the code even if the code is being developed on one partner's CoE account.
 
+**Note that we will cover recursion in class on Wednesday. If you are unfamiliar with this topic, please do not attempt this lab until after Wednesday's lecture. Instead use the lab time to continue to work on lab07 and understanding the problems that you have been asked to solve in this lab.**
 
 # Step 2: Getting the starter code and writing the programs
 
