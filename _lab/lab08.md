@@ -19,10 +19,10 @@ We would like to get your feedback about the program to help us keep the aspects
 Completing the survey carries course credit (1% of your overall grade), so please be sure to complete it. This is an anonymous survey. To get credit please show the final screen  to the instructor TA/tutor
 
 Here is the link to the survey:
-[Please click on this link to complete](https://goo.gl/forms/eIlG8dsXjWbjsAF23)
+[Please click on this link to complete](http://bit.ly/2018-Anonymous-Mentor-Evals)
 
 You may use the following webpage to identify the mentors should you need it to answer the final question on the survey:
-[https://ucsb-cs16-w18.github.io/info/staff/](https://ucsb-cs16-w18.github.io/info/staff/)
+[https://ucsb-cs16-s18-mirza.github.io/info/staff/](https://ucsb-cs16-s18-mirza.github.io/info/staff/)
 
 To get credit show the final screen of the completed survey to your mentor.
 
@@ -50,17 +50,11 @@ Note: Remember to push your work to github at the end of EVERY work session. Tha
 
 # Step 2: Getting the starter code and writing the programs
 
-This step is similar to lab02, first open terminal and go to the directory where you cloned the starter code in lab02 and pull the latest version of the starter code.
-
-```
-  cd ~/cs16/cs16-w18-starter-code
-  git pull
-```
 Clone your github repo in the ~/cs16/ directory. Then cd into your repo directory.
 ```
   cd ../lab08_gaucho_ally
 ```
-Copy the code from your starter code directory to your local lab08 repo using the following command.
+Copy the code starter code for lab08 using the following command.
 
 ```
   cp ~/cs16/cs16-w18-starter-code/lab08/* ./
