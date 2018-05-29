@@ -66,7 +66,7 @@ Copy the code from your starter code directory to your local lab08 repo using th
   cp ~/cs16/cs16-w18-starter-code/lab08/* ./
 ```
 
-This lab will have you write four functions that are specified in strFuncs.h. You must implement these functions in strFuncs.cpp. You must follow the instructions carefully. It is not enough to pass the submit.cs check as the instructor and the TAs *will* be checking your submitted program files for style.
+This lab will have you write two functions that are specified in strFuncs.h and two functions that are specified in recLinkedListFuncs.h. You must implement these functions in strFuncs.cpp and recLinkedListFuncs.cpp. You must follow the instructions carefully. It is not enough to pass the gradescope check as the instructor and the TAs *will* be checking your submitted program files for style.
 
 
 
@@ -75,49 +75,42 @@ This lab will have you write four functions that are specified in strFuncs.h. Yo
 
 
 ---
-## Programs to check if an input string is a palindrome
+## Program to check if an input string is a palindrome
 
-In strFuncs.cpp you are asked to write three different functions - all of which check if a string is a palindrome. For example: "redivide" is not a palindrome, while "detartrated" is a palindrome. You are given different constraints on the implementation of the different functions. Read the instructions in that file carefully to understand the constraints specified for each function. For all the functions you must ignore case when comparing characters of the string.
+In strFuncs.cpp you are asked to a function to check if a string is a palindrome. For example: "redivide" is not a palindrome, while "detartrated" is a palindrome. Read the instructions in the file carefully to understand the constraints specified for the function. Ignore case when comparing characters of the string.
 
 ```
 bool isPalindrome(const string s1);
 ```
 The above function takes a C++ string as input and returns true if an input string is a palindrome and false if it is not. You can do this by checking if the first character equals the last character, and so on. You may choose a recursive implementation in this case, although it is not required. If you chose a recursive implementation you may or may not choose to write a helper function. You won't need a helper function is you used the substr (substring) function appropriately in your recursive calls.
 
-```
-bool isPalindrome(const char *s1);
-```
-In the next version you are given a function that takes a constant C string as input. In this function you MUST use a recursive implementation and you may **not** use built-in C++ functions that we have NOT discussed in lecture. It is highly recommended that you implement a helper function with the right set of parameters for implementing the recursive part.
-
-
-In the last version of the problem you are also for a completely iterative implementation. See the function signature below:
+## Program to recursively find the sum of elements of a linked list
 
 ```
-bool isPalindromeIterative(const char *s1);
+int recursiveSum(Node* head);
+```
+In recLinkedListFuncs.cpp you are asked to reimplement the sum function from last week, this time recursively. If there are no elements of the list, return the value 0;
+
+## Program to recursively find the largest value of a linked list
+
+```
+int recursiveLargestValue(Node* head);
 ```
 
-You must write test code for each of these functions in its own separate file. Once again follow the TDD style of developing your code. Automate you compilation process by writing a Makefile.
-
----
-
+In recLinkedListFuncs.cpp you are asked to reimplement the largestValue function from last week, this time recursively. For this function, you may assume that the linked list contains at least one value. 
 
 ## Step 3: Submit
 
-Push all your code to github. Then submit your code on submit.cs
-Here is the command to submit this week's labs:
+Push all your code to github. Then submit your code on gradescope.
 
-```
-~submit/submit -p 928 strFuncs.cpp strFuncs.h tddFuncs.cpp tddFuncs.h
-```
+Make sure you add your partner as a collaborator.
 
 ## Step 4: Check your submission results
-
-After the 1 minute delay, the submit system will show your score and give you feedback on your submission. Refresh the webpage after a minute to see this information.
 
 You may submit this lab multiple times. You should submit only after local compilation does not produce any errors and runs as expected. The score of the last submission uploaded before the deadline will be used as your assignment grade.
 
 <b>Points assigned by TAs manually</b>
-(50 pts) Style and test code:
+(10 pts) Style and test code:
 You MUST follow the TDD style of test development and test your code extensively.
 Points will also be given for good choice of variable names, code indented in ways that are consistent, and in line with good C++ practice. Where applicable, common code is factored out into functions.
 
