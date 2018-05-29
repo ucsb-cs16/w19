@@ -57,11 +57,19 @@ Clone your github repo in the ~/cs16/ directory. Then cd into your repo director
 Copy the code starter code for lab08 using the following command.
 
 ```
-  cp ~/cs16/cs16-w18-starter-code/lab08/* ./
+  cp /cs/faculty/dimirza/cs16/labs/lab08/* ./
+```
+
+You should see the following files:
+
+```
+[dimirza@csil-01 lab08]$ls
+linkedListFuncs.cpp  README.md               strFuncs.cpp  tddFuncs.h
+linkedListFuncs.h    recLinkedListFuncs.cpp  strFuncs.h
+linkedList.h         recLinkedListFuncs.h    tddFuncs.cpp
 ```
 
 This lab will have you write two functions that are specified in strFuncs.h and two functions that are specified in recLinkedListFuncs.h. You must implement these functions in strFuncs.cpp and recLinkedListFuncs.cpp. You must follow the instructions carefully. It is not enough to pass the gradescope check as the instructor and the TAs *will* be checking your submitted program files for style.
-
 
 
 ## Program to find if two strings are anagrams
@@ -120,4 +128,4 @@ If you are logged in remotely, you can log out using the exit command:
 `$ exit`
 
 
-</div>
+
