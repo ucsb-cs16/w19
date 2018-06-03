@@ -45,12 +45,12 @@
 
 
             
-            <tr class="not-ready" >
+            <tr class="ready" >
   <td class="asn_num"  ><a href="/lab/lab08/" data-ajax="false">lab08</a></td>
-  <td class="asn_ready">false</td>
+  <td class="asn_ready">true</td>
   <td class="asn_desc" >Anagrams, palindromes: Strings and recursion</td>
   <td class="asn_date" >Tue 05/29 10:00AM</td> 
-  <td class="asn_date" >Mon 06/04 11:59PM</td>
+  <td class="asn_date" >Fri 06/08 11:59PM</td>
 </tr>
 
 
@@ -68,10 +68,10 @@ We would like to get your feedback about the program to help us keep the aspects
   <p>Completing the survey carries course credit (1% of your overall grade), so please be sure to complete it. This is an anonymous survey. To get credit please show the final screen  to the instructor TA/tutor</p>
 
   <p>Here is the link to the survey:
-<a href="https://goo.gl/forms/eIlG8dsXjWbjsAF23">Please click on this link to complete</a></p>
+<a href="http://bit.ly/2018-Anonymous-Mentor-Evals">Please click on this link to complete</a></p>
 
   <p>You may use the following webpage to identify the mentors should you need it to answer the final question on the survey:
-<a href="https://ucsb-cs16-w18.github.io/info/staff/">https://ucsb-cs16-w18.github.io/info/staff/</a></p>
+<a href="https://ucsb-cs16-s18-mirza.github.io/info/staff/">https://ucsb-cs16-s18-mirza.github.io/info/staff/</a></p>
 
   <p>To get credit show the final screen of the completed survey to your mentor.</p>
 
@@ -106,71 +106,71 @@ We would like to get your feedback about the program to help us keep the aspects
 
   <p>Note: Remember to push your work to github at the end of EVERY work session. That way, both partners always have access to the latest version of the code even if the code is being developed on one partner’s CoE account.</p>
 
+  <p><strong>Note that we will cover recursion in class on Wednesday. If you are unfamiliar with this topic, please do not attempt this lab until after Wednesday’s lecture. Instead use the lab time to continue to work on lab07 and understanding the problems that you have been asked to solve in this lab.</strong></p>
+
   <h1 id="step-2-getting-the-starter-code-and-writing-the-programs">Step 2: Getting the starter code and writing the programs</h1>
 
-  <p>This step is similar to lab02, first open terminal and go to the directory where you cloned the starter code in lab02 and pull the latest version of the starter code.</p>
-
-  <div class="highlighter-rouge"><pre class="highlight"><code>  cd ~/cs16/cs16-w18-starter-code
-  git pull
-</code></pre>
-  </div>
   <p>Clone your github repo in the ~/cs16/ directory. Then cd into your repo directory.
 <code class="highlighter-rouge">
   cd ../lab08_gaucho_ally
 </code>
-Copy the code from your starter code directory to your local lab08 repo using the following command.</p>
+Copy the code starter code for lab08 using the following command.</p>
 
-  <div class="highlighter-rouge"><pre class="highlight"><code>  cp ~/cs16/cs16-w18-starter-code/lab08/* ./
+  <div class="highlighter-rouge"><pre class="highlight"><code>  cp /cs/faculty/dimirza/cs16/labs/lab08/* ./
 </code></pre>
   </div>
 
-  <p>This lab will have you write four functions that are specified in strFuncs.h. You must implement these functions in strFuncs.cpp. You must follow the instructions carefully. It is not enough to pass the submit.cs check as the instructor and the TAs <em>will</em> be checking your submitted program files for style.</p>
+  <p>You should see the following files:</p>
+
+  <div class="highlighter-rouge"><pre class="highlight"><code>[dimirza@csil-01 lab08]$ls
+linkedListFuncs.cpp  README.md               strFuncs.cpp  tddFuncs.h
+linkedListFuncs.h    recLinkedListFuncs.cpp  strFuncs.h
+linkedList.h         recLinkedListFuncs.h    tddFuncs.cpp
+</code></pre>
+  </div>
+
+  <p>This lab will have you write two functions that are specified in strFuncs.h and two functions that are specified in recLinkedListFuncs.h. You must implement these functions in strFuncs.cpp and recLinkedListFuncs.cpp. You must follow the instructions carefully. It is not enough to pass the gradescope check as the instructor and the TAs <em>will</em> be checking your submitted program files for style.</p>
 
   <h2 id="program-to-find-if-two-strings-are-anagrams">Program to find if two strings are anagrams</h2>
   <p>In the file strFuncs.cpp, write a function called isAnagram that takes two strings as arguments and returns a boolean true if the two strings are anagrams, otherwise it returns false. The function should not be case sensitive and should disregard any punctuation or spaces. Two strings are anagrams if the letters can be rearranged to form each other. For example, “Eleven plus two” is an anagram of “Twelve plus one”. Each string contains one “v”, three “e’s”, two “l’s”, etc. Similarly “Rats and Mice” and “in cat’s dream” are anagrams of each other. You may use any of the C string library or string class functions to complete this code. You may <strong>not</strong> use built-in C++ functions that we have NOT discussed in lecture. You must follow a TDD style of coding. Write your own test code in a separate file and write a Makefile to compile the code.</p>
 
   <hr />
-  <p>## Programs to check if an input string is a palindrome</p>
+  <p>## Program to check if an input string is a palindrome</p>
 
-  <p>In strFuncs.cpp you are asked to write three different functions - all of which check if a string is a palindrome. For example: “redivide” is not a palindrome, while “detartrated” is a palindrome. You are given different constraints on the implementation of the different functions. Read the instructions in that file carefully to understand the constraints specified for each function. For all the functions you must ignore case when comparing characters of the string.</p>
+  <p>In strFuncs.cpp you are asked to a function to check if a string is a palindrome. For example: “redivide” is not a palindrome, while “detartrated” is a palindrome. Read the instructions in the file carefully to understand the constraints specified for the function. Ignore case when comparing characters of the string.</p>
 
   <div class="highlighter-rouge"><pre class="highlight"><code>bool isPalindrome(const string s1);
 </code></pre>
   </div>
   <p>The above function takes a C++ string as input and returns true if an input string is a palindrome and false if it is not. You can do this by checking if the first character equals the last character, and so on. You may choose a recursive implementation in this case, although it is not required. If you chose a recursive implementation you may or may not choose to write a helper function. You won’t need a helper function is you used the substr (substring) function appropriately in your recursive calls.</p>
 
-  <div class="highlighter-rouge"><pre class="highlight"><code>bool isPalindrome(const char *s1);
+  <h2 id="program-to-recursively-find-the-sum-of-elements-of-a-linked-list">Program to recursively find the sum of elements of a linked list</h2>
+
+  <div class="highlighter-rouge"><pre class="highlight"><code>int recursiveSum(Node* head);
 </code></pre>
   </div>
-  <p>In the next version you are given a function that takes a constant C string as input. In this function you MUST use a recursive implementation and you may <strong>not</strong> use built-in C++ functions that we have NOT discussed in lecture. It is highly recommended that you implement a helper function with the right set of parameters for implementing the recursive part.</p>
+  <p>In recLinkedListFuncs.cpp you are asked to reimplement the sum function from last week, this time recursively. If there are no elements of the list, return the value 0;</p>
 
-  <p>In the last version of the problem you are also for a completely iterative implementation. See the function signature below:</p>
+  <h2 id="program-to-recursively-find-the-largest-value-of-a-linked-list">Program to recursively find the largest value of a linked list</h2>
 
-  <div class="highlighter-rouge"><pre class="highlight"><code>bool isPalindromeIterative(const char *s1);
+  <div class="highlighter-rouge"><pre class="highlight"><code>int recursiveLargestValue(Node* head);
 </code></pre>
   </div>
 
-  <p>You must write test code for each of these functions in its own separate file. Once again follow the TDD style of developing your code. Automate you compilation process by writing a Makefile.</p>
-
-  <hr />
+  <p>In recLinkedListFuncs.cpp you are asked to reimplement the largestValue function from last week, this time recursively. For this function, you may assume that the linked list contains at least one value.</p>
 
   <h2 id="step-3-submit">Step 3: Submit</h2>
 
-  <p>Push all your code to github. Then submit your code on submit.cs
-Here is the command to submit this week’s labs:</p>
+  <p>Push all your code to github. Then submit your code on gradescope.</p>
 
-  <div class="highlighter-rouge"><pre class="highlight"><code>~submit/submit -p 928 strFuncs.cpp strFuncs.h tddFuncs.cpp tddFuncs.h
-</code></pre>
-  </div>
+  <p>Make sure you add your partner as a collaborator.</p>
 
   <h2 id="step-4-check-your-submission-results">Step 4: Check your submission results</h2>
-
-  <p>After the 1 minute delay, the submit system will show your score and give you feedback on your submission. Refresh the webpage after a minute to see this information.</p>
 
   <p>You may submit this lab multiple times. You should submit only after local compilation does not produce any errors and runs as expected. The score of the last submission uploaded before the deadline will be used as your assignment grade.</p>
 
   <p><b>Points assigned by TAs manually</b>
-(50 pts) Style and test code:
+(10 pts) Style and test code:
 You MUST follow the TDD style of test development and test your code extensively.
 Points will also be given for good choice of variable names, code indented in ways that are consistent, and in line with good C++ practice. Where applicable, common code is factored out into functions.</p>
 

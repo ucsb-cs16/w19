@@ -48,14 +48,17 @@
   <td>
     lect11
      
+        <a href="/lectures/CS16_Lecture11.pdf" data-ajax="false">
         Before Slides 
+        </a> 
      
  </td>
  <td>
     lect11
      
-        Annotated Slides 
-     
+        <a href="/lectures/CS16_Lecture11_ann.pdf" data-ajax="false">   Annotated Slides
+        </a> 
+    
  </td>
 
  <td><a href="/lectures/lect12/">Next Lecture</a></td>
@@ -63,15 +66,29 @@
 </tr>
 </table> 
     <h2 id="code-from-lecture">Code from lecture</h2>
-<p><a href="https://github.com/ucsb-cs16-wi17/lecture-02-16">https://github.com/ucsb-cs16-wi17/lecture-02-21</a></p>
+<p><a href="https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-11">https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-11</a></p>
 
 <p>#Topics</p>
 
+<p>The good:</p>
+
 <ul>
-  <li>Creating arrays of structs</li>
-  <li>Passing arrays of structs to functions (revist passing arrays to functions)</li>
-  <li>Contrast arrays of ints and arrays of structs</li>
-  <li>Review of homework 10</li>
+  <li>Pointers allow arrays to be passed to functions efficiently</li>
+  <li>Pointers allow arrays of large structs to be traversed effiently</li>
+</ul>
+
+<p>The bad:</p>
+
+<ul>
+  <li>Pointers can only point to one type of data (not generic)</li>
+  <li>They don’t automatically point - need to do some work</li>
+</ul>
+
+<p>The ugly</p>
+
+<ul>
+  <li>Bugs in code that involves pointers can cause your program to irrecoverably crash (Segmentation fault)</li>
+  <li>Examples: dereferencing a null pointer, out of bound array access, dereferncing a pointer that has junk value.</li>
 </ul>
 
 <h2 id="c-memory-model">C++ Memory model</h2>

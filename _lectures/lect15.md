@@ -1,15 +1,15 @@
 ---
 num: "lect15"
 desc: "Recursion"
-ready: false
+ready: true
 pdfurl: /lectures/CS16_Lecture15.pdf
 annotatedpdfurl: /lectures/CS16_Lecture15_ann.pdf
-annotatedready: false
+annotatedready: true
 lecture_date: 2018-05-30
 
 ---
 # Code from lecture
-
+[https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-15](https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-15)
 
 # Topics
 

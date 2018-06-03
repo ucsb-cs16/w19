@@ -58,20 +58,6 @@
 </div>
 
       
-      <div class="not-ready-warning">
-
-<h2>Warning</h2>
-
-<h3>This material has not yet been marked as "ready".</h3>
-
-It should be treated as a "draft", i.e. a "work in progress".
-
-If this is an assignment, and this message still appears after the
-"assigned" date, please post a question on Piazza requesting
-clarification.
-
-</div>
-
            
         <div id="content"  class="ui-content">
         <div class="hwk-header">
@@ -109,8 +95,8 @@ clarification.
 	      <th class="asn_date" >due</th>
 	      <th class="asn_date" >points</th>
 	    </tr>
-	    <tr class="not-ready">
-	      <td class="asn_ready">false</td>
+	    <tr class="ready">
+	      <td class="asn_ready">true</td>
 	      <td class="asn_date" >Fri 05/18 10:00AM</td> 
 	      <td class="asn_date" >Fri 05/25 11:59PM</td>
 	      <td class="pointCount"></td>
@@ -223,9 +209,9 @@ Address  Value
 </code></pre>
     </div>
     <div style="margin-bottom:1em"></div>
-    <p>9.(10 pts) Implement a function that takes a linked list as an input and returns a dynamic array containing the data elements of the linked list. Test your code before writing it out. Illegible code will receive 0 credit.</p>
+    <p>9.(10 pts) Implement a function that takes a linked list and the number of elements in the list as input and returns a dynamic array containing the data elements of the linked list. Test your code before writing it out.</p>
     <div>
-      <div class="highlighter-rouge"><pre class="highlight"><code><span class="kt">int</span><span class="o">*</span> <span class="n">linkedListToArray</span><span class="p">(</span><span class="n">LinkedList</span> <span class="o">*</span> <span class="n">list</span><span class="p">);</span>
+      <div class="highlighter-rouge"><pre class="highlight"><code><span class="kt">int</span><span class="o">*</span> <span class="n">linkedListToArray</span><span class="p">(</span><span class="n">LinkedList</span> <span class="o">*</span> <span class="n">list</span><span class="p">,</span> <span class="kt">int</span> <span class="n">len</span><span class="p">);</span>
 </code></pre>
       </div>
 
