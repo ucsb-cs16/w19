@@ -4,7 +4,7 @@ desc: "Strings and recursion"
 ready: true
 pdfurl: /lectures/CS16_Lecture16.pdf
 annotatedpdfurl: /lectures/CS16_Lecture16_ann.pdf
-annotatedready: false
+annotatedready: true
 lecture_date: 2018-06-04
 ---
 
