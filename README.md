@@ -1,1 +1,1 @@
-# ucsb-cs16-s18-mirza.github.io
+# Course website for <http://ucsb-cs16-f18-mirza.github.io>

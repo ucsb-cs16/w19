@@ -1,0 +1,46 @@
+{% assign get_prev_link = true %}
+{% assign get_next_link = false %}
+
+{% for lect in site.lectures %}
+  {% if lect.num == page.num %}
+     {% assign get_prev_link = false %}	
+     {% assign get_next_link = true %}
+  {% elsif get_next_link == true %}
+     {% assign get_next_link = false %}
+     {% assign next_link = lect.url %}
+  {% elsif get_prev_link == true %}
+    {% assign prev_link = lect.url %}
+  {% endif %}
+{% endfor %}
+
+<table class="lecture_table">
+<tr>
+{% if prev_link %}
+  <td><a href="{{prev_link}}">Previous Lecture</a></td>
+  {% endif %}
+
+
+  <td>
+    {{page.num}}
+    {% if page.ready and page.pdfurl %} 
+        <a href="{{ page.pdfurl }}" data-ajax="false">
+        Before Slides 
+        </a> 
+    {% else %} 
+        Before Slides 
+    {% endif %} 
+ </td>
+ <td>
+    {{page.num}}
+    {% if page.annotatedready and page.annotatedpdfurl %} 
+        <a href="{{ page.annotatedpdfurl }}" data-ajax="false">   Annotated Slides
+        </a> 
+    {% else %} 
+        Annotated Slides 
+     {% endif %}
+ </td>
+{% if next_link %}
+ <td><a href="{{next_link}}">Next Lecture</a></td>
+{% endif %}
+</tr>
+</table>

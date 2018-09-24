@@ -1,0 +1,123 @@
+---
+layout: null
+---
+
+{% include jekyll-github.css %}
+
+
+table {
+    border-collapse: collapse;
+}
+
+table * th {
+    border: 1px solid black;
+}
+
+table * td {
+    border: 1px solid black;
+}
+
+.asn_table  {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.asn_table * td,th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.asn_table * .asn_num {
+    width: 3em;
+}
+
+.asn_table * .asn_ready {
+    width: 3em;
+}
+
+.asn_table * .asn_desc {
+    width: auto;
+}
+
+.asn_table * .asn_date {
+    width: auto;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .asn_table * .asn_num {
+	width: 3em;
+    }
+    
+    .asn_table * .asn_ready {
+	width: 3em;
+    }
+    
+    .asn_table * .asn_desc {
+	width: 5em;
+    }
+    
+    .asn_table * .asn_date {
+	width: 3em;
+	font-size: 16px;
+    }
+    
+}
+
+.lecture_table * td{
+    padding:0.4em 1em 0.4em 1em;
+}
+
+.pagebreak {
+    page-break-before: always;
+    height: 0.5em;
+    width: 100%;
+    border: 1px solid black;
+}
+
+@media print {
+	div.header {display: none; }
+	div.footer {display: none; }
+	div.not-ready-warning { display: none; }
+	body { 
+		font-size: 12px;
+		font-family: "Times New Roman",  serif;
+	}
+	
+	.pagebreak {
+	    page-break-before: always;
+	    height: 0.5em;
+	    width: 100%;
+	    border: none;
+	}
+
+}
+
+tr.not-ready td { color: #ccc; }
+
+
+div.not-ready-warning {
+   width:80%;
+   margin-left:auto;
+   margin-right:auto;
+   padding:1em 1em 1em 1em;
+   margin:1em 1em 1em 1em;		     
+   border: 10px outset red;
+   color: black;
+   background-color: #ffc;
+   text-align: left;
+}
+
+div.not-ready-warning h2, h3 {
+ text-align:center;
+}
+
+.hangingindent {
+    padding-left: 2em ;
+    text-indent: -2em ;
+}
+
+div.hanging-indent-table table * td {
+    padding: 1px 2px 1px 30px;
+    text-indent: -28px ;
+}

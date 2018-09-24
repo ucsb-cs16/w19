@@ -1,5 +1,116 @@
-name: "CS16 Fall 2018, Mirza"
+name: "CS 16 Fall 2018 Mirza"
+github_url: https://github.com/ucsb-cs16-f18-mirza/ucsb-cs16-f18-mirza.github.io
+
+instances:
+  -
+    instructor: Mirza
+    site_url: "https://ucsb-cs16-f18-mirza.github.io"
+    github_org:
+       name: ucsb-cs16-f18-mirza
+       url: https://github.com/ucsb-cs16-f18-mirza
+    piazza_url:  https://piazza.com
+    gradescope_url: https://www.gradescope.com
+  -
+    instructor: Nichols
+    site_url: "https://ucsb-cs16-f18-nichols.github.io"    
+    github_org:
+       name: ucsb-cs16-f18-nichols
+       url: https://github.com/ucsb-cs16-f18-nichols
+    piazza_url:  https://piazza.com/ucsb/fall2018/cs16nichols/home
+    gradescope_url: https://www.gradescope.com/courses/25325
+
+
+start_week: 1
+start_date: 2018-09-23 00:00:00.00-8:00
+num_weeks: 11
+extra_exam_week: true
+
+instructor_url: https://ucsb-cs16.github.io/instructor
+
+cal_dates: >
+  [
+  {"label":"First day of classes", "date":"2018-09-27" },
+  {"label":"Drop Deadline","date":"2018-10-24" },
+  {"label":"Univ Holiday", "date":"2018-11-12" },
+  {"label":"Univ Holiday", "date":"2018-11-22" },
+  {"label":"Univ Holiday", "date":"2018-11-23" },
+  {"label":"Last day of classes", "date":"2018-12-07" },						
+  ]
+
+future: false
+
+course: "CS16"
 qtr: "F18"
 quarter: "Fall 2018"
-github_url: "https://github.com/ucsb-cs16-f18-mirza/ucsb-cs16-f18-mirza.github.io"
 
+markdown: kramdown
+kramdown: 
+  parse_block_html: true
+
+
+exclude:
+   - vendor
+
+timezone: America/Los_Angeles
+
+collections:
+  hwk:
+    output: true
+    permalink: /hwk/:path/
+    last_before: false
+  lab:
+    output: true
+    permalink: /lab/:path/
+    last_before: false
+  exam:
+    output: true
+    permalink: /exam/:path/
+  info:
+    output: true
+    permalink: /info/:path/
+  lectures:
+    output: true
+    permalink: /lectures/:path/
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: default
+  -
+    scope:
+      path: ""
+      type: hwk
+    values:
+      layout: hwk
+  -
+    scope:
+      path: ""
+      type: lab
+    values:
+      layout: lab
+  -
+    scope:
+      path: ""
+      type: exam
+    values:
+      layout: exam_info
+  -
+    scope:
+      path: ""
+      type: info
+    values:
+      layout: info
+  -
+    scope:
+      path: ""
+      type: lectures
+    values:
+      layout: lecture
+  -
+    scope:
+      path: "syllabus.md"
+      type: info
+    values:
+      layout: handout

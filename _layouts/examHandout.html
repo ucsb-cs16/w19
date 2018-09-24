@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head_exam.html %}
+    <title>{{ page.num }} - {{ page.desc }} - {{course}}</title>
+  </head>
+  <body id="page-top">
+    <div id="container" data-role="page">
+      {% include nav.html %}
+      {% if page.ready %}
+      {% else %}
+      {% include not_ready_warning.html %}
+      {% endif %}     
+      <div id="content"  class="ui-content">
+        <div class="exam-header">
+          <div class="exam-page-header exam-page-header-template">
+	    {% include exam-handout-page-header-template.html %}
+	  </div> <!-- exam-page-header -->
+
+	  {% include exam-name-header-template.html %}
+
+	  <h1 style="clear:left;">{{page.num}}: {{ page.desc }}</h1>
+	  
+	  <table class="exam_table">
+	    <tr>
+	      <th class="exam_ready">ready?</th>
+	      <th class="exam_date" >date</th>
+	      <th class="exam_points" >points</th>
+	    </tr>
+	    <tr class={% if page.ready %}"ready"{% else %}"not-ready"{% endif %}>
+	      <td class="exam_ready">{{page.ready}}</td>
+	      <td class="exam_date" >{{page.exam_date | date: "%a %m/%d %I:%M%p"  }}</td> 
+	      <td class="pointCount"></td>
+	    </tr>
+	  </table>
+	  
+	</div><!-- exam-header -->
+<hr />	
+        {{ content }}
+	<div class="end-of-exam">End of Exam Handout</div>
+        </div><!-- content -->
+        {% include footer.html %}
+      </div><!-- container -->
+
+      
+    </body>
+</html>
