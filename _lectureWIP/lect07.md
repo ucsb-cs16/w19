@@ -5,7 +5,7 @@ ready: true
 pdfurl: /lectures/CS16_Lecture7.pdf
 annotatedpdfurl: /lectures/CS16_Lecture7_ann.pdf
 annotatedready: true
-lecture_date: 2018-04-23
+lecture_date: 2018-10-18
 ---
 
 

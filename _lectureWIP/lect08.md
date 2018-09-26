@@ -5,7 +5,7 @@ ready: true
 pdfurl: /lectures/CS16_Lecture8.pdf
 annotatedpdfurl: /lectures/CS16_Lecture8_ann.pdf
 annotatedready: true
-lecture_date: 2018-04-30 
+lecture_date: 2018-10-30
 ---
 # Code from lecture
 [https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-08](https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-08)

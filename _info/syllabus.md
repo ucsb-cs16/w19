@@ -13,14 +13,12 @@ You must contact the instructor for clarification if you receive information fro
 * [Schedule](#schedule){: data-ajax="false"}
 * [Resources](#resources){: data-ajax="false"}
 * [What this course is about](#about){: data-ajax="false"}
-* [Course Policies](#policies)
 * [Graded components](#moreabout){: data-ajax="false"}
 
 # Grading <a name="grading"></a>
 
 ## Grade breakup by evaluation component
-* Lecture and section participation: 2%
-* Homeworks/Quizzes: 8%
+* Homeworks: 10%
 * Lab assignments: 30%
 * Midterm Exams: 30%
 * Final Examination : 30%
@@ -219,10 +217,10 @@ be comfortable with all of the following:</p>
   <li><strong>(1) Reading</strong>—Between each class, you'll have reading to do in the textbook. There is too much information you need to learn in this course for you to get all of it in lecture, so the readings are essential. The reading assignments for the next class can be found in each homeowrk assignment.<br />
     <br />
   </li>
-  <li><strong>(2) Homework/Quizzes</strong>
-    <br />The homeworks are practice for the exams. These are typically pencil/paper type problems, though sometimes you'll need access to a computer to solve them. If you don't have reliable access to a computer at home (or in your dorm), please plan your schedule so that you can spend time in the CSIL computer lab between classes.<br />
+  <li><strong>(2) Homework (lowest three are dropped) </strong>
+    <br /> Homeworks are typically distributed in class on Thursdays and are due the following week during your scheduled lab on Wednesday. The homeworks are practice for the exams. These are typically pencil/paper type problems, though sometimes you'll need access to a computer to solve them. If you don't have reliable access to a computer at home (or in your dorm), please plan your schedule so that you can spend time in the CSIL computer lab between classes.<br />
     <br />
-    Homework assignments are completed on paper, followed by completing a quiz on gauchospace. You should bring your the paper copy of your homework to lecture the day after its due for in class discussions. We will not collect the homeworks<br />
+    Homework assignments are completed on paper. You should bring your the paper copy of your homework to lecture the day its due for in class discussions. If you miss submitting your homework during one of the lab sections, it will count as a missed homework. Please do not submit it to the instructor in class or office hours. I will drop your lowest three homeworks<br />
     <br />
     <br />
      <br />
