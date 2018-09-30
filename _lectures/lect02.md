@@ -7,6 +7,8 @@ annotatedready: false
 lecture_date: 2018-10-02
 ---
 
+<markdown="1">
+
 # Code from lecture
 
 [https://github.com/ucsb-cs16-f18-mirza/cs16-f18-lectures/tree/master/lec-02](https://github.com/ucsb-cs16-f18-mirza/cs16-f18-lectures/tree/master/lec-02)
@@ -32,8 +34,10 @@ lecture_date: 2018-10-02
 	- cd
 * Relative path vs. absolute path (important for mv, cp, mkdir, cd)
 
+<div style="margin-bottom:20em"></div>
 
 <div class="pagebreak"></div>
+
 
 # vim Editor
 
@@ -41,7 +45,7 @@ lecture_date: 2018-10-02
 * Important to be comfortable with a Unix-based command-line text editor.
 * Be sure to understand how to do the [basic eight](https://ucsb-cs16.github.io/topics/vim_basic_eight/) functions.
 
-
+<div style="margin-bottom:60em"></div>
 
 <div class="pagebreak"></div>
 
@@ -74,6 +78,8 @@ $
 * `hello.cpp` is the source file for g++ to use when producing the executable file.
 * In order to actually run an executable file in Unix, `./[filename]` is used.
 
+
+<div style="margin-bottom:60em"></div>
 
 <div class="pagebreak"></div>
 
@@ -145,6 +151,7 @@ comment
 */
 ```
 
+<div style="margin-bottom:60em"></div>
 
 <div class="pagebreak"></div>
 
