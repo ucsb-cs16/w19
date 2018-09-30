@@ -32,6 +32,7 @@ lecture_date: 2018-10-02
 	- cd
 * Relative path vs. absolute path (important for mv, cp, mkdir, cd)
 
+<div style="margin-bottom:8em"></div>
 
 # vim Editor
 
@@ -39,6 +40,7 @@ lecture_date: 2018-10-02
 * Important to be comfortable with a Unix-based command-line text editor.
 * Be sure to understand how to do the [basic eight](https://ucsb-cs16.github.io/topics/vim_basic_eight/) functions.
 
+<div style="margin-bottom:20em"></div>
 
 # Writing, compiling and running a C++ program (hello world) program
 
@@ -68,6 +70,8 @@ $
 * `-o` is a "flag" that instructs the g++ compiler to produce an executable file called `hello`
 * `hello.cpp` is the source file for g++ to use when producing the executable file.
 * In order to actually run an executable file in Unix, `./[filename]` is used.
+
+
 
 
 # Breaking down the Hello World Program
@@ -127,6 +131,7 @@ return 0;
 * `//` denotes a single-line comment.
 * `/* */` denotes a multi-line comment.
 
+<div style="margin-bottom:30em"></div>
 
 # Code anywhere and everywhere with git 
 
