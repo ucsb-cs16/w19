@@ -7,8 +7,6 @@ annotatedready: false
 lecture_date: 2018-10-02
 ---
 
-<markdown="1">
-
 # Code from lecture
 
 [https://github.com/ucsb-cs16-f18-mirza/cs16-f18-lectures/tree/master/lec-02](https://github.com/ucsb-cs16-f18-mirza/cs16-f18-lectures/tree/master/lec-02)
