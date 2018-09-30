@@ -23,7 +23,7 @@ lecture_date: 2018-10-02
 * All your data and programs are stored in files, within the unix filesystem
 * File vs. directory
 * Files are organized within the *unix filesystem*
-* You can navigate the filesytem with some simple commands inside a terminal:
+* You can navigate the filesystem with some simple commands inside a terminal:
 	- ls
 	- mv
 	- cp
@@ -32,10 +32,6 @@ lecture_date: 2018-10-02
 	- cd
 * Relative path vs. absolute path (important for mv, cp, mkdir, cd)
 
-<div style="margin-bottom:20em"></div>
-
-<div class="pagebreak"></div>
-
 
 # vim Editor
 
@@ -43,9 +39,6 @@ lecture_date: 2018-10-02
 * Important to be comfortable with a Unix-based command-line text editor.
 * Be sure to understand how to do the [basic eight](https://ucsb-cs16.github.io/topics/vim_basic_eight/) functions.
 
-<div style="margin-bottom:60em"></div>
-
-<div class="pagebreak"></div>
 
 # Writing, compiling and running a C++ program (hello world) program
 
@@ -138,10 +131,6 @@ return 0;
 * `//` denotes a single-line comment.
 * `/* */` denotes a multi-line comment.
 
-
-<div style="margin-bottom:60em"></div>
-
-<div class="pagebreak"></div>
 
 # Code anywhere and everywhere with git 
 
