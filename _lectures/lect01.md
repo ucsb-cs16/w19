@@ -2,10 +2,9 @@
 num: "lect01"
 lecture_date: 2018-09-27
 desc: "Course overview, a gentle intro to C++ - Standard I/O"
-ready: false
-pdfurl: /lectures/CS16_Lecture1.pdf
 annotatedpdfurl: /lectures/CS16_Lecture1_ann.pdf
-annotatedready: false
+annotatedready: true
+ready: true
 ---
 
 # Basic info

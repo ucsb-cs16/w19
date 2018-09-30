@@ -5,8 +5,7 @@
   <th class="asn_num"  >notes</th>
   <th class="asn_ready">ready?</th>
   <th class="asn_desc" >description</th>
-  <th class="asn_num" >slides before</th>
-  <th class="asn_num" >slides after</th>
+  <th class="asn_num" >Annotated pdf</th>
 </tr>
 
 {% for lect in site.lectures %}
@@ -16,7 +15,6 @@
   <td class="lect_num" ><a href="{{lect.url}}" data-ajax="false">{{ lect.num }}</a></td>
   <td class="lect_ready">{{lect.ready}}</td>
   <td class="lect_desc" >{{lect.desc }}</td>
-  <td class={% if lect.ready %}"lect_num"  ><a href="{{lect.pdfurl}}" data-ajax="false">pdf</a>{% else %}"lect_num"  ><a href="" data-ajax="false"></a>{% endif %}</td>
   <td class={% if lect.annotatedready %}"lect_num"  ><a href="{{lect.annotatedpdfurl}}" data-ajax="false">Annotated pdf</a>{% else %}"lect_num"  ><a href="" data-ajax="false"></a>{% endif %}</td>
 
 </tr>
