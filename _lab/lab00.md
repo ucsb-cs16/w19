@@ -15,6 +15,10 @@ Your first lab for this week is an introduction to programming on CSIL and the t
 
 This lab must be completed <strong>INDIVIDUALLY</strong>. In the subsequent labs you are encouraged to work with your programming partner.
 
+## Submit ic00
+
+In the next few labs you will work with a programming partner. To help us match you with a suitable partner, please submit [ic00](/hwk/ic00/) to the TA in your section.
+
 # Get setup with the tools for this course
 
 ## Create a CoE account if you don't have one already

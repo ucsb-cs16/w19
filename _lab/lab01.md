@@ -31,17 +31,8 @@ Please sit with your pair partner on the same terminal. Decide who will be the '
 
 [http://bit.ly/pair-programming-video](http://bit.ly/pair-programming-video)
 
-You have also been assigned a mentor who will be your first point of contact, and will provide you with regular feedback during the rest of the quarter. Your mentor is an important resource. Do these steps to make the most of it
 
-* Read your [mentor's profile](/info/staff/)
-* At the start of every lab, you and your partner should get together with your mentor group and mentor. We encourage you to sit next to your partner and near your mentor group. Check in with your mentor about your progress. Make sure that you always have the latest version of your code pushed to github before your weekly check-in with your mentor.
-
-* If you have questions about pair programming, ask your mentor.
-
-* If you reported a different partner to your mentor last week, please update your mentor before you proceed with the rest of the lab
-
-
-* If your partner shows up late, let your mentor know. Points will be deducted for students who don't show up on time. If you face difficulties with pair programming consult your mentor.
+* Let your TA know if your partner shows up late or if you face difficulties with pair programming. 
 
 
 ## Log on and create a local directory
@@ -70,7 +61,7 @@ If you don't see those files, work with your pair partner to go back through the
 
 ## Create a repo on github in our class organization
 
-For this lab and all subsequent programming assignments, you should start by creating a repo in the ucsb-cs16-s18-mirza organization. Follow these steps
+For this lab and all subsequent programming assignments, you should start by creating a repo in the ucsb-cs16-f18-mirza organization. Follow these steps
 
 * Navigate to your dashboard on [https://github.com/](https://github.com/). From the left drop down menu, select the class organization
 * Click on the green "New repository" button to create a new repository.
@@ -79,7 +70,7 @@ For this lab and all subsequent programming assignments, you should start by cre
 
 * Select the "Private" visibility option so that other students in the org cannot view your code.
 
-* Add the C++ .ignore option from the frop down menu and click on "Create repository". See screenshot below.
+* Add the C++ .ignore option from the frop down menu and click on "Create repository". See screenshot below (note the organization this quarter is ucsb-cs16-f18-mirza).
 
 ![new-repo](/lab/lab00/enter-org/pic5.png){:height="500px"}
 
@@ -339,7 +330,7 @@ Upload your files to your repo on github using github's web interface.
 Once you are satisfied that your program is correct, then it's time to submit it.
 
 
-Log into your account on [https://www.gradescope.com/](https://www.gradescope.com/) and navigate to our course site: CS16 Spring 2018. Select this assignment. Then click on the "Submit" button on the bottom right corner to make a submission. You will be given the option of  uploading files from your local machine or submitting the code that is in a github repo. Select the second option and select your github repo for this assignment. You should receive 100/100 for a completely correct program.
+Log into your account on [https://www.gradescope.com/](https://www.gradescope.com/) and navigate to our course site: CS16 - Mirza fall 2018. Select this assignment. Then click on the "Submit" button on the bottom right corner to make a submission. You will be given the option of  uploading files from your local machine or submitting the code that is in a github repo. Select the second option and select your github repo for this assignment. You should receive 100/100 for a completely correct program.
 
 
 
