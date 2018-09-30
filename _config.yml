@@ -20,7 +20,7 @@ instances:
     gradescope_url: https://www.gradescope.com/courses/25325
 
 
-start_week: 1
+start_week: 0
 start_date: 2018-09-23 00:00:00.00-8:00
 num_weeks: 11
 extra_exam_week: true

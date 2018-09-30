@@ -19,24 +19,13 @@
   <td><a href="{{prev_link}}">Previous Lecture</a></td>
   {% endif %}
 
-
-  <td>
-    {{page.num}}
-    {% if page.ready and page.pdfurl %} 
-        <a href="{{ page.pdfurl }}" data-ajax="false">
-        Before Slides 
-        </a> 
-    {% else %} 
-        Before Slides 
-    {% endif %} 
- </td>
  <td>
     {{page.num}}
     {% if page.annotatedready and page.annotatedpdfurl %} 
         <a href="{{ page.annotatedpdfurl }}" data-ajax="false">   Annotated Slides
         </a> 
     {% else %} 
-        Annotated Slides 
+        Annotated Notes 
      {% endif %}
  </td>
 {% if next_link %}

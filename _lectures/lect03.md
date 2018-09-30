@@ -1,172 +1,229 @@
 ---
 num: "lect03"
-desc:  "Git, Loops (for, while, do-while), doubles, intro to lab01 "
+desc:  "Variables and types, expressions, control structures (if-else), input/output "
 ready: true
-pdfurl: /lectures/CS16_Lecture3.pdf
-annotatedpdfurl: /lectures/CS16_Lecture3_ann.pdf
-annotatedready: true
-lecture_date: 2018-04-09
+annotatedpdfurl: /lectures/CS16_Lecture2_ann.pdf
+annotatedready: false
+lecture_date: 2018-10-04
 ---
 
 
 # Code from lecture
-[https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-03](https://github.com/ucsb-cs16-s18-mirza/cs16-s18-lectures/tree/master/lec-03)
+[https://github.com/ucsb-cs16-f18-mirza/cs16-f18-lectures/tree/master/lec-03](https://github.com/ucsb-cs16-f18-mirza/cs16-f18-lectures/tree/master/lec-03)
 
 
 # Topics
 
 
-## Github intro
-* What is github? How and why we plan to use it in this class
-* What is a git repo?
-* Creating a github repo and using github's web interface to store your first program
-* Basics - organization, repos
-* Using github's web interface
-	* creating a repo
-	* adding files to the repo
-	* adding collaborators to the repo
-	* updating files and viewing the version history
-* Show command line usage - but won't go into too much detail
+# C++ Variables and Types
 
-* Intro to lab01
-* For loops are DIFFERENT in C++ than in Python. We'll discuss.
-* Simple accumulator
-* For loops, applied to a simple accumulator pattern (find sum of a series)
+* Variables are used to store data.
+  * Each variable must have a type associated with it.
+    * Not the case in Python where a variable can be anything
+  * Variable names must
+    * Start with an alpha character or underscore
+    * Other characters can be alphanumeric and underscore characters, but no spaces or other special characters.
+  * C++ is case-sensitive. ‘x’ and ‘X’ are considered different variables.
 
+* Some common types:
+  * int: Integers
+  * double: Floating point
+  * char: characters
+  * string: sequence (array) of characters
+  * bool: boolean
 
-## Working with doubles
-* Evaluating expressions with mixed numeric types
-* Typecasting int to double 
-* Formatted output with doubles:
+* Good practice to initialize your variables
+  * Uninitialized variables may have strange side-effects.
 
-Comment each line of code. What is the output of the code?
-```
-int i = 10;
-double j = 1/static_cast<double>(i);
-cout.setf(ios::fixed);
-cout.setf(ios::showpoint);
-cout.precision(3);
-cout<<j<<endl;
-```
-## Practice with single for loops
-* Summing a series: 
+# Initializing, Assigning, and Modifying Variables
 
-**Exercise: Write a program that takes a parameter n as a command line arguments and computes the following:**
+* Example
 
 ```
-1 + 1/2 + 1/3 + ....+ 1/n
+int x;      // initialize variable x of type int
+int y, z;   // initialize variables x and y in one statement
+x = 10;     // assign x to an integer value 10.
+
+int a = 10;   // initialize and assign in one statement
+int b = 20, c = 30;
+
+b = 6 + 4;
+
+cout << a << "," << b << "," << c << "," <<
+x << "," << y << "," << z << endl;
 ```
-where n is the number of terms in the series. Sample run of the program is below:
+
+# Boolean Expressions
+* An expression that evaluates to either true or false.
+* You can build boolean expressions with relational operators comparing values:
 
 ```
-$./sumSeries 2
-Sum of the first 2 terms is: 1.500
+==  // true if two values are equivalent
+!=  // true if two values are not equivalent
+< // true if left value is less than the right value
+<=  // true if left value is less than OR EQUAL to the right value
+> // true if left value is greater than the right value
+>=  // true if left value is greater than OR EQUAL to the right value
 ```
-## Nested Loops
 
-ASCII Art with nested loops
-
-**Exercise: Write a program to draw a square of a given width**
-Example usage:
+* Integer values can be used as boolean values
+  * C++ will treat the number 0 as false and any non-zero number as true.
 
 ```
-$./drawSquare 
-Enter the width of the square: 5
-* * * * *
-* * * * *
-* * * * *
-* * * * *
-* * * * *
+bool x = 5 == 1;  // x = 0
+bool x = 3 != 2;  // x = 1
 ```
-Complete the code below
+
+  * Combine boolean expressions using Logical Operators
+
+```
+!   // inverts true to false or false to true
+&&  // boolean AND
+||  // boolean OR
+```
+  
+  * Example
+
+```
+bool x = true;
+bool y = true;
+x = !x;     // x = false
+x = x && y    // x = false
+x = x || y    // x = true
+```
+
+# Control Structures
+
+* Boolean expressions are fundamental pieces that provide control flow within your program.
+
+## If-else statements
+
+* Ability to execute two alternative blocks of C++ statements based on the value of a boolean expression.
+
+```
+if (BOOLEAN_EXPRESSION) {
+  // code1
+} else {
+  // code2
+}
+```
+
+* If the BOOLEAN_EXPRESSION evaluates to true, then code1 is executed. Otherwise code2 is executed.
+* Example
+
+```
+int x = 4;
+if ((x > 3) && (x < 6)) {
+  cout << “x is either 4 or 5” << endl;
+} else {
+  cout << “x is not 4 or 5” << endl;
+}
+```
+
+* Notice the “{ … }” . Also known as block statements. 
+  * This allows many statements to be executed.
+  * Without “{ … }”, only the following statement will be executed, and other statements are considered outside the block statement.
+  * Example
+
+```
+int x = 4;
+if ((x > 3) && (x < 6))
+  cout << “x is either 4 or 5” << endl;
+else
+  cout << “x is not 4 or 5” << endl;
+// Will have the same output as the last statement.
+
+int x = 6;
+if ((x > 3) && (x < 6))
+  cout << “1” << endl;
+  cout << “2” << endl; // outside if block
+  cout << “3” << endl; // outside if block
+```
+  
+  * The last two statements will always execute because it’s considered outside of the code block.
+  * A syntax error will appear if you try to insert an “else” after the statements since “else” can only be used after an if code block.
+
+# Multi-way If-else Statements
+
+* Programs may require more than simply two paths of code execution.
+* Multiple if-else statements can allow the program to execute many branches.
+* Example
+
+```
+int x = 3;
+if (x == 1)
+  cout << “x equals 1” << endl;
+else if (x == 2)
+  cout << “x equals 2” << endl;
+else if (x == 3)
+  cout << “x equals 3” << endl;
+else
+  cout << “x does not equal 1, 2, or 3” << endl;
+```
+
+# User Input
+
+## Example of interacting with the console using the cin function
 
 ```
 #include <iostream>
+#include <string>
+
 using namespace std;
 
-void drawSquare(int n); // Function to draw a square of side n
+int main() {  
+// Example receiving a string from the user
+  string name;
+  cout << "What is your name? ";
+  cin >> name;
+  cout << "Hello " << name << endl;
 
-int main(){
-  // Complete the code below:
-  
-  
-  cout<<"Enter the width of the square : "
-  cin>> num;
-    
+  // Example receiving a number from the user
+  int i;
+  cout << "Enter a number: ";
+  cin >> i;
+  cout << "The number entered is " << i << endl;
+
+  cout << i / 2 << endl; // what value / type is this if i == 11? 
 }
 ```
 
+## Example of using command line arguments
 
-<div class="pagebreak"></div>
-
-
-```
-
-// Write the definition of a function drawSquare that takes one parameter
-void drawSquare(int n){
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-```
-
-**Exercise: Write a program to draw a triangle of a given width**
-Example usage:
+* We can pass information into a C++ program through the command line when executing the program.
+* Note: You may have to convert command line argument information into the proper type (i.e. convert it to an integer type) if necessary.
+* The main function will need to have the following:
 
 ```
-$./drawTriangle
-Enter the width of the triangle: 5
-* * * * *
-* * * * *
-* * * * *
-* * * * *
-* * * * *
+int main(int argc, char *argv[]) {
 ```
 
-Complete the code below
+* `int argc` is the number of "arguments" the program has, including the executable name.
+* `char* argv[]` is the "list" of arguments passed into the program.
+  * Don't worry if the syntax doesn't make too much sense for now, we'll cover this later in the quarter.
 
 ```
 #include <iostream>
+#include <cstdlib>
+
 using namespace std;
 
-void drawTriangle(int n); // Function to draw a triangle of side n
+int main(int argc, char *argv[]) {
 
-int main(){
-  // Complete the code below:
-  
-  
-  cout<<"Enter the width of the triangle : "
-  cin>> num;
-  
-  
+  cout << "Number of arguments: " << argc << endl;
+
+  cout << argv[0] << endl;
+  cout << argv[1] << endl;
+  cout << argv[2] << endl;
+
+  // how to use these arguments as numbers?
+  // We can convert them using the atoi function
+  // in the cstdlib standard library
+
+  int x = atoi(argv[1]) + atoi(argv[2]);
+  cout << x << endl;
+  return 0;
 }
-
-// Which line of code do you need to modify
-void drawTriangle(int n){
-  for(int j = 0 ; j < n; j++){   //A
-    for(int i = 0 ; j < n; j++){ //B
-      cout<<"* ";  //C
-    }
-    cout<<endl;    //D
-  }
-  cout<<endl;      //E
-}
-
 ```
 
-**Math Puzzle**
-One of the powers of computing is being able to do a brute-force search for a solution to a problem. Trial and error works just fine for some problems. In fact, computers can be especially good at such problems. Consider this:
-
-Horses cost $10, pigs cost $3, and rabbits are only $0.50. A farmer buys 100 animals for $100, How many of each animal did he buy?  
-
-Write a program to do this.
+# In class demo: Fizzbuzz!
