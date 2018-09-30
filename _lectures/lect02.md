@@ -70,10 +70,6 @@ $
 * In order to actually run an executable file in Unix, `./[filename]` is used.
 
 
-<div style="margin-bottom:60em"></div>
-
-<div class="pagebreak"></div>
-
 # Breaking down the Hello World Program
 
 ```
