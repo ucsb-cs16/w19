@@ -2,8 +2,8 @@
 num: "lect03"
 desc:  "Variables and types, expressions, control structures (if-else), input/output "
 ready: true
-annotatedpdfurl: /lectures/CS16_Lecture2_ann.pdf
-annotatedready: false
+ready: true
+pdfurl: /lectures/CS16_Lecture3.pdf
 lecture_date: 2018-10-04
 ---
 
@@ -13,46 +13,6 @@ lecture_date: 2018-10-04
 
 
 # Topics
-
-
-# C++ Variables and Types
-
-* Variables are used to store data.
-  * Each variable must have a type associated with it.
-    * Not the case in Python where a variable can be anything
-  * Variable names must
-    * Start with an alpha character or underscore
-    * Other characters can be alphanumeric and underscore characters, but no spaces or other special characters.
-  * C++ is case-sensitive. ‘x’ and ‘X’ are considered different variables.
-
-* Some common types:
-  * int: Integers
-  * double: Floating point
-  * char: characters
-  * string: sequence (array) of characters
-  * bool: boolean
-
-* Good practice to initialize your variables
-  * Uninitialized variables may have strange side-effects.
-
-# Initializing, Assigning, and Modifying Variables
-
-* Example
-
-```
-int x;      // initialize variable x of type int
-int y, z;   // initialize variables x and y in one statement
-x = 10;     // assign x to an integer value 10.
-
-int a = 10;   // initialize and assign in one statement
-int b = 20, c = 30;
-
-b = 6 + 4;
-
-cout << a << "," << b << "," << c << "," <<
-x << "," << y << "," << z << endl;
-```
-
 # Boolean Expressions
 * An expression that evaluates to either true or false.
 * You can build boolean expressions with relational operators comparing values:
@@ -160,6 +120,7 @@ else if (x == 3)
 else
   cout << “x does not equal 1, 2, or 3” << endl;
 ```
+
 
 # User Input
 

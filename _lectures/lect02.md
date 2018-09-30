@@ -2,8 +2,7 @@
 num: "lect02"
 desc: " Hello World! + unix, vim and git"
 ready: true
-annotatedpdfurl: /lectures/CS16_Lecture2_ann.pdf
-annotatedready: false
+pdfurl: /lectures/CS16_Lecture2.pdf
 lecture_date: 2018-10-02
 ---
 
@@ -32,7 +31,6 @@ lecture_date: 2018-10-02
 	- cd
 * Relative path vs. absolute path (important for mv, cp, mkdir, cd)
 
-<div style="margin-bottom:8em"></div>
 
 # vim Editor
 
@@ -40,7 +38,6 @@ lecture_date: 2018-10-02
 * Important to be comfortable with a Unix-based command-line text editor.
 * Be sure to understand how to do the [basic eight](https://ucsb-cs16.github.io/topics/vim_basic_eight/) functions.
 
-<div style="margin-bottom:20em"></div>
 
 # Writing, compiling and running a C++ program (hello world) program
 
@@ -131,7 +128,45 @@ return 0;
 * `//` denotes a single-line comment.
 * `/* */` denotes a multi-line comment.
 
-<div style="margin-bottom:30em"></div>
+
+# C++ Variables and Types
+
+* Variables are used to store data.
+  * Each variable must have a type associated with it.
+    * Not the case in Python where a variable can be anything
+  * Variable names must
+    * Start with an alphabeticsl character or underscore
+    * Other characters can be alphanumeric and underscore characters, but no spaces or other special characters.
+  * C++ is case-sensitive. ‘x’ and ‘X’ are considered different variables.
+
+* Some common types:
+  * int: Integers
+  * double: Floating point
+  * char: characters
+  * string: sequence (array) of characters
+  * bool: boolean
+
+* Good practice to initialize your variables
+  * Uninitialized variables may have strange side-effects.
+
+# Initializing, Assigning, and Modifying Variables
+
+* Example
+
+```
+int x;      // initialize variable x of type int
+int y, z;   // initialize variables x and y in one statement
+x = 10;     // assign x to an integer value 10.
+
+int a = 10;   // initialize and assign in one statement
+int b = 20, c = 30;
+
+b = 6 + 4;
+
+cout << a << "," << b << "," << c << "," <<
+x << "," << y << "," << z << endl;
+```
+
 
 # Code anywhere and everywhere with git 
 
@@ -159,7 +194,5 @@ return 0;
 	
 * cloning a repo: Once you have created a repo, you (and your collaborators) can copy (or clone) it on different computers. Each instance is now a local repo, because it exists on your (local) computer rather than the web.
 * Using git command line tools, we can sync up different repos. This means multiple collaborators can work on the same code on different machines.
-
-
 
 
