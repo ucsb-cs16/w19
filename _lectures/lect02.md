@@ -138,16 +138,6 @@ return 0;
 * `//` denotes a single-line comment.
 * `/* */` denotes a multi-line comment.
 
-## Example
-
-```
-// single line comment
-
-/* multi
-line
-comment
-*/
-```
 
 <div style="margin-bottom:60em"></div>
 
