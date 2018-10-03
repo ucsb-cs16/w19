@@ -328,7 +328,7 @@ The compiler will try to give you hints on the line (in this case, it's complain
 
 If you encounter an error, use the compiler hints and examine the line in question. If the compiler messsage is not sufficient to identify the error (which happens more than sometimes), you can search online to see when the error occurs in general. Once you have fixed the error, run the compilation command again. <i>Debugging</i> a program code is a necessary ritual in almost all programs written (even those written by expert coders). More on that in a later class.
 
-## Step 5: Submitting your code to Gradescope
+## Step 7: Submitting your code to Gradescope
   
 You will need to turn in your correct <code>hello.cpp</code> file to Gradescope.
 
