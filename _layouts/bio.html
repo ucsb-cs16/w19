@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+    <title>{{ page.title }} - {{ site.course}}</title>
+
+
+<style>
+p.staff-bio { max-width: 70em; /* http://maxdesign.com.au/articles/ideal-line-length-in-ems/ */
+              padding: 0.5em;
+	    }
+</style>
+
+    
+  </head>
+    <body id="page-top">
+      <div id="container" data-role="page">
+      {% include nav.html %}
+        <div id="content"  class="ui-content">
+          <h1>{{page.name}}&mdash;{{page.role}}</h1>
+          <p class="staff-bio">{{page.bio}}</p>
+        </div><!-- content -->
+        {% include footer.html %}
+      </div><!-- container -->
+  </body>
+</html>
