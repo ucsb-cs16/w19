@@ -3,7 +3,7 @@ num: "lect04"
 desc: "Repetition with loops"
 ready: true
 pdfurl: /lectures/CS16_Lecture4.pdf
-lecture_date: 2018-10-09 12:30:00.00-7:00
+lecture_date: 2018-10-09 
 ---
 
 
