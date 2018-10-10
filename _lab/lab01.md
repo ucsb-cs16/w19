@@ -23,9 +23,12 @@ In this lab you will get practice
 
 ## Working in Pairs
 
-You are not expected to finish the entire lab in one sitting. Please don't rush through it and read all instructions carefully. We encourage you to work in pairs for this lab. You have been assigned a partner who has reported the same level of confidence and experience in programming as yourself. Find your pair partner at this link:
+You are not expected to finish the entire lab in one sitting. Please don't rush through it and read all instructions carefully. We encourage you to work in pairs for this lab. You have been assigned a partner who has reported the same level of confidence and experience in programming as yourself. Find your pair partner by referring to the seating chart for your section (pair partners are seated next to each other):
 
-[Pair partners and mentor groups for CS16](/info/mentor_groups/)
+* [Seating chart for 1pm section](/info/seating01pm/)
+* [Seating chart for 2pm section](/info/seating02pm/)
+* [Seating chart for 3pm section](/info/seating03pm/)
+* [Seating chart for 4pm section](/info/seating04pm/)
 
 Please sit with your pair partner on the same terminal. Decide who will be the 'driver' and who will be the 'navigator'. Choose who will be the driver for the first part of the lab. The driver should sit down in front of the computer now. The navigator gets a chair and sits next to the driver. You should exchange roles after awhile, before the driver gets tired, and before the navigator gets bored or distracted. See the following video on pair programming to work well with your partner:
 
