@@ -22,9 +22,11 @@ lecture_date: 2018-10-11
 
 
 ## C++ Memory Model
-* Program layout in memory
+* Program layout in memory: text, global data , heap and stack
 * The stack and its purpose
 * Global vs. local variables
+
+
 
 
 
