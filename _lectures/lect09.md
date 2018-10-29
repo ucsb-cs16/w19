@@ -1,7 +1,7 @@
 ---
 num: "lect09"
 desc: "References and Pointers, Call by value, address and reference"
-ready: false
+ready: true
 pdfurl: /lectures/CS16_Lecture9.pdf
 lecture_date: 2018-11-01
 ---
