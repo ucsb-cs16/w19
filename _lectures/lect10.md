@@ -1,7 +1,7 @@
 ---
 num: "lect10"
 desc: "Defining custom types with structs, intro to lab05"
-ready: false
+ready: true
 pdfurl: /lectures/CS16_Lecture10.pdf
 lecture_date: 2018-11-06
 ---
