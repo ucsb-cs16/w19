@@ -1,8 +1,8 @@
 ---
 num: "lect11"
-desc: "Dynamic memory allocation (Heap), Heap vs Stack, Dynamic arrays, Intro to linked lists"
-ready: false
-pdfurl: /lectures/CS16_Lecture10.pdf
+desc: "Dynamic memory allocation (Heap), Heap vs Stack, Intro to linked lists"
+ready: true
+pdfurl: /lectures/CS16_Lecture11.pdf
 lecture_date: 2018-11-08
 ---
 
