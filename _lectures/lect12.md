@@ -17,5 +17,10 @@ lecture_date: 2018-11-13
 * Dynamic memory pitfalls: memory leaks (how to avoid and detect (valgrind))
 * Intro to gdb
 * Practice with small linked list
+* To run your code in valgrind use the following command:
+
+```
+valgrind --leak-check=full <name of your executable>
+```
 
 
