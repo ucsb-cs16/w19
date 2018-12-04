@@ -1,7 +1,7 @@
 ---
 num: "lect16"
-desc: "Review topic of choice"
-ready: false
+desc: "Using the C++ STL: array, vector list"
+ready: true
 pdfurl: /lectures/CS16_Lecture16.pdf
 annotatedpdfurl: /lectures/CS16_Lecture16_ann.pdf
 annotatedready: true
@@ -11,5 +11,6 @@ lecture_date: 2018-12-04
 # Topics
 
 
-* Intro to lab08
-* Understanding the problems for lab08 - isAnagram
+* C++ Standard template library
+* array, list, vector
+* binary search
