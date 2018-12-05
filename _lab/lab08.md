@@ -12,20 +12,6 @@ due: 2018-12-07 23:59:00.00-8
 # Goals of this lab
 This lab will have you do programming exercises with C strings, string class objects, recursive functions, and Makefiles. You will also get more practice writing programs from scratch with little skeleton code.
 
-# Step 0: Complete the TA/Mentor evaluations
-As you may know, we ran a pilot mentor program this quarter.
-We would like to get your feedback about the program to help us keep the aspects that worked well and identify areas for improvement.
-
-Completing the survey carries course credit (1% of your overall grade), so please be sure to complete it. This is an anonymous survey. To get credit please show the final screen  to the instructor TA/tutor
-
-Here is the link to the survey:
-[Please click on this link to complete](http://bit.ly/2018-Anonymous-Mentor-Evals)
-
-You may use the following webpage to identify the mentors should you need it to answer the final question on the survey:
-[https://ucsb-cs16-s18-mirza.github.io/info/staff/](https://ucsb-cs16-s18-mirza.github.io/info/staff/)
-
-To get credit show the final screen of the completed survey to your mentor.
-
 # Step 1: Getting Started
 
 1. Decide if you are working alone, or working in a pair. Pair programming is OPTIONAL for this lab.
@@ -111,11 +97,6 @@ Make sure you add your partner as a collaborator.
 ## Step 4: Check your submission results
 
 You may submit this lab multiple times. You should submit only after local compilation does not produce any errors and runs as expected. The score of the last submission uploaded before the deadline will be used as your assignment grade.
-
-<b>Points assigned by TAs manually</b>
-(10 pts) Style and test code:
-You MUST follow the TDD style of test development and test your code extensively.
-Points will also be given for good choice of variable names, code indented in ways that are consistent, and in line with good C++ practice. Where applicable, common code is factored out into functions.
 
 
 
