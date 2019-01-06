@@ -1,7 +1,7 @@
 ---
 layout: lab
 num: lab03
-ready: true
+ready: false
 desc: "Counting ducks: File I/O and flow control"
 assigned: 2018-10-24 09:00:00.00-7
 due: 2018-10-30 23:59:00.00-7

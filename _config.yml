@@ -1,55 +1,54 @@
-name: "CS 16 Fall 2018 Mirza"
-github_url: https://github.com/ucsb-cs16-f18-mirza/ucsb-cs16-f18-mirza.github.io
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+remote_theme: ucsb-cs-course-repos/course-repo-jekyll-theme
+
+
+name: "CS 16 Winter 2019 Kharitonova"
+github_url: https://github.com/ucsb-cs16-w19/ucsb-cs16-w19.github.io
+baseurl: "/w19"
 
 instances:
   -
-    instructor: Mirza
-    site_url: "https://ucsb-cs16-f18-mirza.github.io"
+    instructor: Kharitonova
+    site_url: "https://ucsb-cs16-w19.github.io"
     github_org:
-       name: ucsb-cs16-f18-mirza
-       url: https://github.com/ucsb-cs16-f18-mirza
+       name: ucsb-cs16-w19
+       url: https://github.com/ucsb-cs16-w19
     piazza_url:  https://piazza.com/class/jmgiws7b9eu5oq
     gradescope_url: https://www.gradescope.com
-  -
-    instructor: Nichols
-    site_url: "https://ucsb-cs16-f18-nichols.github.io"    
-    github_org:
-       name: ucsb-cs16-f18-nichols
-       url: https://github.com/ucsb-cs16-f18-nichols
-    piazza_url:  https://piazza.com/ucsb/fall2018/cs16nichols/home
-    gradescope_url: https://www.gradescope.com/courses/25325
 
 
-start_week: 0
-start_date: 2018-09-23 00:00:00.00-8:00
-num_weeks: 11
+start_week: 1
+start_date: 2019-01-06 00:00:00.00-8:00
+num_weeks: 10
 extra_exam_week: true
 
 instructor_url: https://ucsb-cs16.github.io/instructor
 
 cal_dates: >
   [
-  {"label":"First day of classes", "date":"2018-09-27" },
-  {"label":"Drop Deadline","date":"2018-10-24" },
-  {"label":"Univ Holiday", "date":"2018-11-12" },
-  {"label":"Univ Holiday", "date":"2018-11-22" },
-  {"label":"Univ Holiday", "date":"2018-11-23" },
-  {"label":"Last day of classes", "date":"2018-12-07" },						
+  {"label":"First day of classes", "date":"2019-01-07" },
+  {"label":"Univ Holiday", "date":"2019-01-21" },
+  {"label":"Drop deadline (no W grade)","date":"2019-02-04" },
+  {"label":"Univ Holiday", "date":"2019-02-18" },
+  {"label":"W19 Instruction Ends", "date":"2019-03-15" },  
+  {"label":"W19 Quarter Ends", "date":"2019-03-22" }          
   ]
 
 future: false
 
 course: "CS16"
-qtr: "F18"
-quarter: "Fall 2018"
+qtr: "W19"
+quarter: "Winter 2019"
 
-markdown: kramdown
-kramdown: 
-  parse_block_html: true
+kramdown:
+  parse_block_html: false
 
-
-exclude:
-   - vendor
+exclude: ['vendor', 'setup.sh', 'jekyll.sh']
+include:
+  - _pages
 
 timezone: America/Los_Angeles
 
@@ -122,4 +121,4 @@ defaults:
      path: ""
      type: bios
     values:
-     layout: bio
+     layout: default #bio

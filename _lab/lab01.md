@@ -1,7 +1,7 @@
 ---
 layout: lab
 num: lab01
-ready: true
+ready: false
 desc: "Crunching numbers: Loops and functions "
 assigned: 2018-10-10 09:00:00.00-7
 due: 2018-10-16 23:59:00.00-7

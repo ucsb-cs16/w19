@@ -1,48 +1,23 @@
 
-.bundle/
-*~
-.swp
-.DS_Store
-\#*\#
-
-vendor/bundle
+# Standard Jekyll Stuff
 
 _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
 
+# Also seems to occur in the wild, related to Jekyll in our setup
 
-# Prerequisites
-*.d
+.bundle
+vendor
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Needed for emacs users
+*~
+\#*\#
 
-# Precompiled Headers
-*.gch
-*.pch
+# For vi users
+*.swp
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# For MacOS
 
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
+.DS_Store

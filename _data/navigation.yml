@@ -1,0 +1,89 @@
+# the production_url is the url that the parent/child site have in common
+#  e.g. production_url: https://ucsb-cs24.github.io
+#  for main site http://ucsb-cs24.github.io
+#  and child sites
+#    https://ucsb-cs24.github.io/w18
+#    https://ucsb-cs24.github.io/f18
+#    https://ucsb-cs24.github.io/s19
+#    etc.
+
+production_url: https://ucsb-cs16.github.io
+
+# List the title and url for each item on navigation bar.
+# For items that should be relative urls, put the baseurl of the site
+# they come from, / for main site, and /f18, /s19, etc for child sites.
+
+home:
+   title: UCSB CS16
+   url: /
+   baseurl: /
+
+offerings:
+   title: W19
+   url: /	
+   baseurl: /w19
+   items:
+      - title: W19
+        url: /
+        baseurl: /w19
+
+offering_links:
+  - title: Assignments
+    dropdown:
+        - title: Homework
+          url: /hwk_list/
+          description: "Homework Assignments"
+        - title: Lab
+          url: /lab_list/
+          description: "Lab Assignments"
+  - title: Lectures
+    url: /lec_list/
+    description: "Lecture slides and notes"
+  - title: Exam
+    url: /exam_list/
+    description: "Exams"
+  - title: Calendar
+    url: /info/calendar/
+    description: "Assignment Calendar"
+  - title: Course Info
+    dropdown:
+       - title: Syllabus
+         url: /info/syllabus/
+         description: "Syllabus"    
+       - title: Info Pages
+         url: /info_list/
+         description: "List of General Information Pages"
+  - title: Staff
+    dropdown:
+       - title: About Us	
+         url: /info/staff/
+       - title: Office Open Lab Hours	
+         url: /info/openlab/
+    description: "Staff information"
+  - title: Links
+    dropdown:	 
+       - title: Gauchospace
+         url: https://gauchospace.ucsb.edu
+         description: "Overall Grade Information"
+       - title: GradeScope
+         url: https://gradescope.com
+         description: "HW and Lab Grades"
+       - title: Piazza
+         url: https://piazza.com
+         description: "Q&A Forum"
+#       - title: Topics
+#         url: /topic_list/
+#       - title: Resources
+#         url: /resources_list/
+#  - title: Github
+#    dropdown:
+#       - title: ucsb-cs16-w19
+#         url: https://github.com/ucsb-cs16-w19
+#
+#main_dropdown:
+#    title: Resources
+#    dropdown:
+#       - title: Topics
+#         url: /topic_list/
+#       - title: Resources
+#         url: /resources_list/

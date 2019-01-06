@@ -1,5 +1,5 @@
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     activesupport (4.2.10)
       i18n (~> 0.7)
@@ -121,6 +121,8 @@ GEM
     jekyll-github-metadata (2.9.4)
       jekyll (~> 3.1)
       octokit (~> 4.0, != 4.4.0)
+    jekyll-include-cache (0.1.0)
+      jekyll (~> 3.3)
     jekyll-mentions (1.4.1)
       html-pipeline (~> 2.3)
       jekyll (~> 3.0)
@@ -243,9 +245,11 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-include-cache
+  jekyll-remote-theme
 
 RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   1.16.6
+   1.17.3

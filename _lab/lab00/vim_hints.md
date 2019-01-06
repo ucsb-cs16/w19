@@ -1,5 +1,6 @@
 ---
-layout: topics
+#layout: topics
+layout: default
 topic: "vim hints"
 desc: "Getting started if you've never used vim before"
 ---

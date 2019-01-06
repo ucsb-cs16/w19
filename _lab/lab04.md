@@ -1,7 +1,7 @@
 ---
 layout: lab
 num: lab04
-ready: true
+ready: false
 desc: "Odds and primes: Fun with arrays and makefiles"
 assigned: 2018-10-31 09:00:00.00-7
 due: 2018-11-06 23:59:00.00-8
