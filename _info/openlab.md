@@ -20,7 +20,7 @@ Lecture attendance is *highly recommended*, while lab attendance is *required*. 
 **Open labs**: All open labs will be held in Phelps 3525. Additionally, labs will be open for walk-in help: see the schedule below for more information.
 
 <style>
-iframe { width: 100%; height: 1400px; overflow: scroll; }  
+iframe { width: 100%; height: 880px; overflow: scroll; }  
 </style>
 
-<iframe src=https://docs.google.com/spreadsheets/d/e/2PACX-1vSg2XGFCZeRuZrWDMZcCpTT9ZX_ww54DCKuFrSRxmc-iCRMRWYxOASBGnRKQbUhxHFuM4NMOgNltx_5/pubhtml?gid=4015272&ampsingle=true&amp;widget=true&amp;headers=false"></iframe>
+<iframe src=https://docs.google.com/spreadsheets/d/e/2PACX-1vSg2XGFCZeRuZrWDMZcCpTT9ZX_ww54DCKuFrSRxmc-iCRMRWYxOASBGnRKQbUhxHFuM4NMOgNltx_5/pubhtml?gid=4015272&single=true&widget=true&headers=false"></iframe>
