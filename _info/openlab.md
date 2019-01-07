@@ -23,4 +23,4 @@ Lecture attendance is *highly recommended*, while lab attendance is *required*. 
 iframe { width: 100%; height: 880px; overflow: scroll; }  
 </style>
 
-<iframe src=https://docs.google.com/spreadsheets/d/e/2PACX-1vSg2XGFCZeRuZrWDMZcCpTT9ZX_ww54DCKuFrSRxmc-iCRMRWYxOASBGnRKQbUhxHFuM4NMOgNltx_5/pubhtml?gid=4015272&single=true&widget=true&headers=false"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSg2XGFCZeRuZrWDMZcCpTT9ZX_ww54DCKuFrSRxmc-iCRMRWYxOASBGnRKQbUhxHFuM4NMOgNltx_5/pubhtml?gid=4015272&single=true&widget=true&headers=false"></iframe>
