@@ -7,8 +7,8 @@ ready: true
 # Who We Are<a name="staff"></a>
 
 ## Course instructor: Yekaterina Kharitonova (Prof. K)
-* email: ykk~at~cs.ucsb.edu
-* Office hours time and location are available on [course Calendar](/info/schedule/)
+* email: ykk-class+cs16w19~at~cs.ucsb.edu (replace ~at~ with an @)
+* Office hours time and location are available on the [course Calendar](/info/schedule/)
 * Homepage: [https://www.cs.ucsb.edu/~ykk/](https://www.cs.ucsb.edu/~ykk/)
 
 
@@ -17,9 +17,30 @@ ready: true
 <table style="width:100%">
 <tr>
   <td>
-  <img src="/info/mentorPhotos/"  width="150px"  alt="" style="float: left; margin: 10px 10px 10px 10px;">
-  <b> (TA)</b>
+  <img src="/info/mentorPhotos/Sai-Nikhil-Maram.png"  width="150px"  alt="" style="float: left; margin: 10px 10px 10px 10px;">
+  <b> Sai Nikhil Maram (TA)</b>
+  <i> "I am a Second year Graduate student in Computer Science at UCSB. My Research interests lie in Machine Learning, Natural Language Processing and Data Science. In my spare time I would like to play badminton. " </i>
+  </td>
+</tr>
+<tr>
+  <td>
+  <img src="/info/mentorPhotos/Lawton-Nichols.png"  width="150px"  alt="" style="float: left; margin: 10px 10px 10px 10px;">
+  <b> Lawton Nichols (TA)</b>
+  <i> "Computer Science PhD student, California native, mediocre ballroom dancer, and aspiring teacher." </i>
+  </td>
+</tr>
+<tr>
+  <td>
+  <img src=""  width="150px"  alt="" style="float: left; margin: 10px 10px 10px 10px;">
+  <b> Rachel Redberg (TA)</b>
   <i> " " </i>
+  </td>
+</tr>
+<tr>
+  <td>
+  <img src="/info/mentorPhotos/Yuke-Wang.jpg"  width="150px"  alt="" style="float: left; margin: 10px 10px 10px 10px;">
+  <b> Yuke Wang (TA)</b>
+  <i> "I am a first-year Ph.D. student working with Prof. Yufei Ding in the Department of Computer Science at UCSB. I am interested in applying data-driven approaches and machine learning techniques in system optimization to build more efficient and reliable systems." </i>
   </td>
 </tr>
 <tr>
