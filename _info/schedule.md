@@ -6,12 +6,12 @@ layout: default
 
 # Schedule <a name="schedule"></a>
 
-* **Lecture**: Tue and Thur 12:30pm-1:45pm CHEM 1171, ATTENDANCE IS HIGHLY RECOMMENDED.
-* **Lab**:(50 minute discussion sections) Wednesdays starting at 1p, 2p, 3p, 4p PHELPS 3525, ATTENDANCE REQUIRED.
+* **Lecture (Section 1)**: Tue and Thur 3:30pm-4:45pm PSYCH 1924, ATTENDANCE IS HIGHLY RECOMMENDED.
+* **Lab (Section 1)**:(50 minute discussion sections) Tuesdays starting at 9am, 10am, 11am, 12pm PHELPS 3525, ATTENDANCE REQUIRED.
+* **Lecture (Section 2)**: Tue and Thur 6:30pm-7:45pm HFH 1104, ATTENDANCE IS HIGHLY RECOMMENDED.
+* **Lab (Section 2)**:(50 minute discussion sections) Wednesdays starting at 1pm, 2pm, 3pm, 4pm PHELPS 3525, ATTENDANCE REQUIRED.
 
-* **Open labs**: All open labs will be held in Phelps 3525. Please see [the detailed open lab schedule](/info/cs16_open_lab_hours/)
-
-See the complete schedule on our Google Calendar
+* **Open labs**: All open labs will be held in Phelps 3525. Additionally, labs will be open for walk-in help: see [the detailed open lab schedule](/info/cs16_open_lab_hours/).
 
 ## Schedule of lectures, open lab hours and office hours.
 

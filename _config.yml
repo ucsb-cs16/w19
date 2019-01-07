@@ -12,10 +12,10 @@ baseurl: "/w19"
 instances:
   -
     instructor: Kharitonova
-    site_url: "https://ucsb-cs16-w19.github.io"
+    site_url: "https://ucsb-cs16.github.io/w19/"
     github_org:
        name: ucsb-cs16-w19
-       url: https://github.com/ucsb-cs16-w19
+       url: https://github.com/ucsb-cs16/w19/
     piazza_url:  https://piazza.com/class/jmgiws7b9eu5oq
     gradescope_url: https://www.gradescope.com
 

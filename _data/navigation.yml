@@ -29,13 +29,15 @@ offerings:
 
 offering_links:
   - title: Assignments
-    dropdown:
-        - title: Homework
-          url: /hwk_list/
-          description: "Homework Assignments"
-        - title: Lab
-          url: /lab_list/
-          description: "Lab Assignments"
+    url: /work_list/
+    description: "Homework and Lab Assignments"
+#   dropdown:
+#       - title: Homework
+#         url: /hwk_list/
+#         description: "Homework Assignments"
+#       - title: Lab
+#         url: /lab_list/
+#         description: "Lab Assignments"
   - title: Lectures
     url: /lec_list/
     description: "Lecture slides and notes"
@@ -50,14 +52,17 @@ offering_links:
        - title: Syllabus
          url: /info/syllabus/
          description: "Syllabus"    
-       - title: Info Pages
-         url: /info_list/
-         description: "List of General Information Pages"
+       - title: Course Policies
+         url: /info/policies/
+         description: "University and course policies"    
+#      - title: Info Pages
+#        url: /info_list/
+#        description: "List of General Information Pages"
   - title: Staff
     dropdown:
        - title: About Us	
          url: /info/staff/
-       - title: Office Open Lab Hours	
+       - title: Office Hours / Open Lab Hours	
          url: /info/openlab/
     description: "Staff information"
   - title: Links
