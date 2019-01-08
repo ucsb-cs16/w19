@@ -4,6 +4,7 @@ plugins:
 
 remote_theme: ucsb-cs-course-repos/course-repo-jekyll-theme
 
+suppress_footer: true
 
 name: "CS 16 Winter 2019 Kharitonova"
 github_url: https://github.com/ucsb-cs16/w19/
