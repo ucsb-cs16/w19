@@ -1,3 +1,4 @@
+---
 num: "lect01"
 lecture_date: 2019-01-09
 desc: "Course overview, a gentle intro to C++ - Standard I/O"
