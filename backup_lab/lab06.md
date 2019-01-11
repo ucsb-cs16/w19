@@ -3,8 +3,8 @@ layout: lab
 num: lab06
 ready: false
 desc: "Advanced array lists and dynamic arrays"
-assigned: 2018-11-14 09:00:00.00-8
-due: 2018-11-20 23:59:00.00-8
+assigned: 2019-02-19 09:00:00.00-8
+due: 2019-02-26 09:00:00.00-8
 ---
 
 # Goals of this lab

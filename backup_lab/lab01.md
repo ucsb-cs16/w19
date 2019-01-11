@@ -3,8 +3,8 @@ layout: lab
 num: lab01
 ready: false
 desc: "Crunching numbers: Loops and functions "
-assigned: 2018-10-10 09:00:00.00-7
-due: 2018-10-16 23:59:00.00-7
+assigned: 2019-01-15 09:00:00.00-7
+due: 2019-01-22 9:00:00.00-7
 ---
 
 <div markdown="1">

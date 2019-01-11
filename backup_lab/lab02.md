@@ -3,8 +3,8 @@ layout: lab
 num: lab02
 ready: false
 desc: "ASCII Art: Logical operators, integrating github into your workflow"
-assigned: 2018-10-17 09:00:00.00-7
-due: 2018-10-23 23:59:00.00-7
+assigned: 2019-01-22 09:00:00.00-7
+due: 2019-01-29 09:00:00.00-7
 ---
 
 # Pre-lab prep
