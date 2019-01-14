@@ -47,14 +47,9 @@ offering_links:
   - title: Calendar
     url: /info/calendar/
     description: "Assignment Calendar"
-  - title: Course Info
-    dropdown:
-       - title: Syllabus
-         url: /info/syllabus/
-         description: "Syllabus"    
-       - title: Course Policies
-         url: /info/policies/
-         description: "University and course policies"    
+  - title: Syllabus
+    url: /info/syllabus/
+    description: "University and course policies"    
 #      - title: Info Pages
 #        url: /info_list/
 #        description: "List of General Information Pages"
