@@ -180,7 +180,7 @@ This course moves quickly. So attendance is very important. We’ll sometimes co
 
 There are six components to this course, each of which has a special job to do:
 <ul>
-  <li><strong>(1) Reading</strong>—Between each class, you'll have reading to do in the textbook. There is too much information you need to learn in this course for you to get all of it in lecture, so the readings are essential. The reading assignments can be found in each homework assignment. Occasionally, we might have brief, **in-class quizzes** to augment the homeworks. If you are tardy or are not present during the lecture, it will count as a zero for that quizz. In lieu of makeup quizzes, the lowest two quizz scores will be dropped. <br />
+  <li><strong>(1) Reading</strong>—Between each class, you'll have reading to do in the textbook. There is too much information you need to learn in this course for you to get all of it in lecture, so the readings are essential. The reading assignments can be found in each homework assignment. Occasionally, we might have brief, **in-class quizzes** to augment the homeworks. If you are tardy or are not present during the lecture, it will count as a zero for that quiz. In lieu of makeup quizzes, the lowest two quiz scores will be dropped (i.e., if you miss a quiz, you'll receive a 0, and it will be one of the scores that will be dropped). <br />
     <br />
   </li>
   <li><strong>(2) Homework (lowest *two* are dropped)</strong> <br /> 
@@ -191,6 +191,7 @@ There are six components to this course, each of which has a special job to do:
   </li>
 
   <li><strong>(3) Programming Assignments (Labs) (lowest score is dropped)</strong>—Programming assignments (also called labs) are given once a week. Weekly labs are a required part of the course. You can work on them during the lab session, especially, since you can easily ask for help during that time. We do not expect you to complete the entire assignment during that time, so you can finish them on your own time outside of lab. You must however, read the assignment and attempt the parts that you can do with little assistance as soon as the assignment is released. The assumption is that you at the very least read the assignment *before coming to your section*. Labs will typically involve pair programming, which is described later in this syllabus.<br />
+	We will be taking attendance during labs. **It is your responsibility to make sure that you sign the attendance sheet**. Even if you are present in the lab but did not sign-in, you will receive a 0 for the attendance for that lab. Signing-in for another person is considered as a violation of academic integrity (i.e., cheating) and are grounds for receiving a 0 for that entire lab. To accommodate unforseen circumstances, you have one “sick-day/personal day” per student, per quarter: this means that missing a lab just once during the entire quarter will nto affect your grade.
     <br />
   </li>
   <li><strong>(4) Lectures</strong>—Learning is something that you do as a student, not something that is &quot;done to you&quot; by a teacher. Therefore, most of the learning you will do in this course takes place when you are actively involved in doing something challenging, i.e., during the homework assignments and labs. Most of the information you will need to do those assignments will come from the reading and the in-class discussions. <br />
@@ -221,7 +222,7 @@ There are six components to this course, each of which has a special job to do:
 
 ## Late Submission
 
-Late submissions will not be accepted. The same goes for homework, unless you have relevant DSP accommodations that provide a two-day extension on homework assignments and you contact the instructor *before* the assignment is due.
+**Late submissions will not be accepted**. The same goes for homework, unless you have relevant DSP accommodations that provide a two-day extension on homework assignments and you contact the instructor *before* the assignment is due.
 The policy is based on the idea that the primary purpose of the deadlines is to allow the graders to manage their workload: all labs must be graded in one sitting, or they just won’t be able to keep up with the workload.
 
 In lieu of offering exceptions or extensions, your lowest two homework scores and your lowest lab score will be dropped in the calculation of your overall grade.
@@ -231,16 +232,11 @@ Reminder: If you are registered for another UCSB course that overlaps with this 
 If you miss a class, you miss the opportunity for the points on the in-class activity. Period.
 
 
-### Excused absense / "free day" accomodation
+### Excused absense
 
-There is no makeup, except for:
+**There is no make-up**, except for excused absences that are arranged with and agreed to by the instructor **in advance**, for official UCSB activities.
 
-*    excused absences that are arranged with and agreed to by the instructor **in advance**, for official UCSB activities
-*    **one** "sick-day/personal day" per student, per quarter (see below)
-
-To make up an assignment from a "sick-day/personal-day" or an excused absense, you must within one week of the absence or 24 hours before the final exam, whichever is earlier, come to office hours (this cannot be done in lab). 
-
-In rare cases, if there is a documented family emergency, documented extended illness, documented required court appearance, or other situation beyond the students' control (with documentation) the instructor may grant additional make up days entirely at the instructor's discretion—but this is **not** a guarantee or a right.
+In rare cases, if there is a documented family emergency, documented extended illness, documented required court appearance, or other situation beyond the students' control (with documentation) the instructor may extend an assignment deadline, entirely at the instructor's discretion—but this is **not** a guarantee or a right.
 
 
 ## Grade assignment policy
@@ -350,4 +346,4 @@ Rather than copying someone else's work, ask for help. You are not alone in this
 
 [Back to Top](#top){: data-ajax="false"}
 
-Last major revision: Jan 14, 2019
+Last major revision: Jan 15, 2019
