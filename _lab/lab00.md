@@ -297,6 +297,7 @@ To print out text to the terminal, you can use the <b>`cout`</b> stream. To outp
 cout << "This will be printed out to the terminal" << endl;
 ```
 
+**Note**: `endl` ends with a letter "el" (l), **not** a number "one" (1)!
 The `endl` command will cause a newline (i.e. a carriage return) to be printed and the next print will go on the next line.
 
 You can adapt this line to achieve the objective of the assignment. <b>Remember that we need to print two lines, each with a newline at the end.</b> You can do this with one or two statements.
