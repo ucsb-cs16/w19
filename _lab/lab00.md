@@ -84,9 +84,11 @@ If you are working on your laptop, whether Windows, Mac or Linux, the instructio
 
 3. Next, type "shell" in the search box. Then click the "Terminal" application which appears.
 
-4. You should now see a terminal window open. You can open more tabs or windows from the Terminal application's menu. Skip to Step 3 and read the other steps later when you attempt to log in remotely
+4. You should now see a terminal window open. You can open more tabs or windows from the Terminal application's menu. **Skip to Step 3** and read the other Step 2 steps later when you attempt to log in remotely.
 
-## Step 2: Connecting to CSIL _Remotely_
+<br />
+
+## Connecting to CSIL _Remotely_
 
 ### Step 2b: Connecting to CSIL via SSH on Mac OS X or Linux <a name="step2b"></a>
 
@@ -114,10 +116,10 @@ Once you have a terminal window open on your machine, you next need to **connect
 
 You will do this using a UNIX command (an internet protocol, really) called <em>SSH</em> (short for Secure SHell).
 
-Type the following command in your terminal, replacing <b>USERNAME</b> with <b>your CoE username</b>:
+Type the following command in your terminal, replacing <b>USERNAME</b> with <b>your CoE username</b> and substituting ## with a number between 01 and 48:
 
 ```
-$ ssh USERNAME@csil-[01-48].cs.ucsb.edu
+$ ssh USERNAME@csil-##.cs.ucsb.edu
 ```
 
 SSH will first ask you a question which looks like this:
@@ -233,11 +235,7 @@ In fact, <i>AND PLEASE NOTE THIS</i>, no one editor is necessarily "better" than
 
 vim (or sometimes called vi) is a popular editor that's also available on just about every UNIX machine (including the ones that you're using in the CS labs) and UNIX-based machines (like MacOS computers).
 
-To edit a file (let's say it's called "filename"), you'd type:
-
-	$ vim <filename>
-
-To customize your vim environment for a better coding experience with C/C++, let's add the following lines to a  **.vimrc** file in your home folder:
+To customize your vim environment for a better coding experience with C/C++, let's add the following lines to a  **.vimrc** file in your home folder (**make sure to use this exact filename, since it is a system file**):
 ```
 set nu
 syntax on
@@ -249,9 +247,8 @@ Let's dive in! Open the file:
 ```
 $ vim ~/.vimrc
 ```
-Note that the dot is part of the filename: it indicates a hidden, system file.
 
-Next, toggle the "Insert" mode by typing `i` and either copy/paste or type the above four lines into the file. Exit the "Insert" mode by pressing Esc key on the keyboard, then type `:wq` to write and quit the file.
+Look at the bottom of the vim window to check if you are in the "Insert" mode (if you are not, then type `i`). Either copy/paste or type the above four lines into the file. Exit the "Insert" mode by pressing Esc key on the keyboard, then type `:wq` to write and quit the file (the colon <b>`:`</b> is important! Don't leave it out!). 
 
 
 Again, to learn how to use vim, there is no substitute for **practice**!!! Here are some more [vim hints](vim_hints/) to refer to. We don't expect you to be experts in vim this quarter, but you should definitely pick up "survival" skills. A little later this quarter, we will confirm that you know how to do the "basic eight" ([vim: basic eight](https://ucsb-cs16.github.io/topics/vim_basic_eight/)). 
