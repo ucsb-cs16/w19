@@ -235,7 +235,15 @@ In fact, <i>AND PLEASE NOTE THIS</i>, no one editor is necessarily "better" than
 
 vim (or sometimes called vi) is a popular editor that's also available on just about every UNIX machine (including the ones that you're using in the CS labs) and UNIX-based machines (like MacOS computers).
 
-To customize your vim environment for a better coding experience with C/C++, let's add the following lines to a  **.vimrc** file in your home folder (**make sure to use this exact filename, since it is a system file**):
+To customize your vim environment for a better coding experience with C/C++, let's add the following lines to a  **.vimrc** file in your home folder (**make sure to use this exact filename, since it is a system file**, there are no spaces in `~/.vimrc`).
+
+Let's dive in! Open the file: 
+```
+$ vim ~/.vimrc
+```
+
+Look at the bottom of the vim window to check if you are in the "Insert" mode (if you are not, then type `i`). Either copy/paste or type the following four lines into the file:
+
 ```
 set nu
 syntax on
@@ -243,12 +251,7 @@ set autoindent
 set cindent
 ```
 
-Let's dive in! Open the file: 
-```
-$ vim ~/.vimrc
-```
-
-Look at the bottom of the vim window to check if you are in the "Insert" mode (if you are not, then type `i`). Either copy/paste or type the above four lines into the file. Exit the "Insert" mode by pressing Esc key on the keyboard, then type `:wq` to write and quit the file (the colon <b>`:`</b> is important! Don't leave it out!). 
+Exit the "Insert" mode by pressing Esc key on the keyboard, then type `:wq` to write and quit the file (the colon <b>`:`</b> is important! Don't leave it out!). 
 
 
 Again, to learn how to use vim, there is no substitute for **practice**!!! Here are some more [vim hints](vim_hints/) to refer to. We don't expect you to be experts in vim this quarter, but you should definitely pick up "survival" skills. A little later this quarter, we will confirm that you know how to do the "basic eight" ([vim: basic eight](https://ucsb-cs16.github.io/topics/vim_basic_eight/)). 
