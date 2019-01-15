@@ -287,7 +287,8 @@ int main() {
     return 0;
 }
 ```
-Go ahead and type this in to the **hello.cpp** file. Alternatively, you can copy and paste it directly from this page.
+Go ahead and type this in to the new file called **hello.cpp** (you will need to do `vim hello.cpp`). Alternatively, you can copy and paste it directly from this page.
+
 **Important note**: For students familiar with Python, remember that lines starting with the <b>`#`</b> character are not comments in C++. Rather, they are important `include` lines that allow your program to use the input and output functionality. Make sure to copy those lines in your program as well. Only <b>`//`</b> or <b>`/*`</b> create comments in C++.
 
 Next, you will need to replace the comment with code to print out the expected output. Comments in C++ are lines that start with <b>`//`</b> or text between <b>`/*`</b> and <b>`*/`</b>. The latter style of comment allows text to span multiple lines.
