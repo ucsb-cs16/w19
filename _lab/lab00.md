@@ -1,10 +1,10 @@
 ---
 layout: lab
 num: lab00
-ready: false
+ready: true
 desc: "Getting started"
-assigned: 2019-01-09 09:00:00.00-7
-due: 2019-01-15 9:00:00.00-7
+assigned: 2019-01-15 9:00:00.00-7
+due: 2019-01-22 9:00:00.00-7
 ---
 
 # Introduction
@@ -345,7 +345,7 @@ For this lab, you will need to upload your `hello.cpp` file. You either can navi
 
 If you already submitted something on Gradescope, it will take you to their "Autograder Results" page. There is a "Resubmit" button on the bottom right that will allow you to update files for your submission.
 
-For this lab, if everything is correct, you'll see a successful submission passing all of the autograder tests and receive a 100/100.
+For this lab, if everything is correct, you'll see a successful submission passing all of the autograder tests and receive full credit.
 
 Congratulations on completing your first C++ program!
 
