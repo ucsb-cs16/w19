@@ -186,12 +186,12 @@ There are six components to this course, each of which has a special job to do:
   <li><strong>(2) Homework (lowest *two* are dropped)</strong> <br /> 
   Homeworks are typically submitted online individually. The homeworks are practice for the exams. Each student must submit each homework independently, but are allowed to discuss problems with the course staff *only*. These are typically pencil/paper type problems, though sometimes you'll need access to a computer to solve them. If you don't have reliable access to a computer at home (or in your dorm), please plan your schedule so that you can spend time in the CSIL computer lab between classes.<br />
     <br />
-    Homework assignments can be completed on paper (print the homework, fill it out, and then digitize it) or electronically (print the homework to PDF, fill it out by additing text or "writing" on the PDF). If you miss submitting your homework by the deadline, it will count as a missed homework (the lowest scorest will be dropped). Please do not submit it to the instructor in class or office hours. You may not have someone else turn in your homework for you (that will be considered academic dishonesty).<br />
+    Homework assignments can be completed on paper (print the homework, fill it out, and then digitize it) or electronically (print the homework to PDF, fill it out by adding text or "writing" on the PDF). If you miss submitting your homework by the deadline, it will count as a missed homework (the lowest scores will be dropped). Please do not submit it to the instructor in class or office hours. You may not have someone else turn in your homework for you (that will be considered academic dishonesty).<br />
     <br />
   </li>
 
   <li><strong>(3) Programming Assignments (Labs) (lowest score is dropped)</strong>—Programming assignments (also called labs) are given once a week. Weekly labs are a required part of the course. You can work on them during the lab session, especially, since you can easily ask for help during that time. We do not expect you to complete the entire assignment during that time, so you can finish them on your own time outside of lab. You must however, read the assignment and attempt the parts that you can do with little assistance as soon as the assignment is released. The assumption is that you at the very least read the assignment *before coming to your section*. Labs will typically involve pair programming, which is described later in this syllabus.<br />
-	We will be taking attendance during labs. **It is your responsibility to make sure that you sign the attendance sheet**. Even if you are present in the lab but did not sign-in, you will receive a 0 for the attendance for that lab. Signing-in for another person is considered as a violation of academic integrity (i.e., cheating) and are grounds for receiving a 0 for that entire lab. To accommodate unforseen circumstances, you have one “sick-day/personal day” per student, per quarter: this means that missing a lab just once during the entire quarter will nto affect your grade.
+	We will be taking attendance during labs. **It is your responsibility to make sure that you sign the attendance sheet**. Even if you are present in the lab but did not sign-in, you will receive a 0 for the attendance for that lab. Signing-in for another person is considered as a violation of academic integrity (i.e., cheating) and are grounds for receiving a 0 for that entire lab. To accommodate unforeseen circumstances, you have one “sick-day/personal day” per student, per quarter: this means that missing a lab just once during the entire quarter will not affect your grade.
     <br />
   </li>
   <li><strong>(4) Lectures</strong>—Learning is something that you do as a student, not something that is &quot;done to you&quot; by a teacher. Therefore, most of the learning you will do in this course takes place when you are actively involved in doing something challenging, i.e., during the homework assignments and labs. Most of the information you will need to do those assignments will come from the reading and the in-class discussions. <br />
@@ -210,7 +210,7 @@ There are six components to this course, each of which has a special job to do:
         </ul>
   </li>
 
-<li><strong>(5) Participation</strong>&mdash;Lectures are designed to be interactive, so come prepared with questions. Additionally, participating by answering or clarifying questions on Piazza is highly encouraged. Pair programming is another way that you are participating in this course. I expect everyone to be reliable, prepared to work and to follow the proper pair-programming rules. Disrepectful, unprofessional, and otherwise inappropriate behavior can be grounds for receivng a zero for participation in this course. 
+<li><strong>(5) Participation</strong>&mdash;Lectures are designed to be interactive, so come prepared with questions. Additionally, participating by answering or clarifying questions on Piazza is highly encouraged. Pair programming is another way that you are participating in this course. I expect everyone to be reliable, prepared to work and to follow the proper pair-programming rules. Disrespectful, unprofessional, and otherwise inappropriate behavior can be grounds for receiving a zero for participation in this course. 
     <br />
     <br />
 </li>
@@ -232,7 +232,7 @@ Reminder: If you are registered for another UCSB course that overlaps with this 
 If you miss a class, you miss the opportunity for the points on the in-class activity. Period.
 
 
-### Excused absense
+### Excused absence
 
 **There is no make-up**, except for excused absences that are arranged with and agreed to by the instructor **in advance**, for official UCSB activities.
 
