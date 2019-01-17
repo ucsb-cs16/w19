@@ -2,7 +2,7 @@
 num: "lect02"
 desc: " Hello World! + unix, vim and git"
 ready: true
-pdfurl: /lectures/CS16_Lecture2.pdf
+pdfurl: https://drive.google.com/drive/folders/1qG48RYFvB7VVEU7yP3eCkG8KRVA9KtYw?usp=sharing
 lecture_date: 2019-01-10
 ---
 
