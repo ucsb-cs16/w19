@@ -2,7 +2,7 @@
 num: "lect03"
 desc:  "Variables and types, expressions, control structures (if-else), output "
 ready: true
-pdfurl: "https://drive.google.com/file/d/1WwaBW7bOaDlY3qnJxGIu5A-yK4f818V7/view?usp=sharing"
+pdfurl: "https://drive.google.com/drive/folders/1qG48RYFvB7VVEU7yP3eCkG8KRVA9KtYw?usp=sharing"
 lecture_date: 2019-01-15
 ---
 
