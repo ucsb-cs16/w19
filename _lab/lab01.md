@@ -158,6 +158,13 @@ Enter number of rows and columns:
 0 1
 ```
 
+Note that when you are collecting user input, if you want to store the values in two variables, e.g., `var1` and `var2`, then the `cin` statement would be as follows (no need to provide a space inside your code):
+
+```c++
+cin >> var1 >> var 2;
+```
+
+
 Each string printed by the program should include a newline at the end, but **no other trailing whitespace** (i.e., extra space characters at the end of the line).
 
 For this problem you have to use a `for` loop and a `while` or `do-while` loop. While loops are similar in that the code inside the body of the while is repeated as long as the while condition is true. Here is the syntax for `while`
