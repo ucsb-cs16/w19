@@ -27,7 +27,7 @@ Pair programming is required for this lab.
 
 You are not expected to finish the entire lab in one sitting. Please don't rush through it and read all instructions carefully.
 
-Please sit with your pair partner on the same terminal. Decide who will be the 'driver' and who will be the 'navigator'. Choose who will be the driver for the first part of the lab. The driver should sit down in front of the computer now. The navigator gets a chair and sits next to the driver. You should exchange roles after awhile, before the driver gets tired, and before the navigator gets bored or distracted. See the following video on pair programming to work well with your partner:
+Please sit with your pair partner at the same terminal. Decide who will be the 'driver' and who will be the 'navigator'. Choose who will be the driver for the first part of the lab. The driver should sit down in front of the computer now. The navigator gets a chair and sits next to the driver. You should exchange roles after a while, before the driver gets tired, and before the navigator gets bored or distracted. See the following video on pair programming to work well with your partner:
 
 <http://bit.ly/pair-programming-video>
 
@@ -39,13 +39,15 @@ Please sit with your pair partner on the same terminal. Decide who will be the '
 ## Log in and create a local directory
 
 * Log into the driver's CoE account on CSIL and open a terminal.
-* Under your **cs16** directory, driver should create a new directory named **lab01** (refer to lab00 for instructions if you have forgotten how to do this)
+* Under your **cs16** directory, the driver should create a new directory named **lab01** (refer to lab00 for instructions if you have forgotten how to do this)
 
 You are now ready to get the starter code.
 
 ## Getting the starter code  <a name="getstarter"></a>
 
-Copy the code from the instructor's account on the CSIL server into your local **lab01** directory by issuing the following command (remember that `-bash-4.2$` represents the command prompt and you don't need to type it in):
+The following instructions will work only if you are working on the CSIL server. If you are working on your laptop, you will need to use remote copy `scp`.
+
+Copy the code from the instructor's account _on the CSIL server_ into your **lab01** directory _on the CSIL server_ by issuing the following command (remember that `-bash-4.2$` represents the command prompt and you don't need to type it in):
 
 ```
 -bash-4.2$ cp /cs/faculty/ykk/cs16/labs/lab01/* ~/cs16/lab01/
@@ -67,7 +69,7 @@ For this lab and all subsequent programming assignments, you should start by cre
 * Navigate to your dashboard on [https://github.com/](https://github.com/). From the left drop down menu, select the class organization.
 * Click on the green "New repository" button to create a new repository.
 
-* Type the name of your repo following the naming convention **`lab01_your-github-username`**. For example if your github username is _jgaucho_, you should name your repo as **`lab01_jgaucho`**. If you are working with a partner, include your partner's github username in the name of the repo. e.g. `**lab01_jgaucho_alily**`.
+* Type the name of your repo following the naming convention **`lab01_your-github-username`**. For example if your github username is _jgaucho_, you should name your repo as **`lab01_jgaucho`**. If you are working with a partner, include your partner's github username in the name of the repo. e.g., `**lab01_jgaucho_alily**`.
 
 * Select the "Private" visibility option so that other students in the org cannot view your code.
 
@@ -77,7 +79,8 @@ For this lab and all subsequent programming assignments, you should start by cre
 
 * Click on the "Create repo button"
 
-* Click on the "Settings" tab, then click on the "Collaborators and teams". Search for your partner's github username under collaborators and add them. Log out of github.
+* Click on the "Settings" tab, then click on the "Collaborators and teams". Search for your partner's github username under collaborators and add them. 
+The driver should now log out of github.
 
 * Navigator, log into github and accept the invitation.
 
@@ -86,9 +89,13 @@ For this lab and all subsequent programming assignments, you should start by cre
 
 ## Upload the initial version of your code using github's web interface 
 
-* Upload the files in your lab01 directory to the new repo you created in the previous step. To do this, you should be physically present on a lab machine or in CSIL where you have access to a web browser and a local copy of your files (min2.cpp  min3v1.cpp  min3v2.cpp README.md). On your web browser, navigate to your repo on github. Click on the "Upload files" button.
+* Upload the files in your lab01 directory to the new repo you created in the previous step. To do this, you should be physically present on a lab machine or in CSIL where you have access to a web browser and a local copy of your files (min2.cpp  min3v1.cpp  min3v2.cpp README.md). 
+    * On your web browser, navigate to your repo on github. 
+    * Click on the "Upload files" button.
 
 * Now either drag and drop the files: from your machine or use the "Choose your files" option to browse through your local directory and upload the file. Then press the green "Commit new files" button. Navigate back to your repo to see that the files you uploaded are correctly listed. Click on it and you should see your code on github's web interface. 
+
+You have created an initial copy of the starter files for this lab.
 
 
 
@@ -96,12 +103,14 @@ For this lab and all subsequent programming assignments, you should start by cre
 
 If you are in a pair, make sure you switch the driver and navigator roles at this point. You must switch roles twice more before the end of the lab.
 
-This assignment consists of 3 problems, each of which is described below. The first one is worth 20 points each, and the last two are worth 40 points each. Each should be solved in its own file and all three must be submitted for full assignment credit. These exercises are inspired by the ones from the textbook (in Ch. 2 and Ch. 3) - but they are NOT the same, so follow the instructions on THIS sheet carefully.
+This assignment consists of 3 problems, each of which is described below. The first one is worth 20 points each, and the last two are worth 40 points each. 
+
+Each problem should be solved **in its own file** and **all three** must be submitted for full assignment credit. These exercises are inspired by the ones from the textbook (in Ch. 2 and Ch. 3) - but they are NOT the same, so follow the instructions on THIS page carefully.
 
 You will need to create <b>three files named block.cpp, min4.cpp, and pi.cpp</b>:
 Each corresponds to one of the problems listed below, which make up this lab.
 
-For a reminder on how to open and use a text editor to create and edit new source files, refer back to Lab #0.
+For a reminder on how to open and use a text editor to create and edit new source files, refer back to Lab 00.
 
 For all the subproblems given in this assignment you must compile your code frequently (as you develop it), and test it extensively with as many inputs as you can think of.
 
@@ -109,11 +118,11 @@ For all the subproblems given in this assignment you must compile your code freq
 
 ### Print a block
 
-* Navigate to your lab01 directory using the cd command
-* open a file called `block.cpp` using the same editor you used for the previous labs.
-* In that file, write a program that takes an input from a user for the number of rows and number of columns and prints out a block of characters that is based on these 2 parameters. The program should keep asking the user for input, and printing out the result, until the user enters zero for *either* of the input parameters.
+* Navigate to your **lab01** directory using the `cd` command.
+* open a file called **block.cpp** using the same editor you used for the previous labs.
+* In that file, write a program that takes an input from a user for the number of rows and number of columns and prints out a block of characters that is based on these 2 parameters. The program should keep asking the user for input, and printing out the result, until the user enters zero for **either** of the input parameters.
 
-A session should look <b><i>exactly</i></b> like the following example (including whitespace and formatting - note that there is no whitespace at the end of each of these lines), for all the different inputs and the output:
+A session should look <b><i>exactly</i></b> like the following example for all the different inputs and the output (including whitespace and formatting - note that there is no whitespace at the end of each of these lines):
 
 ```
 $ ./block
@@ -144,9 +153,9 @@ Enter number of rows and columns:
 0 1
 ```
 
-Each string printed by the program should include a newline at the end, but no other trailing whitespace (i.e. extra space characters at the end of the line).
+Each string printed by the program should include a newline at the end, but **no other trailing whitespace** (i.e., extra space characters at the end of the line).
 
-For this problem you have to use a for-loop and a while or do-while loop. While loops are similar in that the code inside the body of the while is repeated as long as the while condition is true. Here is the syntax for while
+For this problem you have to use a `for` loop and a `while` or `do-while` loop. While loops are similar in that the code inside the body of the while is repeated as long as the while condition is true. Here is the syntax for `while`
 
 ```
 while('expression'){
@@ -154,7 +163,7 @@ while('expression'){
 }
 ```
 
-'expression' should be replaced by the appropriate boolean expression. The body of the loop is executed as long as the expression is true. e.g.
+'expression' should be replaced by the appropriate boolean expression. The body of the loop is executed as long as the expression is true. E.g.,
 
 ```
 int x=5;
@@ -163,22 +172,15 @@ while(x>0){
 	x--;
 }
 ```
-The above code prints 5 4 3 2 1.
+The above code prints "5 4 3 2 1 " (includes a space at the end).
 
 
-To compile your code use the g++ command as in lab01 OR the simple make command as in lab01
+To compile your code use the `g++` command:
 
 `$ g++ -std=c++11 -o block block.cpp`
 
-OR
 
-```
-make block
-```
-
-If you used the first option (g++ ...) note that the -std=c++11 option in these commands is optional to use (that is, not critical to define). All this does is force the compiler to use the latest version of C++.
-
-If you used the second option (make...) note that the make program is clever to compile only block.cpp into the block executable, even though there are other programs (cpp files) in that directory. Note that the C++11 compiler will not be used in the default make tool. But that should be okay for now.
+Note that the `-std=c++11` flag is optional to use (that is, not critical to define). All this does is force the compiler to use the latest version of C++.
 
 
 <b>If you encounter an error, use the compiler hints and examine the line in question. If the compiler messsage is not sufficient to identify the error, you can search online to see when the error occurs in general.</b>
@@ -198,7 +200,7 @@ Upload your files to your repo on github using github's web interface following 
 
 Switch roles with your partner.
 
-Write a C++ program in a file named pi.cpp that approximates the value of the constant π. Once again you should not resort to using predefind constants and functions for π, that are provided by C++ standard libraries. Instead you should compute the value of π based on the Leibniz formula for π. The formula is given below:
+Write a C++ program in a file named **pi.cpp** that approximates the value of the constant π. Once again you should not resort to using predefind constants and functions for π, that are provided by C++ standard libraries. Instead you should compute the value of π based on the Leibniz formula for π. The formula is given below:
 
 ```
  1 – 1/3 + 1/5 – 1/7 + 1/9 ...  = pi/4
