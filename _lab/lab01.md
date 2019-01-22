@@ -45,7 +45,8 @@ You are now ready to get the starter code.
 
 ## Getting the starter code  <a name="getstarter"></a>
 
-The following instructions will work only if you are working on the CSIL server. If you are working on your laptop, you will need to use remote copy `scp`.
+The following instructions will work only if you are working on the CSIL server. If you are working on your laptop, you will need to use remote copy via `scp`.
+<https://ucsb-cs16.github.io/topics/csil_copying_files/>
 
 Copy the code from the instructor's account _on the CSIL server_ into your **lab01** directory _on the CSIL server_ by issuing the following command (remember that `-bash-4.2$` represents the command prompt and you don't need to type it in):
 
@@ -273,15 +274,15 @@ Start by examining the given examples, also described below:
 
 <b>min2.cpp</b>
 
-This program takes two command line arguments, and converts them to integers.  It then calls a function, `smallest_of_two`, that returns the smallest of the two numbers (or the value they share in case of a tie.) It then prints out the result of that function call.
+This program takes two command-line arguments, and converts them to integers.  It then calls a function, `smallest_of_two`, that returns the smallest of the two numbers (or the value they share in case of a tie.) It then prints out the result of that function call.
 
 <b>min3v1.cpp</b>
 
-This is the first of two versions of a program that takes min2.cpp one step further, finding the smallest value from among three numbers. Again, if there is a tie, it prints the tie value. Look at the nested if/else statements and see if you can make sense of the logic. Seek help if you don't.
+This is the first of two versions of a program that takes **min2.cpp** one step further, finding the smallest value from among three numbers. Again, if there is a tie, it prints the tie value. Look at the nested if/else statements and see if you can make sense of the logic. Seek help if you don't.
 
 <b>min3v2.cpp</b>
 
-This program does EXACTLY the same thing as min3v1.cpp, but does it with much cleaner, simpler code. Notice how we REUSE the `smallest_of_two` function to build up a `smallest_of_three` function.
+This program does EXACTLY the same thing as **min3v1.cpp**, but does it with much cleaner, simpler code. Notice how we REUSE the `smallest_of_two` function to build up a `smallest_of_three` function.
 
 Your job in this step is to test min2, min3v1 and min3v2 with many different values and convince yourself that they work properly.
 
@@ -335,7 +336,7 @@ Upload your files to your repo on github using github's web interface.
 Once you are satisfied that your program is correct, then it's time to submit it.
 
 
-Log into your account on [https://www.gradescope.com/](https://www.gradescope.com/) and navigate to our course site: CS 16 Fall 2018 (Nichols). Select this assignment. Then click on the "Submit" button on the bottom right corner to make a submission. You will be given the option of  uploading files from your local machine or submitting the code that is in a github repo. Select the second option and select your github repo for this assignment. You should receive 100/100 for a completely correct program.
+Log into your account on [https://www.gradescope.com/](https://www.gradescope.com/) and navigate to our course site. Select this assignment. Then click on the "Submit" button on the bottom right corner to make a submission. You will be given the option of  uploading files from your local machine or submitting the code that is in a github repo. Select the second option and select your github repo for this assignment. You should receive full credit for a completely correct program.
 
 
 
@@ -356,7 +357,7 @@ If you are logged in remotely, you can log out using the exit command:
 
 ## Grading rubric
 
-In addition to the points given by gradescope, our staff will be manually grading your code for style. Code style, includes but is not limited to the following:
+In addition to the points given by gradescope, our staff may be manually grading your code for style. Code style, includes but is not limited to the following:
 
 1. Code can be easily understood by humans familiar with C++ (including both the author(s) of the code, and non-authors of the code.)
 2. Code is neatly indented and formatted, following standard code indentation practices for C++ as illustrated in either the textbook, or example code given in lectures and labs
