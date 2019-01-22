@@ -175,7 +175,7 @@ Enter number of rows and columns:
 Note that when you are collecting user input, if you want to store the values in two variables, e.g., `var1` and `var2`, then the `cin` statement would be as follows (no need to provide a space inside your code):
 
 ```c++
-cin >> var1 >> var 2;
+cin >> var1 >> var2;
 ```
 
 
