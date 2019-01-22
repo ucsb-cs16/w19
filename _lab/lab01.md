@@ -65,7 +65,11 @@ If you don't see those files, work with your pair partner to go back through the
 
 ## Create a repo on github in our class organization
 
-For this lab and all subsequent programming assignments, you should start by creating a repo in the **ucsb-cs16-w19** organization. Follow these steps
+For this lab and all subsequent programming assignments, you should start by creating a repo in the **ucsb-cs16-w19** organization. 
+
+If you haven't completed the **"Setup GitHub and add yourself to our organization" steps from Lab00**, then make sure you do it now, otherwise, you won't be able to access the organization and follow the steps below. 
+
+When you verified that your GitHub account is associated with the correct email address (see Lab00 instructions), you can follow these steps to create a new repo:
 
 * Navigate to your dashboard on [https://github.com/](https://github.com/). From the left drop down menu, select the class organization.
 * Click on the green "New repository" button to create a new repository.
