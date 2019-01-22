@@ -24,8 +24,15 @@ In this lab you will get practice
 ## Working in Pairs
 
 Pair programming is required for this lab.
+**You are not expected to finish the entire lab in one sitting. Please don't rush through it and read all instructions carefully.**
 
-You are not expected to finish the entire lab in one sitting. Please don't rush through it and read all instructions carefully.
+**You are not expected to finish the entire lab in one sitting. Please don't rush through it and read all instructions carefully.**
+
+**You are not expected to finish the entire lab in one sitting. Please don't rush through it and read all instructions carefully.**
+
+**You are not expected to finish the entire lab in one sitting. Please don't rush through it and read all instructions carefully.**
+
+**You are not expected to finish the entire lab in one sitting. Please don't rush through it and read all instructions carefully.**
 
 Please sit with your pair partner at the same terminal. Decide who will be the 'driver' and who will be the 'navigator'. Choose who will be the driver for the first part of the lab. The driver should sit down in front of the computer now. The navigator gets a chair and sits next to the driver. You should exchange roles after a while, before the driver gets tired, and before the navigator gets bored or distracted. See the following video on pair programming to work well with your partner:
 
@@ -48,7 +55,7 @@ You are now ready to get the starter code.
 The following instructions will work only if you are working on the CSIL server. If you are working on your laptop, you will need to use remote copy via `scp`.
 <https://ucsb-cs16.github.io/topics/csil_copying_files/>
 
-Copy the code from the instructor's account _on the CSIL server_ into your **lab01** directory _on the CSIL server_ by issuing the following command (remember that `-bash-4.2$` represents the command prompt and you don't need to type it in):
+Copy the code from the instructor's account _on the CSIL server_ into your **lab01** directory _on the CSIL server_ by issuing the following command (**remember that `-bash-4.2$` represents the command prompt and you don't need to type it in**):
 
 ```
 -bash-4.2$ cp /cs/faculty/ykk/cs16/labs/lab01/* ~/cs16/lab01/
@@ -65,8 +72,15 @@ If you don't see those files, work with your pair partner to go back through the
 
 ## Create a repo on github in our class organization
 
-For this lab and all subsequent programming assignments, you should start by creating a repo in the **ucsb-cs16-w19** organization. 
+For this lab and all subsequent programming assignments, you should start by creating a repo _in the **ucsb-cs16-w19** organization_. 
+**You may not receive any credit for this lab if you do not create the repository under the organization (i.e., do NOT create it in your own account).**
 
+Make sure that when you create a repo, the **Owner** is the **ucsb-cs16-w19** organization (**NOT** your personal account).
+
+**Your group needs ONLY ONE repo for this assignment.** 
+Because your lab partner is going to be added as a collaborator, you will both have access to the repository, so there is **no need to create a duplicate repo**.
+
+**IMPORTANT**. 
 If you haven't completed the **"Setup GitHub and add yourself to our organization" steps from Lab00**, then make sure you do it now, otherwise, you won't be able to access the organization and follow the steps below. 
 
 When you verified that your GitHub account is associated with the correct email address (see Lab00 instructions), you can follow these steps to create a new repo:
