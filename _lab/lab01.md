@@ -356,26 +356,26 @@ Upload your files to your repo on github using github's web interface.
 
 
 
-## Submit your code on gradescope<a name="submit"></a>
+## Submit your code on Gradescope<a name="submit"></a>
 
-Once you are satisfied that your program is correct, then it's time to submit it.
-
-
-Log into your account on [https://www.gradescope.com/](https://www.gradescope.com/) and navigate to our course site. Select this assignment. Then click on the "Submit" button on the bottom right corner to make a submission. You will be given the option of  uploading files from your local machine or submitting the code that is in a github repo. Select the second option and select your github repo for this assignment. You should receive full credit for a completely correct program.
+Once you are satisfied that **your programs are correct**, then it's time to submit them. Note that Gradescope will display an error if you don’t upload **all six files**.
 
 
+Log into your account on [https://www.gradescope.com/](https://www.gradescope.com/) and navigate to our course site. Select this assignment. Then click on the "Submit" button on the bottom right corner to make a submission. You will be given the option of  uploading files from your local machine or submitting the code that is in a Github repo. _Select the second option and select your Github repo for this assignment._ You should receive full credit for a completely correct program.
 
 
 
 
 
 
-## Done!<a name="done"></a>
+
+
+## Log Out!<a name="done"></a>
 
 You are now done with this assignment!
 If you are in the Phelps lab or in CSIL, make sure to log out of the machine before you leave. Also, make sure to close all open programs before you log out. Some programs will not work next time if they are not closed. Remember to save all your open files before you close your text editor.
 
-If you are logged in remotely, you can log out using the exit command:
+If you are logged in remotely, you can log out using the `exit` command:
 
 `$ exit`
 
