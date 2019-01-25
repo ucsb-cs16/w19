@@ -1,22 +1,23 @@
 ---
 num: "lect05"
 desc: "Functions, print vs. return, Memory Stack"
-ready: false
+ready: true
 pdfurl: ""
 lecture_date: 2019-01-22
 ---
 
 * A reminder to read through labs, lecture notes, and homework readings thoroughly- these often contain most of the information you should need for a particular assignment
  * The labs will only get harder as the course progresses, so it's important to read carefully 
- * Reading the textbook sections are crucial
+ * Reading the textbook sections is crucial!
  * Good practice to review code in lecture notes and the book and run it yourself
-* Office hours will remained the same for now (found on the course website), so use them to your advantage
-* On the exams, you will have to do everything yourself, on paper
+* Office hours will remain the same for now (found on the course website), so use them to your advantage
+* On the exams, you will have to do everything yourself, on paper, so make sure you can do by yourself any work that the tutors/TAs helped you with and any work that you did with your lab partner.
+
 
 # Review - Control Structures: Loops
 *Remember to initialize your variables*
  * The iteration variable needs to be declared/initialized outside the loop body
-  * You must alter the value of this variable within the body of the loop so that you will eventually reach the stopping condition, otherwise you will hit an infinite loop
+ * You must alter the value of this variable within the body of the loop so that you will eventually reach the stopping condition, otherwise you will be stuck in an infinite loop
 
 * Coding process
   * Start with a skeleton program, make sure you declare and initialize all the variables you need
@@ -87,7 +88,7 @@ do {
 * Change to `while (i < 10)` to print "i = [0 - 9]".
 
 * Understand differences/ tradeoffs between `while` and `do-while` loops, and the differences in syntax
-  * `while` loops have a little more freedom with what boolean expressions can be used: while a `bool` is true, while you still receive user input, while a number variable is less than a given value, etc
+  * `while` loops have many variations in what boolean expressions can be used: e.g., while a `bool` is true, while you still receive user input, while a number variable is less than a given value.
 
 ## For Loop
 
@@ -172,7 +173,7 @@ Lowest precedence (done last)
 C++ first evaluates the leftmost of the two expressions joined by an `&&` or an `||`.
 If that gives enough information to determine the final value of the expression (independent of the value of the second expression), then C++ does not bother to evaluate the second expression. This is called **short-circuit evaluation**. (Savitch, p.114-115)
   * Order of operations can be the source of many bugs!
-  * Unintended consequences if you don't understand the order of operations that will take place in boolean/ arithmetic operations
+  * Unintended consequences will occur if you don't understand the order of operations that will take place in boolean/ arithmetic operations
   * Make sure to use parentheses where necessary to ensure operations execute in the order you intend
 
 
@@ -305,7 +306,9 @@ int main(int argc, char *argv[]) {
 	}
 	else
 	{
-		cout << "You need to provide 3 arguments after the name of the program.\n";
+		//cout << "You need to provide 3 arguments after the name of the program.\n";
+        // Subtract one to eliminate the first argument, which is the name of the program
+		cout << "You need to provide " << (num_args - 1) << " arguments after the name of the program.\n";
 	}
 	return 0;
 }
@@ -327,9 +330,8 @@ int main(int argc, char *argv[]) {
 In C++, a function declaration must occur BEFORE they are used.
 	* We can write the method after it is used, we just need to declare it.
 	* Declaration must include: [return type] [function name] (input parameters)
-	* Basically just the header of the function, followed by a semicolon
-	* As long as the declaration is placed before the function is called, the function definition (its body) can be placed anywhere in the code.
-	   * It is possible to leave out a function declaration, if you can place the entire function definition (the body) before the main, or any other place where the function is called, but this is rarely done because it is often impractical.
+	* Basically just the header of the function (its "signature"), followed by a semicolon
+    * It is possible to leave out a function declaration, if you can place the entire function definition (the body) before the `main()`, but this is not common because it is often impractical to bury the `main()` function at the end of a file.
 
 ## Example: Simple Function Definition
 
@@ -414,7 +416,7 @@ int doubleValue(int x) {
 }
 
 int quadrupleValue(int x) {
-	return double(x) + double(x);
+	return doubleValue(x) + doubleValue(x);
 }
 
 int main() {
@@ -444,12 +446,12 @@ int main() {
 |_______________________|
 ```
 
-* `double(x)` is called
+* `doubleValue(x)` is called
 
 ```
 |                       |
 |-----------------------|
-| int double(4)         |
+| int doubleValue(4)         |
 |-----------------------|
 | int quadrupleValue(4) |
 |-----------------------|
@@ -457,31 +459,7 @@ int main() {
 |_______________________|
 ```
 
-* `double(4)` finishes executing and returns a value
-
-```
-|                       |
-|-----------------------|
-| int quadrupleValue(4) |
-|-----------------------|
-| int main()            |
-|_______________________|
-```
-
-* `double(4)` is called again
-
-```
-|                       |
-|-----------------------|
-| int double(4)         |
-|-----------------------|
-| int quadrupleValue(4) |
-|-----------------------|
-| int main()            |
-|_______________________|
-```
-
-* `double(4)` finishes executing and returns a value
+* `doubleValue(4)` finishes executing and returns a value
 
 ```
 |                       |
@@ -492,7 +470,31 @@ int main() {
 |_______________________|
 ```
 
-* `quadrupleValue` returns the sum of the two `double(4)` function calls
+* `doubleValue(4)` is called again
+
+```
+|                       |
+|-----------------------|
+| int doubleValue(4)         |
+|-----------------------|
+| int quadrupleValue(4) |
+|-----------------------|
+| int main()            |
+|_______________________|
+```
+
+* `doubleValue(4)` finishes executing and returns a value
+
+```
+|                       |
+|-----------------------|
+| int quadrupleValue(4) |
+|-----------------------|
+| int main()            |
+|_______________________|
+```
+
+* `quadrupleValue` returns the sum of the two `doubleValue(4)` function calls
 
 ```
 |                       |
