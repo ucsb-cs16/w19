@@ -5,6 +5,88 @@ ready: false
 lecture_date: 2019-01-24
 ---
 
+**Announcements**
+* Quizzes for now are graded for completion, but questions will be added later will be graded for correctness. The quizzes are meant as a gauge of problems that you may encounter on the exam, so use your score as a feedback on what you may be missing. 
+*  For the homework and the midterm, one week of regrade requests will be made available, potentially giving points back. However, if more things are found to be wrong during the regrade, then more points will be taken off.
+* Regarding Gradescope, everyone should be submitting code individually, even though you worked in pairs to write the code. Both partners should be on the same machine when you are working on the lab to get the full benefits of pair-programming.
+* Github crash course instructions will be either posted online or be discussed on Tuesday
+
+* Since the midterm is next Thursday, we will be holding a review session for the exam on **Phelps 2510 from 5-8pm on Wednesday, Jan 30th**. Go over the resources and practice made available on the site, and come the review session with any questions about specific   questions, or other concepts you would like to have explained better. At any time during review session or open lab hours, clarify doubts to the tutors and TA’s what you are missing; some of those questions may appear on the midterm!
+* Anything from homework, labs, and textbook readings are fair game for the exam, which will cover all material up to Tuesday (up to textbook 4.1 to 4.3). One page of notes wil be allowed for the exam.
+
+# Directory Navigation in Linux
+* Refer to the screenshot from lecture for a diagram of a set of example directories. Imagine you start in your home directory, which holds several other directories. 
+    * Use `pwd` to determine which directory you are currently in, `ls`to see contents of the current directory
+        * EX: If you are in the `home` directory, and you want to see the contents of `home`, then just use the command `ls`
+    * To see the contents of another directory without moving our of your current directory, you can use *paths*   
+        * EX: If you are in the `home` directory, which holds the `lab01` directory, and you want to look inside `lab01` without moving out of home, use the command `ls ./lab01`
+    * To copy a directory, use the command `cp -R [source] [destination]`
+        * -R is a flag that indicates you are copying recursively and prepares cp to prepare an entire directory
+        * No need to use -R if you just want to just copy a file
+        * You can use absolute or relative paths for either the source or destination directories
+            * EX: 
+                With absolute and relative, respectively:
+                   ` cp -R /home/jgaucho/cs16/lab02 . ` 
+                    * (the extra dot indicates a relative path- copy the contents of the first directory into the current directory)
+                With relative and relative, respectively:
+                    `cp -R ../lab02  ../../jnewman`
+                    * Grab lab02 directory from current directory you are in (can also write it without ../ as just lab02)
+                    * Can usually leave off ./ EXCEPT with executables- indicates that you are looking for an executable of that name in your current         directory before you can run it
+                With relative and absolute, respectively:
+                    `cp -R ../lab02  /home/jnewman`
+
+
+    *  `*` is the wildcard symbol (indicates that you want to perform an action on everything in a directory)
+        
+* If a command starts with a `~` or a `.` (dot), it is using relative paths. If it uses  a `/` , it is using absolute paths.
+    * Relative paths indicate that you are looking for a file or directory in relation to the directory you are currently in, while absolute paths give the full path to the directory from the root. Accessing files using relative paths is often faster.
+    
+* Use the `..` command to reference previous directories.
+    * EX: `ls ../../` lists the contents of the parent directory of the parent directory of the directory you are currently in
+        `cd ..` allows you to move back into the parent directory of the current one     
+* You will get an error if you try to access or reference a directory or file that does not exist!
+
+**Relative Paths**
+* cs16/lab02 only works from one location, so it is a relative path
+    * changing your current location anywhere from that one location will cause that path not to work
+    * `.` indicates that you are looking at a directory in deeper from your current one
+* ls. and ls do the same thing
+* ls .. will show contents of previous directory
+* ls ../lab02 will go to the previous directory, look for a directory called lab02, and then list the contents of that directory (if it exists)
+* Can use ../../../ etc to go to prev directories as needed
+* Can also use absolute paths with other commands:
+    `mkdir /home/jnewman/cs16/lab01`
+    * If you didn’t have a cs16 directory in jnewman, then this command will create one. Then it will create a lab01 directory inside that new directory
+
+
+**Absolute Paths**
+* You can type in absolute paths with cd to skip typing cd several times in a row, if target file/directory is several directories deep
+    * EX- `cd one` 
+            `cd two`
+               `cd three`
+    VS
+        `cd one/two/three`
+* Make sure you know where the absolute path to a directory actually starts- you can use `pwd` to figure out where you are, which will give you the absolute path for the directory you are currently in
+
+# Switches
+
+* Want to have different behavior based on user input
+* Switches take in a control variable from the user, and tests for different cases to determine how to proceed
+* The control variable **must** be initialized before entering the switch
+* Remember break statements after each case, otherwise the rest of the cases will be checked sequentially and possibly executed
+* An option to have a default case, in case the user’s input is not one of the options they were given
+    * Don’t need a break after default, since it is always the last case in a switch
+* Be careful how you set up the cases!
+    * EX- prints “yes” if lowercase ‘y’ is entered, should also check for uppercase ‘Y’ 
+* You can always get the same behavior of a switch with a series of if-else statements, but the switch syntax can be cleaner and simpler
+* If you want to keep asking for user input, put all of it into a while or a do-while loop
+*Note* 
+`while( answer!= ‘q’ || ‘Q’ )` contains a logical error!
+    * Remember boolean precedence: unary operators is evaluated before the ‘or’. Here, you are actually evaluating (answer!=’q’) OR (‘Q’)
+        * Q will always evaluate to TRUE, since it has a non-zero ASCII value, and everything non-zero always evaluates to true, so this statement is always true, and the program will be stuck in an infinite loop
+
+**Switch Syntax**
+
 ```c++
 #include <iostream>
 #include <string>
@@ -20,6 +102,7 @@ int main (){
 
         switch(answer)
         {
+            //When there are two cases one after another, they will both fall through to the same executed statements
             case 'Y':
             case 'y':
                 cout << "You said Yes! " << answer << endl;
@@ -38,3 +121,4 @@ int main (){
     return 0;
 }
 ```
+
