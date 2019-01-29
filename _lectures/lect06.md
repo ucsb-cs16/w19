@@ -1,7 +1,7 @@
 ---
 num: "lect06"
 desc: "Relative vs absolute path; `switch` statement"
-ready: false
+ready: true
 lecture_date: 2019-01-24
 ---
 
@@ -17,14 +17,14 @@ lecture_date: 2019-01-24
 # Directory Navigation in Linux
 * Refer to the screenshot from lecture for a diagram of a set of example directories. Imagine you start in your home directory, which holds several other directories. 
     * Use `pwd` to determine which directory you are currently in, `ls`to see contents of the current directory
-        * EX: If you are in the `home` directory, and you want to see the contents of `home`, then just use the command `ls` (this is a shortcut to `ls .`)
+        * E.g.: If you are in the `home` directory, and you want to see the contents of `home`, then just use the command `ls` (this is a shortcut to `ls .`)
     * To see the contents of another directory without moving out of your current directory, you can use *paths*   
-        * EX: If you are in the `home` directory, which holds the `lab01` directory, and you want to look inside `lab01` without moving out of home, use the command `ls ./lab01` (or simply, `ls lab01`, because `lab01` is already in your current directory).
+        * E.g.: If you are in the `home` directory, which holds the `lab01` directory, and you want to look inside `lab01` without moving out of home, use the command `ls ./lab01` (or simply, `ls lab01`, because `lab01` is already in your current directory).
     * To copy a **directory**, use the command `cp -R [source] [destination]`
         * `-R` is a flag that indicates you are copying recursively and prepares cp to copy an entire directory
         * Don't use `-R` if you want to copy a file
         * You can use **absolute** or **relative** paths for either the source or destination directories
-            * EX: 
+            * E.g.: 
                 With absolute and relative, respectively:
                    ` cp -R /home/jgaucho/cs16/lab02 . ` 
                     * (the dot at the end indicates a relative path- copy the contents of the first directory into the current directory)
@@ -40,11 +40,13 @@ lecture_date: 2019-01-24
 
     *  `*` is the **wildcard** symbol (indicates that you want to perform an action on everything in a directory *that matches the given pattern*)
         
-* If a command starts with a `~` or a `.` (dot), it is using relative paths. If it uses  a `/` , it is using absolute paths.
-    * Relative paths indicate that you are looking for a file or directory in relation to the directory you are currently in, while absolute paths give the full path to the directory from the root. Accessing files using relative paths is often faster (to type :-)).
+* If a path starts with a `~` or a `.` (dot), it is a *relative* path. If it starts with  a `/` , it is an *absolute* path.
+    * Relative paths indicate that you are looking for a file or directory in relation to the directory you are currently in, while absolute paths give the full path to the directory from the root. 
+    * An absolute path with lead you to the same file or a directory regardless of your starting diretory or a user that uses it.
+    * Accessing files using relative paths is often faster (to type :-)).
     
 * Use the `..` command to reference previous/higher directories.
-    * EX: `ls ../../` lists the contents of the parent directory of the parent directory of the directory you are currently in
+    * E.g.: `ls ../../` lists the contents of the parent directory of the parent directory of the directory you are currently in
         `cd ..` allows you to move back into the parent directory of the current one     
 * You will get an error if you try to access or reference a directory or file that does not exist!
 
@@ -85,10 +87,54 @@ lecture_date: 2019-01-24
 * If you want to keep asking for user input, put all of it into a while or a do-while loop
 *Note* 
 `while( answer!= ‘q’ || ‘Q’ )` contains a logical error!
-    * Remember **boolean operator precedence**: unary operators is evaluated before the ‘or’. Here, you are actually evaluating `(answer!=’q’) OR (‘Q’)`
-        * Q will always evaluate to TRUE, since it has a non-zero ASCII value, and everything non-zero always evaluates to true, so this statement is always true, and the program will be stuck in an infinite loop
+    * Remember **boolean operator precedence**: unary operator is evaluated before the ‘or’. Here, you are actually evaluating `(answer!=’q’) OR (‘Q’)`
+        * `Q` will always evaluate to TRUE, since it has a non-zero ASCII value, and everything non-zero always evaluates to true, so this statement is always true, and the program will be stuck in an infinite loop
 
 **Switch Syntax**
+
+```c++
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main (){
+
+    char answer = 'z';
+    double x = 5;
+    int y = 3;
+
+    cout << "5/3 = " << x/y << endl;
+
+    return 0;
+
+
+    do {
+        cout << "Yes or no?" << endl;
+        cin >> answer;
+
+        switch(answer)
+        {
+        case 'Y':
+        case 'y':
+            cout << "You said yes! " << answer << endl;
+            break;
+        case 'N':
+        case 'n':
+            cout << "You said no! " << answer << endl;
+            break;
+        default:
+            cout << "Default " << answer << endl;
+            break;
+        }
+    } while (answer != 'q');
+
+    cout << "Goodbye!" << endl;
+    return 0;
+}
+```
+
+We didn't get to talk about integer division in the 630 lecture, but you need to make sure you know how it works.
 
 ```c++
 #include <iostream>
@@ -124,4 +170,5 @@ int main (){
     return 0;
 }
 ```
+
 

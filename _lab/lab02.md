@@ -3,8 +3,8 @@ layout: lab
 num: lab02
 ready: false
 desc: "ASCII Art: Logical operators, integrating github into your workflow"
-assigned: 2019-01-22 09:00:00.00-7
-due: 2019-01-29 09:00:00.00-7
+assigned: 2019-01-29 09:00:00.00-7
+due: 2019-02-05 09:00:00.00-7
 ---
 
 # Pre-lab prep
@@ -68,11 +68,11 @@ Below are the links to different sections of the lab:
    git config --global user.email "atriton@cs.ucsb.edu"
 ```
 
-Next, generate a private/public key pair and upload your public key to your github account. To do this refer to this tutorial: https://ucsb-cs56-pconrad.github.io/topics/github_ssh_keys/ In the process of setting up your key pair, when asked for a passphrase just press enter. By doing this step you will avoid having to enter a password or passphrase everytime you push your code to git.
+Next, generate a private/public key pair and upload your public key to your github account. To do this refer to this tutorial: <https://ucsb-cs56-pconrad.github.io/topics/github_ssh_keys/>. In the process of setting up your key pair, when asked for a passphrase just press enter. By doing this step you will avoid having to enter a password or passphrase everytime you push your code to git.
 
 ## Step 1b: Create a new repo, add your partner as collaborator and clone the git repo that contains the starter code
 
-* Create a repo for this lab on the pilot's github account (just like you did in lab01): To do this, open a browser and navigate to [www.github.com](www.github.com). Log into the pilot's github account. From the drop down menu on the left, select our class organization: **ucsb-cs16-w19** and proceed to create a new repo. You may refer to the instructions in lab01. Follow this naming convention: If your github username is jgaucho and your partner's is alily, your should name your repo lab02_agaucho_alily (usernames appear in alphabetical order). Also you must set the visibity of your repo to be 'PRIVATE' when creating it, and remember to add the C++ .ignore option from the drop down menu. (We will not repeat these instructions in subsequent labs.)
+* Create a repo for this lab on the pilot's github account (just like you did in lab01): To do this, open a browser and navigate to [www.github.com](www.github.com). Log into the pilot's github account. From the drop down menu on the left, select our class organization: **ucsb-cs16-w19** and proceed to create a new repo. You may refer to the instructions in lab01. Follow this naming convention: If your github username is jgaucho and your partner's is alily, your should name your repo lab02_agaucho_alily (usernames appear in alphabetical order). Also you must set the visibity of your repo to be 'PRIVATE' when creating it, and remember to add the C++ `.ignore` option from the drop down menu. (We will not repeat these instructions in subsequent labs.)
 
 * The pilot should add the navigator as a collaborator on github. To do this navigate to the git repo you just created. Choose the settings tab. Then click on the 'Collaborators and teams' option on the left. Scroll all the way down and add the navigator's github account. Then press on the 'Add collaborator' button. Now you and the navigator share the ownership of your git repo. You won't work with your new repo until the end of the lab.
 
@@ -135,7 +135,7 @@ Congratulations on integrating git into your workflow! Now proceed to the progra
 
 There was a time when laser printers either hadn't been invented yet, or were not yet widely available. Thus, the only kind of printer most folks had access to was something called a &quot;line printer&quot;, which printed only from left to right, top to bottom, and could only print the kinds of characters you find on a typewriter keyboard.
 
-So, you might find folks making pictures like this one, found at http://chris.com/ascii/
+So, you might find folks making pictures like this one, found at <http://chris.com/ascii/>.
 
  <pre>
                                  .ze$$e.
@@ -366,7 +366,7 @@ If there are errors reported, fix them.
 When you have a clean build, you are nearly done with this lab.   I say "nearly" done, because you should take one last look over the grading rubric to see if there is anything you need to adjust before doing your final submit and calling it a day.
 
 Note:
-You MUST make one final submission that includes ALL of your files.  For getting incremental feedback while working on the lab, it is fine to submit one at a time, but for GRADING purposes, your LAST submission (in time) must be a complete submission of EVERYTHING.   In the ideal case (for you), that submission is completely "green", i.e. all test cases pass, and you have a perfect score (at least from the standpoint of the points you are awarded for passing the test cases.)
+You MUST make one final submission that includes ALL of your files.  In the ideal case (for you), that submission is completely "green", i.e. all test cases pass, and you have a perfect score (at least from the standpoint of the points you are awarded for passing the test cases.)
 
 Make sure you add your pair partner as a collaborator (this should show up on the right side of your screen on gradescope after you submit your files).
 
