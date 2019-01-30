@@ -26,7 +26,7 @@ lecture_date: 2019-01-24
         * You can use **absolute** or **relative** paths for either the source or destination directories
             * E.g.: 
                 With absolute and relative, respectively:
-                   ` cp -R /home/jgaucho/cs16/lab02 . ` 
+                   `cp -R /home/jgaucho/cs16/lab02 .` 
                     * (the dot at the end indicates a relative path- copy the contents of the first directory into the current directory)
                 With relative and relative, respectively:
                     `cp -R ./lab02  ../../jnewman`
@@ -38,7 +38,7 @@ lecture_date: 2019-01-24
                     In the above examples, which directory were you in?
 
 
-    *  `*` is the **wildcard** symbol (indicates that you want to perform an action on everything in a directory *that matches the given pattern*)
+    *  `*` is the **wildcard** symbol (indicates that you want to perform an action on everything in a directory *that matches the given pattern*, e.g., if a pattern is `*.cpp`, then it will match everything that ends in `.cpp`; if the pattern is `hw0*`, then we will grab everything that starts with "hw0", e.g., `hw00.cpp`, `hw01.cpp`, etc.).
         
 * If a path starts with a `~` or a `.` (dot), it is a *relative* path. If it starts with  a `/` , it is an *absolute* path.
     * Relative paths indicate that you are looking for a file or directory in relation to the directory you are currently in, while absolute paths give the full path to the directory from the root. 
