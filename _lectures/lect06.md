@@ -11,7 +11,7 @@ lecture_date: 2019-01-24
 * Regarding Gradescope, everyone should be submitting code individually, even though you worked in pairs to write the code. Both partners should be on the same machine when you are working on the lab assignment to get the full benefits of pair-programming.
 * Github crash-course instructions will be either posted online or be discussed on Tuesday.
 
-* Since the midterm is next Thursday, we will be holding a review session for the exam in **Phelps 2510 from 5-8pm on Wednesday, Jan 30th**. Go over the resources and practice resources that aee made available on the site, and come the review session with any questions about specific questions, or other concepts you would like to have explained in more detail. At any time during the review session or open lab hours, discuss any doubts that you have with to the staff -- some of those questions may appear on the midterm!
+* Since the midterm is next Thursday, we will be holding a review session for the exam in **Phelps 2510 from 5-8pm on Wednesday, Jan 30th**. Go over the resources and practice resources that are made available on the site, and come the review session with any questions about specific questions, or other concepts you would like to have explained in more detail. At any time during the review session or open lab hours, discuss any doubts that you have with to the staff -- some of those questions may appear on the midterm!
 * Anything from homework, labs, lectures, and textbook readings are fair game for the exam, which will cover all material up to Tuesday (up to textbook 4.1 to 4.3). One page of notes wil be allowed for the exam (typed or handwritten).
 
 # Directory Navigation in Linux
