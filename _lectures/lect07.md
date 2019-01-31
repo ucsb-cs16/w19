@@ -12,19 +12,18 @@ See the lecture slides for the list of topics on the exam, as well as the practi
 ### Here are some problems to expect:
 **Note that this list is not comprehensive, and you should be comfortable with any material discussed in lectures, homeworks, and labs.**
 ---
-Code Tracing
----
+* Code Tracing
 	* Given a piece of code, determine its behavior or output
-Code Completion
----
+
+* Code Completion
 	* Given a few lines of a program and its output, fill in the missing lines
-Bug Hunting:
----
+	
+* Bug Hunting:
 	* Given a piece of code, find all the errors. We will tell you how many errors to look for.
 	* Make sure to check edge cases and precedence or operations in loops and boolean statements
 		* Edge cases = the extreme cases, such as the first and last numbers used in a loop
-Block Placement:
----
+		
+* Block Placement:
 	* What is the proper order to place "blocks" of code in?
 	* Notes on functions:
 		* The declaration is function’s return value, name and parameters. The definition is its implementation (code). A declaration must appear before the function is ever called in the program, but the definition can appear anywhere. If you want to "combine" the declaration and definition, you can place the entire definition before the function is called anywhere in the code (you will no longer need a declaration)
@@ -37,8 +36,7 @@ Block Placement:
     		* Remember to use a semicolon after a list of function’s arguments when writing the function *declaration*
    		* Functions can only access data inside its scope. If a variable uses some variable declared in another place, pass it as a parameter.
 
-Command-Line Arguments:
----
+* Command-Line Arguments:
 	* Be able to convert a program that does not take command-line arguments into one that requires command-line arguments. Know how to use `argc` and `argv` in your program.
 
 Converting the example from the slides to accept the user input from the command line.
@@ -70,14 +68,14 @@ int main(int argc, char *argv[])
 
 ### Miscellaneous
 ---
-How are booleans output? What if the value that takes the place of a boolean is not 1 or 0?
+* How are booleans output? What if the value that takes the place of a boolean is not 1 or 0?
     * First, the expression is converted into a boolean. Everything that is not 0 is converted to a 1 (true), and 0 stays a 0 (zero). Boolean values are output as 1 (true) or 0 (false).
 
-Know your basic vim commands (mode switching, etc)
+* Know your basic vim commands (mode switching, etc)
 
-Be familiar with information from the reading- just because it wasn’t on the homework doesn’t mean it’s not important to being a good programmer.
+* Be familiar with information from the reading- just because it wasn’t on the homework doesn’t mean it’s not important to being a good programmer.
 
-Different types of errors, and how to identify them:
+* Different types of errors, and how to identify them:
 	* Compile-time: When a program fails to compile.
 		* Syntax errors are a commong example of this- if you are missing a semicolon or a bracket {}, or have a misspelling somewhere that the compiler cannot understand, then the compilation will fail and no executable will be created.
 	* Run-time errors: Using invalid operations in code
@@ -85,13 +83,13 @@ Different types of errors, and how to identify them:
 	* Logic errors: Not the expected output
 		* These errors are the trickiest to find, because the program compiles and runs normally but doesn't behave as it was intended to. Common logic errors are: Dividing by the wrong number (programming in the wrong math), being off by one in your loop indices (too high or too low), and mistakes in boolean logic (if-else statements, while-loop tests, etc)
 
-C++ doesn’t care about spacing/tabs/newlines, etc
+* C++ doesn’t care about spacing/tabs/newlines, etc
 
-Functions are the most important section!
+* Functions are the most important section!
     - Don’t spend a disproportionate amount of time on the basics- be sure to review complex concepts
     - Be comfortable with programming concepts in the most recent lab and lecture (this Tuesday and Wednesday)
 
-Converting the example from the slides to use a function and provide a more elaborate output.
+Converting the example from the slides to use a function and provide a more elaborate output:
 
 ```c++
 // mult_funct_n.cpp
