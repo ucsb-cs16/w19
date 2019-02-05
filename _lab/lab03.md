@@ -168,6 +168,8 @@ i=5
 
 If you get that output, you are ready for the next step.
 
+**Troubleshooting**
+
 If you got the following error:
 ```
 $ make sample01
@@ -198,7 +200,7 @@ Now you have a new file called myProg01.cpp that is a copy of sample01.cpp. This
 Open `myProg01.cpp` in a text editor and make the following changes:
 
 1. Change the comment at the top of the file so that it says `// myProg01.cpp`
-2. Change the second line of the file to be of the format "`Author: your name`"
+2. Add a new line and make the second line of the file to be of the format "`// Author: your name`"
 3. Change the comment within the code to "`Simple program that counts down from n to 1`"
 
 4. Change the `for` loop as follows:
@@ -216,11 +218,23 @@ Compile and run myProg01.cpp with these changes. The output should look like thi
 5 4 3 2 1
 </pre>
 
+To compile the code using the makefile, add `myProg01` as another target in your Makefile: open the Makefile file again (`vim Makefile`) and add the following TWO lines (making sure you remember to include the colon **`:`** and **add a TAB before `g++`**, there should be **no spaces before `g++`**):
+
+```
+myProg01: myProg01.cpp
+	g++ myProg01.cpp -o myProg01
+```
+
+Save the file and exit it.
+
+Now, to acually compile, run `make myProg01`. To run your code, use `./myProg01`.
 
 You are now ready to move to the next step.   
 
 
+**Troubleshooting**
 Tip: *If you make a mistake that results in an "infinite loop", i.e. the window is just scrolling by without stopping, you can use CTRL+C (hold down Control and type C) to stop the program.*
+To fix the program, verify that your loop conditions are correct (see the instructions above).
 
 
 ## Step 6: Reading from input files and counting ducks <a name="step6"></a>
