@@ -306,7 +306,8 @@ There were 6 ducks in animals02.txt
 -bash-4.2$
 ```
 
-You will need to use `ifstream` and the `getline()` functions. You can check if a `string` variable contains a specific string, e.g., "animal" by using `if ( ... == "animal")`.
+You will need to use `ifstream` and the `getline()` functions (see examples of `ifstream` [here](http://www.cplusplus.com/reference/fstream/ifstream/ifstream/) and [here](http://www.physics.utah.edu/~detar/lessons/c++/canned_classes/node9.html), and examples of `getline` [here](http://www.cplusplus.com/reference/string/string/getline/) and [here](https://stackoverflow.com/questions/12133379/c-using-ifstream-with-getline)).
+You can check if a `string` variable contains a specific string, e.g., "animal" by using `if ( ... == "animal")`.
 
 Once you've done that, you are ready for the next step.
 
