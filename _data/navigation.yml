@@ -53,13 +53,10 @@ offering_links:
 #      - title: Info Pages
 #        url: /info_list/
 #        description: "List of General Information Pages"
-  - title: Staff
+  - title: Open Lab/Office Hours
     dropdown:
-       - title: About Us	
-         url: /info/staff/
-       - title: Office Hours / Open Lab Hours	
-         url: /info/openlab/
-    description: "Staff information"
+    url: /info/staff/
+    description: "Staff information + Office Hours / Open Lab Hours"
   - title: Links
     dropdown:	 
        - title: Gauchospace
