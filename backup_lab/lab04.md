@@ -13,12 +13,6 @@ due: 2019-02-12 09:00:00.00-8
 
 The mentors will be looking for (and grading) your programming style, such as proper use of comments, tab indentation, good variable names, and overall block and function designs. So, it is not enough for your lab to pass gradescope tests! Please read the instructions herein <b>carefully</b>.
 
-<h3>Pair programming </h3>
-
-If working in a pair: Choose who will be the first driver and who will start as navigator, and then remember to switch (at least once) during the lab. But you should probably know the long-term goal too: each partner should participate in both roles in approximately equal parts over the course of the assignment. We realize it is not possible to equally split time in every lab perfectly, but it is worth trying, and it is possible to make up for unequal splits in future labs. We trust you will try to meet this goal. Thanks!
-
-
-**PLEASE MAKE SURE YOU TRADE CONTACT INFORMATION WITH YOUR LAB PARTNER! This means emails, phone numbers, online chat handles, or whatever is necessary to continue working together when you are working remotely (like, say, if one of you goes home for the weekend).**
 
 You should now have a familiarity with:
 * Creating a git repo on github
@@ -26,7 +20,7 @@ You should now have a familiarity with:
 * Integrating git command-line tools into your workflow (*git add...*, *git commit..*, *git push ...*)
 
 
-Be sure to commit and push or work to github at the end of EVERY work session. That way, if your pair partner bails on you, you can continue working without him/her. :)
+Be sure to commit and push or work to github at the end of EVERY work session. 
 
 ## Step 1: Log on to CSIL and bring up a terminal window. <a name="step1"></a>
 
@@ -39,13 +33,12 @@ As a reminder to get to the terminal go to <strong>Application</strong> Menu, th
 In the steps below, and in most future labs, you will create files on your own
 account.
 
-## Step 2: Create a new repo, add your partner as collaborator and clone it to your local directory <a name="step2"></a>
+## Step 2: Create a new repo and clone it to your local directory <a name="step2"></a>
 
 In lab02,  we have done the same thing. So if you don't know to how to do that, please refer to lab02 for details. The basic steps are as follows:
 
-* Create a git repo on github following the correct naming convention, e.g., if your github username is jgaucho and your partner's is alily, your should name your repo lab04_agaucho_alily (usernames appear in alphabetical order). Don't forget to make it 'PRIVATE'.
+* Create a git repo on github following the correct naming convention, e.g., if your github username is jgaucho, you should name your repo lab04_agaucho. Don't forget to make it 'PRIVATE'.
 
-* Add your partner as a collaborator for the repo.
 
 * Go to your CS16 directory and clone the repo locally.
 
@@ -55,7 +48,7 @@ In lab02,  we have done the same thing. So if you don't know to how to do that, 
 Copy the skeleton to your local lab04 repo using the following command, <strong>REMEMBER</strong> to change the directory name in the commands below to your own directory's name, in this lab we simply use lab04_agaucho_alily as a example for your local git directory:
 
 ```
-  cp /cs/faculty/dimirza/cs16/labs/lab04/* ~/cs16/lab04_agaucho_alily/
+  cp /cs/faculty/ykk/cs16/labs/lab04/* ~/cs16/lab04_agaucho_alily/
 ```
 
 Typing the list (ls) command should show you the following files in your current directory
@@ -345,9 +338,9 @@ At that point, you are ready to try submitting on the gradescope system.
 ## Step 9: Turn in your code on gradescope <a name="step8"></a>
 
 
-* Navigate to your ~/cs16/lab04_agaucho_alily directory, the one containing your code for this week's lab.
+* Navigate to your ~/cs16/lab04_agaucho directory, the one containing your code for this week's lab.
 <pre>
--bash-4.2$ cd ~/cs16/lab04_agaucho_alily
+-bash-4.2$ cd ~/cs16/lab04_agaucho
 </pre>
 
 * Use the <code>ls</code> command to list your files and to be sure that you have all .cpp files (that you received as starter files) in your directory.  It is ok if there are other files ( *.txt, *.o, etc.) along with the executables.  You only have to submit *.cpp files
@@ -368,7 +361,6 @@ Makefile               sumOddsTest.cpp
 ```
 
 Submit all the cpp files to lab04 assignment on gradescope. Then visit gradescope and check that you have a correct score.
-If you are working with a partner, make sure both of you join a team on gradescope, otherwise only one of you will get credit for the lab
 
 
 * You must check that you have followed these style guidelines:
