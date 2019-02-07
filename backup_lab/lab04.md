@@ -175,7 +175,6 @@ You must only proceed with the rest of the lab once you have implemented all the
 
 When all the tests for `utlityTest` pass, do a final push to github and move on to the next step.
 
-If you are working with a pair partner, this is a good time to switch roles.
 
 <h2>Step 6: Reviewing the rest of the files and what your tasks are</h2>
 
