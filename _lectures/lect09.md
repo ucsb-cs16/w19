@@ -7,19 +7,19 @@ lecture_date: 2019-02-07
 ---
 
 # Recap from last time: reading from a file
-* How to look through a file using an ifstream variable
-  * Keep getting lines from a file using getline()
-  * Use eof() to check if the end of file has been reached. May be useful to put it in a condition for a while loop.
-* Difference between get() and getline(), and how to customize getline()
-  * get function deals only with characters: gets the next character, including spaces and newlines as individual characters
-	* getline deals only with strings - continues until encounters a newline character
-	* you can customize getline’s delimiter- what character you want it to stop at. Default is the newline \n, but you can set it to anything
-  ` getline(*ifs*, *string_var*, ‘m’) - m is the delimiter, stores a string up until the character m `
+* How to look through a file using an `ifstream` variable
+  * Keep getting lines from a file using `getline()`
+  * Use `eof()` to check if the end of file has been reached (remember what it returns?). May be useful to put it in a condition inside a `while` loop.
+* Difference between `get()` and `getline()`, and how to customize `getline()`
+  * `get()` function deals only with characters: gets the next character, including spaces and newlines as individual characters
+	* `getline()` deals only with strings - continues until encounters a newline character, **not including the newline**
+	* you can customize getline’s delimiter, i.e., what character you want it to stop at. Default is the newline `\n`, but you can set it to anything
+  `getline(*ifs*, *string_var*, 'm')` - `'m'` is the delimiter, stores a string up until the character `m`
   
-  * cin is a also a variable of type ifstream!
-   ` getline(cin, *string_variable*) works too!`
-   * cin indicates that your input stream is coming from the keyboard,
-   * ifstream variables deal with different sources of input
+  * `cin` is a also a variable of type `ifstream`!
+   `getline(cin, *string_variable*)` works too!
+   * `cin` indicates that your input stream is coming from the keyboard
+   * `ifstream` variables deal with different sources of input
    
 # Lecture material
 ## Arrays in C++
@@ -29,29 +29,30 @@ lecture_date: 2019-02-07
 * practical for storing lists of information, as opposed to manually making declarations for every single variable in the list
 * the array starts at 0, not at 1
   * double check this when you work with arrays, otherwise this could create errors, and potentially corrupt data
-  * can pass index as a number or an integer variable
-  * when working with arrays in functions, pass their size into a fuction as an argument.
+  * can pass **index** as a number or an integer variable
+  * when working with arrays in functions, **pass their size into a fuction as a formal argument**.
 
 ### Syntax
 * declaration for an array
-```
-int MyArray[5]; → 5 unitialized int varaibles
-int MyArray[] ={1, 2, 5, 7, 0} → declares an array and initializes it with values specified.
-//array size here is implied to be 5
+```cpp
+int MyArray[5]; // 5 unitialized int varaibles
+int MyArray[] = {1, 2, 5, 7, 0}; // declares an array and initializes it with specified values 
+//array size here is implied to be 5, because 5 elements are given
 //note that here you must keep track of the array size yourself!
 //You can save it as a variable to easily pass it into functions later.
-int MyArray[5] ={1, 2, 5, 7, 0} is also legal! And can sometimes be clearer
-int arr[7] = {3,2} // first two elements are 3 and 2, the rest are 0s
+int MyArray[5] = {1, 2, 5, 7, 0}; // also legal! This is clearer, since you are being explicit about the size.
+int arr[7] = {3,2}; // first two elements are 3 and 2, the rest are 0s
 ```
   * if you don't assign any values, initially your array will contain junk values. 
 
 
-* you cannot use variables to declare arrays, but you can use variables as indices of your array
-  ``` 
+* you **cannot use variables to _declare_ arrays**, but you can use variables as **indices** of your array
+  ``` cpp
   int a = 9; 
   int arr[a];  //ILLEGAL!
-  //Part of it is because the compiler needs to know how much memory to allocate at compile time, and variables can change during runtime
-  //if a is constant (const int a = 7), you can get around this.
+  //Part of it is because the compiler needs to know how much memory to allocate at compile time, 
+  // but variables can change during runtime
+  //if a is constant (const int a = 7;), you can get around this, because its value will not change during runtime.
   ```
 * Examples for loops and arrays on the slides!
   * Use index variable of loop to iterate through positions in the array
