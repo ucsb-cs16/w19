@@ -80,7 +80,7 @@ git push origin master
 
 The files in your directory this week use separate compilation, that is each program is not necessarily taking all of its code from a single .cpp source file.
 
-In Lecture, we will introduce the idea of separate compilation, where your C++ program may be divided among multiple source files. The following web page explains more about separate compilation, dividing your program up among multiple C++ and .h files, and using a Makefile. I strongly encourage you to read over it briefly before you proceed with the lab: [Separate Compilation and Makefiles](https://foo.cs.ucsb.edu/16wiki/index.php/C%2B%2B:_Separate_Compilation_and_Makefiles)
+In Lecture, we have introduced the idea of separate compilation, where your C++ program may be divided among multiple source files. The following web page explains more about separate compilation, dividing your program up among multiple C++ and .h files, and using a Makefile. I strongly encourage you to read over it briefly before you proceed with the lab: [Separate Compilation and Makefiles](https://foo.cs.ucsb.edu/16wiki/index.php/C%2B%2B:_Separate_Compilation_and_Makefiles)
 
 ## Step 5: Writing isOdd(), isEven() and isPrime()<a name="step3"></a>
 
@@ -187,9 +187,9 @@ You have the following .cpp files. This table indicates what you must do with ea
 |arrayBoundsDemo.cpp|NOTHING TO CHANGE OR SUBMIT.|This is here as example code only. You are encouraged to run it, study it, and learn about how array bounds work in C++
 |arrayToString.cpp|	NOTHING TO CHANGE OR SUBMIT.|This code is part of your solution, but you do not have to submit it - we will use our own version, which matches the one in your sample directory. This file just has utiltiy funcitons for printing arrays as strings.
 |arrayToStringTest.cpp|NOTHING TO CHANGE OR SUBMIT.|This code is part of your solution, but you do not have to submit it - we will use our own version, which matches the one in your sample directory. This file is an example of how to test cases to determine whether the output of `arrayToString` works correctly.
-|countEvens.cpp|REPLACE STUB WITH CORRECT CODE.|You must replace the code in this file with correct code that returns the number of even integers in each array passed in.
+|countEvens.cpp|REPLACE STUB WITH CORRECT CODE.|You must replace the code in this file with correct code that returns the number of even integers in each array passed in. You will want to *#include "utility.h"* at the top of your file to use your completed function from step 5.
 |countEvensTest.cpp|NO MODIFICATIONS NEEDED|This tests the changes you made in *countEvens.cpp*.
-|countPrimes.cpp|REPLACE STUB WITH CORRECT CODE.|You must replace the code in this file with correct code that returns the number of prime integers in each array passed in. Treat negative numbers, 0 and 1 as "not prime". You may want to add a definition of `isPrime()` to the *utility.cpp* file and a function prototype to *utility.h* so that you can call function `isPrime` in your solution.
+|countPrimes.cpp|REPLACE STUB WITH CORRECT CODE.|You must replace the code in this file with correct code that returns the number of prime integers in each array passed in. Treat negative numbers, 0 and 1 as "not prime". You will want to *#include "utility.h"* at the top of your file to use your completed function from step 5.
 |countPrimesTest.cpp|NO MODIFICATIONS NEEDED|This tests the changes you made in *countEvens.cpp*.
 |maxOfArray.cpp|REPLACE STUB WITH CORRECT CODE.|You can look at *minOfArray.cpp* for hints. This one should be easy.
 |maxOfArrayErrorTest.cpp|REPLACE EMPTY MAIN WITH TESTS.|Insert code to call maxOfArray with zero length array. Use *minOfArrayErrorTest.cpp* as a model.
@@ -371,7 +371,7 @@ Submit all the cpp files to lab04 assignment on gradescope. Then visit gradescop
 * Your submission should be on-time. If you miss the deadline, you are subject to getting a zero
 
 <h2>Grading Rubric</h2>
-Points from automated gradescope. system tests
+Points from automated gradescope system tests
 
 <b>Passed Tests</b>
 
