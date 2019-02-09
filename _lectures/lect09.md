@@ -59,69 +59,74 @@ int arr[7] = {3,2}; // first two elements are 3 and 2, the rest are 0s
 
 ### More on memory
 * memory is allocated for an array, but the compiler needs to know three things
-  1) starting location /address of array
-  2) how many elements
-  3) what is the data type of the elements
+  * 1) **address**: starting location /address of array
+  * 2) **size**: how many elements
+  * 3) **type**: what is the data type of the elements
 * The elements in an array are adjacent in memory! This will be important when we talk about pointers and how traversing through an array works. Remember that memory allocated for the entire array cannot change during runtime.
-> What if I go out of bounds of an array?
+
+> **What if I go out of bounds of an array?**
 * Bad things may happen. You might corrupt your data, mess with other variables, or could potentially hit a segfault if you go out of bounds of memory allocated by the OS for your program.
-* If the size of your array is 10, the last element you should reach is a[9]. a[10] points to a memory location that is not within the array!
+   * If the size of your array is 10, the last element you should reach is `a[9]`. 
+   * `a[10]` points to a memory location that is not within the array!
+   * **the index** of the **last** element of the array is at `(size - 1)`.
 
 ### Arrays in functions
-* The function header should be aware that it is taking in an array: add the brackets
-	* ` int funct(int x[], int size); `
+* The function header should be "informed" that it is taking in an array: to do so, add the brackets `[]`
+  * ` int funct(int x[], int size); `
   * don't specify the size of an array in your function call -> square brackets is all the compiler needs to know to expect an array
-* don't forget the size of an array as your other argument.
-* when passing an array to a function, don't include the square brackets -> the compiler already knows it's an array
-  * call to the function funct() from above will look like:
-  ```
+* remember the size of an array as your other argument!
+* _when passing an array to a function_, don't include the square brackets -> the compiler already knows it's an array
+  * call to the function `funct()` from above will look like:
+  ```cpp
   int arr[] = {2,3,5};
-  funct(arr, 3);
+  funct(arr, 3); // no [] here!
   ```
-* Can you calculate the size of an array inside a function? Kind of, but only with (auto:) that we haven't covered or with dynamic arrays, not regular arrays
+* Can you calculate the size of an array inside a function? Kind of, but not with regular arrays (only with (`auto:`) that we haven't covered or with dynamic arrays)
   * You will learn about dynamic arrays after you learn about pointers
 
-* Functions cannot return arrays! Only pointers to arrays.
+* **Functions cannot return arrays**! Only pointers to arrays.
 
 ## Makefiles & header files
 
 * Flags in Makefiles
-  * Indicate flags in the commands to slightly change the behavior. You already know -o and -std=c++11. -Wall is another one to output all warnings the compiler has.
+  * flags in Makefile commands change the default behavior. You already know `-o` (to rename the resulting object file) and `-std=c++11` (to compile using C++11 features). 
+  * `-Wall` is another one to output all warnings the compiler finds.
 * Makefile commands don't have to be g++ commands!
-  * clean command that will remove the .o files created during compilation and the default executable if they exist.
+  * E.g., `clean` command shown below will remove all `.o` files created during compilation (i.e., all files that match the pattern with the wildcard in it) and the default executable (it will complain when the command is run, if they don't exist).
   ```
   clean:
 	  rm a.out *.o 
   ```
-  * As always, call this command by typing its name after a call to make: *make clean*
-  * Make sure not to delete any important files! Files deleted with rm cannot be restored.
-* Calling make without specifying targets will execute the first command
-* You can add .o files as dependencies for your targets. This way the .o files will be produced before the make command is executed. If there is no command correcponding to creating .o files, Make will attempt to create them from .cpp files for you!
+  * As always, call this command by typing its name after a call to make: `make clean`
+  * Make sure not to delete any important files! Files deleted with `rm` cannot be restored.
+* Calling `make` without specifying targets will execute _the first command_ (which might cascade through the rest of your Makefile, depending on your listed dependencies)
+* You can add `.o` files as dependencies for your targets. This way the `.o` files will be produced before the `make` command is executed. If there is no command correcponding to creating `.o` files, `make` will attempt to create them from .cpp files for you!
 
 ### Header files
 * header files: why do we need them? 
   * They contain function declarations (return type, name and variables, not actual instructions) that can be used in other programs.
-* header files (.h) should always have a corresponding .cpp file with function definitions (actual code)
+  * header files help keep the programs modular and allow the code to be reusable.
+  
+* header files (`.h`) should always have a corresponding `.cpp` file with function definitions (actual code)
 * EXAMPLE
-  * let's say you have a file arrayFunc.cpp that has functions to calculate the minimum, maximum, and average of an array.
-  * header file will contain:
-  ```
+  * let's say you have a file `arrayFunc.cpp` that has functions to calculate the minimum, maximum, and average of an array.
+  * you will need to create a corresponding header file `arrayFunc.h` that will contain:
+  ```cpp
   int maximum(int arr[], int size);
   int minimum(int arr[], int size);
   double average(int arr[], int size);
   ```
-  * and the code for those functions will be in the correcponding arrayFunc.cpp .
+  * the code for those functions (i.e., function definitions) will be in the corresponding `arrayFunc.cpp`.
   
 * If you want to use those functions in another program, say, main.cpp, you must let the compiler know where you're getting the functions from.
-To do that, write #include "arrayFunc.h" at the top of main.cpp.
-  * #include <> is used to search in the Standard Template Library
-  * #include "" is used to search for the local files. Don't be confused.
+To do that, write `#include "arrayFunc.h"` at the top of main.cpp.
+  * `#include <>` is used to search in the Standard Template Library
+  * `#include ""` is used to search for the local files, i.e., the files that **you** created. 
+  * Don't confuse the two ways listed above! Using the wrong directive will result in an error.
 
 * Compile like this: 
-  ` g++ main.cpp arrayFunc.cpp `
-  * or
-  ` g++ main.o arrayFunc.o `
-* We did not include arrayFunc.h in the compilation command, because main.cpp includes it, and the linked takes care of that automatically.
+  * `g++ main.cpp arrayFunc.cpp` or `g++ main.o arrayFunc.o` (the object files will be generated automatically _from the corresponding .cpp files_, which means that the .cpp files do not exist, the error will occur and the object files will not be created)
+  * We did not include `arrayFunc.h` in the compilation command, because main.cpp includes it, and the linker takes care of linking the declarations from `arrayFunc.h` automatically.
 
 ## Notes
 * You will pratice dealing with header files, Makefiles, and arrays in lab04
