@@ -181,7 +181,7 @@ When all the tests for `utlityTest` pass, do a final push to github (repeat the 
 Now, let us look at the files you have in your directory, and what you need to do with them.
 You have the following .cpp files. This table indicates what you must do with each one to get full credit on this lab.
 
-
+{:class="table table-bordered"}
 |Filename|Your task|Details
 |--- |---|---
 |arrayBoundsDemo.cpp|NOTHING TO CHANGE OR SUBMIT.|This is here as example code only. You are encouraged to run it, study it, and learn about how array bounds work in C++
@@ -212,6 +212,7 @@ You should see a lot of activity as programs are compiled. You then will have a 
 
 Note these are the programs listed under `BINARIES` in the Makefile.
 
+{:class="table table-bordered"}
 |file|Anything to do?|explanation
 |--- |---|---
 |arrayToStringTest|no|Run this and all tests should pass. Nothing to do here.
@@ -377,6 +378,7 @@ Points from automated Gradescope system tests
 
 <b>Passed Tests</b>
 
+{:class="table table-bordered"}
 |Test Group|Test Name|Value
 |--- |---|---
 |countEvens|countEvensTest|25 pts
@@ -384,8 +386,8 @@ Points from automated Gradescope system tests
 |maxOfArray|maxOfArrayTest|25 pts
 |maxOfArrayErrorTest|maxOfArrayErrorTest |25 pts
 |sumOdds|sumOddsTest|25 pts
-|sumOfArray|sumOfArrayTest|25ts
-|utilityTest|utilityTest|50pts
+|sumOfArray|sumOfArrayTest|25 pts
+|utilityTest|utilityTest|50 pts
 
 
 **Style** (5 pts):
