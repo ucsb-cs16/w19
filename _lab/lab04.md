@@ -4,7 +4,7 @@ num: lab04
 ready: true
 desc: "Odds and primes: Fun with arrays and makefiles"
 assigned: 2019-02-09 19:30:00.00-7
-due: 2019-02-12 09:00:00.00-8
+due: 2019-02-19 09:00:00.00-8
 ---
 <div markdown="1">
 
