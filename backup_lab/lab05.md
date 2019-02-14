@@ -17,32 +17,30 @@ The goal of this lab is to demonstrate how we can abstract "things" in the world
 
 ## Step 1: Getting Ready
 
-1. If you are working as a pair, go to github and create a git repo for this lab following the naming convention specified in previous labs. If you are working with a partner only one of you needs to create the repo.
+1. Go to github and create a git repo for this lab following the naming convention specified in previous labs. 
 
-2. If you are working with a partner and you are the one who created the github repo, add your partner as a collborator on the repo
+2. Log on to your CSIL account.
 
-3. Decide on initial navigator and driver.
+3. Open a terminal window
 
-4. Driver, log on to your CSIL account.
+4. Change into your CS 16 directory
 
-5. Open a terminal window and log into the correct machine.
-
-6. Change into your CS 16 directory
-
-Remember to push your work to github at the end of EVERY work session. That way, both partners always have access to the latest version of the code even if the code is being developed on one partner's CoE account.
+Remember to push your work to github at the end of EVERY work session.
 
 
 ## Step 2: Obtain the starter code
 
 This step is similar to lab02, first clone your github repo in the ~/cs16/ directory. Then cd into your repo directory.
 ```
-  cd ~/cs16/lab05_gaucho_ally
+  cd ~/cs16/lab05_agaucho
 ```
 Copy the code from your starter code directory to your local lab05 repo using the following command.
 
 ```
-  cp /cs/faculty/dimirza/cs16/labs/lab05/* ~/cs16/lab05_agaucho_alily/
+  cp /cs/faculty/dimirza/cs16/labs/lab05/* ~/cs16/lab05_agaucho/
 ```
+
+Type make clean command to remove all executables
 
 Typing the list (ls) command should show you the following files in your current directory
 
@@ -73,6 +71,7 @@ Here is a list of your tasks for this lab:
 * Run ./distanceBetweenTest and see it fail.
 * Edit the distanceBetween function in shapeFuncs.cpp to replace with correct code.
 * Run ./distanceBetweenTest and see it pass.
+* If all of your tests return an actual of 1, consider using doubles instead of integers in your power expressions
 * Commit and push your code to github.
 
 
