@@ -106,11 +106,11 @@ Here is a list of your tasks for this lab:
 * Run ./pointToStringTest and see it it pass
 * Copy pointToStringTest.cpp to boxToStringTest.cpp and make tests for the boxToString function.  Look in shapeFuncs.cpp at the boxToString function stub for an example of the format you need for boxToString's return values.  Make tests for different precisions, just like pointToString has.
 * Add code to the Makefile so that boxToString runs:
-	Add to the end of `BINARIES=` boxToStringTest
-	Add to the end of `tests: ${Binaries}`  ./boxToStringTest
-	Copy the two lines for `pointToStringTest:` and paste on the line before `clean:`
-	For the pasted lines: change `pointToStringTest` and `pointToStringTest.o` to `boxToStringTest` and `boxToStringTest.o`
-Just follow the model--adding code for boxToStringTest everywhere you see code for pointToStringTest
+	* Add to the end of `BINARIES=` boxToStringTest
+	* Add to the end of `tests: ${Binaries}`  ./boxToStringTest
+	* Copy the two lines for `pointToStringTest:` and paste on the line before `clean:`
+	* For the pasted lines: change `pointToStringTest` and `pointToStringTest.o` to `boxToStringTest` and `boxToStringTest.o`
+	* Just follow the model--adding code for boxToStringTest everywhere you see code for pointToStringTest
 
 * Run make
 * Commit and push your code to github.
