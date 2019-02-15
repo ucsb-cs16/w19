@@ -90,8 +90,7 @@ Here is a list of your tasks for this lab:
 * Edit the boxesApproxEqual function in shapeFuncs.cpp to replace the stub with correct code.  As you do, consider adding an approxEqual function that takes two double values into utility.h and utility.cpp, as this will make your coding job easier, and keep you code "DRYer".  Also, consider reusing the pointsApproxEqual function in your boxesApproxEqual solution.  Remember that the <code>&amp;&amp;</code> operator is the symbol for "logical and" in C++.
 * Run ./boxesApproxEqualTest and see it pass.
 * Reason about why your code worked, draw a diagram to show the relationship between the formal and actual parameters. You don't need to submit the diagram but you may be asked to draw such a diagram on an exam!
-* Commit and push your code to github. This may be a good time to switch partners if you haven't done so already.
-
+* Commit and push your code to github.
 * Run ./initBoxTest and see it fail
 * Edit the initBox function in shapeFuncs.cpp to replace with correct code.    As you do, remember that you use -> to access members of a struct through a pointer, but simply . to access members of a struct directly.  You may need both in your answer.
 * Run ./initBoxTest and see it pass
@@ -106,7 +105,13 @@ Here is a list of your tasks for this lab:
 
 * Run ./pointToStringTest and see it it pass
 * Copy pointToStringTest.cpp to boxToStringTest.cpp and make tests for the boxToString function.  Look in shapeFuncs.cpp at the boxToString function stub for an example of the format you need for boxToString's return values.  Make tests for different precisions, just like pointToString has.
-* Add code to the Makefile so that boxToString runs.  Just follow the model--adding code for boxToStringTest everywhere you see code for pointToStringTest
+* Add code to the Makefile so that boxToString runs:
+	Add to the end of `BINARIES=` boxToStringTest
+	Add to the end of `tests: ${Binaries}`  ./boxToStringTest
+	Copy the two lines for `pointToStringTest:` and paste on the line before `clean:`
+	For the pasted lines: change `pointToStringTest` and `pointToStringTest.o` to `boxToStringTest` and `boxToStringTest.o`
+Just follow the model--adding code for boxToStringTest everywhere you see code for pointToStringTest
+
 * Run make
 * Commit and push your code to github.
 
@@ -204,7 +209,7 @@ At that point, you are ready to try submitting on gradescope.
 ## Step 5: Submitting via gradescope
 
 
-Submit all the cpp files to lab05 assignment on gradescope. Then visit gradescope and check that you have a correct score. If you are working with a partner, make sure both of you join a team on gradescope, otherwise only one of you will get credit for the lab
+Submit all the cpp files to lab05 assignment on gradescope. Then visit gradescope and check that you have a correct score. 
 
 * You must check that you have followed these style guidelines:
 
