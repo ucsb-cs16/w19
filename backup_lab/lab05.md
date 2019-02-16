@@ -26,6 +26,12 @@ The goal of this lab is to demonstrate how we can abstract "things" in the world
 4. Change into your CS 16 directory
 
 Remember to push your work to github at the end of EVERY work session.
+```
+make clean
+git add *.cpp *.h Makefile
+git commit -m "<Your commit Message>"
+git push
+```
 
 
 ## Step 2: Obtain the starter code
