@@ -17,32 +17,30 @@ The goal of this lab is to demonstrate how we can abstract "things" in the world
 
 ## Step 1: Getting Ready
 
-1. If you are working as a pair, go to github and create a git repo for this lab following the naming convention specified in previous labs. If you are working with a partner only one of you needs to create the repo.
+1. Go to github and create a git repo for this lab following the naming convention specified in previous labs. 
 
-2. If you are working with a partner and you are the one who created the github repo, add your partner as a collborator on the repo
+2. Log on to your CSIL account.
 
-3. Decide on initial navigator and driver.
+3. Open a terminal window
 
-4. Driver, log on to your CSIL account.
+4. Change into your CS 16 directory
 
-5. Open a terminal window and log into the correct machine.
-
-6. Change into your CS 16 directory
-
-Remember to push your work to github at the end of EVERY work session. That way, both partners always have access to the latest version of the code even if the code is being developed on one partner's CoE account.
+Remember to push your work to github at the end of EVERY work session.
 
 
 ## Step 2: Obtain the starter code
 
 This step is similar to lab02, first clone your github repo in the ~/cs16/ directory. Then cd into your repo directory.
 ```
-  cd ~/cs16/lab05_gaucho_ally
+  cd ~/cs16/lab05_agaucho
 ```
 Copy the code from your starter code directory to your local lab05 repo using the following command.
 
 ```
-  cp /cs/faculty/dimirza/cs16/labs/lab05/* ~/cs16/lab05_agaucho_alily/
+  cp /cs/faculty/dimirza/cs16/labs/lab05/* ~/cs16/lab05_agaucho/
 ```
+
+Type make clean command to remove all executables
 
 Typing the list (ls) command should show you the following files in your current directory
 
@@ -73,25 +71,26 @@ Here is a list of your tasks for this lab:
 * Run ./distanceBetweenTest and see it fail.
 * Edit the distanceBetween function in shapeFuncs.cpp to replace with correct code.
 * Run ./distanceBetweenTest and see it pass.
+* If all of your tests return an actual of 1, consider using doubles instead of integers in your power expressions
 * Commit and push your code to github.
 
 
 * Run ./pointsApproxEqualTest and see it pass.
 * Look at the code in pointsApproxEqualTest.cpp and shapeFuncs.cpp and understand how it works; Notice how the pointsApproxEqual() function uses the distanceBetween() function that you just wrote and tested, rather than writing new code within pointsApproxEqual() that repeats the logic of distanceBetween(). The takeaway here is that you want to keep your code as DRY as possible (DRY==Don't Repeat Yourself). You also want to only reuse code that has already been tested. You'll need to understand pointsApproxEqual() to get ./boxesApproxEqual to pass.
 
-
+ 
 * Run ./initPointTest and see it fail.
 * Looking at the test code in initPointTest.cpp figure out what the initPoint function is supposed to do and add preconditions and postconditions as comments to the start of that function. See page 275 of the book for more information on writing pre and post conditions.
 * Edit the initPoint function in shapeFuncs.cpp to replace the stub with correct code.
 * Run ./initPointTest and see it pass.
-* Now reason about why your code works. Do this by drawing a pointer diagram that shows the state of memory right before the initPoint function returns when it is called for the very first time by the test code. Your pointer diagram should show the value of member variables x and y of the struct object 'p1' in initPointTest.cpp as well as the relationship between 'p1' and the formal parameter 'p' of the function initPoint. You should also show the formal parameters xVal and yVal in memory and indicate whether or not they are colocated in memory with any other variables (such as x and y). Make the drawing on a piece of paper or as ascii art in a text file and upload it to your gitrepo with the filename: pointer-diagram-initPoint. The diagram will be graded manually by us.
+* Now reason about why your code works. Do this by drawing a pointer diagram that shows the state of memory right before the initPoint function returns when it is called for the very first time by the test code. Your pointer diagram should show the value of member variables x and y of the struct object 'p1' in initPointTest.cpp as well as the relationship between 'p1' and the formal parameter 'p' of the function initPoint. You should also show the formal parameters xVal and yVal in memory and indicate whether or not they are colocated in memory with any other variables (such as x and y). 
+## Make the drawing on a piece of paper and show this to a tutor/TA to get checked off during your discussion session or open lab hours. Pointer diagrams will show up on midterm/final. ##
 
 * Run ./boxesApproxEqualTest and see it fail.
 * Edit the boxesApproxEqual function in shapeFuncs.cpp to replace the stub with correct code.  As you do, consider adding an approxEqual function that takes two double values into utility.h and utility.cpp, as this will make your coding job easier, and keep you code "DRYer".  Also, consider reusing the pointsApproxEqual function in your boxesApproxEqual solution.  Remember that the <code>&amp;&amp;</code> operator is the symbol for "logical and" in C++.
 * Run ./boxesApproxEqualTest and see it pass.
 * Reason about why your code worked, draw a diagram to show the relationship between the formal and actual parameters. You don't need to submit the diagram but you may be asked to draw such a diagram on an exam!
-* Commit and push your code to github. This may be a good time to switch partners if you haven't done so already.
-
+* Commit and push your code to github.
 * Run ./initBoxTest and see it fail
 * Edit the initBox function in shapeFuncs.cpp to replace with correct code.    As you do, remember that you use -> to access members of a struct through a pointer, but simply . to access members of a struct directly.  You may need both in your answer.
 * Run ./initBoxTest and see it pass
@@ -106,7 +105,13 @@ Here is a list of your tasks for this lab:
 
 * Run ./pointToStringTest and see it it pass
 * Copy pointToStringTest.cpp to boxToStringTest.cpp and make tests for the boxToString function.  Look in shapeFuncs.cpp at the boxToString function stub for an example of the format you need for boxToString's return values.  Make tests for different precisions, just like pointToString has.
-* Add code to the Makefile so that boxToString runs.  Just follow the model--adding code for boxToStringTest everywhere you see code for pointToStringTest
+* Add code to the Makefile so that boxToString runs:
+	* Add to the end of `BINARIES=` boxToStringTest
+	* Add to the end of `tests: ${Binaries}`  ./boxToStringTest
+	* Copy the two lines for `pointToStringTest:` and paste on the line before `clean:`
+	* For the pasted lines: change `pointToStringTest` and `pointToStringTest.o` to `boxToStringTest` and `boxToStringTest.o`
+	* Just follow the model--adding code for boxToStringTest everywhere you see code for pointToStringTest
+
 * Run make
 * Commit and push your code to github.
 
@@ -204,7 +209,7 @@ At that point, you are ready to try submitting on gradescope.
 ## Step 5: Submitting via gradescope
 
 
-Submit all the cpp files to lab05 assignment on gradescope. Then visit gradescope and check that you have a correct score. If you are working with a partner, make sure both of you join a team on gradescope, otherwise only one of you will get credit for the lab
+Submit all the cpp files to lab05 assignment on gradescope. Then visit gradescope and check that you have a correct score. 
 
 * You must check that you have followed these style guidelines:
 
