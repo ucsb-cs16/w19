@@ -1,7 +1,7 @@
 ---
 num: "lect08"
 desc: "Intro to Makefiles and File I/O "
-ready: false
+ready: true
 pdfurl: https://drive.google.com/drive/folders/1qG48RYFvB7VVEU7yP3eCkG8KRVA9KtYw?usp=sharing
 reading: "Section 6.1: File I/O"
 lecture_date: 2019-02-05
