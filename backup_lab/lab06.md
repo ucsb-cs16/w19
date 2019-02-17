@@ -6,6 +6,9 @@ desc: "Advanced array lists and dynamic arrays"
 assigned: 2019-02-19 09:00:00.00-8
 due: 2019-02-26 09:00:00.00-8
 ---
+<h2>Introduction -- Important: Read this!</h2>
+
+The mentors will be looking for (and grading) your programming style, such as proper use of comments, tab indentation, good variable names, and overall block and function designs. You are also required to write pre- and pos-conditions for every function you write, whether it is one you need to fill in from the starter code or one that you have declared and define yourself. So, **it is not enough for your lab to pass Gradescope tests**! Please read the instructions herein <b>carefully</b>.
 
 # Goals of this lab
 
@@ -278,6 +281,7 @@ Some of the points will be awarded based on gradescope automatic grading. Other 
 3. Variable names choices are reasonable
 4. Code is reasonably "DRY" (as in "don't repeat yourself")&mdash;where appropriate, common code is factored out into functions
 5. Code is not unnecessarily or unreasonably complex when a simpler solution is available
+6. Pre- and Post-conditions
 
 ## An important word about academic honesty and the gradescope system
 
