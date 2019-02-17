@@ -10,6 +10,7 @@ lecture_date: 2019-02-07
 * How to look through a file using an `ifstream` variable
   * Keep getting lines from a file using `getline()`
   * Use `eof()` to check if the end of file has been reached (remember what it returns?). May be useful to put it in a condition inside a `while` loop. (Note: this is apparently [not a good practice](https://stackoverflow.com/questions/21647/reading-from-text-file-until-eof-repeats-last-line))
+  * **Update**: Take a look at the Lecture 8 notes for an example.
 * Difference between `get()` and `getline()`, and how to customize `getline()`
   * `get()` function deals only with characters: gets the next character, including spaces and newlines as individual characters
   * `getline()` deals only with strings - continues until encounters a newline character, **not including the newline**
@@ -20,6 +21,7 @@ lecture_date: 2019-02-07
    `getline(cin, *string_variable*)` works too!
    * `cin` indicates that your input stream is coming from the keyboard
    * `ifstream` variables deal with different sources of input
+
    
 # Lecture material
 ## Arrays in C++
@@ -87,6 +89,8 @@ int arr[7] = {3,2}; // first two elements are 3 and 2, the rest are 0s
 * **Functions cannot return arrays**! Only pointers to arrays.
 
 ## Makefiles & header files
+
+**Update**: Take a look at the *Makefile Walkthrough* that we posted on Piazza <https://piazza.com/class/jqm50idtsek4wz?cid=177> for additional explanation.
 
 * Flags in Makefiles
   * flags in Makefile commands change the default behavior. You already know `-o` (to rename the resulting object file) and `-std=c++11` (to compile using C++11 features). 
