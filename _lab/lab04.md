@@ -4,11 +4,13 @@ num: lab04
 ready: true
 desc: "Odds and primes: Fun with arrays and makefiles"
 assigned: 2019-02-09 19:30:00.00-7
-due: 2019-02-19 09:00:00.00-8
+due: 2019-02-20 23:00:00.00-8
 ---
 <div markdown="1">
 
 <h1>CS16: Programming Assignment 04</h1>
+## Due to the holiday on Monday, the due date was changed to allow students to get more help during the open lab hours.
+
 <h2>Introduction -- Important: Read this!</h2>
 
 The mentors will be looking for (and grading) your programming style, such as proper use of comments, tab indentation, good variable names, and overall block and function designs. So, **it is not enough for your lab to pass Gradescope tests**! Please read the instructions herein <b>carefully</b>.
