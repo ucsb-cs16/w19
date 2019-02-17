@@ -1,19 +1,20 @@
 ---
 layout: lab
 num: lab06
-ready: false
+ready: true
 desc: "Advanced array lists and dynamic arrays"
 assigned: 2019-02-19 09:00:00.00-8
 due: 2019-02-26 09:00:00.00-8
 ---
 
-
-<h2>Introduction -- Important: Read this!</h2>
-
-This lab is optional. If you choose to complete it, it will replace your lowest score in the lab category so far (if your Lab06 score is higher).
+## This lab is **optional**. 
+If you choose to complete it, it will replace your lowest score in the lab category so far (if your Lab06 score is higher).
 
 **The topics covered in Lab06 will be on the midterm and final, so you are encouraged to complete it.**
 
+
+
+<h2>Introduction -- Important: Read this!</h2>
 
 The mentors will be looking for (and grading) your programming style, such as proper use of comments, tab indentation, good variable names, and overall block and function designs. You are also required to write pre- and post-conditions for every function you write, whether it is one you need to fill in from the starter code or one that you have declared and define yourself. So, **it is not enough for your lab to pass Gradescope tests**! Please read the instructions herein <b>carefully</b>.
 
