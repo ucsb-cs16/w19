@@ -8,7 +8,7 @@ due: 2019-02-26 09:00:00.00-8
 ---
 <h2>Introduction -- Important: Read this!</h2>
 
-The mentors will be looking for (and grading) your programming style, such as proper use of comments, tab indentation, good variable names, and overall block and function designs. You are also required to write pre- and pos-conditions for every function you write, whether it is one you need to fill in from the starter code or one that you have declared and define yourself. So, **it is not enough for your lab to pass Gradescope tests**! Please read the instructions herein <b>carefully</b>.
+The mentors will be looking for (and grading) your programming style, such as proper use of comments, tab indentation, good variable names, and overall block and function designs. You are also required to write pre- and post-conditions for every function you write, whether it is one you need to fill in from the starter code or one that you have declared and define yourself. So, **it is not enough for your lab to pass Gradescope tests**! Please read the instructions herein <b>carefully</b>.
 
 # Goals of this lab
 
@@ -18,31 +18,17 @@ The goal of this lab is get more practice with iterating through arrays and dyna
 
 ## Step 1: Getting Started
 
-1. Decide if you are working alone, or working in a pair. Pair programming is OPTIONAL for this lab.
+1. Go to github and create a git repo for this lab following the naming convention specified in previous labs (this step carries style points, see our feedback on previous labs to understand what we are looking for). If you are working with a partner only one of you needs to create the repo.
 
-2. If you are working as a pair, make sure that you submit as a pair on Gradescope at the end of the lab.  Choose who will be the first driver and who will start as navigator, and then remember to switch (at least once) during the lab.
+2. Log on to your CSIL account and open a terminal window
 
-3. Go to github and create a git repo for this lab following the naming convention specified in previous labs (this step carries style points, see our feedback on previous labs to understand what we are looking for). If you are working with a partner only one of you needs to create the repo.
-
-4. If you are working with a partner and you are the one who created the github repo, add your partner as a collborator on the repo
-
-5. Decide on initial navigator and driver.
-
-6. Driver, log on to your CSIL account.
-
-7. Open a terminal window and log into the correct machine.
-
-8. Change into your CS 16 directory
-
-Note: Remember to push your work to github at the end of EVERY work session. That way, both partners always have access to the latest version of the code even if the code is being developed on one partner's CoE account.
-
-
+3. Change into your CS 16 directory
 
 ## Step 2: Obtaining the starter code
 
 * Navigate to your cs16 directory and clone the git repository you created
 ```
-git clone git@github.com:ucsb-cs16-s18-mirza/lab06_alily_jgaucho.git
+git clone git@github.com:ucsb-cs16-w19/lab06_alily_jgaucho.git
 ```
 * cd into this new directory
 ```
@@ -52,7 +38,7 @@ cd lab06_alily_jgaucho
 * Copy the starter code by typing the following command:
 
 ```
-cp /cs/faculty/dimirza/cs16/labs/lab06/* ./
+cp /cs/faculty/ykk/cs16/labs/lab06/* ./
 ```
 
 Typing the list (ls) command should show you the following files in your current directory
@@ -65,6 +51,16 @@ mafTest.cpp     moreArrayFuncs.h    tddFuncs.h
 [dimirza@csil-03 lab06-startercode]$
 
 ```
+
+Push the initial version of the code to github before making any changes by typing the following commands
+
+```
+git add .
+git commit -m "Initial version of Lab 4"
+git push origin master
+```
+Note: Remember to push your work to github at the end of EVERY work session. That way, both partners always have access to the latest version of the code even if the code is being developed on one partner's CoE account.
+
 
 
 ## Step 3: Reviewing the files and what your tasks are
