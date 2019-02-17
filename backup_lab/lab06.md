@@ -18,7 +18,7 @@ The goal of this lab is get more practice with iterating through arrays and dyna
 
 ## Step 1: Getting Started
 
-1. Go to github and create a git repo for this lab following the naming convention specified in previous labs (this step carries style points, see our feedback on previous labs to understand what we are looking for). 
+1. Go to GitHub and create a git repo for this lab following the naming convention specified in previous labs (this step carries style points, see our feedback on previous labs to understand what we are looking for). 
 
 2. Log on to your CSIL account and open a terminal window
 
@@ -45,14 +45,14 @@ $
 
 ```
 
-Push the initial version of the code to github before making any changes by typing the following commands
+Push the initial version of the code to GitHub before making any changes by typing the following commands
 
 ```
 git add .
 git commit -m "Initial version of Lab 6"
 git push origin master
 ```
-Note: Remember to push your work to github at the end of EVERY work session. 
+Note: Remember to push your work to GitHub at the end of EVERY work session. 
 
 
 
@@ -60,18 +60,18 @@ Note: Remember to push your work to github at the end of EVERY work session.
 
 Here is a list of your tasks for this lab:
 
-### Step 3a: Familiarize yourself with the big picture
+### Step 4a: Familiarize yourself with the big picture
 
-Type "make tests" and you will see some tests pass, but some fail.
+Type `make tests` and you will see some tests pass, but some fail.
 
-You are finished when all the tests pass.
+Your goal is to make all the tests pass.
 
 There is only one file that you need to edit this week: 
 
 * <code>moreArrayFuncs.cpp</code> contains more functions that deal with arrays.  These are in addition to the arrayFuncs.cpp that you worked with before in lab04.
 
 
-### Step 3b: Work on the array functions
+### Step 4b: Work on the array functions
 
 There are 9 functions you will need to write for this lab:
 
@@ -85,7 +85,7 @@ There are 9 functions you will need to write for this lab:
 * <code>multiplyPairwise</code>
 * <code>createArray</code>
 
-Each one has a set of tests which can be found under its corresponding heading when you type <code>make tests</code>. For example, the indexOfMax tests look like this to start: 
+Each one has a set of tests which can be found under its corresponding heading when you type <code>make tests</code>. For example, the `indexOfMax` tests look like this to start: 
 
 ```
 --------------INDEX_OF_MAX--------------
@@ -115,9 +115,9 @@ Each one has a set of tests which can be found under its corresponding heading w
      Expected: 4 Actual: -42
 ```
 
-You should replace each function stub with the correct code for the function until all of the tests for each one pass. It is recommended that you work on the functions one at a time in the order that they are presented above. That is, get all the tests to pass for indexOfMax then indexOfMin and so on. When all the tests pass, move on to the next step. 
+You should replace each function stub with the correct code for the function until all of the tests for each one pass. It is recommended that you work on the functions one at a time in the order that they are presented above. That is, get all the tests to pass for `indexOfMax` then `indexOfMin` and so on. When all the tests pass, move on to the next step. 
 
-## Step 4: Checking your work before submitting
+## Step 5: Checking your work before submitting
 
 When you are finished, you should be able to type  <code>make clean</code> and then <code>make tests</code> and see the following output:
 
@@ -236,18 +236,18 @@ PASSED: arrayToString(fiveElems, 5)
 -bash-4.2$
 ```
 
-At that point, you are ready to try submitting on gradescope.
+At that point, you are ready to try submitting on Gradescope.
 
 
-## Step 5: Submitting via gradescope
+## Step 6: Submitting via Gradescope
 
-Go throught the same submit process you have in past labs. Make sure you add your partner if you have one. 
+Go throught the same submit process you have in past labs. 
 
 # Grading Rubric
 
-Some of the points will be awarded based on gradescope automatic grading. Other points will be assigned after visual code inspection by TAs.
+Some of the points will be awarded based on Gradescope automatic grading. Other points will be assigned after visual code inspection by TAs.
 
-## Submit.cs system automatic points
+## Rubric's automatic points
 
 <table border="1">
 <tr><th>Test Name</th><th>Value</th></tr>
@@ -272,10 +272,8 @@ Some of the points will be awarded based on gradescope automatic grading. Other 
 5. Code is not unnecessarily or unreasonably complex when a simpler solution is available
 6. Pre- and Post-conditions
 
-## An important word about academic honesty and the gradescope system
+## An important word about academic honesty and the Gradescope system
 
-We will test your code against other data files too&mdash;not just these.  So while you might be able to pass the tests on gradescope now by just doing a hard-coded "cout" of the expected output, that will NOT receive credit.    
+Make sure to actually solve the problem by writing the correct code -- you will NOT receive credit unless you write the correct functions that are able to work correctly on other inputs. We will test your code against other data files too&mdash;not just the default autograder tests that you are able to see.  
 
-To be very clear, code like this will pass on gradescope, BUT REPRESENTS A FORM OF ACADEMIC DISHONESTY since it is an attempt to just "game the system", i.e. to get the tests to pass without really solving the problem.
-
-I would hope this would be obvious, but I have to say it so that there is no ambiguity: hard coding your output is a form of cheating, i.e. a form of "academic dishonesty".  Submitting a program of this kind would be subject not only to a reduced grade, but to possible disciplinary penalties.    If there is <em>any</em> doubt about this fact, please ask your TA and/or your instructor for clarification.
+Any attempt to just "game the system" or use solutions that are not your own is a form of cheating, i.e. a form of "academic dishonesty".  Submitting a program of this kind would be subject not only to a grade of 0, but to possible disciplinary penalties.    If there is <em>any</em> doubt about this fact, please ask your TA and/or your instructor for clarification.
