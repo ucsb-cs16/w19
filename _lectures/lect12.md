@@ -19,7 +19,7 @@ lecture_date: 2019-02-19
 
 Today's lecture focused on reviewing concepts from [Lecture 11](https://ucsb-cs16.github.io/w19/lectures/lect11/).
 
-Based on students' requests on the course eval survey, homeworks are making a comeback: they will now be focused on what the exam will cover. The next homework is optional (see below) but the subsequent ones will earn you point in addition to preparing you for the exam better.
+Based on students' requests on the course eval survey, homeworks are making a comeback: they will now be focused on what the exam will cover. The next homework is optional (see below) but the subsequent homeworks will earn you points, in addition to preparing you better for the exam.
 
 
 ### Quizzes
@@ -32,6 +32,6 @@ Based on students' requests on the course eval survey, homeworks are making a co
 ### HW 4
 
 * Hard copies were distributed in class. You can pick them up during labs on Wednesday, and Prof. K will bring the extra copies to the Thursday lecture. 
-* You can turn in the homework to Prof. K on Thursday before/after the lecture. You can turn it in on Friday by dropping it off in the CS16 homework box in HFH building (the copy/mail room next to the CS Advising office 2104, across from Prof. K’s office in 2107). Submitting this homework is optional, although, since we will provide feedback to you before the weekend, it will help with studying for the exam and during the review session.
-* Getting feedback on the correctness of your submission should be enough incentive to turn it in, so no additional points will be providing for its completion.
+* You can turn in the homework to Prof. K **on Thursday before/after the lecture**. You can turn it in **on Friday by 4:45pm** by dropping it off in the CS16 homework box in HFH building (the copy/mail room next to the CS Advising office 2104, across from Prof. K’s office in 2107). 
+* Submitting this homework is optional, although, since we will provide feedback to you before the weekend, it will help with studying for the exam and during the review session. Getting feedback on the correctness of your submission should be enough incentive to turn it in, so no additional points will be provided for its completion.
 
