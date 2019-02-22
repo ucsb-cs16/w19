@@ -38,3 +38,55 @@ Based on students' requests on the course eval survey, homeworks are making a co
 * Submitting this homework is **optional**, although, since we will provide feedback to you before the weekend, it will help with studying for the exam and during the review session. Getting feedback on the correctness of your submission should be enough incentive to turn it in, so no additional points will be provided for its completion.
 
 **Update**: Based on students' requests we set up Gradescope to accept student submissions: you now have the option of uploading your submission yourself.
+
+## Lecture Notes:
+
+**Note:** To change a function that takes arguments by copy / by value to a function that takes arguments by reference, just add the `address-of` operator (`&`) in front of the arugments in the function header. See slides for examples.
+
+## Pointers
+
+* Use `&` to assign the address of an existing variable to a pointer. (The pointer will then point to this variable)
+* To access the value of the variable that a pointer is pointing to, use the `dereference operator`: `*`
+* A pointer has its own address, and it holds the address of another variable
+* When drawing pointer diagrams, don’t forget to draw boxes for pointers - it’s a variable just like everything else.
+  * See rewritten swap function using pointers on slides
+
+* Why use pointers? We already had a working function that did what we wanted without needing pointers, and they seem like an extra hassle-- so why?
+  * We care about pointers for a few reasons.
+    * Pointers and arrays:
+      * Recall that we couldn’t return an array from a function
+      * An array is like a pointer to the head of array
+      * See slides for diagrams and explanations
+    * Essentially, we can take a ptr to an array in a function and use it to change values in memory, so we can change the vals in the array themselves
+**Note:** Setting a ptr to 0 makes it a NULL pointer (a pointer that points to nowhere)! 
+
+* Q: Does “`*x = *y`” mean make `x` point to the same thing as `y`? 
+  * A: No, it sets the *value* that `x` points to whatever value `y` points to.
+* Q: `*(arr+2)` - Is this adding 2 bytes to the memory location stored at `arr`? 
+  * A: Since the type of `arr` is `int*`, and integer is 4 bytes, `arr+2` adds 8 bytes to memory location. The means we are looking at the memory location 8 bits away from the location of whatever `arr` is pointing to. 
+
+Helful online visualization of C++ programs (may help to understand pointers): [http://pythontutor.com/cpp.html#mode=edit]
+
+## Structs
+
+* A bunch of variables that, taken together, describe an object 
+  * Structs are a simple data structure
+* **EX**: A coordinate point has values `x` and `y`. Rather than have two disparate variables, we can put these into a struct to indicate that, taken together, they relate to the same object (a certain `(x,y)` for a particular point)
+  * These variables are known as member variables  (since they are members of a larger struct)
+* Create an instance of a structs like so: `Point p = {10,20};`
+  * The member variables are initialized in curly braces.
+* **Example struct syntax:**
+`Struct Name{
+    String first;
+    String last;
+    Int age;
+};`
+* Don’t forget the semicolon at the end of the struct definition!
+* To access member variables, use the dot operator `.`
+  * **EX:** 
+    `Name n = {"first", "last"};`
+   ` cout<< n.first; //prints "first"`
+* Accessing them allows you to: print, compare, or change the values of those mem vars
+* If one of the member variables is also a struct, use the dot operator once more to access the member variables of that struct 
+    * See slides for Point / box example!
+
