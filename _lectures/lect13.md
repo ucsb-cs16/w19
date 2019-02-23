@@ -46,7 +46,7 @@ ch = &c;
 
 ## Memory: stack and heap
 
-Stack and heap are used to refer to two different regions of memory. Stack is automatically managed (you don't have to worry about deleting your variables to free up memory), and heap is not. 
+Stack and heap are used to refer to two different regions of memory. Stack is automatically managed (you don't have to worry about deleting your variables to free up memory), and heap is not. If you create something on the heap, you need to make sure you 'free up' all the memory you have used. Otherwise, you run into a memory leak, which can be a major problem in bigger applications. Always made sure to delete all heap objects before the end of the program.
 
 So far we have only been using the stack in our programs - all variables, arrays, structs you create have been stored on the stack. Now we will learn how to use the heap. Let's create an array of integers on the heap!
 
@@ -57,6 +57,7 @@ int arr[] = {14, 15, 67, 34};
 ```
 We can create objects on the heap by using the 'new' keyword.
 ```
+string* sp = new string; //sp is a pointer on the stack pointing to a string on the heap. Dereference sp to access the string itself.
 int* arr = new int[10]; //creates an array of size 10 on the heap and saves the address of the first element in arr
 ```
 
@@ -67,6 +68,33 @@ int size;
 cin >> size; //size is set by the user
 int* arr = new int[size];
 ```
+
+You now can use this array just like you would use it normally, and it's not deleted at the end of the function like an array on the stack would!
+
+> But what if I want to delete that array?
+
+Do delete elements from the heap, you would also use a keyword. ``` delete``` + a pointer frees up the heap at that memory location.
+
+To delete the entire array, use ``` delete [] arr```, if arr is the pointer to the first element.
+
+Remember that dereferencing a NULL pointer will result in a segmentation fault. 0 is a memory address reserved by the operating system, and is commonly used as the default value for pointers.
+
+> But isn't it a bad thing to get a segmentation fault if a NULL pointer gets dereferenced?
+
+Yes, but it's worse to not initialize your pointers at all. Accessing random memory locations might result in data corruption, which is worse than your program crashing.
+
+### Recap
+
+* Stack and heap are different regions in memory. 
+* Stack is managed by C++, and heap is managed by you! 
+* To create objects on the heap, use the `new` keyword. When you create objects on the heap, you have a connection to them by having the pointer pointing to the memory location where the object is.
+* Make sure to 'free up' all the memory from the heap by using the `delete` keyword
+
+## Organizational notes:
+
+* Midterm 2 is next Thursday!
+* There is going to be a review session on Monday, Feb 25. TAs and tutors will go over the practice tests and answer any questions. The exact information will be posted on Piazza over the weekend.
+* Lab05 and Lab06 are due on Tuesday. Remember that Lab06 is optional, but highly recommended.
 
 
 
