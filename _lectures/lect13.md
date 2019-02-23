@@ -10,14 +10,14 @@ lecture_date: 2019-02-21
 
 # Recap
 
-3 different ways to pass an variable into a function
+There are 3 different ways to pass a variable into a function
 
-let's look at how we could implement initBox() that takes a box and initializes its member variables to 0.
+Let's look at how we could implement initBox() that takes a box and initializes its member variables to 0.
 
 * Pass by value -- `void initBox(Box b)`
 
-Local copies are created, any changes within a function are not applied to the original object passed in.
-Local copy is lost after the function returns.
+A local copy of a box will be created, any changes within the function are not applied to the original object passed in.
+The local copy is lost after the function returns.
 
 * Pass by reference -- `void initBox(Box& b)`
 
