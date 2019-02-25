@@ -16,31 +16,13 @@ The goal of this lab is get more practice with iterating through linked lists an
 
 ## Step 1: Getting Started
 
-1. Decide if you are working alone, or working in a pair. Pair programming is OPTIONAL for this lab.
-
-2. Choose who will be the first driver and who will start as navigator, and then remember to switch (at least once) during the lab.
-
-3. Go to github and create a git repo for this lab following the naming convention specified in previous labs (this step carries style points, see our feedback on previous labs to understand what we are looking for). If you are working with a partner only one of you needs to create the repo.
-
-4. If you are working with a partner and you are the one who created the github repo, add your partner as a collborator on the repo
-
-5. Decide on initial navigator and driver.
-
-6. Driver, log on to your CSIL account.
-
-7. Open a terminal window and log into the correct machine.
-
-8. Change into your CS 16 directory
-
-Note: Remember to push your work to github at the end of EVERY work session. That way, both partners always have access to the latest version of the code even if the code is being developed on one partner's CoE account.
-
-
+Please refer to previous labs (e.g., lab04) for additional instructions on creating a github repo for this lab.
 
 ## Step 2: Obtaining the starter code
 
 * Navigate to your cs16 directory and clone the git repository you created
 ```
-git clone git@github.com:ucsb-cs16-s18-mirza/lab07_alily_jgaucho.git
+git clone git@github.com:ucsb-cs16-w19/lab07_alily_jgaucho.git
 ```
 * cd into this new directory
 ```
@@ -50,18 +32,18 @@ cd lab07_alily_jgaucho
 * Copy the starter code by typing the following command:
 
 ```
-cp /cs/faculty/dimirza/cs16/labs/lab07/* ./
+cp /cs/faculty/ykk/cs16/labs/lab07/* ./
 ```
 
 Typing the list (ls) command should show you the following files in your current directory
 
 ```
-[dimirza@csil-03 lab07-startercode]$ ls
+$ ls
 linkedListFuncs.cpp  Makefile                 tddFuncs.cpp
 linkedListFuncs.h    moreLinkedListFuncs.cpp  tddFuncs.h
 linkedList.h         moreLinkedListFuncs.h
 llTests.cpp          README.md
-[dimirza@csil-03 lab07-startercode]$
+$
 ```
 
 
