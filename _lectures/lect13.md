@@ -1,10 +1,8 @@
 ---
 num: "lect13"
 desc: "Double Linked lists, more memory management"
-ready: false
-pdfurl: /lectures/CS16_Lecture13.pdf
-annotatedpdfurl: /lectures/CS16_Lecture13_ann.pdf
-annotatedready: false
+ready: true
+pdfurl: https://drive.google.com/open?id=1qG48RYFvB7VVEU7yP3eCkG8KRVA9KtYw
 lecture_date: 2019-02-21
 ---
 
