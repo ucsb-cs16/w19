@@ -16,15 +16,7 @@ The goal of this lab is get more practice with iterating through linked lists an
 
 ## Step 1: Getting Started
 
-
-1. Go to github and create a git repo for this lab following the naming convention specified in previous labs (this step carries style points, see our feedback on previous labs to understand what we are looking for).l
-
-2. Log on to your CSIL account and open a terminal window.
-
-3. Change into your CS 16 directory.
-
-Note: Remember to push your work to github at the end of EVERY work session.
-
+Please refer to previous labs (e.g., lab04) for additional instructions on creating a github repo for this lab.
 
 ## Step 2: Obtaining the starter code
 
