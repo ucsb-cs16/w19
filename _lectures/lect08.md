@@ -1,6 +1,7 @@
 ---
 num: "lect08"
 desc: "Intro to Makefiles and File I/O "
+reading: "Sections 6.1 (6.2, 6.3) + lecture notes + Makefile walkthrough on Piazza"
 ready: true
 pdfurl: https://drive.google.com/drive/folders/1qG48RYFvB7VVEU7yP3eCkG8KRVA9KtYw?usp=sharing
 reading: "Section 6.1: File I/O"

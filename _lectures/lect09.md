@@ -1,6 +1,7 @@
 ---
 num: "lect09"
 desc: "Arrays and Makefile"
+reading: "Sections 4.2, 7.1, 7.2 + notes + Makefile walkthrough on Piazza"
 ready: true
 pdfurl: "https://drive.google.com/open?id=1qG48RYFvB7VVEU7yP3eCkG8KRVA9KtYw"
 lecture_date: 2019-02-07

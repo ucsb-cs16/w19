@@ -1,6 +1,7 @@
 ---
 num: "lect10"
 desc: "Numerical Base Conversions, C-strings vs C++ strings"
+reading: "Sections 5.3, 5.5, 8.1, 8.2 + lecture notes"
 ready: true
 pdfurl: "https://drive.google.com/open?id=1qG48RYFvB7VVEU7yP3eCkG8KRVA9KtYw"
 lecture_date: 2019-02-12

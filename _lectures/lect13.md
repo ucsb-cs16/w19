@@ -1,6 +1,7 @@
 ---
 num: "lect13"
-desc: "Double Linked lists, more memory management"
+desc: "Linked lists, more memory management"
+reading: "Chapters 9, 13.1"
 ready: true
 pdfurl: https://drive.google.com/open?id=1qG48RYFvB7VVEU7yP3eCkG8KRVA9KtYw
 lecture_date: 2019-02-21
