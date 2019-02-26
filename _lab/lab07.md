@@ -1,7 +1,7 @@
 ---
 layout: lab
 num: lab07
-ready: false
+ready: true
 desc: "Linked lists"
 assigned: 2019-02-26 09:00:00.00-8
 due: 2019-03-05 09:00:00.00-8
@@ -53,7 +53,7 @@ Here is a list of your tasks for this lab:
 
 ### Step 3a: Familiarize yourself with the big picture
 
-Type "make tests" and you will see some tests pass, but some fail.
+Type `make tests` and you will see some tests pass, but some fail.
 
 You are finished when all the tests pass. We have implemented a few function that involve linked lists in `linkedListFuncs.cpp`. There is only one file you need to edit this week:
 
@@ -184,7 +184,7 @@ At that point, you are ready to try submitting on gradescope.
 
 ## Step 5: Submitting via gradescope
 
-Submit the moreLinkedListFuncs.cpp file on gradescope. Make sure to add your partner as a collaborator if you had one.
+Submit the moreLinkedListFuncs.cpp file on gradescope.
 
 # Grading Rubric
 
@@ -214,8 +214,6 @@ Most of the points will be awarded based on gradescope automatic grading. Other 
 
 ## An important word about academic honesty and the gradescope system
 
-We will test your code against other data files too&mdash;not just these.  So while you might be able to pass the tests on gradescope now by just doing a hard-coded "cout" of the expected output, that will NOT receive credit.    
+We will test your code against other data files too&mdash;not just these.  So while you might be able to pass the tests on gradescope now by just doing a hard-coded output, that will NOT receive credit.    
 
-To be very clear, code like this will pass on gradescope, BUT REPRESENTS A FORM OF ACADEMIC DISHONESTY since it is an attempt to just "game the system", i.e. to get the tests to pass without really solving the problem.
-
-I would hope this would be obvious, but I have to say it so that there is no ambiguity: hard coding your output is a form of cheating, i.e. a form of "academic dishonesty".  Submitting a program of this kind would be subject not only to a reduced grade, but to possible disciplinary penalties.    If there is <em>any</em> doubt about this fact, please ask your TA and/or your instructor for clarification.
+To be very clear, code like this will pass on gradescope, BUT REPRESENTS A FORM OF ACADEMIC DISHONESTY since it is an attempt to just "game the system", i.e. to get the tests to pass without really solving the problem. Submitting a program of this kind would be subject not only to a reduced grade, but to possible disciplinary penalties.    If there is <em>any</em> doubt about this fact, please ask your TA and/or your instructor for clarification.
