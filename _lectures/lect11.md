@@ -186,8 +186,7 @@ int& b = a; //b is a reference to a
 * References cannot change the variables they are assigned to
 ```cpp
 int a = 10, c = 9;
-int& b; //b (reference) was just created
-b = a; //b is not assigned to a; b is a reference to a
+int& b = a; //b (reference to a) was just created. b and a refer to the same "box" in memory
 b = c; //ILLEGAL: you are attempting to reassign b
 ```
 * The ampersand sign can help us get the location of any variable in memory
