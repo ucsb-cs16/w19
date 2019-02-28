@@ -328,7 +328,7 @@ Note that when you run the above code, you will get different values, because th
   * Remember how value of `arr` in the code above was 0x2a8c64d78a14?
   * This tells us that the first element is at location 0x2a8c64d78a14.
   * The size of one integer is 4 bytes, so the second element is at location 0x2a8c64d78a18.
-  * The third element of arr is at location 0x2a8c64d78a1b (hexadecimal addition: 18 -> 19 -> 1a -> 1b)
+  * The third element of arr is at location 0x2a8c64d78a1c (hexadecimal addition: 18 -> 19 -> 1a -> 1b -> 1c)
 
 * Final notes on pointers:
   * When pointers are **declared**, they hold **junk values**. Defererencing (i.e., using `*`) such pointers is dangerous, because their values are not properly initialized, which means that they do not hold the valid memory location. It might, depending on what's inside, tamper with your data, or attempt to reach something that the pointer doesn't have access to, causing a segmentation fault.
