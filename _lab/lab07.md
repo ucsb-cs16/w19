@@ -4,9 +4,10 @@ num: lab07
 ready: true
 desc: "Linked lists"
 assigned: 2019-02-26 09:00:00.00-8
-due: 2019-03-05 09:00:00.00-8
+due: 2019-03-08 17:00:00.00-8
 ---
 
+### Deadline has been extended from March 5 to March 8 at 5PM.
 
 # Goals of this lab
 
