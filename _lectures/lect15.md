@@ -1,8 +1,7 @@
 ---
 num: "lect15"
 desc: "Strings and recursion"
-ready: false
-pdfurl: 
+ready: true
 annotatedready: false
 lecture_date: 2019-03-05
 ---
