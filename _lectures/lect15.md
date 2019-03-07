@@ -2,9 +2,15 @@
 num: "lect15"
 desc: "Strings and recursion"
 ready: true
-annotatedready: false
+pdfurl: "https://drive.google.com/open?id=1qG48RYFvB7VVEU7yP3eCkG8KRVA9KtYw"
+reading: "Sections 8.1, 8.2 (Strings) + Lect 10 notes/slides"
 lecture_date: 2019-03-05
 ---
+
+In class, we mainly talked about linked lists and walked through an example of creating a struct for a playing Card and player's Hand.
+
+
+The notes below are meant to help with Lab 08, and are easier to understand on your own.
 
 
 # Strings

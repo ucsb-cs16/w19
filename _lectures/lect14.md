@@ -2,13 +2,15 @@
 num: "lect14"
 desc: "Linked lists"
 ready: true
+reading: Section 13.1
 notes: https://1drv.ms/f/s!AlgIeD1urAgmegsFAP4XW6tA9jE
 lecture_date: 2019-02-26
 ---
 
 ## Recap
 
-Code from lecture: <https://github.com/ucsb-cs16-w19/code-from-lecture-2-26>
+* Code from lecture: <https://github.com/ucsb-cs16-w19/code-from-lecture-2-26>
+* notes: <https://1drv.ms/f/s!AlgIeD1urAgmegsFAP4XW6tA9jE>
 
 ### Dynamic memory / the heap
 
