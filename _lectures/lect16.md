@@ -5,7 +5,7 @@ ready: false
 pdfurl: /lectures/CS16_Lecture17.pdf
 annotatedpdfurl: /lectures/CS16_Lecture17_ann.pdf
 annotatedready: false
-lecture_date: 2019-03-12
+lecture_date: 2019-07-12
 ---
 **Notes:**
 * Deleting a node in a linked list is covered very well in the book, in Chapter 13 around page 755 
