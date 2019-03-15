@@ -1,10 +1,9 @@
 ---
-num: "lect17"
+num: "lect16"
 desc: "Recursion"
-ready: false
-pdfurl: /lectures/CS16_Lecture17.pdf
-annotatedpdfurl: /lectures/CS16_Lecture17_ann.pdf
-annotatedready: false
+ready: true
+pdfurl: "https://drive.google.com/open?id=1qG48RYFvB7VVEU7yP3eCkG8KRVA9KtYw"
+reading: "Chapters 13.1, 14"
 lecture_date: 2019-03-07
 ---
 **Notes:**
@@ -12,16 +11,16 @@ lecture_date: 2019-03-07
     * An important topic to know for final/ future CS classes 
 * Will be posting associated readings for lectures
 * In the last week, we will be holding extra office hours/ final review during lab sections, so please take advantage of this time to ask any questions!
-* Lab08 is due next Friday
+* Lab08 is due next Friday, 3/15
 * Also review the recursive "write vertical" function in the book
   * The book uses integers, so also a good review of division and modulo tricks to isolate the digits of a number
-  * We have created a very similar sample problem-- print the characters of the word vertically
+  * We have created a very similar sample problem -- print the characters of the word vertically (posted on Piazza)
 * You can use i`salpha()` to identify which chars are not letters, to pull out punctuation from a word (will need for lab)
 
 **IMPORTANT!**
 * Pointers are *not* automatically initialized to `NULL`! They are initialized pointing to a junk value-- it is good practice to set ptrs to `NULL` when you first declare them
 * Order of operations with dereference operator `*`
-* The `*` has very low precedence (often executed last), so should always dereference **first, within parentheses** before trying any operations on the variable being pointed to
+  * The `*` has low precedence, so always dereference **first, within parentheses** before trying any operations on the variable being pointed to
 
 **Recursion**
 * Something that calls itself
@@ -60,7 +59,7 @@ fact(5) -> 5 * fact(4) -> 4 * 6
 fact(5) -> 5 * 24
 fact(5) -> 120
 ```
-  * fact(5) returns 120
+  * `fact(5)` returns 120
 
 * A recursive definition of an array:
   * A single element, followed by the rest of the elements
@@ -70,21 +69,23 @@ fact(5) -> 120
   
 * How can we tell if there is a single node in the list?
    * Head and tail point to the same location
-   * Or Head-> next is NULL
-   * Or Tail-> next is NULL
+   * Or `head->next` is NULL 
+   * Or `tail->next` is NULL
     * These are equivalent statements
 
-* Question on slides- sum of nodes in linked list. How will the given function behave?
+* Question on slides - sum of nodes in linked list. How will the given function behave?
   * It will crash with a segfault- there is no base case to catch the end of the list, so you will end up trying to dereference a null or an undefined pointer
   * Here, the base case is "head is `NULL`". If head is `NULL`, `return 0;`
   * Else call the function recursively
   
 * Can I have more than one call to a recursive function within a recursive function?
    * Why not?
-   * However, know that every time you call it, if will place another frame on the stack
+   * However, know that **every time you call it, if will place another frame on the stack**
    * Several recursive calls happening at once will add many frames to the stack
+   * If there are too many, you can cause a **stack overflow**
 
 * See slides for info on helper functions
+
 * The following functions are fair game for the final:
   * Recursive search of a linked list
   * Find the min/ max elements of a linked list recursively
@@ -95,6 +96,12 @@ fact(5) -> 120
 * Slides will be released with the above problems!
 
 **Recursion:** Remember that every time you call the recursive function again, you should have made the problem smaller!
+ * for recursion, first, identify the **base case**
+ * then, think about the next simplest case and identify how part of it can be passed to the function, returning the base case
+   * for example, if you are dealing with arrays, your base case is the 1-element array
+   * the next simplest case is the 2-element array. 
+   * in the recursive case, you would consider one of these elements, typically, the first or the last element, and call the function on the rest of the array (which you know will end up resulting in the base case)
+   * now you can verify that the recursive case works for an example that's slightly longer than you "next simplest case"
 
 * Fibonacci Series Example:
   * The first two elements in the series are 1s, the subsequent elements are the sums of the two previous elements
