@@ -1,9 +1,9 @@
 ---
-num: "lect17"
-desc: "Wrap up and final review"
+num: "lect16"
+desc: "Using the C++ STL: array, vector list"
 ready: false
-pdfurl: /lectures/CS16_Lecture17.pdf
-annotatedpdfurl: /lectures/CS16_Lecture17_ann.pdf
+pdfurl: /lectures/CS16_Lecture16.pdf
+annotatedpdfurl: /lectures/CS16_Lecture16_ann.pdf
 annotatedready: false
 lecture_date: 2019-03-12
 ---
@@ -57,3 +57,4 @@ ll-->head will be added a reference to and change if passed by reference. This i
 * A standard code base of common data structures with built-in functions, to avoid having to constantly re-implement more complex structures from scratch
 * Has prewritten data structures we have used: arrays, linked lists, and much more
 * Contains the vector class (stay tuned!)
+
