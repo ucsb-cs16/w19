@@ -55,7 +55,7 @@ Dynamic variables in c++ are variables athat are created on the heap. They are c
 > What does it mean to delete a variable? How does that work?
 
 Let's have an example. 
-`Box* b1 = new Box{{50,40}, 20, 50};` 
+`Box* b1 = new Box{ {50,40}, 20, 50};` 
 We have just created a Box on the heap. This means that memory was allocated on the heap for the box. If you are interested in how much memory was allocated, you can calculate that by adding all the sizes of member variables of the type Box.
 * A Box has a Point, a width parameter and a length parameter. In total, that is 4 integers that represent a Box, so a size of a Box object is 16 bytes.
 Since we are dealing with the heap, c++ will not automatically get rid of our Box when the time comes. We need to get rid of that memory ourselves, or else we would get a memory leak.
