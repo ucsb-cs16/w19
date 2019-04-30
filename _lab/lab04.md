@@ -3,13 +3,13 @@ layout: lab
 num: lab04
 ready: true
 desc: "Odds and primes: Fun with arrays and makefiles"
-assigned: 2019-04-29 22:15:00.00-7
-due: 2019-05-07 23:59:00.00-7
+assigned: 2019-02-09 19:30:00.00-7
+due: 2019-02-20 23:00:00.00-8
 ---
 <div markdown="1">
 
 <h1>CS16: Programming Assignment 04</h1>
-
+## Due to the holiday on Monday, the due date was changed to allow students to get more help during the open lab hours.
 
 <h2>Introduction -- Important: Read this!</h2>
 
@@ -37,7 +37,7 @@ account.
 In lab02,  we have done the same thing. So if you don't know to how to do that, please refer to lab02 for details. The basic steps are as follows:
 
 * Create a git repo on github following the correct naming convention, e.g., if your github username is jgaucho, you should name your repo lab04_agaucho. 
-**Remember to make it 'PRIVATE'.**
+Remember to make it 'PRIVATE'.
 
 
 * Go to your CS16 directory and clone the repo locally using `git clone`.
@@ -395,12 +395,14 @@ Points from automated Gradescope system tests
 **Style** (5 pts):
 Good choice of variable names, code indented in ways that are consistent, and in line with good C++ practice. Where applicable, common code is factored out into functions (added to utility.h and utility.cpp as needed). 
 
-This last point may or may not arise, but if it does, utility.h and utility.cpp is a place where functions needed in multiple files can be put -— prototypes in utility.h and function definitions in utility.cpp.
+This last point may or may not arise, but if it does, utility.h and utility.cpp is a place where functions needed in multiple files can be put—prototypes in utility.h and function definitions in utility.cpp.
 
+
+You will note that the Gradescope score is worth 200 points. The grade will ultimately normalized to be out of 100 points. This lab is worth exactly the same as all the other labs done so far (i.e. the 205 points here, which will include the manual score for the style, are equivalent to 100 points in other labs).
 
 <h2>Step 10: Done!</h2>
 
- Remember that we will check your code for appropriate comments, formatting, and the use of required code, as stated earlier, based on your github submission.
+Once your submission receives a score of 200/200 on Gradescope, you are done with this assignment. Remember that we will check your code for appropriate comments, formatting, and the use of required code, as stated earlier, based on your github submission.
 
 If you are in the Phelps lab or in CSIL, **make sure to log out of the machine before you leave**. Also, make sure to close all open programs before you log out. Some programs will not work next time if they are not closed. **Remember to save all your open files before you close your text editor.**
 
